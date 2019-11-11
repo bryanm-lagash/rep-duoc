@@ -1,0 +1,151 @@
+{% extends "core/base.html" %}
+
+{% load static %}
+
+{% block contenido %}
+<div class="container container2">
+        <div class="row">
+            <div class="col-12">
+                <h2>¿Qué es el Cambio Climático? </h2>
+                <h4>El cambio climático es un reto global que no tiene fronteras y que para combatirlo requiere del trabajo coordinado por parte de todos los países.</h4>
+                <p>Existe un gran desconocimiento de lo que es el cambio climático en realidad, bien por exceso de información, inexactitud en las fuentes o por desinformación interesada, lo que da origen a una serie de falsos mitos sobre el cambio climático.</p>
+                <p>El calentamiento global es la causa del cambio climático, es decir, el aumento de la temperatura del planeta provocado por las emisiones a la atmósfera de gases de efecto invernadero derivadas de la actividad del ser humano, están provocando variaciones en el clima que de manera natural no se producirían.</p>
+                <p>La Tierra ya se ha calentado y enfriado en otras ocasiones de forma natural, pero lo cierto es, que estos ciclos siempre habían sido mucho más lentos, necesitando millones de años, mientras que ahora y como consecuencia de la actividad humana,  estamos alcanzando niveles que en otras épocas trajeron consigo extinciones en apenas doscientos años.</p>
+            </div>
+        </div>
+    </div>
+    
+    <section style="position: inherit" class="banner">
+        <h3>Solo tu puedes cambiar el planeta <a href="#">Enlace Externo<span class="icon-right-open"></span></a> </h3>
+    </section>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 causas">
+                <h2 class="text-titulo2">¿Que causa el calentamiento global?</h2>
+                <div class="col-md-4 col-sm-4">
+                    <p>El calentamiento global supone el ascenso de la temperatura media de la superficie de la Tierra y de la atmósfera de forma continuada. El calentamiento global no solo se debe a efectos naturales como el aumento de la actividad solar o a fenómenos que se producen en la Tierra como la emisión de metano en los glaciares o de diversos tipos de gases en la erupción de volcanes.</p>
+                    <img class="causas-img1" src="{% static 'core/img/gases-invernadero.jpg' %}" alt="">
+                </div>
+                
+                <div class="col-md-8 col-sm-8 celglobal">
+                    <h3>Aumento de gases de efecto invernadero</h3>
+                    <p>Hay muchos gases de efecto invernadero responsables de un calentamiento adicional de la atmósfera, los cuales son producidos de distintintas formas por personas. El gas responsable de la mayoría del calentamiento es el dióxido de carbono, también llamado CO2. Otros contribuyentes son el metano expulsado de los vertederos y de la agricultura (especialmente de los sistemas digestivos de los animales que pastan), óxido nitroso de los fertilizantes, los gases usados para la refrigeración y procesos industriales, y de la pérdida de bosques que de otra forma almacenarían CO2.</p>
+                    <p><b>Dióxido de carbono (CO2):</b> Provocado principalmente por la quema de combustibles fósiles para la generación de electricidad, el transporte, la calefacción, la industria y la edificación. También provocado por la producción de cemento y otros bienes. Y como consecuencia de la deforestación.</p>
+                    <p> <b> Metano (CH4):</b> Provocado por la ganadería, la agricultura (principalmente el cultivo del arroz), el tratamiento d aguas residuales, la distribución del gas natural y petróleo, la industria de la minería del carbón, el empleo de combustibles y los vertederos.</p>
+                    <p></p>
+                    <p><b>Compuestos halogenados (HCFC, CFC, HFC, PFC…):</b> Gases de origen antropogénico (resultado de las actividades humanas). No son no nocivos para la capa de ozono pero sí aumentan el efecto invernadero. Principalmente de la producción química para diversos sectores (refrigeración y climatización, eléctrico y electrónico, médico, metalúrgico…)</p>
+                    <p><b>Ozono troposférico (O3):</b> Reacción entre los gases CO, HC, NOx y COV, emitidos en el empleo de combustibles.</p>
+                    <p><b> Óxido de nitrógeno (N2O): </b> Provocado por el exceso de uso de fertilizantes, el empleo de combustibles, la actividad química y el tratamiento de aguas residuales.</p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="wrapper carousel">
+                <input checked type="radio" name="slider" id="slide1">
+                <input type="radio" name="slider" id="slide2">
+                <input type="radio" name="slider" id="slide3">
+                <input type="radio" name="slider" id="slide4">
+                <input type="radio" name="slider" id="slide5">
+                    <div class="slider-wrapper">
+                    <div class="inner">
+                        <article>
+                            <div class="info top-left">
+                                <h3>Cambio climatico</h3>
+                            </div>
+                            <img src="{% static 'core/img/carousel-1.png' %}" alt="">
+                        </article>
+                        
+                        <article>
+                            <div class="info bottom-right">
+                                <h3>España</h3>
+                            </div>
+                            <img src="{% static 'core/img/carousel-2.jpg' %}" alt="">
+                        </article>
+                        
+                        <article>
+                            <div class="info bottom-left">
+                            </div>
+                            <img src="{% static 'core/img/gases.jpg' %}" alt="">
+                        </article>
+                        
+                        <article>
+                            <div class="info top-right">
+                            </div>
+                            <img src="{% static 'core/img/carousel-3.jpg' %}" alt="">
+                        </article>
+                        
+                        <article>
+                            <div class="info bottom-left">
+                            </div>
+                            <img src="{% static 'core/img/climatechange.jpg' %}" alt="">
+                        </article>
+                    </div> <!--Inner-->
+                </div><!--Slider-Wrapper-->
+                
+                <div class="slider-prev-next-control">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
+                    <label for="slide4"></label>
+                    <label for="slide5"></label>
+                </div>
+                
+                <div class="slider-dot-control">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
+                    <label for="slide4"></label>
+                    <label for="slide5"></label>
+                </div>
+                </div>
+                
+            </div>
+        </div><!--Row-->
+    </div><!--Container-->
+
+    <div class="container container3">
+        <div class="row">
+            <div class="col-md-12 climatProvoc">
+                <h2 class="text-titulo">¿Qué provoca el cambio climático?</h2>
+                <p>Las temperaturas en la Tierra son aptas para la vida gracias a un proceso natural llamado el efecto invernadero. Cuando la radiación solar llega a nuestra atmósfera, parte de ella es reflejada al espacio, y parte de ella pasa y es absorbida por la Tierra. Esto causa que la superficie de la Tierra se caliente.  El calor es irradiado hacia el exterior y absorbido por los gases presentes en la atmósfera de la Tierra, los llamados ”gases de efecto invernadero”. Este proceso previene que el calor desaparezca, haciendo que la temperatura ronde los +15°C en vez de -19°C.</p>
+                <p>Este aumento global de la temperatura trae consecuencias desastrosas que ponen en peligro la supervivencia de la flora y la fauna de la Tierra, incluido el ser humano. Entre los impactos del cambio climático destacan, el derretimiento de la masa de hielo en los polos, que a su vez provoca el aumento del nivel del mar, lo que produce inundaciones y amenaza los litorales costeros –incluso pequeños estados insulares están en riesgo de desaparición-.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            
+        </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 contacto">
+            <h2 id="secContacto">Nos ponemos en contacto contigo</h2>
+                <form action="">
+                    <div class="form-group">
+                        <p class="item-form"><b>Rut</b></p>
+                        <input type="" class="form-control" placeholder="99999999-9" required>
+                        <p class="item-form"><b>Nombres</b></p>
+                        <input type="" class="form-control" placeholder="Ingrese nombre">
+                        <p class="item-form"><b>Apellidos</b></p>
+                        <input type="" class="form-control" placeholder="Ingrese apellidos">
+                        <p class="item-form"><b>Genero</b></p>
+                        <input type="" class="form-control" placeholder="Ingrese genero">
+                        <p class="item-form"><b>Fecha Nacimiento</b></p>
+                        <input type="date" class="form-control">
+                        <p class="item-form"><b>Email</b></p>
+                        <input type="email" class="form-control" placeholder="example@outlook.com">
+                        <section class="section-btn">
+                            <button type="submit" class="btn btn-primary myButton btn-block">Enviar</button>
+                        </section>
+                        
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock contenido %}

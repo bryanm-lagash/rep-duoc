@@ -1,0 +1,28 @@
+{% extends "core/base.html" %}
+
+{% load static %}
+
+{% block contenido %}
+  
+<div class="login-box">
+    <form action="">
+       <img class="avatar" src="{% static 'core/img/planeta.png' %}" alt="">
+        <!--Username-->
+        <label for="username">Usuario</label>
+        <input type="text" placeholder="Ingrese usuario">
+        <!--Password-->
+        <label for="password">Contraseña</label>
+        <input type="password" placeholder="Ingrese contraseña">
+        <label for="password">Repetir contraseña</label>
+        <input type="text" placeholder="Repetir contraseña">
+        <label for="email">Email</label>
+        <input type="text" placeholder="Ingrese email">
+        <!--Button-->
+        <input type="submit" value="Registrarse">
+        <a href="{% url 'inicio-sesion' %}">¿Ya tiene cuenta?</a>
+    </form>
+    
+</div>
+
+{% endblock contenido %}
+    

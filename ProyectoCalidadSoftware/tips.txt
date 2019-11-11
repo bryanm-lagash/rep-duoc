@@ -1,0 +1,5 @@
+Para que trabajes bien en el proyecto solamente ejecuta el script de la base de datos,
+cuando nos juntemos te hago lo de las migraciones para que puedas ocupar la aplicacion con el
+login
+
+chupala brou <3 

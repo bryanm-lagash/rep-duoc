@@ -1,0 +1,60 @@
+﻿@model App.Models.Contrato
+
+@{
+    ViewBag.Title = "Detalles";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Detalles</h2>
+
+<div>
+    <h4>Contrato</h4>
+    <hr />
+    <dl class="dl-horizontal">
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ContratoId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ContratoId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaCreacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaCreacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaInicio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaInicio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaTermino)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaTermino)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmpleadoId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmpleadoId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Editar", new { id = Model.ContratoId }) 
+    @Html.ActionLink("Regresar a la lista", "Index")
+</p>

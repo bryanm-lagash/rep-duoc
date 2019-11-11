@@ -1,0 +1,62 @@
+﻿@model App.Models.ViewModels.ContratoViewModel
+@{
+    ViewBag.Title = "Crear Contrato";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 style="text-align:center;">@ViewBag.Title </h2>
+
+@using (Html.BeginForm("Crear","Contrato", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    <div class="container">
+        <div class="row">
+            <div class="form-horizontal">
+                @Html.ValidationSummary(true)
+                <h3>Datos Contrato</h3>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        @Html.LabelFor(d => d.ContratoId, htmlAttributes: new { @class = "form-label" })
+                        @Html.TextBoxFor(d => d.ContratoId, "", htmlAttributes: new { @class = "form-control" })
+                        @Html.ValidationMessageFor(d => d.ContratoId, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(d => d.FechaCreacion, htmlAttributes: new { @class = "form-label" })
+                        @Html.TextBoxFor(d => d.FechaCreacion, "", htmlAttributes: new { @class = "form-control" })
+                        @Html.ValidationMessageFor(d => d.FechaCreacion, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(d => d.FechaInicio, htmlAttributes: new { @class = "form-label" })
+                        @Html.TextBoxFor(d => d.FechaInicio, "", htmlAttributes: new { @class = "form-control" })
+                        @Html.ValidationMessageFor(d => d.FechaInicio, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(d => d.FechaTermino, htmlAttributes: new { @class = "form-label" })
+                        @Html.TextBoxFor(d => d.FechaTermino, "", htmlAttributes: new { @class = "form-control" })
+                        @Html.ValidationMessageFor(d => d.FechaTermino, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(d => d.EmpleadoId, htmlAttributes: new { @class = "form-label" })
+                        @Html.TextBoxFor(d => d.EmpleadoId, "", htmlAttributes: new { @class = "form-control" })
+                        @Html.ValidationMessageFor(d => d.EmpleadoId, "", new { @class = "text-danger" })
+                    </div>
+
+                </div>
+
+                <div class="col-md-6">
+                    <h2>Sueldo</h2>
+
+                </div>
+
+                <div class="form-group" style="text-align:center;">
+                    <input type="submit" value="Guardar" class="btn btn-primary" />
+                </div>
+                <!--Por si hay que agregar mas detalles sobre el sueldo sobran 6 filas de bootstrap-->
+            </div>
+        </div>
+    </div>
+}
