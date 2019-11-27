@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .forms import .CustomUserForm
 
 # Create your views here.
 
@@ -13,3 +14,9 @@ def registrarse(request):
 
 def registro(request):
     return render(request, 'core/registrarse.html')
+
+def registro_usuario(request):
+    data = {
+        'form':CustomUserForm()
+    }
+    return render {request, 'registration/register.html'}    
