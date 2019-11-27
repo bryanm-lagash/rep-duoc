@@ -1,0 +1,189 @@
+﻿@model App.Models.ViewModels.ContratoViewModel
+@{
+    ViewBag.Title = "Crear Contrato";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+    <head>
+        <link href="~/Content/Site.css" rel="stylesheet" />
+    </head>
+<body>
+
+
+<h2 style="text-align:center; margin-top:50px;">@ViewBag.Title </h2>
+
+@using (Html.BeginForm("Crear", "Contrato", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    <br /><hr />
+    <div class="container" >
+    <form>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                @Html.LabelFor(d => d.ContratoId, htmlAttributes: new { @class = "form-label" })
+                @Html.TextBoxFor(d => d.ContratoId, "", htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(d => d.ContratoId, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group col-md-4">
+                @Html.LabelFor(d => d.EmpleadoId, htmlAttributes: new { @class = "form-label" })
+                @Html.TextBoxFor(d => d.EmpleadoId, "", htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(d => d.EmpleadoId, "", new { @class = "text-danger" })
+            </div>
+            <div class="form-group col-md-4">
+                    <label for="inputFcreacion">Fecha Creación</label>
+                    <input type="date" class="form-control" id="inputFcreacion">
+            </div>
+        </div>
+        <div class="row col-md-12 justify-content-center  ">
+            <div class="form-group col-md-4">
+                <label for="inputFinicio">Fecha Inicio</label>
+                <input type="date" class="form-control" id="inputFinicio">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputFtermino">Fecha Termino</label>
+                <input type="date" class="form-control" id="inputFtermino">
+            </div>
+        </div>
+        <hr />
+
+
+        <div class="row col-md-12">
+
+            <div class="primero col-md-6" style=" display:block; border-right:1px solid gray;">
+                <h3 style="text-align:center;">Haberes</h3>
+                <br />
+                <div class="form-group col-md-4 " style=" float: left">
+                    <label for="inputNhoras">N° de Horas</label>
+                    <input type="number" class="form-control" id="inputNhoras">
+                </div>
+
+
+                <div class="form-group col-md-6" style="  float: right">
+
+                    <label for="selectTipo">Tipo</label>
+                    @*<input type="text" class="form-control" id="inputTipo">*@
+                <select class="form-control" id="selectTipo">
+                    <option value="0">Novato</option>
+                    <option value="1">Experimentado</option>
+                    <option value="2">Profesional</option>
+                </select>
+                </div>
+
+
+                <div class="form-group col-md-4 " style=" float: left">
+
+                    <label for="inputValor">Valor hora</label>
+                    <input type="number" class="form-control" id="inputValor">
+
+
+                </div>
+                <div class="form-group col-md-6" style="  float: right">
+
+                    <label for="inputSB">Sueldo Base</label>
+                    <input type="text" class="form-control" id="inputSB">
+
+
+                </div>
+                <div class="form-group col-md-6" style="  float: left">
+
+                    <label for="selectedBonificaciones">Bonificaciones</label>
+                    @*<input type="text" class="form-control" id="inputBonificaciones">*@
+                    <select class="form-control" id="selectBonificaciones">
+                        <option value="0">Principiantes</option>
+                        <option value="0">Recien ingresado</option>
+                        <option value="1">B. mensual</option>
+                    </select>
+
+                </div>
+                <div class="form-group col-md-4">
+
+                    <label for="inputValorBonificacion">Valor</label>
+                    <input type="text" class="form-control" id="inputValorBonificacion">
+
+                </div>
+
+            </div>
+
+            <div class="col-md-6" style="display:block">
+                <h3 style="text-align:center;">Descuentos</h3>
+                <br />
+
+                <div class="form-group col-md-6" style="float: left">
+                    <label for="selectAfp">AFP</label>
+                    @*<input type="text" class="form-control" id="inputAfp">*@
+                <select class="form-control" id="selectAfp">
+                    <option value="0">Cuprum</option>
+                    <option value="1">Habitat</option>
+                    <option value="2">Modelo</option>
+                    <option value="3">PlanVital</option>
+                    <option value="4">Provida</option>
+                    <option value="5">Capital</option>
+                    <option value="6">Uno</option>
+                </select>
+                </div>
+
+                <div class="form-group col-md-4" style="float: right">
+                    <label for="inputValorAfp">Valor</label>
+                    <input type="number" class="form-control" id="inputValorAfp">
+                </div>
+
+                <div class="form-group col-md-6" style="float: left">
+                    <label for="selectPrevicion">Previción</label>
+                    @*<input type="text" class="form-control" id="inputPrevicion">*@
+                    <select class="form-control" id="selectPrevicion">
+                        <option value="0">Isapre</option>
+                        <option value="1">Fonasa</option>
+                    </select>
+                </div>
+
+                <div class="form-group col-md-4" style="float: right">
+                    <label for="inputValorValorPrevicion">Valor</label>
+                    <input type="number" class="form-control" id="inputValorPrevicion">
+                </div>
+
+                <div class="form-group col-md-6" style="float: left">
+                    <label for="inputOtro">Otro</label>
+                    <input type="text" class="form-control" id="inputOtro">
+                </div>
+
+                <div class="form-group col-md-4" style="float: right">
+                    <label for="inputValorOtro">Valor</label>
+                    <input type="number" class="form-control" id="inputValorOtro">
+                </div>
+            </div>
+        </div>
+        <hr />
+        <h3 style="text-align:center">Detalle</h3>
+        <br />
+        <div class="row col-md-12 " >
+
+            <br />
+            <div class="container col-md-12">
+                <div class="form-group col-md-3" style="float: left">
+                    <label for="inputAfp">Total Haberes</label>
+                    <input type="text" class="form-control" id="inputAfp">
+                </div>
+
+                <div class="form-group col-md-3" style="float: left">
+                    <label for="inputAfp">Sueldo Bruto</label>
+                    <input type="text" class="form-control" id="inputAfp">
+                </div>
+
+                <div class="form-group col-md-3" style="float: left">
+                    <label for="inputAfp">Total Descuentos</label>
+                    <input type="text" class="form-control" id="inputAfp">
+                </div>
+
+                <div class="form-group col-md-3" style="float: left">
+                    <label for="inputAfp">Sueldo Liquido</label>
+                    <input type="text" class="form-control" id="inputAfp">
+                </div>
+            </div>
+        </div>
+
+        <button type="submit" class="btn">Guardar</button>
+    </form>
+</div>
+}
+ </body>
+
