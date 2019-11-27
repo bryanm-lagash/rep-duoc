@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ProyectoPagWeb</title>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'core/css/estilo.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/fontello.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/carousel.css' %}">
+
+
+    <!--Inicio Sesion-->
+    <link rel="stylesheet" href="{% static 'core/css/inicio-sesion.css' %}">
+    <!--Registrarse-->
+    <link rel="stylesheet" href="{% static 'core/css/registrarse.css' %}">
+
+    <!--Hay un problema al tratar de descargar el archivo y hacer referencia directamente de la carpeta css, por eso el link de referencia es online -->
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="{% static 'core/css/normalize.min.css' %}">
+
+    <!-- Reloj -->
+    <script type="text/javascript">
+        function reloj(){
+            var fecha = new Date();
+            var hora = fecha.getHours();
+            var min = fecha.getMinutes();
+            var seg = fecha.getSeconds();
+            var recarga = setTimeout('reloj()',500);
+            document.getElementById('print').innerHTML = hora + ":" + min + ":" + seg;
+        }
+    </script>
+    <!-- Scroll Reveal JS-->
+    <script src="{% static 'core/js/scrollreveal.min.js' %}"></script>
+    
+</head>
+<body onload="reloj()" >
+    <!--Body-->
+    <!-- Menú -->
+    <header>
+        <img class="img-logo" src="{% static 'core/img/planeta.png' %}" alt="">
+        <p class="text-header">Cambio Climatico</p>
+        <section class="myReloj">
+            <div class="reloj" id="print"></div>
+        </section>
+        <input type="checkbox" id="check">
+        <label for="check" class="icon-menu"></label>
+
+        <nav class="menu" id ="myNav">
+            <ul>
+           <li><a data-scroll href="{% url 'home' %}">Inicio</a></li>
+                <li><a href="{% url 'registro' %}">Registro</a></li>
+                <li><a data-scroll href="#secContacto">Contacto</a></li>   
+                   {%if user.is_authenticated == False %}
+                <li><a href="/accounts/login">Iniciar Sesión</a></li>
+                 {% endif %}             
+               
+                <li><a href="{% url 'registrarse' %}">Registrarse</a></li>
+                 {%if user.is_authenticated %}
+                <li><a href="#">{{user.username}}</a></li>
+                <li><a href="{% url 'logout'%}">Cerrar sesiòn</a></li>
+                 {% endif %}
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container-fluid" id="secVideo">
+        <div class="row">
+            <div class="col-md-12 section-video">
+                <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" id="herovideo"><source src="{% static 'core/video/Pexels%20Videos%201893623.mp4' %}" type="video/mp4" >
+                </video>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="contenido">
+        {% block contenido %}
+          
+        {% endblock contenido %}
+    </div>
+
+    <div class="footer-main-div">
+        <div class="footer-social-icons">
+            <ul>
+                <li><a href="#" target="blank"><img class="social" src="{% static 'core/img/facebook.png' %}" alt=""></a></li>
+                <li><a href="#" target="blank"><img class="social" src="{% static 'core/img/g-plus.png' %}" alt=""></a></li>
+                <li><a href="#" target="blank"><img class="social" src="{% static 'core/img/twitter.png' %}" alt=""></a></li>
+                <li><a href="#" target="blank"><img class="social" src="{% static 'core/img/instagram.png' %}" alt=""></a></li>
+            </ul>
+            <address >Desarrollado por Bryan Montes</address>
+        </div>
+    </div>
+
+
+
+   <!-- Scrool Reveal-->
+    <script>
+        window.sr = ScrollReveal();
+        sr.reveal('.menu' , {
+            duration: 2000,
+            origin: 'bottom'
+        });
+        
+        sr.reveal('.text-header',{
+            duration: 2000,
+            origin: 'bottom'
+        });
+        
+        sr.reveal('.reloj', {
+            duration: 2000,
+            origin: 'bottom'
+        });
+        
+        sr.reveal('.container2', {
+            duration: 2000,
+            origin: 'top',
+            distance: '300px'
+        });
+        
+        sr.reveal('.img-logo',{
+            duration: 2000,
+            origin: 'left',
+            distance: '200px',
+        });
+        
+        sr.reveal('.causas',{
+           duration: 2000,
+            origin: 'top',
+            distance: '200px'
+        });
+        
+        sr.reveal('.carousel', {
+           duration: 2000,
+            origin: 'bottom',
+            distance: '200px'
+        });
+        
+        sr.reveal('.container3', {
+            duration: 2000,
+            origin: 'left',
+            distance: '200px'
+        });
+        
+        sr.reveal('.contacto',{
+            duration: 2000,
+            origin: 'top',
+            distance: '200px'
+        });
+        
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+    </script>
+
+        
+    </script>
+</html>
