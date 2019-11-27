@@ -52,13 +52,15 @@
         <nav class="menu" id ="myNav">
             <ul>
            <li><a data-scroll href="{% url 'home' %}">Inicio</a></li>
-                <li><a href="{% url 'registro' %}">Registro</a></li>
+                
                 <li><a data-scroll href="#secContacto">Contacto</a></li>   
                    {%if user.is_authenticated == False %}
                 <li><a href="/accounts/login">Iniciar Sesión</a></li>
+                 <li><a href="{% url 'registro_usuario' %}">Registrarse</a></li>
+
                  {% endif %}             
                
-                <li><a href="{% url 'registrarse' %}">Registrarse</a></li>
+               
                  {%if user.is_authenticated %}
                 <li><a href="#">{{user.username}}</a></li>
                 <li><a href="{% url 'logout'%}">Cerrar sesiòn</a></li>
