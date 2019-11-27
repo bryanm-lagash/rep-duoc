@@ -16,7 +16,8 @@ class Cliente(models.Model):
     direccion = models.CharField(max_length=40)
     telefono = models.CharField(max_length=15)
     email = models.CharField(max_length=35)
-    empresa = models.ForeignKey(Empresa, on_delete=models.CASCADE)     
+    empresa = models.ForeignKey(Empresa, on_delete=models.CASCADE)  
+    imagen = models.ImageField(upload_to="clientes",null=True)   
 
     def __str__(self):
         return self.rut
