@@ -240,6 +240,7 @@
     <Compile Include="Models\ViewModels\ContratoViewModel.cs" />
     <Compile Include="Models\ViewModels\DescuentoViewModel.cs" />
     <Compile Include="Models\ViewModels\EmpleadoViewModel.cs" />
+    <Compile Include="Models\ViewModels\FinalContratoViewModel.cs" />
     <Compile Include="Models\ViewModels\ListContratosViewModel.cs" />
     <Compile Include="Models\ViewModels\ListEmpleadosViewModel.cs" />
     <Compile Include="Models\ViewModels\SueldoViewModel.cs" />
