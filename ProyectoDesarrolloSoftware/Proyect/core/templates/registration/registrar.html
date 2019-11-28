@@ -1,25 +1,53 @@
+{% extends "core/base.html" %}
+
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+{% block contenido %}
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="{% static 'core/css/fontello.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/carousel.css' %}">
+
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="{% static 'core/css/normalize.min.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/login.css' %}">
     <title>Registrar</title>
 </head>
-<body>
-    <h2>Registro de usuario</h2>
-
-    <form action="" method="POST">
+<body class="body-body" >
+    <img src="{% static 'core/img/cambio-climatico-3.jpg' %}" style="z-index: 0;position: absolute;background-repeat: no-repeat; background-size: cover; 
+    background-attachment: fixed; height: 130%;width: 100%;">
+   <div class=" register" style="display: flex; justify-content:center; align-items: center;margin-bottom: 150px;">
+     <div class="col-md-4 register2" style="top: 100px;">
+       <h2 style="text-align: center;">Registro de usuario</h2>
+        <br>
+         <form action="" method="POST">
         {% csrf_token %}
-        <table>
-            {{ form.as_table}}
-        </table>
-         <input type="reset" value="Limpiar">
-         <input type="submit" value="Registrar">
+        
+            {{ form | crispy}}
+
+            <div class="row " style=" text-align: center; width: 100%;margin-left: 15px;margin-bottom: 30px;">
+            <input type="submit" value="Limpiar" class="btn btn-warning " style=" right: 110px;">
+            <input type="submit" value="Registrar" class="btn btn-success " style="right: 12px;">
+            </div>
+
     </form>
+     </div>
+   </div>
+
+
+
 
 
 
 
 </body>
 </html>
+{% endblock contenido %}

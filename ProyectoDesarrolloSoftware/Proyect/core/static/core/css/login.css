@@ -1,0 +1,23 @@
+
+
+
+
+
+.login{
+    margin-top: 150px;
+    margin-bottom: 50px;
+    
+}
+.body-body{
+    background-color: aqua;
+   z-index: 1;
+   overflow-x: hidden;
+
+}
+.register2{
+    background-color:whitesmoke;
+    box-shadow:0 0 40px -10px #000;
+}
+
+
+

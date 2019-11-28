@@ -1,28 +1,54 @@
+
+
+{% extends "core/base.html" %}
+
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+{% block contenido %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'core/css/fontello.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/carousel.css' %}">
+
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="{% static 'core/css/normalize.min.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/login.css' %}">
     <title>Login</title>
 </head>
-<body>
-    <h2>Autenticaciòn</h2>
+<body >
+        <img src="{% static 'core/img/cambio-climatico-3.jpg' %}" style="z-index: 0;position: absolute;background-repeat: no-repeat; background-size: cover; 
+        background-attachment: fixed; height: 100%;width: 100%;">
+ <div class="row  " style="display: flex; justify-content:center; align-items: center; ">
+
+  <div class="container col-md-4 col-sm-6 login"  >
+    <h2 style="text-align: center;">Autenticaciòn</h2>
+    <br>
     <form action="" method="POST">
        {% csrf_token %}
-       <table>
-             {{form.as_table}}
+      
+             {{form | crispy}}
            
-       </table>
-       <a href="/accounts/password_reset">Forgot your pasdaf ?</a>
-<input type="submit" value="Login">
+       <div class="row " style="display: inline-block; width: 100%;">
+       <a href="/accounts/password_reset" style="position: absolute; left: 10px;bottom:-20px;;">Olvidaste tu contraseña?</a>
+      
+       <a class="btn btn-info "  href="{% url 'registrarse' %}" role="button" style="position: absolute; right: 130px;">Registrarse</a>
+       <input type="submit" value="Iniciar sesiòn" class="btn btn-success " style="position: absolute; right: 12px;"   >
+       </div>
+       
     </form>
 
+   </div>
+ </div>
 
-
-
-
-
-
+ 
 </body>
 </html>
+
+{% endblock contenido %}
