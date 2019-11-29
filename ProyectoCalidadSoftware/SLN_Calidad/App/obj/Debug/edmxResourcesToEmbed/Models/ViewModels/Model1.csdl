@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DefaultConnectionModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ValorHora">
+    <Key>
+      <PropertyRef Name="ValorHoraId" />
+    </Key>
+    <Property Name="ValorHoraId" Type="Int32" Nullable="false" />
+    <Property Name="Tipo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Valor" Type="Double" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ValorHoraView">
+    <Key>
+      <PropertyRef Name="ValorHoraid" />
+      <PropertyRef Name="Tipo" />
+      <PropertyRef Name="Valor" />
+    </Key>
+    <Property Name="ValorHoraid" Type="Int32" Nullable="false" />
+    <Property Name="Tipo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Valor" Type="Double" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="DefaultConnectionEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ValorHora" EntityType="Self.ValorHora" />
+    <EntitySet Name="ValorHoraView" EntityType="Self.ValorHoraView" />
+  </EntityContainer>
+</Schema>

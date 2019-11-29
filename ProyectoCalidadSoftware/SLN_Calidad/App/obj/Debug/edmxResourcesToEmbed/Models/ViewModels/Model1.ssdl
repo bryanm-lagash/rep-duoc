@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DefaultConnectionModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ValorHora">
+    <Key>
+      <PropertyRef Name="ValorHoraId" />
+    </Key>
+    <Property Name="ValorHoraId" Type="int" Nullable="false" />
+    <Property Name="Tipo" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Valor" Type="float" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'DefaultConnection.dbo.ValorHoraView' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="ValorHoraView">
+    <Key>
+      <PropertyRef Name="ValorHoraid" />
+      <PropertyRef Name="Tipo" />
+      <PropertyRef Name="Valor" />
+    </Key>
+    <Property Name="ValorHoraid" Type="int" Nullable="false" />
+    <Property Name="Tipo" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Valor" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="DefaultConnectionModel1StoreContainer">
+    <EntitySet Name="ValorHora" EntityType="Self.ValorHora" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ValorHoraView" EntityType="Self.ValorHoraView" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ValorHoraView].[ValorHoraid] AS [ValorHoraid], 
+    [ValorHoraView].[Tipo] AS [Tipo], 
+    [ValorHoraView].[Valor] AS [Valor]
+    FROM [dbo].[ValorHoraView] AS [ValorHoraView]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>
