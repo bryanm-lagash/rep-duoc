@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="DBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+<Schema Namespace="DefaultConnectionModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
   <EntityType Name="__MigrationHistory">
     <Key>
       <PropertyRef Name="MigrationId" />
@@ -9,6 +9,14 @@
     <Property Name="ContextKey" Type="nvarchar" MaxLength="300" Nullable="false" />
     <Property Name="Model" Type="varbinary(max)" Nullable="false" />
     <Property Name="ProductVersion" Type="nvarchar" MaxLength="32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Afp">
+    <Key>
+      <PropertyRef Name="AfpId" />
+    </Key>
+    <Property Name="AfpId" Type="int" Nullable="false" />
+    <Property Name="Nombre" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="Valor" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="AspNetRoles">
     <Key>
@@ -75,19 +83,17 @@
       <PropertyRef Name="ContratoId" />
     </Key>
     <Property Name="ContratoId" Type="int" Nullable="false" />
+    <Property Name="EmpleadoId" Type="int" Nullable="false" />
     <Property Name="FechaCreacion" Type="datetime" Nullable="false" />
     <Property Name="FechaInicio" Type="datetime" Nullable="false" />
     <Property Name="FechaTermino" Type="datetime" Nullable="false" />
-    <Property Name="EmpleadoId" Type="int" Nullable="false" />
-  </EntityType>
-  <EntityType Name="Descuento">
-    <Key>
-      <PropertyRef Name="DescuentoId" />
-    </Key>
-    <Property Name="DescuentoId" Type="int" Nullable="false" />
-    <Property Name="Salud" Type="float" />
-    <Property Name="AFP" Type="float" />
-    <Property Name="Otros" Type="float" />
+    <Property Name="ValorHoraId" Type="int" Nullable="false" />
+    <Property Name="AfpId" Type="int" Nullable="false" />
+    <Property Name="SaludId" Type="int" Nullable="false" />
+    <Property Name="BonificacionId" Type="int" Nullable="false" />
+    <Property Name="SueldoBase" Type="int" Nullable="false" />
+    <Property Name="SueldoLiquido" Type="int" Nullable="false" />
+    <Property Name="SueldoBruto" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="Empleado">
     <Key>
@@ -106,20 +112,13 @@
     <Property Name="ImagePath" Type="nvarchar" MaxLength="500" Nullable="false" />
     <Property Name="CargasFamiliares" Type="int" />
   </EntityType>
-  <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'DefaultConnection.dbo.Sueldo' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
-  <EntityType Name="Sueldo">
+  <EntityType Name="Salud">
     <Key>
-      <PropertyRef Name="ValorHoraId" />
-      <PropertyRef Name="ContratoId" />
-      <PropertyRef Name="DescuentoId" />
-      <PropertyRef Name="BonificacionId" />
+      <PropertyRef Name="SaludId" />
     </Key>
-    <Property Name="ValorHoraId" Type="int" Nullable="false" />
-    <Property Name="ContratoId" Type="int" Nullable="false" />
-    <Property Name="DescuentoId" Type="int" Nullable="false" />
-    <Property Name="BonificacionId" Type="int" Nullable="false" />
-    <Property Name="NumeroHoras" Type="int" Nullable="false" />
+    <Property Name="SaludId" Type="int" Nullable="false" />
+    <Property Name="Nombre" Type="nvarchar" MaxLength="25" Nullable="false" />
+    <Property Name="Valor" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="ValorHora">
     <Key>
@@ -129,6 +128,30 @@ advertencia 6002: La tabla o vista 'DefaultConnection.dbo.Sueldo' no tiene defin
     <Property Name="Tipo" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="Valor" Type="float" Nullable="false" />
   </EntityType>
+  <Association Name="Contrato_Afp_fk">
+    <End Role="Afp" Type="Self.Afp" Multiplicity="1" />
+    <End Role="Contrato" Type="Self.Contrato" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Afp">
+        <PropertyRef Name="AfpId" />
+      </Principal>
+      <Dependent Role="Contrato">
+        <PropertyRef Name="AfpId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Contrato_Bonificacion_fk">
+    <End Role="Bonificacion" Type="Self.Bonificacion" Multiplicity="1" />
+    <End Role="Contrato" Type="Self.Contrato" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Bonificacion">
+        <PropertyRef Name="BonificacionId" />
+      </Principal>
+      <Dependent Role="Contrato">
+        <PropertyRef Name="BonificacionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="Contrato_Empleado_fk">
     <End Role="Empleado" Type="Self.Empleado" Multiplicity="1" />
     <End Role="Contrato" Type="Self.Contrato" Multiplicity="*" />
@@ -138,6 +161,30 @@ advertencia 6002: La tabla o vista 'DefaultConnection.dbo.Sueldo' no tiene defin
       </Principal>
       <Dependent Role="Contrato">
         <PropertyRef Name="EmpleadoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Contrato_Salud_fk">
+    <End Role="Salud" Type="Self.Salud" Multiplicity="1" />
+    <End Role="Contrato" Type="Self.Contrato" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Salud">
+        <PropertyRef Name="SaludId" />
+      </Principal>
+      <Dependent Role="Contrato">
+        <PropertyRef Name="SaludId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Contrato_ValorHora_fk">
+    <End Role="ValorHora" Type="Self.ValorHora" Multiplicity="1" />
+    <End Role="Contrato" Type="Self.Contrato" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ValorHora">
+        <PropertyRef Name="ValorHoraId" />
+      </Principal>
+      <Dependent Role="Contrato">
+        <PropertyRef Name="ValorHoraId" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -197,56 +244,9 @@ advertencia 6002: La tabla o vista 'DefaultConnection.dbo.Sueldo' no tiene defin
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="Sueldo_Bonificacion_fk">
-    <End Role="Bonificacion" Type="Self.Bonificacion" Multiplicity="1" />
-    <End Role="Sueldo" Type="Self.Sueldo" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Bonificacion">
-        <PropertyRef Name="BonificacionId" />
-      </Principal>
-      <Dependent Role="Sueldo">
-        <PropertyRef Name="BonificacionId" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="Sueldo_Contrato_fk">
-    <End Role="Contrato" Type="Self.Contrato" Multiplicity="1" />
-    <End Role="Sueldo" Type="Self.Sueldo" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Contrato">
-        <PropertyRef Name="ContratoId" />
-      </Principal>
-      <Dependent Role="Sueldo">
-        <PropertyRef Name="ContratoId" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="Sueldo_Descuento_fk">
-    <End Role="Descuento" Type="Self.Descuento" Multiplicity="1" />
-    <End Role="Sueldo" Type="Self.Sueldo" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Descuento">
-        <PropertyRef Name="DescuentoId" />
-      </Principal>
-      <Dependent Role="Sueldo">
-        <PropertyRef Name="DescuentoId" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="Sueldo_ValorHora_fk">
-    <End Role="ValorHora" Type="Self.ValorHora" Multiplicity="1" />
-    <End Role="Sueldo" Type="Self.Sueldo" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="ValorHora">
-        <PropertyRef Name="ValorHoraId" />
-      </Principal>
-      <Dependent Role="Sueldo">
-        <PropertyRef Name="ValorHoraId" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <EntityContainer Name="DBModelStoreContainer">
+  <EntityContainer Name="DefaultConnectionModelStoreContainer">
     <EntitySet Name="__MigrationHistory" EntityType="Self.__MigrationHistory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Afp" EntityType="Self.Afp" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="AspNetRoles" EntityType="Self.AspNetRoles" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="AspNetUserClaims" EntityType="Self.AspNetUserClaims" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="AspNetUserLogins" EntityType="Self.AspNetUserLogins" Schema="dbo" store:Type="Tables" />
@@ -254,20 +254,27 @@ advertencia 6002: La tabla o vista 'DefaultConnection.dbo.Sueldo' no tiene defin
     <EntitySet Name="AspNetUsers" EntityType="Self.AspNetUsers" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Bonificacion" EntityType="Self.Bonificacion" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Contrato" EntityType="Self.Contrato" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="Descuento" EntityType="Self.Descuento" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Empleado" EntityType="Self.Empleado" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Salud" EntityType="Self.Salud" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="ValorHora" EntityType="Self.ValorHora" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="Sueldo" EntityType="Self.Sueldo" store:Type="Tables" store:Schema="dbo">
-      <DefiningQuery>SELECT 
-    [Sueldo].[ValorHoraId] AS [ValorHoraId], 
-    [Sueldo].[ContratoId] AS [ContratoId], 
-    [Sueldo].[DescuentoId] AS [DescuentoId], 
-    [Sueldo].[BonificacionId] AS [BonificacionId], 
-    [Sueldo].[NumeroHoras] AS [NumeroHoras]
-    FROM [dbo].[Sueldo] AS [Sueldo]</DefiningQuery>
-    </EntitySet>
+    <AssociationSet Name="Contrato_Afp_fk" Association="Self.Contrato_Afp_fk">
+      <End Role="Afp" EntitySet="Afp" />
+      <End Role="Contrato" EntitySet="Contrato" />
+    </AssociationSet>
+    <AssociationSet Name="Contrato_Bonificacion_fk" Association="Self.Contrato_Bonificacion_fk">
+      <End Role="Bonificacion" EntitySet="Bonificacion" />
+      <End Role="Contrato" EntitySet="Contrato" />
+    </AssociationSet>
     <AssociationSet Name="Contrato_Empleado_fk" Association="Self.Contrato_Empleado_fk">
       <End Role="Empleado" EntitySet="Empleado" />
+      <End Role="Contrato" EntitySet="Contrato" />
+    </AssociationSet>
+    <AssociationSet Name="Contrato_Salud_fk" Association="Self.Contrato_Salud_fk">
+      <End Role="Salud" EntitySet="Salud" />
+      <End Role="Contrato" EntitySet="Contrato" />
+    </AssociationSet>
+    <AssociationSet Name="Contrato_ValorHora_fk" Association="Self.Contrato_ValorHora_fk">
+      <End Role="ValorHora" EntitySet="ValorHora" />
       <End Role="Contrato" EntitySet="Contrato" />
     </AssociationSet>
     <AssociationSet Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
@@ -285,22 +292,6 @@ advertencia 6002: La tabla o vista 'DefaultConnection.dbo.Sueldo' no tiene defin
     <AssociationSet Name="FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId">
       <End Role="AspNetUsers" EntitySet="AspNetUsers" />
       <End Role="AspNetUserRoles" EntitySet="AspNetUserRoles" />
-    </AssociationSet>
-    <AssociationSet Name="Sueldo_Bonificacion_fk" Association="Self.Sueldo_Bonificacion_fk">
-      <End Role="Bonificacion" EntitySet="Bonificacion" />
-      <End Role="Sueldo" EntitySet="Sueldo" />
-    </AssociationSet>
-    <AssociationSet Name="Sueldo_Contrato_fk" Association="Self.Sueldo_Contrato_fk">
-      <End Role="Contrato" EntitySet="Contrato" />
-      <End Role="Sueldo" EntitySet="Sueldo" />
-    </AssociationSet>
-    <AssociationSet Name="Sueldo_Descuento_fk" Association="Self.Sueldo_Descuento_fk">
-      <End Role="Descuento" EntitySet="Descuento" />
-      <End Role="Sueldo" EntitySet="Sueldo" />
-    </AssociationSet>
-    <AssociationSet Name="Sueldo_ValorHora_fk" Association="Self.Sueldo_ValorHora_fk">
-      <End Role="ValorHora" EntitySet="ValorHora" />
-      <End Role="Sueldo" EntitySet="Sueldo" />
     </AssociationSet>
   </EntityContainer>
 </Schema>

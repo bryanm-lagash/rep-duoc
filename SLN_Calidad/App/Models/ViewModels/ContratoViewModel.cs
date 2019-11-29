@@ -18,14 +18,24 @@ namespace App.Models.ViewModels
         [Display(Name = "Fecha Creacion")]
         public DateTime FechaCreacion { get; set; }
         [Required]
-        [DataType(DataType.Date)]
+        //[DataType(DataType.Date)]
+        //[DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
         [Display(Name = "Fecha Inicio")]
         public DateTime FechaInicio { get; set; }
         [Required]
         [DataType(DataType.Date)]
         [Display(Name = "Fecha Termino")]
         public DateTime FechaTermino { get; set; }
+        [Display(Name = "Rut Empleado")]
         public int EmpleadoId { get; set; }
+        public int ValorHoraId { get; set; }
+        public int AfpId { get; set; }
+        public int SaludId { get; set; }
+        public int BonificacionId { get; set; }
+        public int SueldoBase { get; set; }
+        public int SueldoLiquido { get; set; }
+        public int SueldoBruto { get; set; }
+
 
         public List<ValorHoraViewModel> ValoresHoras()
         {
@@ -41,6 +51,5 @@ namespace App.Models.ViewModels
             }
             return lista;
         }
-
     }
 }

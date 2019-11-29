@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="DBModelStoreContainer" CdmEntityContainer="DBEntities">
+  <EntityContainerMapping StorageEntityContainer="DefaultConnectionModelStoreContainer" CdmEntityContainer="DBEntities">
     <EntitySetMapping Name="C__MigrationHistory">
-      <EntityTypeMapping TypeName="DBModel.C__MigrationHistory">
+      <EntityTypeMapping TypeName="DefaultConnectionModel.C__MigrationHistory">
         <MappingFragment StoreEntitySet="__MigrationHistory">
           <ScalarProperty Name="MigrationId" ColumnName="MigrationId" />
           <ScalarProperty Name="ContextKey" ColumnName="ContextKey" />
@@ -11,8 +11,17 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="Afp">
+      <EntityTypeMapping TypeName="DefaultConnectionModel.Afp">
+        <MappingFragment StoreEntitySet="Afp">
+          <ScalarProperty Name="AfpId" ColumnName="AfpId" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Valor" ColumnName="Valor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="AspNetRoles">
-      <EntityTypeMapping TypeName="DBModel.AspNetRoles">
+      <EntityTypeMapping TypeName="DefaultConnectionModel.AspNetRoles">
         <MappingFragment StoreEntitySet="AspNetRoles">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name" ColumnName="Name" />
@@ -20,7 +29,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="AspNetUserClaims">
-      <EntityTypeMapping TypeName="DBModel.AspNetUserClaims">
+      <EntityTypeMapping TypeName="DefaultConnectionModel.AspNetUserClaims">
         <MappingFragment StoreEntitySet="AspNetUserClaims">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="UserId" ColumnName="UserId" />
@@ -30,7 +39,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="AspNetUserLogins">
-      <EntityTypeMapping TypeName="DBModel.AspNetUserLogins">
+      <EntityTypeMapping TypeName="DefaultConnectionModel.AspNetUserLogins">
         <MappingFragment StoreEntitySet="AspNetUserLogins">
           <ScalarProperty Name="LoginProvider" ColumnName="LoginProvider" />
           <ScalarProperty Name="ProviderKey" ColumnName="ProviderKey" />
@@ -39,7 +48,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="AspNetUsers">
-      <EntityTypeMapping TypeName="DBModel.AspNetUsers">
+      <EntityTypeMapping TypeName="DefaultConnectionModel.AspNetUsers">
         <MappingFragment StoreEntitySet="AspNetUsers">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Email" ColumnName="Email" />
@@ -57,38 +66,35 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Bonificacion">
-      <EntityTypeMapping TypeName="DBModel.Bonificacion">
+      <EntityTypeMapping TypeName="DefaultConnectionModel.Bonificacion">
         <MappingFragment StoreEntitySet="Bonificacion">
-          <ScalarProperty Name="Valor" ColumnName="Valor" />
           <ScalarProperty Name="BonificacionId" ColumnName="BonificacionId" />
           <ScalarProperty Name="Nombre" ColumnName="Nombre" />
           <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Valor" ColumnName="Valor" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Contrato">
-      <EntityTypeMapping TypeName="DBModel.Contrato">
+      <EntityTypeMapping TypeName="DefaultConnectionModel.Contrato">
         <MappingFragment StoreEntitySet="Contrato">
           <ScalarProperty Name="ContratoId" ColumnName="ContratoId" />
+          <ScalarProperty Name="EmpleadoId" ColumnName="EmpleadoId" />
           <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
           <ScalarProperty Name="FechaInicio" ColumnName="FechaInicio" />
           <ScalarProperty Name="FechaTermino" ColumnName="FechaTermino" />
-          <ScalarProperty Name="EmpleadoId" ColumnName="EmpleadoId" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="Descuento">
-      <EntityTypeMapping TypeName="DBModel.Descuento">
-        <MappingFragment StoreEntitySet="Descuento">
-          <ScalarProperty Name="DescuentoId" ColumnName="DescuentoId" />
-          <ScalarProperty Name="Salud" ColumnName="Salud" />
-          <ScalarProperty Name="AFP" ColumnName="AFP" />
-          <ScalarProperty Name="Otros" ColumnName="Otros" />
+          <ScalarProperty Name="ValorHoraId" ColumnName="ValorHoraId" />
+          <ScalarProperty Name="AfpId" ColumnName="AfpId" />
+          <ScalarProperty Name="SaludId" ColumnName="SaludId" />
+          <ScalarProperty Name="BonificacionId" ColumnName="BonificacionId" />
+          <ScalarProperty Name="SueldoBase" ColumnName="SueldoBase" />
+          <ScalarProperty Name="SueldoLiquido" ColumnName="SueldoLiquido" />
+          <ScalarProperty Name="SueldoBruto" ColumnName="SueldoBruto" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Empleado">
-      <EntityTypeMapping TypeName="DBModel.Empleado">
+      <EntityTypeMapping TypeName="DefaultConnectionModel.Empleado">
         <MappingFragment StoreEntitySet="Empleado">
           <ScalarProperty Name="EmpleadoId" ColumnName="EmpleadoId" />
           <ScalarProperty Name="Rut" ColumnName="Rut" />
@@ -105,8 +111,17 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="Salud">
+      <EntityTypeMapping TypeName="DefaultConnectionModel.Salud">
+        <MappingFragment StoreEntitySet="Salud">
+          <ScalarProperty Name="SaludId" ColumnName="SaludId" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Valor" ColumnName="Valor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="ValorHora">
-      <EntityTypeMapping TypeName="DBModel.ValorHora">
+      <EntityTypeMapping TypeName="DefaultConnectionModel.ValorHora">
         <MappingFragment StoreEntitySet="ValorHora">
           <ScalarProperty Name="ValorHoraId" ColumnName="ValorHoraId" />
           <ScalarProperty Name="Tipo" ColumnName="Tipo" />
@@ -114,18 +129,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="Sueldo">
-      <EntityTypeMapping TypeName="DBModel.Sueldo">
-        <MappingFragment StoreEntitySet="Sueldo">
-          <ScalarProperty Name="ValorHoraId" ColumnName="ValorHoraId" />
-          <ScalarProperty Name="ContratoId" ColumnName="ContratoId" />
-          <ScalarProperty Name="DescuentoId" ColumnName="DescuentoId" />
-          <ScalarProperty Name="BonificacionId" ColumnName="BonificacionId" />
-          <ScalarProperty Name="NumeroHoras" ColumnName="NumeroHoras" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <AssociationSetMapping Name="AspNetUserRoles" TypeName="DBModel.AspNetUserRoles" StoreEntitySet="AspNetUserRoles">
+    <AssociationSetMapping Name="AspNetUserRoles" TypeName="DefaultConnectionModel.AspNetUserRoles" StoreEntitySet="AspNetUserRoles">
       <EndProperty Name="AspNetRoles">
         <ScalarProperty Name="Id" ColumnName="RoleId" />
       </EndProperty>

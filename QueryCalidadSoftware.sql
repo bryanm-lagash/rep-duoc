@@ -13,39 +13,48 @@ CREATE TABLE Empleado (
 	Email nvarchar(80) NOT NULL,
 	ImagePath nvarchar(500) NOT NULL,
 	CargasFamiliares [int] NULL
-) ;
+);
 
 ALTER TABLE Empleado
 	ADD CONSTRAINT Empleado_pk PRIMARY KEY (EmpleadoId);
 
- CREATE TABLE Contrato (
+CREATE TABLE Contrato (
 	ContratoId [int] NOT NULL,
+	EmpleadoId [int] NOT NULL,
 	FechaCreacion DateTime NOT NULL,
 	FechaInicio DateTime NOT NULL,
 	FechaTermino DateTime NOT NULL,
-	EmpleadoId [int] NOT NULL
- );
+	NumeroHoras [int] NOT NULL,
+	ValorHoraId [int] NOT NULL,
+	AfpId [int] NOT NULL,
+	SaludId [int] NOT NULL,
+	BonificacionId [int] NOT NULL,
+	SueldoBase [int] NOT NULL,
+	SueldoLiquido [int] NOT NULL,
+	SueldoBruto [int] NOT NULL
+);
+
 
 ALTER TABLE Contrato
 	ADD CONSTRAINT Contrato_pk PRIMARY KEY (ContratoId);
 
-CREATE TABLE Sueldo(
-	ValorHoraId [int] NOT NULL,
-	ContratoId [int] NOT NULL,
-	DescuentoId [int] NOT NULL,
-	BonificacionId [int] NOT NULL,
-	NumeroHoras [int] NOT NULL
+CREATE TABLE Afp(
+	AfpId [int] NOT NULL,
+	Nombre nvarchar(30) NOT NULL,
+	Valor [int] NOT NULL
 );
 
-CREATE TABLE Descuento (
-	DescuentoId [int] NOT NULL,
-	Salud float NULL,
-	AFP float NULL,
-	Otros float NULL
+ALTER TABLE Afp 
+	ADD CONSTRAINT Afp_pk PRIMARY KEY (AfpId);
+
+CREATE TABLE Salud( 
+	SaludId [int] NOT NULL,
+	Nombre nvarchar(25) NOT NULL,
+	Valor [int] NOT NULL
 );
 
-ALTER TABLE Descuento
-	ADD CONSTRAINT Descuento_pk PRIMARY KEY (Descuentoid);
+ALTER TABLE Salud 
+	ADD CONSTRAINT Salud_pk PRIMARY KEY (SaludId);
 
 CREATE TABLE Bonificacion (
 	BonificacionId [int] NOT NULL,
@@ -65,27 +74,29 @@ CREATE TABLE ValorHora(
 
 ALTER TABLE ValorHora
 	ADD CONSTRAINT ValorHora_pk PRIMARY KEY (ValorHoraId);
+
 --FOREING KEY'S
 
 ALTER TABLE Contrato
 	ADD CONSTRAINT Contrato_Empleado_fk FOREIGN KEY (EmpleadoId)
 		REFERENCES Empleado (EmpleadoId);
-	
-ALTER TABLE Sueldo
-	ADD CONSTRAINT Sueldo_ValorHora_fk FOREIGN KEY (ValorHoraId)
+
+ALTER TABLE Contrato
+	ADD CONSTRAINT Contrato_ValorHora_fk FOREIGN KEY (ValorHoraId)
 		REFERENCES ValorHora (ValorHoraId);
 
-ALTER TABLE Sueldo
-	ADD CONSTRAINT Sueldo_Contrato_fk FOREIGN KEY (ContratoId)
-		REFERENCES Contrato (ContratoId);
+ALTER TABLE Contrato
+	ADD CONSTRAINT Contrato_Afp_fk FOREIGN KEY (AfpId)
+		REFERENCES Afp (AfpId);
 
-ALTER TABLE Sueldo
-	ADD CONSTRAINT Sueldo_Descuento_fk FOREIGN KEY (DescuentoId)
-		REFERENCES Descuento (Descuentoid);
+ALTER TABLE Contrato
+	ADD CONSTRAINT Contrato_Salud_fk FOREIGN KEY (SaludId)
+		REFERENCES Salud (SaludId);
 
-ALTER TABLE Sueldo
-	ADD CONSTRAINT Sueldo_Bonificacion_fk FOREIGN KEY (BonificacionId)
+ALTER TABLE Contrato
+	ADD CONSTRAINT Contrato_Bonificacion_fk FOREIGN KEY (BonificacionId)
 		REFERENCES Bonificacion (BonificacionId);
+
 
 <       ----------        INSERT INTO       ----------        >
 INSERT INTO dbo.Empleado VALUES (1, '20512884-0', 'Bryan', 'Montes', 'Masculino', 2000-06-30, 'Av. marihueno 032', 12345678, 'Ingeniero Informatico', 'bryanm@lagash.com', 'asdasd', 2)
