@@ -52,6 +52,7 @@ CREATE TABLE Salud(
 	Nombre nvarchar(25) NOT NULL,
 	Valor [int] NOT NULL
 );
+USE DefaultConnection;
 
 ALTER TABLE Salud 
 	ADD CONSTRAINT Salud_pk PRIMARY KEY (SaludId);
