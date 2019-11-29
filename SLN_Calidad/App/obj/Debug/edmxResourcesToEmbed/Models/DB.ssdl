@@ -87,6 +87,7 @@
     <Property Name="FechaCreacion" Type="datetime" Nullable="false" />
     <Property Name="FechaInicio" Type="datetime" Nullable="false" />
     <Property Name="FechaTermino" Type="datetime" Nullable="false" />
+    <Property Name="NumeroHoras" Type="int" Nullable="false" />
     <Property Name="ValorHoraId" Type="int" Nullable="false" />
     <Property Name="AfpId" Type="int" Nullable="false" />
     <Property Name="SaludId" Type="int" Nullable="false" />

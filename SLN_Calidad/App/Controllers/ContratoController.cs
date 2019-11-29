@@ -26,6 +26,7 @@ namespace App.Controllers
                            EmpleadoId = d.EmpleadoId
                        }).ToList();
             }
+
             return View(lst);
         }
 
@@ -41,8 +42,30 @@ namespace App.Controllers
             {
                 if (ModelState.IsValid)
                 {
+
                     using (DBEntities db = new DBEntities())
                     {
+                        List<ContratoViewModel> lst;
+                        lst = (from l in db.ValorHora
+                               select new ContratoViewModel
+                               {
+                                   ValorHoraId = l.ValorHoraId,
+                                   TipoHora = l.Tipo,
+                                   ValorHora = l.Valor
+                               }).ToList();
+
+
+                        List<SelectListItem> cboTipoHora = lst.ConvertAll(d =>
+                        {
+                            return new SelectListItem()
+                            {
+                                Text = d.TipoHora.ToString(),
+                                Value = d.ValorHoraId.ToString(),
+                                Selected = false
+                            };
+                        });
+                        ViewBag.items = cboTipoHora;
+
                         var oContrato = new Contrato();
                         foreach (var item in db.Contrato)
                         {
@@ -121,6 +144,6 @@ namespace App.Controllers
             }
             
         }
-
+ 
     }//Clase
 }//namespace

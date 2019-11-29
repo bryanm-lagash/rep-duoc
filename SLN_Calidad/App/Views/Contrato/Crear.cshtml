@@ -2,7 +2,9 @@
 @{
     ViewBag.Title = "Crear Contrato";
     Layout = "~/Views/Shared/_Layout.cshtml";
+    List<SelectListItem> cbotipoHora = (List<SelectListItem>)ViewBag.items;
 }
+
     <head>
         <link href="~/Content/Site.css" rel="stylesheet" />
     </head>
@@ -52,20 +54,16 @@
                 <h3 style="text-align:center;">Haberes</h3>
                 <br />
                 <div class="form-group col-md-4 " style=" float: left">
-                    <label for="inputNhoras">N° de Horas</label>
-                    <input type="number" class="form-control" id="inputNhoras">
+                    @Html.LabelFor(d => d.NumeroHoras, htmlAttributes: new { @class = "form-label" })
+                    @Html.TextBoxFor(d => d.NumeroHoras, "{0:MM/dd/yyyy}", new { type = "date", @class = "form-control" })
+                    @Html.ValidationMessageFor(d => d.NumeroHoras, "", new { @class = "text-danger" })
                 </div>
 
 
                 <div class="form-group col-md-6" style="  float: right">
+                    @*@Html.DropDownList("items", items, "Seleccione", new { @class = "form-control"})*@
+                    @Html.DropDownList("cboTipoHora", cbotipoHora,"Seleccione", new { @class = "form-control" } )
 
-                    <label for="selectTipo">Tipo</label>
-                    @*<input type="text" class="form-control" id="inputTipo">*@
-                    <select class="form-control" id="selectTipo">
-                        <option value="0">Novato</option>
-                        <option value="1">Experimentado</option>
-                        <option value="2">Profesional</option>
-                    </select>
                 </div>
 
                 <div class="form-group col-md-6" style="  float: left">

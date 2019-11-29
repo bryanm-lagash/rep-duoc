@@ -83,6 +83,7 @@
           <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
           <ScalarProperty Name="FechaInicio" ColumnName="FechaInicio" />
           <ScalarProperty Name="FechaTermino" ColumnName="FechaTermino" />
+          <ScalarProperty Name="NumeroHoras" ColumnName="NumeroHoras" />
           <ScalarProperty Name="ValorHoraId" ColumnName="ValorHoraId" />
           <ScalarProperty Name="AfpId" ColumnName="AfpId" />
           <ScalarProperty Name="SaludId" ColumnName="SaludId" />

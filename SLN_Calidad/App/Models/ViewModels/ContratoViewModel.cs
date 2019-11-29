@@ -14,26 +14,37 @@ namespace App.Models.ViewModels
         [Required]
         [Display(Name = "Numero Contrato")]
         public int ContratoId { get; set; }
+        [Required]
+        [Display(Name = "Rut Empleado")]
+        public int EmpleadoId { get; set; }
+        [Required]
         [DataType(DataType.Date)]
         [Display(Name = "Fecha Creacion")]
         public DateTime FechaCreacion { get; set; }
         [Required]
-        //[DataType(DataType.Date)]
-        //[DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
         [Display(Name = "Fecha Inicio")]
         public DateTime FechaInicio { get; set; }
         [Required]
         [DataType(DataType.Date)]
         [Display(Name = "Fecha Termino")]
         public DateTime FechaTermino { get; set; }
-        [Display(Name = "Rut Empleado")]
-        public int EmpleadoId { get; set; }
+        [Required]
+        [Display(Name = "Numero de horas")]
+        public int NumeroHoras { get; set; }
         public int ValorHoraId { get; set; }
+        public string TipoHora { get; set; }
+        public double ValorHora { get; set; }
         public int AfpId { get; set; }
         public int SaludId { get; set; }
         public int BonificacionId { get; set; }
+        [Required]
+        [Display(Name = "Sueldo Base")]
         public int SueldoBase { get; set; }
+        [Required]
+        [Display(Name = "Sueldo Liquido")]
         public int SueldoLiquido { get; set; }
+        [Required]
+        [Display(Name = "Sueldo Bruto")]
         public int SueldoBruto { get; set; }
 
 
@@ -51,5 +62,7 @@ namespace App.Models.ViewModels
             }
             return lista;
         }
-    }
+
+        //public List<ValorHora>
+    } 
 }
