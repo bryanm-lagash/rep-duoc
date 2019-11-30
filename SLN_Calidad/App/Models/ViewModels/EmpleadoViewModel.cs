@@ -34,8 +34,8 @@ namespace App.Models.ViewModels
         [Required]
         public string Direccion { get; set; }
         [Required]
-        [StringLength(11)]
-        public string Telefono { get; set; }
+        [MaxLength(11)]
+        public int Telefono { get; set; }
         [StringLength(30)]
         public string Profesion { get; set; }
         [EmailAddress]

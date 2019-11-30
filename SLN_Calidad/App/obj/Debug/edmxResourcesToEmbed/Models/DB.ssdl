@@ -16,7 +16,7 @@
     </Key>
     <Property Name="AfpId" Type="int" Nullable="false" />
     <Property Name="Nombre" Type="nvarchar" MaxLength="30" Nullable="false" />
-    <Property Name="Valor" Type="int" Nullable="false" />
+    <Property Name="Valor" Type="float" Nullable="false" />
   </EntityType>
   <EntityType Name="AspNetRoles">
     <Key>
@@ -76,7 +76,7 @@
     <Property Name="BonificacionId" Type="int" Nullable="false" />
     <Property Name="Nombre" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="Descripcion" Type="nvarchar" MaxLength="50" />
-    <Property Name="Valor" Type="int" Nullable="false" />
+    <Property Name="Valor" Type="float" Nullable="false" />
   </EntityType>
   <EntityType Name="Contrato">
     <Key>
@@ -92,9 +92,9 @@
     <Property Name="AfpId" Type="int" Nullable="false" />
     <Property Name="SaludId" Type="int" Nullable="false" />
     <Property Name="BonificacionId" Type="int" Nullable="false" />
-    <Property Name="SueldoBase" Type="int" Nullable="false" />
-    <Property Name="SueldoLiquido" Type="int" Nullable="false" />
-    <Property Name="SueldoBruto" Type="int" Nullable="false" />
+    <Property Name="SueldoBase" Type="float" Nullable="false" />
+    <Property Name="SueldoLiquido" Type="float" Nullable="false" />
+    <Property Name="SueldoBruto" Type="float" Nullable="false" />
   </EntityType>
   <EntityType Name="Empleado">
     <Key>
@@ -107,7 +107,7 @@
     <Property Name="Genero" Type="nvarchar" MaxLength="10" Nullable="false" />
     <Property Name="FechaNacimiento" Type="datetime" Nullable="false" />
     <Property Name="Direccion" Type="nvarchar" MaxLength="50" Nullable="false" />
-    <Property Name="Telefono" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Telefono" Type="int" Nullable="false" />
     <Property Name="Profesion" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="Email" Type="nvarchar" MaxLength="80" Nullable="false" />
     <Property Name="ImagePath" Type="nvarchar" MaxLength="500" Nullable="false" />
@@ -119,7 +119,7 @@
     </Key>
     <Property Name="SaludId" Type="int" Nullable="false" />
     <Property Name="Nombre" Type="nvarchar" MaxLength="25" Nullable="false" />
-    <Property Name="Valor" Type="int" Nullable="false" />
+    <Property Name="Valor" Type="float" Nullable="false" />
   </EntityType>
   <EntityType Name="ValorHora">
     <Key>

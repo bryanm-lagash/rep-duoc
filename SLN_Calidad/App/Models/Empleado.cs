@@ -27,7 +27,7 @@ namespace App.Models
         public string Genero { get; set; }
         public System.DateTime FechaNacimiento { get; set; }
         public string Direccion { get; set; }
-        public string Telefono { get; set; }
+        public int Telefono { get; set; }
         public string Profesion { get; set; }
         public string Email { get; set; }
         public string ImagePath { get; set; }

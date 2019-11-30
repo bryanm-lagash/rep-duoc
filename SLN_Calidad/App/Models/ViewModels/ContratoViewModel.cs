@@ -32,10 +32,14 @@ namespace App.Models.ViewModels
         [Display(Name = "Numero de horas")]
         public int NumeroHoras { get; set; }
         public int ValorHoraId { get; set; }
+        [Display(Name = "Tipo de hora")]
         public string TipoHora { get; set; }
+        [Display(Name = "Valor")]
         public double ValorHora { get; set; }
+        [Display(Name = "AFP")]
         public int AfpId { get; set; }
         public int SaludId { get; set; }
+        [Display(Name = "Bonificación")]
         public int BonificacionId { get; set; }
         [Required]
         [Display(Name = "Sueldo Base")]
@@ -46,23 +50,22 @@ namespace App.Models.ViewModels
         [Required]
         [Display(Name = "Sueldo Bruto")]
         public int SueldoBruto { get; set; }
+        [Display(Name = "Valor")]
+        public int ValorBonificacion { get; set; }
+        [Display(Name = "Indemnización")]
+        public int Indemnizacion { get; set; }
+        [Display(Name = "Valor")]
+        public double ValorAfp { get; set; }
+        [Display(Name = "Valor")]
+        public double ValorSalud { get; set; }
 
-
-        public List<ValorHoraViewModel> ValoresHoras()
-        {
-            List<ValorHoraViewModel> lista = new List<ValorHoraViewModel>();
-            var model = new DBEntities();
-            foreach(var item in model.ValorHora)
-            {
-                ValorHoraViewModel v = new ValorHoraViewModel();
-                v.ValorHoraId = item.ValorHoraId;
-                v.Tipo = item.Tipo;
-                v.Valor = item.Valor;
-                lista.Add(v);
-            }
-            return lista;
-        }
-
-        //public List<ValorHora>
+        [Display(Name = "Otro")]
+        public string Otro { get; set; }
+        [Display(Name = "Valor")]
+        public string ValorOtro { get; set; }
+        [Display(Name = "Total Haberes")]
+        public int TotalHaberes { get; set; }
+        [Display(Name = "Total Descuentos")]
+        public int TotalDescuentos { get; set; }
     } 
 }

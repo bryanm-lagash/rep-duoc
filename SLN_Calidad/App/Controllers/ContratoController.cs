@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.UI.WebControls;
 using App.Models;
 using App.Models.ViewModels;
 
@@ -32,6 +33,104 @@ namespace App.Controllers
 
         public ActionResult Crear()
         {
+            using (DBEntities db = new DBEntities())
+            {
+                List<ValorHoraViewModel> lst;
+                //lista valor hora lst
+                lst = (from l in db.ValorHora
+                       select new ValorHoraViewModel
+                       {
+                           ValorHoraId = l.ValorHoraId,
+                           Tipo = l.Tipo,
+                           Valor = l.Valor
+                       }).ToList();
+
+
+
+                // lista viewbag valorHora lst
+                List<SelectListItem> cboTipoHora = lst.ConvertAll(d =>
+                {
+                    return new SelectListItem()
+                    {
+                        Text = d.Tipo.ToString(),
+                        Value = d.ValorHoraId.ToString(),
+                        Selected = false
+                    };
+                });
+
+
+                //lista afp lst2
+                List<AfpContratoViewModel> lst2;
+                lst2 = (from l in db.Afp
+                        select new AfpContratoViewModel
+                        {
+                            AfpId = l.AfpId,
+                            Nombre = l.Nombre,
+                            Valor = l.Valor
+                        }).ToList();
+
+                //lista viewbag afp lst2
+                List<SelectListItem> cboAfp = lst2.ConvertAll(a =>
+                {
+                    return new SelectListItem()
+                    {
+                        Text = a.Nombre.ToString(),
+                        Value = a.AfpId.ToString(),
+                        Selected = false
+                    };
+                });
+
+                //lista bonificacion lst3
+                List<BonificacionViewModel> lst3;
+                lst3 = (from l in db.Bonificacion
+                        select new BonificacionViewModel
+                        {
+                            BonificacionId = l.BonificacionId,
+                            Nombre = l.Nombre,
+                            Valor = l.Valor
+
+                        }).ToList();
+
+                //lista viewbag bonificacion lst3
+                List<SelectListItem> cboBonificacion = lst3.ConvertAll(a =>
+                {
+                    return new SelectListItem()
+                    {
+                        Text = a.Nombre.ToString(),
+                        Value = a.BonificacionId.ToString(),
+                        Selected = false
+                    };
+                });
+
+                //lista salud lst4
+                List<SaludContratoViewModel> lst4;
+                lst4 = (from l in db.Salud
+                        select new SaludContratoViewModel
+                        {
+                            SaludId = l.SaludId,
+                            Nombre = l.Nombre,
+                            Valor = l.Valor
+
+                        }).ToList();
+
+                //lista viewbag salud lst4
+                List<SelectListItem> cboSalud = lst4.ConvertAll(a =>
+                {
+                    return new SelectListItem()
+                    {
+                        Text = a.Nombre.ToString(),
+                        Value = a.Valor.ToString(),
+                        Selected = false
+                    };
+                });
+
+
+                ViewBag.items = cboTipoHora;
+                ViewBag.items2 = cboAfp;
+                ViewBag.items3 = cboBonificacion;
+                ViewBag.items4 = cboSalud;
+
+            }
             return View();
         }
 
@@ -45,36 +144,118 @@ namespace App.Controllers
 
                     using (DBEntities db = new DBEntities())
                     {
-                        List<ContratoViewModel> lst;
+                        List<ValorHoraViewModel> lst;
+                        //lista valor hora lst
                         lst = (from l in db.ValorHora
-                               select new ContratoViewModel
+                               select new ValorHoraViewModel
                                {
                                    ValorHoraId = l.ValorHoraId,
-                                   TipoHora = l.Tipo,
-                                   ValorHora = l.Valor
+                                   Tipo = l.Tipo,
+                                   Valor = l.Valor
                                }).ToList();
 
 
+
+                        // lista viewbag valorHora lst
                         List<SelectListItem> cboTipoHora = lst.ConvertAll(d =>
                         {
                             return new SelectListItem()
                             {
-                                Text = d.TipoHora.ToString(),
+                                Text = d.Tipo.ToString(),
                                 Value = d.ValorHoraId.ToString(),
                                 Selected = false
                             };
                         });
+
+
+                        //lista afp lst2
+                        List<AfpContratoViewModel> lst2;
+                        lst2 = (from l in db.Afp
+                                select new AfpContratoViewModel
+                                {
+                                    AfpId = l.AfpId,
+                                    Nombre = l.Nombre,
+                                    Valor = l.Valor
+                                }).ToList();
+
+                        //lista viewbag afp lst2
+                        List<SelectListItem> cboAfp = lst2.ConvertAll(a =>
+                        {
+                            return new SelectListItem()
+                            {
+                                Text = a.Nombre.ToString(),
+                                Value = a.AfpId.ToString(),
+                                Selected = false
+                            };
+                        });
+
+                        //lista bonificacion lst3
+                        List<BonificacionViewModel> lst3;
+                        lst3 = (from l in db.Bonificacion
+                                select new BonificacionViewModel
+                                {
+                                    BonificacionId = l.BonificacionId,
+                                    Nombre = l.Nombre,
+                                    Valor = l.Valor
+
+                                }).ToList();
+
+                        //lista viewbag bonificacion lst3
+                        List<SelectListItem> cboBonificacion = lst3.ConvertAll(a =>
+                        {
+                            return new SelectListItem()
+                            {
+                                Text = a.Nombre.ToString(),
+                                Value = a.BonificacionId.ToString(),
+                                Selected = false
+                            };
+                        });
+
+                        //lista salud lst4
+                        List<SaludContratoViewModel> lst4;
+                        lst4 = (from l in db.Salud
+                                select new SaludContratoViewModel
+                                {
+                                    SaludId = l.SaludId,
+                                    Nombre = l.Nombre,
+                                    Valor = l.Valor
+
+                                }).ToList();
+
+                        //lista viewbag salud lst4
+                        List<SelectListItem> cboSalud = lst4.ConvertAll(a =>
+                        {
+                            return new SelectListItem()
+                            {
+                                Text = a.Nombre.ToString(),
+                                Value = a.Valor.ToString(),
+                                Selected = false
+                            };
+                        });
+
+
                         ViewBag.items = cboTipoHora;
+                        ViewBag.items2 = cboAfp;
+                        ViewBag.items3 = cboBonificacion;
+                        ViewBag.items4 = cboSalud;
+
 
                         var oContrato = new Contrato();
                         foreach (var item in db.Contrato)
                         {
                             oContrato.ContratoId = item.ContratoId + 1;
                         }
+                        oContrato.EmpleadoId = model.EmpleadoId;
                         oContrato.FechaCreacion = DateTime.Now;
                         oContrato.FechaInicio = model.FechaInicio;
                         oContrato.FechaTermino = model.FechaTermino;
-                        oContrato.EmpleadoId = model.EmpleadoId;
+                        oContrato.NumeroHoras = model.NumeroHoras;
+                        oContrato.ValorHoraId = model.ValorHoraId;
+                        oContrato.BonificacionId = model.BonificacionId;
+                        oContrato.AfpId = model.AfpId;
+                        oContrato.SaludId = model.SaludId;
+                        oContrato.SueldoBruto = model.SueldoBruto;
+                        oContrato.SueldoLiquido = model.SueldoLiquido;
 
                         db.Contrato.Add(oContrato);
                         db.SaveChanges();

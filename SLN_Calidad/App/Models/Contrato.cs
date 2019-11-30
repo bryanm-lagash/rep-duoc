@@ -24,9 +24,9 @@ namespace App.Models
         public int AfpId { get; set; }
         public int SaludId { get; set; }
         public int BonificacionId { get; set; }
-        public int SueldoBase { get; set; }
-        public int SueldoLiquido { get; set; }
-        public int SueldoBruto { get; set; }
+        public double SueldoBase { get; set; }
+        public double SueldoLiquido { get; set; }
+        public double SueldoBruto { get; set; }
     
         public virtual Afp Afp { get; set; }
         public virtual Bonificacion Bonificacion { get; set; }

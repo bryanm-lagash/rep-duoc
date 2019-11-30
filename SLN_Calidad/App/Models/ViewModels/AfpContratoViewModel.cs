@@ -5,12 +5,10 @@ using System.Web;
 
 namespace App.Models.ViewModels
 {
-    public class BonificacionViewModel
+    public class AfpContratoViewModel
     {
-        public int BonificacionId { get; set; }
+        public int AfpId { get; set; }
         public string Nombre { get; set; }
-        public string Descripcion { get; set; }
         public double Valor { get; set; }
-
     }
 }

@@ -99,7 +99,7 @@ ALTER TABLE Contrato
 		REFERENCES Bonificacion (BonificacionId);
 
 
-<       ----------        INSERT INTO       ----------        >
+       ----------        INSERT INTO       ----------        
 INSERT INTO dbo.Empleado VALUES (1, '20512884-0', 'Bryan', 'Montes', 'Masculino', 2000-06-30, 'Av. marihueno 032', 12345678, 'Ingeniero Informatico', 'bryanm@lagash.com', 'asdasd', 2)
 
 INSERT INTO dbo.Contrato VALUES (0, '2000-10-10', '2000-10-10', '2000-10-10', 1);
@@ -111,8 +111,13 @@ INSERT INTO dbo.ValorHora VALUES (2,'Profesional', 17000);
 INSERT INTO dbo.Bonificacion VALUES (0, 'Bonificacion principiantes', 'Bonificacion personal recien ingresado', 50000)
 INSERT INTO dbo.Bonificacion VALUES (1, 'Bonificacion Mensual', null, 10000);
 
-INSERT INTO dbo.Descuento VALUES (0, 0.20, 0.19, null);
-INSERT INTO dbo.Descuento VALUES (1, 0.10, 0.19, null);
-INSERT INTO dbo.Descuento VALUES (2, 0.9, 0.19, null);
-INSERT INTO dbo.Descuento VALUES (3, null, null, 0.40);
-INSERT INTO dbo.Descuento VALUES (4, null, null, 0.60);
+INSERT INTO Afp VALUES (1, 'Modelo', 0.10);
+INSERT INTO Afp VALUES (2, 'Cuprum', 0.10);
+INSERT INTO Afp VALUES (3, 'Provida', 0.10);
+INSERT INTO Afp VALUES (4, 'Habitat', 0.10);
+INSERT INTO Afp VALUES (5, 'Capital', 0.10);
+
+INSERT INTO Salud VALUES (1, 'Isapre', 0.7);
+INSERT INTO Salud VALUES (2, 'Fonasa', 0.7);
+
+SELECT * FROM AFP;

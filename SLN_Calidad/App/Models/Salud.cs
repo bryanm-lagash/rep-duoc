@@ -22,7 +22,7 @@ namespace App.Models
     
         public int SaludId { get; set; }
         public string Nombre { get; set; }
-        public int Valor { get; set; }
+        public double Valor { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Contrato> Contrato { get; set; }

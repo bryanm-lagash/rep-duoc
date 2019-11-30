@@ -16,7 +16,7 @@
     </Key>
     <Property Name="AfpId" Type="Int32" Nullable="false" />
     <Property Name="Nombre" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="Valor" Type="Int32" Nullable="false" />
+    <Property Name="Valor" Type="Double" Nullable="false" />
     <NavigationProperty Name="Contrato" Relationship="Self.Contrato_Afp_fk" FromRole="Afp" ToRole="Contrato" />
   </EntityType>
   <EntityType Name="AspNetRoles">
@@ -75,7 +75,7 @@
     <Property Name="BonificacionId" Type="Int32" Nullable="false" />
     <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="Descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="Valor" Type="Int32" Nullable="false" />
+    <Property Name="Valor" Type="Double" Nullable="false" />
     <NavigationProperty Name="Contrato" Relationship="Self.Contrato_Bonificacion_fk" FromRole="Bonificacion" ToRole="Contrato" />
   </EntityType>
   <EntityType Name="Contrato">
@@ -92,9 +92,9 @@
     <Property Name="AfpId" Type="Int32" Nullable="false" />
     <Property Name="SaludId" Type="Int32" Nullable="false" />
     <Property Name="BonificacionId" Type="Int32" Nullable="false" />
-    <Property Name="SueldoBase" Type="Int32" Nullable="false" />
-    <Property Name="SueldoLiquido" Type="Int32" Nullable="false" />
-    <Property Name="SueldoBruto" Type="Int32" Nullable="false" />
+    <Property Name="SueldoBase" Type="Double" Nullable="false" />
+    <Property Name="SueldoLiquido" Type="Double" Nullable="false" />
+    <Property Name="SueldoBruto" Type="Double" Nullable="false" />
     <NavigationProperty Name="Afp" Relationship="Self.Contrato_Afp_fk" FromRole="Contrato" ToRole="Afp" />
     <NavigationProperty Name="Bonificacion" Relationship="Self.Contrato_Bonificacion_fk" FromRole="Contrato" ToRole="Bonificacion" />
     <NavigationProperty Name="Empleado" Relationship="Self.Contrato_Empleado_fk" FromRole="Contrato" ToRole="Empleado" />
@@ -112,7 +112,7 @@
     <Property Name="Genero" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="FechaNacimiento" Type="DateTime" Nullable="false" Precision="3" />
     <Property Name="Direccion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="Telefono" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Telefono" Type="Int32" Nullable="false" />
     <Property Name="Profesion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="Email" Type="String" MaxLength="80" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="ImagePath" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
@@ -125,7 +125,7 @@
     </Key>
     <Property Name="SaludId" Type="Int32" Nullable="false" />
     <Property Name="Nombre" Type="String" MaxLength="25" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="Valor" Type="Int32" Nullable="false" />
+    <Property Name="Valor" Type="Double" Nullable="false" />
     <NavigationProperty Name="Contrato" Relationship="Self.Contrato_Salud_fk" FromRole="Salud" ToRole="Contrato" />
   </EntityType>
   <EntityType Name="ValorHora">
