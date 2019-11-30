@@ -35,144 +35,155 @@ namespace App.Controllers
         [HttpGet]
         public ActionResult Crear()
         {
-            using (DBEntities db = new DBEntities())
+            List<SelectListItem> cboTipoHora = ListaValorHora().ConvertAll(d =>
             {
-                List<ValorHoraViewModel> lst;
-                //lista valor hora lst
-                lst = (from l in db.ValorHora
-                       select new ValorHoraViewModel
-                       {
-                           ValorHoraId = l.ValorHoraId,
-                           Tipo = l.Tipo,
-                           Valor = l.Valor
-                       }).ToList();
-
-
-
-                // lista viewbag valorHora lst
-                List<SelectListItem> cboTipoHora = lst.ConvertAll(d =>
+                return new SelectListItem()
                 {
-                    return new SelectListItem()
-                    {
-                        Text = d.Tipo.ToString(),
-                        Value = d.ValorHoraId.ToString(),
-                        Selected = false
-                    };
-                });
+                    Text = d.Tipo.ToString(),
+                    Value = d.ValorHoraId.ToString(),
+                    Selected = false
+                };
+            });
 
 
-                //lista afp lst2
-                List<AfpContratoViewModel> lst2;
-                lst2 = (from l in db.Afp
-                        select new AfpContratoViewModel
-                        {
-                            AfpId = l.AfpId,
-                            Nombre = l.Nombre,
-                            Valor = l.Valor
-                        }).ToList();
-
-                //lista viewbag afp lst2
-                List<SelectListItem> cboAfp = lst2.ConvertAll(a =>
+            List<SelectListItem> cboAfp = ListaAfp().ConvertAll(a =>
+            {
+                return new SelectListItem()
                 {
-                    return new SelectListItem()
-                    {
-                        Text = a.Nombre.ToString(),
-                        Value = a.AfpId.ToString(),
-                        Selected = false
-                    };
-                });
+                    Text = a.Nombre.ToString(),
+                    Value = a.AfpId.ToString(),
+                    Selected = false
+                };
+            });
 
-                //lista bonificacion lst3
-                List<BonificacionViewModel> lst3;
-                lst3 = (from l in db.Bonificacion
-                        select new BonificacionViewModel
-                        {
-                            BonificacionId = l.BonificacionId,
-                            Nombre = l.Nombre,
-                            Valor = l.Valor
-
-                        }).ToList();
-
-                //lista viewbag bonificacion lst3
-                List<SelectListItem> cboBonificacion = lst3.ConvertAll(a =>
+            List<SelectListItem> cboBonificacion = ListaBonificacion().ConvertAll(a =>
+            {
+                return new SelectListItem()
                 {
-                    return new SelectListItem()
-                    {
-                        Text = a.Nombre.ToString(),
-                        Value = a.BonificacionId.ToString(),
-                        Selected = false
-                    };
-                });
+                    Text = a.Nombre.ToString(),
+                    Value = a.BonificacionId.ToString(),
+                    Selected = false
+                };
+            });
 
-                //lista salud lst4
-                List<SaludContratoViewModel> lst4;
-                lst4 = (from l in db.Salud
-                        select new SaludContratoViewModel
-                        {
-                            SaludId = l.SaludId,
-                            Nombre = l.Nombre,
-                            Valor = l.Valor
-
-                        }).ToList();
-
-                //lista viewbag salud lst4
-                List<SelectListItem> cboSalud = lst4.ConvertAll(a =>
+            List<SelectListItem> cboSalud = ListaSalud().ConvertAll(a =>
+            {
+                return new SelectListItem()
                 {
-                    return new SelectListItem()
-                    {
-                        Text = a.Nombre.ToString(),
-                        Value = a.Valor.ToString(),
-                        Selected = false
-                    };
-                });
+                    Text = a.Nombre.ToString(),
+                    Value = a.SaludId.ToString(),
+                    Selected = false
+                };
+            });
 
-                ViewBag.ValorHora = new SelectList(db.ValorHora, "ValorHoraId", "ValorHora", "ValorHora");
-                ViewBag.items2 = cboAfp;
-                ViewBag.items3 = cboBonificacion;
-                ViewBag.items4 = cboSalud;
-
-            }
+            ViewBag.cboTipoHora = cboTipoHora;
+            ViewBag.cboAfp = cboAfp;
+            ViewBag.cboBonificacion = cboBonificacion;
+            ViewBag.cboSalud = cboSalud;
             return View();
         }
 
         [HttpPost]
-        public ActionResult Crear(ContratoViewModel model)
+        public ActionResult Crear(ContratoViewModel model, int cboTipoHora, int cboBonificacion, int cboAfp, int cboSalud)
         {
             try
             {
-                if (ModelState.IsValid)
+                using (DBEntities db = new DBEntities())
                 {
-                    using (DBEntities db = new DBEntities())
+                    var oContrato = new Contrato();
+                    foreach (var item in db.Contrato)
                     {
-                        var oContrato = new Contrato();
-                        foreach (var item in db.Contrato)
-                        {
-                            oContrato.ContratoId = item.ContratoId + 1;
-                        }
-                        oContrato.EmpleadoId = model.EmpleadoId;
-                        oContrato.FechaCreacion = DateTime.Now;
-                        oContrato.FechaInicio = model.FechaInicio;
-                        oContrato.FechaTermino = model.FechaTermino;
-                        oContrato.NumeroHoras = model.NumeroHoras;
-                        oContrato.ValorHoraId = int.Parse(Request["cboTipoHora"]);
-                        oContrato.BonificacionId = int.Parse(Request["cboBonificacion"]);
-                        oContrato.AfpId = int.Parse(Request["cboAfp"]);
-                        oContrato.SaludId = int.Parse(Request["cboSalud"]);
-                        oContrato.SueldoBruto = model.SueldoBruto;
-                        oContrato.SueldoLiquido = model.SueldoLiquido;
-
-                        db.Contrato.Add(oContrato);
-                        db.SaveChanges();
-
-                        return Redirect("/");
+                        oContrato.ContratoId = item.ContratoId + 1;
                     }
+                    var empleado = db.Empleado.Where(e => e.Rut == model.RutEmpleado).FirstOrDefault().EmpleadoId;
+
+                    oContrato.EmpleadoId = empleado;
+                    oContrato.FechaCreacion = model.FechaCreacion;
+                    oContrato.FechaInicio = model.FechaInicio;
+                    oContrato.FechaTermino = model.FechaTermino;
+                    oContrato.NumeroHoras = model.NumeroHoras;
+                    oContrato.ValorHoraId = cboTipoHora;
+                    oContrato.AfpId = cboAfp;
+                    oContrato.SaludId = cboSalud;
+                    oContrato.BonificacionId = cboBonificacion;
+                    oContrato.SueldoBase = model.TotalHaberes;
+                    oContrato.SueldoBruto = model.SueldoBruto;
+                    oContrato.SueldoLiquido = model.SueldoLiquido;
+
+                    db.Contrato.Add(oContrato);
+                    db.SaveChanges();
+
+                    return Redirect("/");
                 }
-                return View(model);
             }
             catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }
+        }
+
+        public static List<ValorHoraViewModel> ListaValorHora()
+        {
+            List<ValorHoraViewModel> lista = new List<ValorHoraViewModel>();
+            DBEntities db = new DBEntities();
+            foreach (var item in db.ValorHora)
+            {
+                ValorHoraViewModel v = new ValorHoraViewModel();
+                v.ValorHoraId = item.ValorHoraId;
+                v.Tipo = item.Tipo;
+                v.Valor = item.Valor;
+
+                lista.Add(v);
+            }
+            return lista;
+        }
+
+        public static List<BonificacionViewModel> ListaBonificacion()
+        {
+            List<BonificacionViewModel> lista = new List<BonificacionViewModel>();
+            DBEntities db = new DBEntities();
+            foreach (var item in db.Bonificacion)
+            {
+                BonificacionViewModel b = new BonificacionViewModel();
+                b.BonificacionId = item.BonificacionId;
+                b.Nombre = item.Nombre;
+                b.Valor = item.Valor;
+
+                lista.Add(b);
+            }
+            return lista;
+        }
+
+        public static List<AfpContratoViewModel> ListaAfp()
+        {
+            List<AfpContratoViewModel> lista = new List<AfpContratoViewModel>();
+            DBEntities db = new DBEntities();
+            foreach (var item in db.Afp)
+            {
+                AfpContratoViewModel a = new AfpContratoViewModel();
+                a.AfpId = item.AfpId;
+                a.Nombre = item.Nombre;
+                a.Valor = item.Valor;
+
+                lista.Add(a);
+            }
+            return lista;
+        }
+
+        public static List<SaludContratoViewModel> ListaSalud()
+        {
+            List<SaludContratoViewModel> lista = new List<SaludContratoViewModel>();
+            DBEntities db = new DBEntities();
+            foreach (var item in db.Salud)
+            {
+                SaludContratoViewModel s = new SaludContratoViewModel();
+                s.SaludId = item.SaludId;
+                s.Nombre = item.Nombre;
+                s.Valor = item.Valor;
+
+                lista.Add(s);
+            }
+            return lista;
         }
 
         public ActionResult Editar(int ID)

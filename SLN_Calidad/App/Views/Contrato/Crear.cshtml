@@ -2,10 +2,10 @@
 @{
     ViewBag.Title = "Crear Contrato";
     Layout = "~/Views/Shared/_Layout.cshtml";
-    List<SelectListItem> cboAfp = (List<SelectListItem>)ViewBag.items2;
     List<SelectListItem> cboTipoHora = (List<SelectListItem>)ViewBag.ValorHora;
-    List<SelectListItem> cboBonificacion = (List<SelectListItem>)ViewBag.items3;
-    List<SelectListItem> cboSalud = (List<SelectListItem>)ViewBag.items4;
+    List<SelectListItem> cboAfp = (List<SelectListItem>)ViewBag.cboAfo;
+    List<SelectListItem> cboBonificacion = (List<SelectListItem>)ViewBag.cboBonificacion;
+    List<SelectListItem> cboSalud = (List<SelectListItem>)ViewBag.cboSalud;
 }
 
     <head>
@@ -29,9 +29,9 @@
                       </div>
 
                       <div class="form-group col-md-4">
-                          @Html.LabelFor(d => d.EmpleadoId, htmlAttributes: new { @class = "form-label" })
-                          @Html.TextBoxFor(d => d.EmpleadoId, "", htmlAttributes: new { @class = "form-control" })
-                          @Html.ValidationMessageFor(d => d.EmpleadoId, "", new { @class = "text-danger" })
+                          @Html.LabelFor(d => d.RutEmpleado, htmlAttributes: new { @class = "form-label" })
+                          @Html.TextBoxFor(d => d.RutEmpleado, "", htmlAttributes: new { @class = "form-control" })
+                          @Html.ValidationMessageFor(d => d.RutEmpleado, "", new { @class = "text-danger" })
                       </div>
                       <div class="form-group col-md-4">
                           @Html.LabelFor(d => d.FechaCreacion, htmlAttributes: new { @class = "form-label" })
@@ -65,14 +65,13 @@
 
                           <div class="form-group col-md-6" style="  float: right">
                               @Html.LabelFor(d => d.TipoHora, htmlAttributes: new { @class = "form-label" })
-                              @Html.DropDownList("cboTipoHora", cboTipoHora, "Seleccione", new { @class = "form-control", @id })
-                              @Html.DropDownList()
+                              @Html.DropDownList("cboTipoHora", cboTipoHora, "Seleccione",htmlAttributes: new { @class = "form-control"})
                               @Html.ValidationMessageFor(d => d.TipoHora, "", new { @class = "text-danger" })
                           </div>
 
                           <div class="form-group col-md-6" style="  float: left">
                               @Html.LabelFor(d => d.BonificacionId, htmlAttributes: new { @class = "form-label" })
-                              @Html.DropDownList("cboBonificacion", cboBonificacion, "Seleccione", new { @class = "form-control" })
+                              @Html.DropDownList("cboBonificacion", cboBonificacion, "Seleccione", htmlAttributes: new { @class="form-control", @id="cboBonificacion" })
                               @Html.ValidationMessageFor(d => d.BonificacionId, "", new { @class = "text-danger" })
                           </div>
                           <div class="form-group col-md-4" style="float:left;">
@@ -106,7 +105,6 @@
                           </div>
 
                           <div class="form-group col-md-6" style="float: left">
-
                               @Html.LabelFor(d => d.SaludId, htmlAttributes: new { @class = "form-label" })
                               @Html.DropDownList("cboSalud", cboSalud, "Seleccione", new { @class = "form-control" })
                               @Html.ValidationMessageFor(d => d.SaludId, "", new { @class = "text-danger" })

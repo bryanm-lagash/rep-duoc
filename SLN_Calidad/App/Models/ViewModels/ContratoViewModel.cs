@@ -18,8 +18,8 @@ namespace App.Models.ViewModels
         [Required]
         [Display(Name = "Rut Empleado")]
         public int EmpleadoId { get; set; }
+        public string RutEmpleado { get; set; }
         [Required]
-        [DataType(DataType.Date)]
         [Display(Name = "Fecha Creacion")]
         public DateTime FechaCreacion { get; set; }
         [Required]
@@ -44,15 +44,15 @@ namespace App.Models.ViewModels
         public int BonificacionId { get; set; }
         [Required]
         [Display(Name = "Sueldo Base")]
-        public int SueldoBase { get; set; }
+        public double SueldoBase { get; set; }
         [Required]
         [Display(Name = "Sueldo Liquido")]
-        public int SueldoLiquido { get; set; }
+        public double SueldoLiquido { get; set; }
         [Required]
         [Display(Name = "Sueldo Bruto")]
-        public int SueldoBruto { get; set; }
+        public double SueldoBruto { get; set; }
         [Display(Name = "Valor")]
-        public int ValorBonificacion { get; set; }
+        public double ValorBonificacion { get; set; }
         [Display(Name = "Indemnización")]
         public int Indemnizacion { get; set; }
         [Display(Name = "Valor")]
