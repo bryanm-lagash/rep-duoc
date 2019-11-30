@@ -29,9 +29,9 @@ CREATE TABLE Contrato (
 	AfpId [int] NOT NULL,
 	SaludId [int] NOT NULL,
 	BonificacionId [int] NOT NULL,
-	SueldoBase [int] NOT NULL,
-	SueldoLiquido [int] NOT NULL,
-	SueldoBruto [int] NOT NULL
+	SueldoBase float NOT NULL,
+	SueldoLiquido float NOT NULL,
+	SueldoBruto float NOT NULL
 );
 
 
@@ -41,7 +41,7 @@ ALTER TABLE Contrato
 CREATE TABLE Afp(
 	AfpId [int] NOT NULL,
 	Nombre nvarchar(30) NOT NULL,
-	Valor [int] NOT NULL
+	Valor float NOT NULL
 );
 
 ALTER TABLE Afp 
@@ -50,7 +50,7 @@ ALTER TABLE Afp
 CREATE TABLE Salud( 
 	SaludId [int] NOT NULL,
 	Nombre nvarchar(25) NOT NULL,
-	Valor [int] NOT NULL
+	Valor float NOT NULL
 );
 USE DefaultConnection;
 
@@ -61,7 +61,7 @@ CREATE TABLE Bonificacion (
 	BonificacionId [int] NOT NULL,
 	Nombre nvarchar(50) NOT NULL,
 	Descripcion nvarchar(50) NULL,
-	Valor [int] NOT NULL
+	Valor float NOT NULL
 );
 
 ALTER TABLE Bonificacion
@@ -101,8 +101,6 @@ ALTER TABLE Contrato
 
        ----------        INSERT INTO       ----------        
 INSERT INTO dbo.Empleado VALUES (1, '20512884-0', 'Bryan', 'Montes', 'Masculino', 2000-06-30, 'Av. marihueno 032', 12345678, 'Ingeniero Informatico', 'bryanm@lagash.com', 'asdasd', 2)
-
-INSERT INTO dbo.Contrato VALUES (0, '2000-10-10', '2000-10-10', '2000-10-10', 1);
 
 INSERT INTO dbo.ValorHora VALUES (0,'Novato', 8500);
 INSERT INTO dbo.ValorHora VALUES (1,'Experimentado', 12000);
