@@ -11,116 +11,7 @@ namespace App.Controllers
 {
     public class ContratoController : Controller
     {
-
-        // GET: Contrato
-        public ActionResult Index()
-        {
-            List<ListContratosViewModel> lst;
-            using (DBEntities db = new DBEntities())
-            {
-                lst = (from d in db.Contrato
-                       select new ListContratosViewModel
-                       {
-                           ContratoId = d.ContratoId,
-                           FechaCreacion = d.FechaCreacion,
-                           FechaInicio = d.FechaInicio,
-                           FechaTermino = d.FechaTermino,
-                           EmpleadoId = d.EmpleadoId
-                       }).ToList();
-            }
-
-            return View(lst);
-        }
-
-        [HttpGet]
-        public ActionResult Crear()
-        {
-            List<SelectListItem> cboTipoHora = ListaValorHora().ConvertAll(d =>
-            {
-                return new SelectListItem()
-                {
-                    Text = d.Tipo.ToString(),
-                    Value = d.ValorHoraId.ToString(),
-                    Selected = false
-                };
-            });
-
-
-            List<SelectListItem> cboAfp = ListaAfp().ConvertAll(a =>
-            {
-                return new SelectListItem()
-                {
-                    Text = a.Nombre.ToString(),
-                    Value = a.AfpId.ToString(),
-                    Selected = false
-                };
-            });
-
-            List<SelectListItem> cboBonificacion = ListaBonificacion().ConvertAll(a =>
-            {
-                return new SelectListItem()
-                {
-                    Text = a.Nombre.ToString(),
-                    Value = a.BonificacionId.ToString(),
-                    Selected = false
-                };
-            });
-
-            List<SelectListItem> cboSalud = ListaSalud().ConvertAll(a =>
-            {
-                return new SelectListItem()
-                {
-                    Text = a.Nombre.ToString(),
-                    Value = a.SaludId.ToString(),
-                    Selected = false
-                };
-            });
-
-            ViewBag.cboTipoHora = cboTipoHora;
-            ViewBag.cboAfp = cboAfp;
-            ViewBag.cboBonificacion = cboBonificacion;
-            ViewBag.cboSalud = cboSalud;
-            return View();
-        }
-
-        [HttpPost]
-        public ActionResult Crear(ContratoViewModel model, int cboTipoHora, int cboBonificacion, int cboAfp, int cboSalud)
-        {
-            try
-            {
-                using (DBEntities db = new DBEntities())
-                {
-                    var oContrato = new Contrato();
-                    foreach (var item in db.Contrato)
-                    {
-                        oContrato.ContratoId = item.ContratoId + 1;
-                    }
-                    var empleado = db.Empleado.Where(e => e.Rut == model.RutEmpleado).FirstOrDefault().EmpleadoId;
-
-                    oContrato.EmpleadoId = empleado;
-                    oContrato.FechaCreacion = model.FechaCreacion;
-                    oContrato.FechaInicio = model.FechaInicio;
-                    oContrato.FechaTermino = model.FechaTermino;
-                    oContrato.NumeroHoras = model.NumeroHoras;
-                    oContrato.ValorHoraId = cboTipoHora;
-                    oContrato.AfpId = cboAfp;
-                    oContrato.SaludId = cboSalud;
-                    oContrato.BonificacionId = cboBonificacion;
-                    oContrato.SueldoBase = model.TotalHaberes;
-                    oContrato.SueldoBruto = model.SueldoBruto;
-                    oContrato.SueldoLiquido = model.SueldoLiquido;
-
-                    db.Contrato.Add(oContrato);
-                    db.SaveChanges();
-
-                    return Redirect("/");
-                }
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
-        }
+        #region Listas
 
         public static List<ValorHoraViewModel> ListaValorHora()
         {
@@ -186,6 +77,123 @@ namespace App.Controllers
             return lista;
         }
 
+
+        #endregion Listas
+
+        // GET: Contrato
+        public ActionResult Index()
+        {
+            List<ListContratosViewModel> lst = new List<ListContratosViewModel>();
+            DBEntities db = new DBEntities();
+            foreach (var item in db.Contrato)
+            {
+                ListContratosViewModel c = new ListContratosViewModel();
+                c.ContratoId = item.ContratoId;
+                c.RutEmpleado = db.Empleado.Where(e => e.EmpleadoId == item.EmpleadoId).FirstOrDefault().Rut;
+                c.FechaCreacion = item.FechaCreacion;
+                c.FechaInicio = item.FechaInicio;
+                c.NumeroHoras = item.NumeroHoras;
+                c.TipoHora = db.ValorHora.Where(v => v.ValorHoraId == item.ValorHoraId).FirstOrDefault().Tipo;
+                c.AfpNombre = db.Afp.Where(a => a.AfpId == item.AfpId).FirstOrDefault().Nombre;
+                c.NombreSalud = db.Salud.Where(s => s.SaludId == item.SaludId).FirstOrDefault().Nombre;
+                c.NombreBonif = db.Bonificacion.Where(b => b.BonificacionId == item.BonificacionId).FirstOrDefault().Nombre;
+                c.SueldoBase = item.SueldoBase;
+                c.SueldoBruto = item.SueldoBruto;
+                c.SueldoLiquido = item.SueldoLiquido;
+
+                lst.Add(c);
+            }
+            return View(lst);
+        }
+
+        [HttpGet]
+        public ActionResult Crear()
+        {
+            List<SelectListItem> cboTipoHora = ListaValorHora().ConvertAll(d =>
+            {
+                return new SelectListItem()
+                {
+                    Text = d.Tipo.ToString(),
+                    Value = d.ValorHoraId.ToString(),
+                    Selected = false
+                };
+            });
+
+
+            List<SelectListItem> cboAfp = ListaAfp().ConvertAll(a =>
+            {
+                return new SelectListItem()
+                {
+                    Text = a.Nombre.ToString(),
+                    Value = a.AfpId.ToString(),
+                    Selected = false
+                };
+            });
+
+            List<SelectListItem> cboBonificacion = ListaBonificacion().ConvertAll(a =>
+            {
+                return new SelectListItem()
+                {
+                    Text = a.Nombre.ToString(),
+                    Value = a.BonificacionId.ToString(),
+                    Selected = false
+                };
+            });
+
+            List<SelectListItem> cboSalud = ListaSalud().ConvertAll(a =>
+            {
+                return new SelectListItem()
+                {
+                    Text = a.Nombre.ToString(),
+                    Value = a.SaludId.ToString(),
+                    Selected = false
+                };
+            });
+
+            ViewBag.cboTipoHora = cboTipoHora;
+            ViewBag.cboAfp = cboAfp;
+            ViewBag.cboBonificacion = cboBonificacion;
+            ViewBag.cboSalud = cboSalud;
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Crear(ContratoViewModel model, int cboTipoHora, int cboBonificacion, int cboAfp, int cboSalud)
+        {
+            try
+            {
+                using (DBEntities db = new DBEntities())
+                {
+                    var oContrato = new Contrato();
+                    var empleado = db.Empleado.Where(e => e.Rut == model.RutEmpleado).FirstOrDefault().EmpleadoId;
+
+                    oContrato.ContratoId = model.ContratoId;
+                    oContrato.EmpleadoId = empleado;
+                    oContrato.FechaCreacion = model.FechaCreacion;
+                    oContrato.FechaInicio = model.FechaInicio;
+                    oContrato.FechaTermino = model.FechaTermino;
+                    oContrato.NumeroHoras = model.NumeroHoras;
+                    oContrato.ValorHoraId = cboTipoHora;
+                    oContrato.AfpId = cboAfp;
+                    oContrato.SaludId = cboSalud;
+                    oContrato.BonificacionId = cboBonificacion;
+                    oContrato.SueldoBase = model.TotalHaberes;
+                    oContrato.SueldoBruto = model.SueldoBruto;
+                    oContrato.SueldoLiquido = model.SueldoLiquido;
+
+                    db.Contrato.Add(oContrato);
+                    db.SaveChanges();
+
+                    return Redirect("/");
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        
         public ActionResult Editar(int ID)
         {
 
