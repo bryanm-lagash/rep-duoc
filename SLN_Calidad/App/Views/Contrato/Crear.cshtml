@@ -3,7 +3,7 @@
     ViewBag.Title = "Crear Contrato";
     Layout = "~/Views/Shared/_Layout.cshtml";
     List<SelectListItem> cboAfp = (List<SelectListItem>)ViewBag.items2;
-    //List<SelectListItem> cboTipoHora = (List<SelectListItem>)ViewBag.ValorHora;
+    List<SelectListItem> cboTipoHora = (List<SelectListItem>)ViewBag.ValorHora;
     List<SelectListItem> cboBonificacion = (List<SelectListItem>)ViewBag.items3;
     List<SelectListItem> cboSalud = (List<SelectListItem>)ViewBag.items4;
 }
@@ -65,9 +65,8 @@
 
                           <div class="form-group col-md-6" style="  float: right">
                               @Html.LabelFor(d => d.TipoHora, htmlAttributes: new { @class = "form-label" })
-                              @*@Html.DropDownListFor(m => m.ValorHoraId, Model.cboValorHora)*@
-                              @*@Html.DropDownList("cboTipoHora", cboTipoHora, "Seleccione", new { @class = "form-control" })*@
-                              @Html.DropDownList("cboTipoHora",ViewData["ValorHora"] as SelectList)
+                              @Html.DropDownList("cboTipoHora", cboTipoHora, "Seleccione", new { @class = "form-control", @id })
+                              @Html.DropDownList()
                               @Html.ValidationMessageFor(d => d.TipoHora, "", new { @class = "text-danger" })
                           </div>
 

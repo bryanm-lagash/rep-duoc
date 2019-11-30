@@ -32,6 +32,7 @@ namespace App.Controllers
             return View(lst);
         }
 
+        [HttpGet]
         public ActionResult Crear()
         {
             using (DBEntities db = new DBEntities())
@@ -137,49 +138,41 @@ namespace App.Controllers
         [HttpPost]
         public ActionResult Crear(ContratoViewModel model)
         {
-
-            using (DBEntities db = new DBEntities())
+            try
             {
-                var list = new SelectList(db.ValorHora, "ValorHoraId", "Tipo");
-                ViewData["ValorHora"] = list;
+                if (ModelState.IsValid)
+                {
+                    using (DBEntities db = new DBEntities())
+                    {
+                        var oContrato = new Contrato();
+                        foreach (var item in db.Contrato)
+                        {
+                            oContrato.ContratoId = item.ContratoId + 1;
+                        }
+                        oContrato.EmpleadoId = model.EmpleadoId;
+                        oContrato.FechaCreacion = DateTime.Now;
+                        oContrato.FechaInicio = model.FechaInicio;
+                        oContrato.FechaTermino = model.FechaTermino;
+                        oContrato.NumeroHoras = model.NumeroHoras;
+                        oContrato.ValorHoraId = int.Parse(Request["cboTipoHora"]);
+                        oContrato.BonificacionId = int.Parse(Request["cboBonificacion"]);
+                        oContrato.AfpId = int.Parse(Request["cboAfp"]);
+                        oContrato.SaludId = int.Parse(Request["cboSalud"]);
+                        oContrato.SueldoBruto = model.SueldoBruto;
+                        oContrato.SueldoLiquido = model.SueldoLiquido;
+
+                        db.Contrato.Add(oContrato);
+                        db.SaveChanges();
+
+                        return Redirect("/");
+                    }
+                }
+                return View(model);
             }
-            return View(model);
-
-            //try
-            //{
-            //    if (ModelState.IsValid)
-            //    {
-            //        using (DBEntities db = new DBEntities())
-            //        {
-            //            var oContrato = new Contrato();
-            //            foreach (var item in db.Contrato)
-            //            {
-            //                oContrato.ContratoId = item.ContratoId + 1;
-            //            }
-            //            oContrato.EmpleadoId = model.EmpleadoId;
-            //            oContrato.FechaCreacion = DateTime.Now;
-            //            oContrato.FechaInicio = model.FechaInicio;
-            //            oContrato.FechaTermino = model.FechaTermino;
-            //            oContrato.NumeroHoras = model.NumeroHoras;
-            //            oContrato.ValorHoraId = int.Parse(Request["cboTipoHora"]);
-            //            oContrato.BonificacionId = int.Parse(Request["cboBonificacion"]);
-            //            oContrato.AfpId = int.Parse(Request["cboAfp"]);
-            //            oContrato.SaludId = int.Parse(Request["cboSalud"]);
-            //            oContrato.SueldoBruto = model.SueldoBruto;
-            //            oContrato.SueldoLiquido = model.SueldoLiquido;
-
-            //            db.Contrato.Add(oContrato);
-            //            db.SaveChanges();
-
-            //            return Redirect("/");
-            //        }   
-            //    }
-            //    return View(model);       
-            //}
-            //catch(Exception ex)
-            //{
-            //    throw new Exception(ex.Message);
-            //}
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
 
         public ActionResult Editar(int ID)
