@@ -359,7 +359,6 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Empleado\Index.cshtml" />
     <Content Include="Views\Empleado\Crear.cshtml" />
-    <Content Include="Views\Empleado\Editar.cshtml" />
     <Content Include="Views\Contrato\Editar.cshtml" />
     <Content Include="Views\Contrato\Detalles.cshtml" />
     <Content Include="Scripts\umd\popper.min.js.map" />
@@ -373,6 +372,7 @@
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Views\Contrato\Crear.cshtml" />
     <Content Include="Views\Contrato\Index.cshtml" />
+    <Content Include="Views\Empleado\Editar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

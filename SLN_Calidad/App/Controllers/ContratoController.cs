@@ -79,7 +79,6 @@ namespace App.Controllers
 
 
         #endregion Listas
-
         // GET: Contrato
         public ActionResult Index()
         {
@@ -184,7 +183,7 @@ namespace App.Controllers
                     db.Contrato.Add(oContrato);
                     db.SaveChanges();
 
-                    return Redirect("/");
+                    return Redirect("/Contrato/Index");
                 }
             }
             catch (Exception ex)
@@ -193,7 +192,7 @@ namespace App.Controllers
             }
         }
 
-        
+        [HttpGet]
         public ActionResult Editar(int ID)
         {
 
@@ -202,15 +201,19 @@ namespace App.Controllers
             {
                 var oContrato = db.Contrato.Find(ID);
                 model.ContratoId = oContrato.ContratoId;
+                model.RutEmpleado = db.Empleado.Where(e => e.EmpleadoId == oContrato.EmpleadoId).FirstOrDefault().Rut;
                 model.FechaCreacion = oContrato.FechaCreacion;
                 model.FechaInicio = oContrato.FechaInicio;
                 model.FechaTermino = oContrato.FechaTermino;
-                model.EmpleadoId = oContrato.EmpleadoId;
+                model.NumeroHoras = oContrato.NumeroHoras;
+                model.ValorHoraId = oContrato.ValorHoraId;
+                model.BonificacionId = oContrato.BonificacionId;
+                //model.ValorBonificacion
             }
             return View(model);
         }
 
-        [HttpPut]
+        [HttpPost]
         public ActionResult Editar(ContratoViewModel model)
         {
             try

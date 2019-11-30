@@ -35,8 +35,6 @@ namespace App.Models.ViewModels
         public int ValorHoraId { get; set; }
         [Display(Name = "Tipo de hora")]
         public string TipoHora { get; set; }
-        [Display(Name = "Valor")]
-        public double ValorHora { get; set; }
         [Display(Name = "AFP")]
         public int AfpId { get; set; }
         public int SaludId { get; set; }
@@ -46,24 +44,19 @@ namespace App.Models.ViewModels
         [Display(Name = "Sueldo Base")]
         public double SueldoBase { get; set; }
         [Required]
-        [Display(Name = "Sueldo Liquido")]
-        public double SueldoLiquido { get; set; }
-        [Required]
         [Display(Name = "Sueldo Bruto")]
         public double SueldoBruto { get; set; }
-        [Display(Name = "Valor")]
-        public double ValorBonificacion { get; set; }
-        [Display(Name = "Indemnización")]
-        public int Indemnizacion { get; set; }
-        [Display(Name = "Valor")]
-        public double ValorAfp { get; set; }
-        [Display(Name = "Valor")]
-        public double ValorSalud { get; set; }
+        [Required]
+        [Display(Name = "Sueldo Liquido")]
+        public double SueldoLiquido { get; set; }
 
-        [Display(Name = "Otro")]
-        public string Otro { get; set; }
+        [Display(Name = "Dias")]
+        public int Indemnizacion { get; set; }
+
+        [Display(Name = "Otros descuentos")]
+        public string OtroDescuento { get; set; }
         [Display(Name = "Valor")]
-        public string ValorOtro { get; set; }
+        public string ValorOtroDesc { get; set; }
         [Display(Name = "Total Haberes")]
         public int TotalHaberes { get; set; }
         [Display(Name = "Total Descuentos")]
