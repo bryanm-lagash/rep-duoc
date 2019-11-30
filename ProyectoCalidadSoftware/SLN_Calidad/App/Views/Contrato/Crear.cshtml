@@ -22,7 +22,7 @@
     @Html.AntiForgeryToken()
     <br /><hr />
     <div class="container" >
-    <form>
+    <form action="~/Controllers/" method="post">
         <div class="form-row">
             <div class="form-group col-md-4">
                 @Html.LabelFor(d => d.ContratoId, htmlAttributes: new { @class = "form-label" })
@@ -60,7 +60,7 @@
                 <br />
                 <div class="form-group col-md-4 " style=" float: left">
                     @Html.LabelFor(d => d.NumeroHoras, htmlAttributes: new { @class = "form-label" })
-                    @Html.TextBoxFor(d => d.NumeroHoras, "{0:MM/dd/yyyy}", new { type = "date", @class = "form-control" })
+                    @Html.TextBoxFor(d => d.NumeroHoras, " ", new { @class = "form-control" })
                     @Html.ValidationMessageFor(d => d.NumeroHoras, "", new { @class = "text-danger" })
                 </div>
 
@@ -81,19 +81,22 @@
                 </div>
                 <div class="form-group col-md-4" style="float:left;">
 
-                    <label for="inputValorBonificacion">Valor</label>
-                    <input type="text" class="form-control" id="inputValorBonificacion">
-                  
+                    
+                    @Html.LabelFor(d => d.ValorBonificacion, htmlAttributes: new { @class = "form-label" })
+                    @Html.TextBoxFor(d => d.ValorBonificacion , "", new { @class = "form-control" })
+                    @Html.ValidationMessageFor(d => d.ValorBonificacion, "", new { @class = "text-danger" })
+
                 </div>
 
                 <h3 style="text-align:center;">Indemnización</h3>
                 <div class="form-group col-md-4" style="float:left;">
 
-                    <label for="inputValorBonificacion">Días</label>
-                    <input type="text" class="form-control" id="inputValorBonificacion">
+                   
+                    @Html.LabelFor(d => d.Indemnizacion, htmlAttributes: new { @class = "form-label" })
+                    @Html.TextBoxFor(d => d.Indemnizacion, "", new { @class = "form-control" })
+                    @Html.ValidationMessageFor(d => d.Indemnizacion, "", new { @class = "text-danger" })
 
                 </div>
-
 
             </div>
 
@@ -103,36 +106,50 @@
 
                 <div class="form-group col-md-6" style="float: left">
                     <label for="selectAfp">AFP</label>
-                    @*<input type="text" class="form-control" id="inputAfp">*@
+
+                    @Html.LabelFor(d => d.AfpId, htmlAttributes: new { @class = "form-label" })
                     @Html.DropDownList("cboAfp", cboAfp, "Seleccione", new { @class = "form-control" })
+                    @Html.ValidationMessageFor(d => d.AfpId, "", new { @class = "text-danger" })
+
 
                 </div>
 
                 <div class="form-group col-md-4" style="float: right">
-                    <label for="inputValorAfp">Valor</label>
-                    <input type="number" class="form-control" id="inputValorAfp">
+                   
+                    @Html.LabelFor(d => d.ValorAfp, htmlAttributes: new { @class = "form-label" })
+                    @Html.TextBoxFor(d => d.ValorAfp, "", new { @class = "form-control" })
+                    @Html.ValidationMessageFor(d => d.ValorAfp, "", new { @class = "text-danger" })
                 </div>
 
                 <div class="form-group col-md-6" style="float: left">
-                    <label for="selectPrevicion">Previción</label>
-                    @*<input type="text" class="form-control" id="inputPrevicion">*@
+                  
+                    @Html.LabelFor(d => d.SaludId, htmlAttributes: new { @class = "form-label" })
                     @Html.DropDownList("cboSalud", cboSalud, "Seleccione", new { @class = "form-control" })
-
+                    @Html.ValidationMessageFor(d => d.SaludId, "", new { @class = "text-danger" })
                 </div>
 
                 <div class="form-group col-md-4" style="float: right">
-                    <label for="inputValorValorPrevicion">Valor</label>
-                    <input type="number" class="form-control" id="inputValorPrevicion">
+
+                    @Html.LabelFor(d => d.ValorSalud, htmlAttributes: new { @class = "form-label" })
+                    @Html.TextBoxFor(d => d.ValorSalud, "", new { @class = "form-control" })
+                    @Html.ValidationMessageFor(d => d.ValorSalud, "", new { @class = "text-danger" })
                 </div>
 
                 <div class="form-group col-md-6" style="float: left">
-                    <label for="inputOtro">Otro</label>
-                    <input type="text" class="form-control" id="inputOtro">
+                  
+                    @Html.LabelFor(d => d.Otro, htmlAttributes: new { @class = "form-label" })
+                    @Html.TextBoxFor(d => d.Otro, "", new { @class = "form-control" })
+                    @Html.ValidationMessageFor(d => d.Otro, "", new { @class = "text-danger" })
                 </div>
 
                 <div class="form-group col-md-4" style="float: right">
-                    <label for="inputValorOtro">Valor</label>
-                    <input type="number" class="form-control" id="inputValorOtro">
+                   
+
+                    @Html.LabelFor(d => d.ValorOtro, htmlAttributes: new { @class = "form-label" })
+                    @Html.TextBoxFor(d => d.ValorOtro, "", new { @class = "form-control" })
+                    @Html.ValidationMessageFor(d => d.ValorOtro, "", new { @class = "text-danger" })
+
+
                 </div>
             </div>
         </div>
@@ -144,23 +161,35 @@
             <br />
             <div class="container col-md-12">
                 <div class="form-group col-md-3" style="float: left">
-                    <label for="inputAfp">Total Haberes</label>
-                    <input type="text" class="form-control" id="inputAfp">
+                 
+                    @Html.LabelFor(d => d.TotalHaberes, htmlAttributes: new { @class = "form-label" })
+                    @Html.TextBoxFor(d => d.TotalHaberes, "", new { @class = "form-control" })
+                    @Html.ValidationMessageFor(d => d.TotalHaberes, "", new { @class = "text-danger" })
+
+
                 </div>
 
                 <div class="form-group col-md-3" style="float: left">
-                    <label for="inputAfp">Sueldo Bruto</label>
-                    <input type="text" class="form-control" id="inputAfp">
+              
+
+                    @Html.LabelFor(d => d.SueldoBruto, htmlAttributes: new { @class = "form-label" })
+                    @Html.TextBoxFor(d => d.SueldoBruto, "", new { @class = "form-control" })
+                    @Html.ValidationMessageFor(d => d.SueldoBruto, "", new { @class = "text-danger" })
+               
                 </div>
 
                 <div class="form-group col-md-3" style="float: left">
-                    <label for="inputAfp">Total Descuentos</label>
-                    <input type="text" class="form-control" id="inputAfp">
+                  
+                    @Html.LabelFor(d => d.TotalDescuentos, htmlAttributes: new { @class = "form-label" })
+                    @Html.TextBoxFor(d => d.TotalDescuentos, "", new { @class = "form-control" })
+                    @Html.ValidationMessageFor(d => d.TotalDescuentos, "", new { @class = "text-danger" })
                 </div>
 
                 <div class="form-group col-md-3" style="float: left">
-                    <label for="inputAfp">Sueldo Liquido</label>
-                    <input type="text" class="form-control" id="inputAfp">
+               
+                    @Html.LabelFor(d => d.SueldoLiquido, htmlAttributes: new { @class = "form-label" })
+                    @Html.TextBoxFor(d => d.SueldoLiquido, "", new { @class = "form-control" })
+                    @Html.ValidationMessageFor(d => d.SueldoLiquido, "", new { @class = "text-danger" })
                 </div>
             </div>
         </div>

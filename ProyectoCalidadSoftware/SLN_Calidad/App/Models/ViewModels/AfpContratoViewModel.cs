@@ -11,4 +11,6 @@ namespace App.Models.ViewModels
         public string Nombre { get; set; }
         public double Valor { get; set; }
     }
+
+
 }

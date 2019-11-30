@@ -50,7 +50,25 @@ namespace App.Models.ViewModels
         [Required]
         [Display(Name = "Sueldo Bruto")]
         public int SueldoBruto { get; set; }
+        [Display(Name = "Valor")]
+        public int ValorBonificacion { get; set; }
+        [Display(Name = "Indemnización")]
+        public int Indemnizacion { get; set; }
+        [Display(Name = "Valor")]
+        public double ValorAfp { get; set; }
+        [Display(Name = "Valor")]
+        public double ValorSalud { get; set; }
 
+        [Display(Name = "Otro")]
+        public string Otro { get; set; }
+        [Display(Name = "Valor")]
+        public string ValorOtro { get; set; }
+        [Display(Name = "Total Haberes")]
+        public int TotalHaberes { get; set; }
+        [Display(Name = "Total Descuentos")]
+        public int TotalDescuentos { get; set; }
+
+        
 
         public List<ValorHoraViewModel> ValoresHoras()
         {
