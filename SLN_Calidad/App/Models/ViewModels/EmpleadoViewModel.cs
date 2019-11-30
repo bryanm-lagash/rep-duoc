@@ -34,7 +34,6 @@ namespace App.Models.ViewModels
         [Required]
         public string Direccion { get; set; }
         [Required]
-        [MaxLength(11)]
         public int Telefono { get; set; }
         [StringLength(30)]
         public string Profesion { get; set; }

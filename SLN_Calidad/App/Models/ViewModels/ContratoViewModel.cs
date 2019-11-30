@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using App.Models;
+using System.Web.Mvc;
 
 namespace App.Models.ViewModels
 {
@@ -67,5 +68,6 @@ namespace App.Models.ViewModels
         public int TotalHaberes { get; set; }
         [Display(Name = "Total Descuentos")]
         public int TotalDescuentos { get; set; }
+
     } 
 }

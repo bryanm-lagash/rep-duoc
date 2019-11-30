@@ -11,6 +11,7 @@ namespace App.Controllers
 {
     public class ContratoController : Controller
     {
+
         // GET: Contrato
         public ActionResult Index()
         {
@@ -124,8 +125,7 @@ namespace App.Controllers
                     };
                 });
 
-
-                ViewBag.items = cboTipoHora;
+                ViewBag.ValorHora = new SelectList(db.ValorHora, "ValorHoraId", "ValorHora", "ValorHora");
                 ViewBag.items2 = cboAfp;
                 ViewBag.items3 = cboBonificacion;
                 ViewBag.items4 = cboSalud;
@@ -137,137 +137,49 @@ namespace App.Controllers
         [HttpPost]
         public ActionResult Crear(ContratoViewModel model)
         {
-            try
+
+            using (DBEntities db = new DBEntities())
             {
-                if (ModelState.IsValid)
-                {
-
-                    using (DBEntities db = new DBEntities())
-                    {
-                        List<ValorHoraViewModel> lst;
-                        //lista valor hora lst
-                        lst = (from l in db.ValorHora
-                               select new ValorHoraViewModel
-                               {
-                                   ValorHoraId = l.ValorHoraId,
-                                   Tipo = l.Tipo,
-                                   Valor = l.Valor
-                               }).ToList();
-
-
-
-                        // lista viewbag valorHora lst
-                        List<SelectListItem> cboTipoHora = lst.ConvertAll(d =>
-                        {
-                            return new SelectListItem()
-                            {
-                                Text = d.Tipo.ToString(),
-                                Value = d.ValorHoraId.ToString(),
-                                Selected = false
-                            };
-                        });
-
-
-                        //lista afp lst2
-                        List<AfpContratoViewModel> lst2;
-                        lst2 = (from l in db.Afp
-                                select new AfpContratoViewModel
-                                {
-                                    AfpId = l.AfpId,
-                                    Nombre = l.Nombre,
-                                    Valor = l.Valor
-                                }).ToList();
-
-                        //lista viewbag afp lst2
-                        List<SelectListItem> cboAfp = lst2.ConvertAll(a =>
-                        {
-                            return new SelectListItem()
-                            {
-                                Text = a.Nombre.ToString(),
-                                Value = a.AfpId.ToString(),
-                                Selected = false
-                            };
-                        });
-
-                        //lista bonificacion lst3
-                        List<BonificacionViewModel> lst3;
-                        lst3 = (from l in db.Bonificacion
-                                select new BonificacionViewModel
-                                {
-                                    BonificacionId = l.BonificacionId,
-                                    Nombre = l.Nombre,
-                                    Valor = l.Valor
-
-                                }).ToList();
-
-                        //lista viewbag bonificacion lst3
-                        List<SelectListItem> cboBonificacion = lst3.ConvertAll(a =>
-                        {
-                            return new SelectListItem()
-                            {
-                                Text = a.Nombre.ToString(),
-                                Value = a.BonificacionId.ToString(),
-                                Selected = false
-                            };
-                        });
-
-                        //lista salud lst4
-                        List<SaludContratoViewModel> lst4;
-                        lst4 = (from l in db.Salud
-                                select new SaludContratoViewModel
-                                {
-                                    SaludId = l.SaludId,
-                                    Nombre = l.Nombre,
-                                    Valor = l.Valor
-
-                                }).ToList();
-
-                        //lista viewbag salud lst4
-                        List<SelectListItem> cboSalud = lst4.ConvertAll(a =>
-                        {
-                            return new SelectListItem()
-                            {
-                                Text = a.Nombre.ToString(),
-                                Value = a.Valor.ToString(),
-                                Selected = false
-                            };
-                        });
-
-
-                        ViewBag.items = cboTipoHora;
-                        ViewBag.items2 = cboAfp;
-                        ViewBag.items3 = cboBonificacion;
-                        ViewBag.items4 = cboSalud;
-
-
-                        var oContrato = new Contrato();
-                        foreach (var item in db.Contrato)
-                        {
-                            oContrato.ContratoId = item.ContratoId + 1;
-                        }
-                        oContrato.EmpleadoId = model.EmpleadoId;
-                        oContrato.FechaCreacion = DateTime.Now;
-                        oContrato.FechaInicio = model.FechaInicio;
-                        oContrato.FechaTermino = model.FechaTermino;
-                        oContrato.NumeroHoras = model.NumeroHoras;
-                        oContrato.ValorHoraId = model.ValorHoraId;
-                        oContrato.BonificacionId = model.BonificacionId;
-                        oContrato.AfpId = model.AfpId;
-                        oContrato.SaludId = model.SaludId;
-                        oContrato.SueldoBruto = model.SueldoBruto;
-                        oContrato.SueldoLiquido = model.SueldoLiquido;
-
-                        db.Contrato.Add(oContrato);
-                        db.SaveChanges();
-                    }
-                    return Redirect("/");
-                }
-                return View(model);
+                var list = new SelectList(db.ValorHora, "ValorHoraId", "Tipo");
+                ViewData["ValorHora"] = list;
             }
-            catch(Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
+            return View(model);
+
+            //try
+            //{
+            //    if (ModelState.IsValid)
+            //    {
+            //        using (DBEntities db = new DBEntities())
+            //        {
+            //            var oContrato = new Contrato();
+            //            foreach (var item in db.Contrato)
+            //            {
+            //                oContrato.ContratoId = item.ContratoId + 1;
+            //            }
+            //            oContrato.EmpleadoId = model.EmpleadoId;
+            //            oContrato.FechaCreacion = DateTime.Now;
+            //            oContrato.FechaInicio = model.FechaInicio;
+            //            oContrato.FechaTermino = model.FechaTermino;
+            //            oContrato.NumeroHoras = model.NumeroHoras;
+            //            oContrato.ValorHoraId = int.Parse(Request["cboTipoHora"]);
+            //            oContrato.BonificacionId = int.Parse(Request["cboBonificacion"]);
+            //            oContrato.AfpId = int.Parse(Request["cboAfp"]);
+            //            oContrato.SaludId = int.Parse(Request["cboSalud"]);
+            //            oContrato.SueldoBruto = model.SueldoBruto;
+            //            oContrato.SueldoLiquido = model.SueldoLiquido;
+
+            //            db.Contrato.Add(oContrato);
+            //            db.SaveChanges();
+
+            //            return Redirect("/");
+            //        }   
+            //    }
+            //    return View(model);       
+            //}
+            //catch(Exception ex)
+            //{
+            //    throw new Exception(ex.Message);
+            //}
         }
 
         public ActionResult Editar(int ID)
