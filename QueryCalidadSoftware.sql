@@ -34,7 +34,6 @@ CREATE TABLE Contrato (
 	SueldoBruto float NOT NULL
 );
 
-
 ALTER TABLE Contrato
 	ADD CONSTRAINT Contrato_pk PRIMARY KEY (ContratoId);
 
@@ -52,7 +51,6 @@ CREATE TABLE Salud(
 	Nombre nvarchar(25) NOT NULL,
 	Valor float NOT NULL
 );
-USE DefaultConnection;
 
 ALTER TABLE Salud 
 	ADD CONSTRAINT Salud_pk PRIMARY KEY (SaludId);
@@ -115,7 +113,5 @@ INSERT INTO Afp VALUES (3, 'Provida', 0.10);
 INSERT INTO Afp VALUES (4, 'Habitat', 0.10);
 INSERT INTO Afp VALUES (5, 'Capital', 0.10);
 
-INSERT INTO Salud VALUES (1, 'Isapre', 0.7);
-INSERT INTO Salud VALUES (2, 'Fonasa', 0.7);
-
-SELECT * FROM AFP;
+INSERT INTO Salud VALUES (0, 'Isapre', 0.7);
+INSERT INTO Salud VALUES (1, 'Fonasa', 0.7);
