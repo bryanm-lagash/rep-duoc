@@ -107,11 +107,11 @@ INSERT INTO dbo.ValorHora VALUES (2,'Profesional', 17000);
 INSERT INTO dbo.Bonificacion VALUES (0, 'Bonificacion principiantes', 'Bonificacion personal recien ingresado', 50000)
 INSERT INTO dbo.Bonificacion VALUES (1, 'Bonificacion Mensual', null, 10000);
 
-INSERT INTO Afp VALUES (1, 'Modelo', 0.10);
-INSERT INTO Afp VALUES (2, 'Cuprum', 0.10);
-INSERT INTO Afp VALUES (3, 'Provida', 0.10);
-INSERT INTO Afp VALUES (4, 'Habitat', 0.10);
-INSERT INTO Afp VALUES (5, 'Capital', 0.10);
+INSERT INTO Afp VALUES (1, 'Modelo', 0.1);
+INSERT INTO Afp VALUES (2, 'Cuprum', 0.1);
+INSERT INTO Afp VALUES (3, 'Provida', 0.1);
+INSERT INTO Afp VALUES (4, 'Habitat', 0.1);
+INSERT INTO Afp VALUES (5, 'Capital', 0.1);
 
-INSERT INTO Salud VALUES (0, 'Isapre', 0.7);
-INSERT INTO Salud VALUES (1, 'Fonasa', 0.7);
+INSERT INTO Salud VALUES (0, 'Isapre', 0.07);
+INSERT INTO Salud VALUES (1, 'Fonasa', 0.07);
