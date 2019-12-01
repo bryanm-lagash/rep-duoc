@@ -349,13 +349,16 @@ namespace App.Controllers
             double sueldoBruto = sueldoBase + totalHaberes;
             double sueldoLiquido = (sueldoBruto * totalDescuentos) / 100;
 
-            return View();7
+            return View();
         }
 
         [HttpGet]
         public ActionResult Prueba(ContratoViewModel model)
         {
-            return View();
+
+            ViewBag.RutEmpleado = "20512884-0";
+
+            return Redirect("/Contrato/Crear");
         }
 
     }//Clase
