@@ -20,7 +20,7 @@ namespace ClasesBLL
 
             if (buscado == null)
             {
-                Persona p = new Persona();
+                var p = new Persona();
                 p.Rut = Rut;
                 p.Nombre = Nombre;
                 p.Apellidos = Apellidos;
@@ -36,13 +36,6 @@ namespace ClasesBLL
                 throw new Exception("Persona ya existe");
             }
         }
-
-
-
-
-
-
-
 
         private string rut;
         public string Rut {
