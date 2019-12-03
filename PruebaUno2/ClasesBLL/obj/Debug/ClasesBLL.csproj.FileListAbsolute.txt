@@ -1,0 +1,15 @@
+C:\Users\anton\Desktop\PruebaUno\ClasesBLL\bin\Debug\ClasesBLL.dll.config
+C:\Users\anton\Desktop\PruebaUno\ClasesBLL\bin\Debug\ClasesBLL.dll
+C:\Users\anton\Desktop\PruebaUno\ClasesBLL\bin\Debug\ClasesBLL.pdb
+C:\Users\anton\Desktop\PruebaUno\ClasesBLL\bin\Debug\ClasesDAL.dll
+C:\Users\anton\Desktop\PruebaUno\ClasesBLL\bin\Debug\EntityFramework.dll
+C:\Users\anton\Desktop\PruebaUno\ClasesBLL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\anton\Desktop\PruebaUno\ClasesBLL\bin\Debug\ClasesDAL.pdb
+C:\Users\anton\Desktop\PruebaUno\ClasesBLL\bin\Debug\ClasesDAL.dll.config
+C:\Users\anton\Desktop\PruebaUno\ClasesBLL\bin\Debug\EntityFramework.xml
+C:\Users\anton\Desktop\PruebaUno\ClasesBLL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\anton\Desktop\PruebaUno\ClasesBLL\obj\Debug\ClasesBLL.csprojAssemblyReference.cache
+C:\Users\anton\Desktop\PruebaUno\ClasesBLL\obj\Debug\ClasesBLL.csproj.CoreCompileInputs.cache
+C:\Users\anton\Desktop\PruebaUno\ClasesBLL\obj\Debug\ClasesBLL.csproj.CopyComplete
+C:\Users\anton\Desktop\PruebaUno\ClasesBLL\obj\Debug\ClasesBLL.dll
+C:\Users\anton\Desktop\PruebaUno\ClasesBLL\obj\Debug\ClasesBLL.pdb
