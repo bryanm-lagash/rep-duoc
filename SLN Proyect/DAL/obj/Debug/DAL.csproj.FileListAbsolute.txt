@@ -8,3 +8,4 @@ C:\Users\Usuario\Desktop\rep-duoc\SLN Proyect\DAL\bin\Debug\EntityFramework.SqlS
 C:\Users\Usuario\Desktop\rep-duoc\SLN Proyect\DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\Usuario\Desktop\rep-duoc\SLN Proyect\DAL\obj\Debug\DAL.dll
 C:\Users\Usuario\Desktop\rep-duoc\SLN Proyect\DAL\obj\Debug\DAL.pdb
+C:\Users\Usuario\Desktop\rep-duoc\SLN Proyect\DAL\obj\Debug\DAL.csprojAssemblyReference.cache

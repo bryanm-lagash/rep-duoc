@@ -162,6 +162,12 @@ namespace EmpleadosCRUD
 
         #endregion Empleado
 
+        #region Contrato
+
+
+
+        #endregion Contrato
+
         #region MetodosSecundarios
         public void CargarDatos()
         {
@@ -183,13 +189,11 @@ namespace EmpleadosCRUD
         }
         #endregion MetodosSecundarios
 
-        private void txtFiltrarPorRut_TextInput(object sender, TextCompositionEventArgs e)
-        {
-            //GrillaEmpleados.
-        }
+        
 
-        private void txtFiltrarPorRut_TextChanged(object sender, TextChangedEventArgs e)
+        private void txtFiltrarPorRut_TargetUpdated(object sender, DataTransferEventArgs e)
         {
+
             GrillaEmpleados.ItemsSource = new EmpleadoBLL().ListaEmpleados().Where(a => a.Rut.Contains(txtRutEmpleado.Text)).ToList();
         }
     }

@@ -219,7 +219,25 @@ namespace BLL
                 }
             }
         }
-        public string Profesion { get; set; }
+        private string profesion;
+        public string Profesion
+        {
+            get
+            {
+                return profesion;
+            }
+            set
+            {
+                if (!string.IsNullOrEmpty(value))
+                {
+
+                }
+                else
+                {
+                    throw new Exception("Profesion no puede estar vacio");
+                }
+            }
+        }
         private string email;
         public string Email
         {
@@ -240,6 +258,24 @@ namespace BLL
             }
         }
         public string ImagePath { get; set; }
-        public int CargasFamiliares { get; set; }
+        private int cargasFamiliares;
+        public int CargasFamiliares
+        {
+            get
+            {
+                return cargasFamiliares;
+            }
+            set
+            {
+                if (!string.IsNullOrEmpty(value.ToString()))
+                {
+                    cargasFamiliares = value;
+                }
+                else
+                {
+                    throw new Exception("Cargas familiares no puede estar vacio");
+                }
+            }
+        }
     }
 }

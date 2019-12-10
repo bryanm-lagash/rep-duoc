@@ -4,18 +4,18 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="60145ada1224455880fce773f0a68a75" Name="Diagram1">
-        <EntityTypeShape EntityType="DefaultConnectionModel.C__MigrationHistory" Width="1.5" PointX="2.75" PointY="6.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="DefaultConnectionModel.Afp" Width="1.5" PointX="0.75" PointY="2.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="DefaultConnectionModel.AspNetRoles" Width="1.5" PointX="5.75" PointY="2.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="DefaultConnectionModel.AspNetUserClaims" Width="1.5" PointX="10.25" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="DefaultConnectionModel.AspNetUserLogins" Width="1.5" PointX="10.25" PointY="3.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="DefaultConnectionModel.AspNetUsers" Width="1.5" PointX="8" PointY="1.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="DefaultConnectionModel.Bonificacion" Width="1.5" PointX="0.75" PointY="6" IsExpanded="true" />
+      <Diagram DiagramId="60145ada1224455880fce773f0a68a75" Name="Diagram1" ZoomLevel="55">
+        <EntityTypeShape EntityType="DefaultConnectionModel.C__MigrationHistory" Width="1.5" PointX="14.375" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DefaultConnectionModel.Afp" Width="1.5" PointX="0.75" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DefaultConnectionModel.AspNetRoles" Width="1.5" PointX="9.5" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DefaultConnectionModel.AspNetUserClaims" Width="1.5" PointX="14.5" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DefaultConnectionModel.AspNetUserLogins" Width="1.5" PointX="14.5" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DefaultConnectionModel.AspNetUsers" Width="1.5" PointX="11.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DefaultConnectionModel.Bonificacion" Width="1.5" PointX="0.75" PointY="0.625" IsExpanded="true" />
         <EntityTypeShape EntityType="DefaultConnectionModel.Contrato" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="DefaultConnectionModel.Empleado" Width="1.5" PointX="0.75" PointY="8.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="DefaultConnectionModel.Salud" Width="1.5" PointX="0.75" PointY="13" IsExpanded="true" />
-        <EntityTypeShape EntityType="DefaultConnectionModel.ValorHora" Width="1.5" PointX="0.75" PointY="15.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DefaultConnectionModel.Empleado" Width="1.5" PointX="3" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DefaultConnectionModel.Salud" Width="1.5" PointX="6.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="DefaultConnectionModel.ValorHora" Width="1.5" PointX="6.25" PointY="3.625" IsExpanded="true" />
         <AssociationConnector Association="DefaultConnectionModel.Afp_fk" ManuallyRouted="false" />
         <AssociationConnector Association="DefaultConnectionModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
         <AssociationConnector Association="DefaultConnectionModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
