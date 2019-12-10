@@ -14,8 +14,8 @@ namespace DAL
     
     public partial class Contrato
     {
-        public int ContratoId { get; set; }
-        public int EmpleadoId { get; set; }
+        public long ContratoId { get; set; }
+        public long EmpleadoId { get; set; }
         public System.DateTime FechaCreacion { get; set; }
         public System.DateTime FechaInicio { get; set; }
         public System.DateTime FechaTermino { get; set; }
@@ -23,7 +23,7 @@ namespace DAL
         public int ValorHoraId { get; set; }
         public int AfpId { get; set; }
         public int SaludId { get; set; }
-        public int BonificacionId { get; set; }
+        public int BonificacionID { get; set; }
         public double SueldoBase { get; set; }
         public double SueldoLiquido { get; set; }
         public double SueldoBruto { get; set; }

@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="f286809c7b0f496bad1b7ea7a58491c9" Name="Diagram1">
+      <Diagram DiagramId="60145ada1224455880fce773f0a68a75" Name="Diagram1">
         <EntityTypeShape EntityType="DefaultConnectionModel.C__MigrationHistory" Width="1.5" PointX="2.75" PointY="6.75" IsExpanded="true" />
         <EntityTypeShape EntityType="DefaultConnectionModel.Afp" Width="1.5" PointX="0.75" PointY="2.375" IsExpanded="true" />
         <EntityTypeShape EntityType="DefaultConnectionModel.AspNetRoles" Width="1.5" PointX="5.75" PointY="2.5" IsExpanded="true" />
@@ -16,13 +16,13 @@
         <EntityTypeShape EntityType="DefaultConnectionModel.Empleado" Width="1.5" PointX="0.75" PointY="8.75" IsExpanded="true" />
         <EntityTypeShape EntityType="DefaultConnectionModel.Salud" Width="1.5" PointX="0.75" PointY="13" IsExpanded="true" />
         <EntityTypeShape EntityType="DefaultConnectionModel.ValorHora" Width="1.5" PointX="0.75" PointY="15.5" IsExpanded="true" />
-        <AssociationConnector Association="DefaultConnectionModel.Contrato_Afp_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="DefaultConnectionModel.Afp_fk" ManuallyRouted="false" />
         <AssociationConnector Association="DefaultConnectionModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
         <AssociationConnector Association="DefaultConnectionModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
-        <AssociationConnector Association="DefaultConnectionModel.Contrato_Bonificacion_fk" ManuallyRouted="false" />
-        <AssociationConnector Association="DefaultConnectionModel.Contrato_Empleado_fk" ManuallyRouted="false" />
-        <AssociationConnector Association="DefaultConnectionModel.Contrato_Salud_fk" ManuallyRouted="false" />
-        <AssociationConnector Association="DefaultConnectionModel.Contrato_ValorHora_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="DefaultConnectionModel.Bonificacion_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="DefaultConnectionModel.Empleado_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="DefaultConnectionModel.Salud_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="DefaultConnectionModel.ValorHora_fk" ManuallyRouted="false" />
         <AssociationConnector Association="DefaultConnectionModel.AspNetUserRoles" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>

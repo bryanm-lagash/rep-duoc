@@ -51,7 +51,7 @@
                         <ColumnDefinition Width="332*"/>
                     </Grid.ColumnDefinitions>
                     <DataGrid x:Name="GrillaEmpleados" IsReadOnly="True" Grid.ColumnSpan="2" Height="329" VerticalAlignment="Bottom"/>
-                    <TextBox x:Name="txtFiltrarPorRut" HorizontalAlignment="Left" Height="23" Margin="61,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextInput="txtFiltrarPorRut_TextInput"/>
+                    <TextBox x:Name="txtFiltrarPorRut" HorizontalAlignment="Left" Height="23" Margin="61,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextInput="txtFiltrarPorRut_TextInput" TextChanged="txtFiltrarPorRut_TextChanged"/>
                     <TextBox x:Name="txtFiltrarPorNombre" HorizontalAlignment="Left" Height="23" Margin="279,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
                     <Label Content="Rut" HorizontalAlignment="Left" Margin="10,39,0,0" VerticalAlignment="Top"/>
                     <Label Content="Nombre" HorizontalAlignment="Left" Margin="209,39,0,0" VerticalAlignment="Top"/>

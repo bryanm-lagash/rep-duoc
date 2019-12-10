@@ -32,7 +32,7 @@ namespace EmpleadosCRUD
             try
             {
                 EmpleadoBLL em = new EmpleadoBLL();
-                if (em.BuscarEmpleado(txtRutEmpleado.Text)) 
+                if (!em.BuscarEmpleado(txtRutEmpleado.Text)) 
                 {
                     em.Rut = txtRutEmpleado.Text;
                     em.Nombres = txtNombres.Text;
@@ -185,7 +185,12 @@ namespace EmpleadosCRUD
 
         private void txtFiltrarPorRut_TextInput(object sender, TextCompositionEventArgs e)
         {
+            //GrillaEmpleados.
+        }
 
+        private void txtFiltrarPorRut_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            GrillaEmpleados.ItemsSource = new EmpleadoBLL().ListaEmpleados().Where(a => a.Rut.Contains(txtRutEmpleado.Text)).ToList();
         }
     }
 }
