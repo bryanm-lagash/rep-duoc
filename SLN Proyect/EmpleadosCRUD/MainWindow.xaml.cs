@@ -32,8 +32,8 @@ namespace EmpleadosCRUD
             try
             {
                 EmpleadoBLL em = new EmpleadoBLL();
-                if (!em.BuscarEmpleado(txtRutEmpleado.Text)) 
-                {
+                if (!em.BuscarEmpleado(txtRutEmpleado.Text))
+                { 
                     em.Rut = txtRutEmpleado.Text;
                     em.Nombres = txtNombres.Text;
                     em.Apellidos = txtApellidos.Text;
@@ -43,7 +43,7 @@ namespace EmpleadosCRUD
                     em.Telefono = txtTelefono.Text;
                     em.Profesion = txtProfesion.Text;
                     em.Email = txtEmail.Text;
-                    em.ImagePath = null;
+                    em.ImagePath = "imagen";
                     em.CargasFamiliares = int.Parse(txtCargasFamiliares.Text);
 
                     var result = MessageBox.Show("¿Está seguro que desea agregar?", "Advertencia", MessageBoxButton.YesNo, MessageBoxImage.Question);

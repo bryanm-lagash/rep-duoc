@@ -48,3 +48,8 @@ ALTER TABLE Contrato
 ALTER TABLE Contrato
 	ADD CONSTRAINT Bonificacion_fk FOREIGN KEY (BonificacionID)
 		REFERENCES Bonificacion (BonificacionId);
+
+USE DefaultConnection;
+INSERT INTO Empleado VALUES('20512884-0', 'Bryan','Montes', 'Masculino', '2000/07/30', 'Direccion', '123123123', 'Ingeniero informatico', 'asdasdasdsa', 'asd', 2);
+
+SELECT * FROM Empleado;
