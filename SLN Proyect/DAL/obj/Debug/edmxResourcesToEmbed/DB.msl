@@ -87,7 +87,7 @@
           <ScalarProperty Name="ValorHoraId" ColumnName="ValorHoraId" />
           <ScalarProperty Name="AfpId" ColumnName="AfpId" />
           <ScalarProperty Name="SaludId" ColumnName="SaludId" />
-          <ScalarProperty Name="BonificacionId" ColumnName="BonificacionId" />
+          <ScalarProperty Name="BonificacionID" ColumnName="BonificacionID" />
           <ScalarProperty Name="SueldoBase" ColumnName="SueldoBase" />
           <ScalarProperty Name="SueldoLiquido" ColumnName="SueldoLiquido" />
           <ScalarProperty Name="SueldoBruto" ColumnName="SueldoBruto" />

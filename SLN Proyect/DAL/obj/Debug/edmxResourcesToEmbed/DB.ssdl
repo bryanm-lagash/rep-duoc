@@ -82,8 +82,8 @@
     <Key>
       <PropertyRef Name="ContratoId" />
     </Key>
-    <Property Name="ContratoId" Type="int" Nullable="false" />
-    <Property Name="EmpleadoId" Type="int" Nullable="false" />
+    <Property Name="ContratoId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmpleadoId" Type="bigint" Nullable="false" />
     <Property Name="FechaCreacion" Type="datetime" Nullable="false" />
     <Property Name="FechaInicio" Type="datetime" Nullable="false" />
     <Property Name="FechaTermino" Type="datetime" Nullable="false" />
@@ -91,7 +91,7 @@
     <Property Name="ValorHoraId" Type="int" Nullable="false" />
     <Property Name="AfpId" Type="int" Nullable="false" />
     <Property Name="SaludId" Type="int" Nullable="false" />
-    <Property Name="BonificacionId" Type="int" Nullable="false" />
+    <Property Name="BonificacionID" Type="int" Nullable="false" />
     <Property Name="SueldoBase" Type="float" Nullable="false" />
     <Property Name="SueldoLiquido" Type="float" Nullable="false" />
     <Property Name="SueldoBruto" Type="float" Nullable="false" />
@@ -100,18 +100,18 @@
     <Key>
       <PropertyRef Name="EmpleadoId" />
     </Key>
-    <Property Name="EmpleadoId" Type="int" Nullable="false" />
-    <Property Name="Rut" Type="nvarchar" MaxLength="50" Nullable="false" />
-    <Property Name="Nombres" Type="nvarchar" MaxLength="50" Nullable="false" />
-    <Property Name="Apellidos" Type="nvarchar" MaxLength="50" Nullable="false" />
-    <Property Name="Genero" Type="nvarchar" MaxLength="10" Nullable="false" />
-    <Property Name="FechaNacimiento" Type="datetime" Nullable="false" />
-    <Property Name="Direccion" Type="nvarchar" MaxLength="50" Nullable="false" />
-    <Property Name="Telefono" Type="int" Nullable="false" />
-    <Property Name="Profesion" Type="nvarchar" MaxLength="50" Nullable="false" />
-    <Property Name="Email" Type="nvarchar" MaxLength="80" Nullable="false" />
+    <Property Name="EmpleadoId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Rut" Type="nvarchar" MaxLength="11" Nullable="false" />
+    <Property Name="Nombres" Type="nvarchar" MaxLength="25" Nullable="false" />
+    <Property Name="Apellidos" Type="nvarchar" MaxLength="25" Nullable="false" />
+    <Property Name="Genero" Type="nvarchar" MaxLength="15" Nullable="false" />
+    <Property Name="FechaNacimiento" Type="date" Nullable="false" />
+    <Property Name="Direccion" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Telefono" Type="nvarchar" MaxLength="11" Nullable="false" />
+    <Property Name="Profesion" Type="nvarchar" MaxLength="25" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="25" Nullable="false" />
     <Property Name="ImagePath" Type="nvarchar" MaxLength="500" Nullable="false" />
-    <Property Name="CargasFamiliares" Type="int" />
+    <Property Name="CargasFamiliares" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="Salud">
     <Key>
@@ -129,7 +129,7 @@
     <Property Name="Tipo" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="Valor" Type="float" Nullable="false" />
   </EntityType>
-  <Association Name="Contrato_Afp_fk">
+  <Association Name="Afp_fk">
     <End Role="Afp" Type="Self.Afp" Multiplicity="1" />
     <End Role="Contrato" Type="Self.Contrato" Multiplicity="*" />
     <ReferentialConstraint>
@@ -141,7 +141,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="Contrato_Bonificacion_fk">
+  <Association Name="Bonificacion_fk">
     <End Role="Bonificacion" Type="Self.Bonificacion" Multiplicity="1" />
     <End Role="Contrato" Type="Self.Contrato" Multiplicity="*" />
     <ReferentialConstraint>
@@ -149,11 +149,11 @@
         <PropertyRef Name="BonificacionId" />
       </Principal>
       <Dependent Role="Contrato">
-        <PropertyRef Name="BonificacionId" />
+        <PropertyRef Name="BonificacionID" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="Contrato_Empleado_fk">
+  <Association Name="Empleado_fk">
     <End Role="Empleado" Type="Self.Empleado" Multiplicity="1" />
     <End Role="Contrato" Type="Self.Contrato" Multiplicity="*" />
     <ReferentialConstraint>
@@ -162,30 +162,6 @@
       </Principal>
       <Dependent Role="Contrato">
         <PropertyRef Name="EmpleadoId" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="Contrato_Salud_fk">
-    <End Role="Salud" Type="Self.Salud" Multiplicity="1" />
-    <End Role="Contrato" Type="Self.Contrato" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Salud">
-        <PropertyRef Name="SaludId" />
-      </Principal>
-      <Dependent Role="Contrato">
-        <PropertyRef Name="SaludId" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="Contrato_ValorHora_fk">
-    <End Role="ValorHora" Type="Self.ValorHora" Multiplicity="1" />
-    <End Role="Contrato" Type="Self.Contrato" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="ValorHora">
-        <PropertyRef Name="ValorHoraId" />
-      </Principal>
-      <Dependent Role="Contrato">
-        <PropertyRef Name="ValorHoraId" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -245,6 +221,30 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="Salud_fk">
+    <End Role="Salud" Type="Self.Salud" Multiplicity="1" />
+    <End Role="Contrato" Type="Self.Contrato" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Salud">
+        <PropertyRef Name="SaludId" />
+      </Principal>
+      <Dependent Role="Contrato">
+        <PropertyRef Name="SaludId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ValorHora_fk">
+    <End Role="ValorHora" Type="Self.ValorHora" Multiplicity="1" />
+    <End Role="Contrato" Type="Self.Contrato" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ValorHora">
+        <PropertyRef Name="ValorHoraId" />
+      </Principal>
+      <Dependent Role="Contrato">
+        <PropertyRef Name="ValorHoraId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <EntityContainer Name="DefaultConnectionModelStoreContainer">
     <EntitySet Name="__MigrationHistory" EntityType="Self.__MigrationHistory" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Afp" EntityType="Self.Afp" Schema="dbo" store:Type="Tables" />
@@ -258,24 +258,16 @@
     <EntitySet Name="Empleado" EntityType="Self.Empleado" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Salud" EntityType="Self.Salud" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="ValorHora" EntityType="Self.ValorHora" Schema="dbo" store:Type="Tables" />
-    <AssociationSet Name="Contrato_Afp_fk" Association="Self.Contrato_Afp_fk">
+    <AssociationSet Name="Afp_fk" Association="Self.Afp_fk">
       <End Role="Afp" EntitySet="Afp" />
       <End Role="Contrato" EntitySet="Contrato" />
     </AssociationSet>
-    <AssociationSet Name="Contrato_Bonificacion_fk" Association="Self.Contrato_Bonificacion_fk">
+    <AssociationSet Name="Bonificacion_fk" Association="Self.Bonificacion_fk">
       <End Role="Bonificacion" EntitySet="Bonificacion" />
       <End Role="Contrato" EntitySet="Contrato" />
     </AssociationSet>
-    <AssociationSet Name="Contrato_Empleado_fk" Association="Self.Contrato_Empleado_fk">
+    <AssociationSet Name="Empleado_fk" Association="Self.Empleado_fk">
       <End Role="Empleado" EntitySet="Empleado" />
-      <End Role="Contrato" EntitySet="Contrato" />
-    </AssociationSet>
-    <AssociationSet Name="Contrato_Salud_fk" Association="Self.Contrato_Salud_fk">
-      <End Role="Salud" EntitySet="Salud" />
-      <End Role="Contrato" EntitySet="Contrato" />
-    </AssociationSet>
-    <AssociationSet Name="Contrato_ValorHora_fk" Association="Self.Contrato_ValorHora_fk">
-      <End Role="ValorHora" EntitySet="ValorHora" />
       <End Role="Contrato" EntitySet="Contrato" />
     </AssociationSet>
     <AssociationSet Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
@@ -293,6 +285,14 @@
     <AssociationSet Name="FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId">
       <End Role="AspNetUsers" EntitySet="AspNetUsers" />
       <End Role="AspNetUserRoles" EntitySet="AspNetUserRoles" />
+    </AssociationSet>
+    <AssociationSet Name="Salud_fk" Association="Self.Salud_fk">
+      <End Role="Salud" EntitySet="Salud" />
+      <End Role="Contrato" EntitySet="Contrato" />
+    </AssociationSet>
+    <AssociationSet Name="ValorHora_fk" Association="Self.ValorHora_fk">
+      <End Role="ValorHora" EntitySet="ValorHora" />
+      <End Role="Contrato" EntitySet="Contrato" />
     </AssociationSet>
   </EntityContainer>
 </Schema>

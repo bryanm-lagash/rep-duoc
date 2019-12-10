@@ -17,7 +17,7 @@
     <Property Name="AfpId" Type="Int32" Nullable="false" />
     <Property Name="Nombre" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="Valor" Type="Double" Nullable="false" />
-    <NavigationProperty Name="Contrato" Relationship="Self.Contrato_Afp_fk" FromRole="Afp" ToRole="Contrato" />
+    <NavigationProperty Name="Contrato" Relationship="Self.Afp_fk" FromRole="Afp" ToRole="Contrato" />
   </EntityType>
   <EntityType Name="AspNetRoles">
     <Key>
@@ -76,14 +76,14 @@
     <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="Descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="Valor" Type="Double" Nullable="false" />
-    <NavigationProperty Name="Contrato" Relationship="Self.Contrato_Bonificacion_fk" FromRole="Bonificacion" ToRole="Contrato" />
+    <NavigationProperty Name="Contrato" Relationship="Self.Bonificacion_fk" FromRole="Bonificacion" ToRole="Contrato" />
   </EntityType>
   <EntityType Name="Contrato">
     <Key>
       <PropertyRef Name="ContratoId" />
     </Key>
-    <Property Name="ContratoId" Type="Int32" Nullable="false" />
-    <Property Name="EmpleadoId" Type="Int32" Nullable="false" />
+    <Property Name="ContratoId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmpleadoId" Type="Int64" Nullable="false" />
     <Property Name="FechaCreacion" Type="DateTime" Nullable="false" Precision="3" />
     <Property Name="FechaInicio" Type="DateTime" Nullable="false" Precision="3" />
     <Property Name="FechaTermino" Type="DateTime" Nullable="false" Precision="3" />
@@ -91,33 +91,33 @@
     <Property Name="ValorHoraId" Type="Int32" Nullable="false" />
     <Property Name="AfpId" Type="Int32" Nullable="false" />
     <Property Name="SaludId" Type="Int32" Nullable="false" />
-    <Property Name="BonificacionId" Type="Int32" Nullable="false" />
+    <Property Name="BonificacionID" Type="Int32" Nullable="false" />
     <Property Name="SueldoBase" Type="Double" Nullable="false" />
     <Property Name="SueldoLiquido" Type="Double" Nullable="false" />
     <Property Name="SueldoBruto" Type="Double" Nullable="false" />
-    <NavigationProperty Name="Afp" Relationship="Self.Contrato_Afp_fk" FromRole="Contrato" ToRole="Afp" />
-    <NavigationProperty Name="Bonificacion" Relationship="Self.Contrato_Bonificacion_fk" FromRole="Contrato" ToRole="Bonificacion" />
-    <NavigationProperty Name="Empleado" Relationship="Self.Contrato_Empleado_fk" FromRole="Contrato" ToRole="Empleado" />
-    <NavigationProperty Name="Salud" Relationship="Self.Contrato_Salud_fk" FromRole="Contrato" ToRole="Salud" />
-    <NavigationProperty Name="ValorHora" Relationship="Self.Contrato_ValorHora_fk" FromRole="Contrato" ToRole="ValorHora" />
+    <NavigationProperty Name="Afp" Relationship="Self.Afp_fk" FromRole="Contrato" ToRole="Afp" />
+    <NavigationProperty Name="Bonificacion" Relationship="Self.Bonificacion_fk" FromRole="Contrato" ToRole="Bonificacion" />
+    <NavigationProperty Name="Empleado" Relationship="Self.Empleado_fk" FromRole="Contrato" ToRole="Empleado" />
+    <NavigationProperty Name="Salud" Relationship="Self.Salud_fk" FromRole="Contrato" ToRole="Salud" />
+    <NavigationProperty Name="ValorHora" Relationship="Self.ValorHora_fk" FromRole="Contrato" ToRole="ValorHora" />
   </EntityType>
   <EntityType Name="Empleado">
     <Key>
       <PropertyRef Name="EmpleadoId" />
     </Key>
-    <Property Name="EmpleadoId" Type="Int32" Nullable="false" />
-    <Property Name="Rut" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="Nombres" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="Apellidos" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="Genero" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="FechaNacimiento" Type="DateTime" Nullable="false" Precision="3" />
-    <Property Name="Direccion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="Telefono" Type="Int32" Nullable="false" />
-    <Property Name="Profesion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="Email" Type="String" MaxLength="80" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="EmpleadoId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Rut" Type="String" MaxLength="11" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Nombres" Type="String" MaxLength="25" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Apellidos" Type="String" MaxLength="25" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Genero" Type="String" MaxLength="15" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="FechaNacimiento" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Direccion" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Telefono" Type="String" MaxLength="11" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Profesion" Type="String" MaxLength="25" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="25" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="ImagePath" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="CargasFamiliares" Type="Int32" />
-    <NavigationProperty Name="Contrato" Relationship="Self.Contrato_Empleado_fk" FromRole="Empleado" ToRole="Contrato" />
+    <Property Name="CargasFamiliares" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Contrato" Relationship="Self.Empleado_fk" FromRole="Empleado" ToRole="Contrato" />
   </EntityType>
   <EntityType Name="Salud">
     <Key>
@@ -126,7 +126,7 @@
     <Property Name="SaludId" Type="Int32" Nullable="false" />
     <Property Name="Nombre" Type="String" MaxLength="25" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="Valor" Type="Double" Nullable="false" />
-    <NavigationProperty Name="Contrato" Relationship="Self.Contrato_Salud_fk" FromRole="Salud" ToRole="Contrato" />
+    <NavigationProperty Name="Contrato" Relationship="Self.Salud_fk" FromRole="Salud" ToRole="Contrato" />
   </EntityType>
   <EntityType Name="ValorHora">
     <Key>
@@ -135,9 +135,9 @@
     <Property Name="ValorHoraId" Type="Int32" Nullable="false" />
     <Property Name="Tipo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="Valor" Type="Double" Nullable="false" />
-    <NavigationProperty Name="Contrato" Relationship="Self.Contrato_ValorHora_fk" FromRole="ValorHora" ToRole="Contrato" />
+    <NavigationProperty Name="Contrato" Relationship="Self.ValorHora_fk" FromRole="ValorHora" ToRole="Contrato" />
   </EntityType>
-  <Association Name="Contrato_Afp_fk">
+  <Association Name="Afp_fk">
     <End Role="Afp" Type="Self.Afp" Multiplicity="1" />
     <End Role="Contrato" Type="Self.Contrato" Multiplicity="*" />
     <ReferentialConstraint>
@@ -177,7 +177,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="Contrato_Bonificacion_fk">
+  <Association Name="Bonificacion_fk">
     <End Role="Bonificacion" Type="Self.Bonificacion" Multiplicity="1" />
     <End Role="Contrato" Type="Self.Contrato" Multiplicity="*" />
     <ReferentialConstraint>
@@ -185,11 +185,11 @@
         <PropertyRef Name="BonificacionId" />
       </Principal>
       <Dependent Role="Contrato">
-        <PropertyRef Name="BonificacionId" />
+        <PropertyRef Name="BonificacionID" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="Contrato_Empleado_fk">
+  <Association Name="Empleado_fk">
     <End Role="Empleado" Type="Self.Empleado" Multiplicity="1" />
     <End Role="Contrato" Type="Self.Contrato" Multiplicity="*" />
     <ReferentialConstraint>
@@ -201,7 +201,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="Contrato_Salud_fk">
+  <Association Name="Salud_fk">
     <End Role="Salud" Type="Self.Salud" Multiplicity="1" />
     <End Role="Contrato" Type="Self.Contrato" Multiplicity="*" />
     <ReferentialConstraint>
@@ -213,7 +213,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="Contrato_ValorHora_fk">
+  <Association Name="ValorHora_fk">
     <End Role="ValorHora" Type="Self.ValorHora" Multiplicity="1" />
     <End Role="Contrato" Type="Self.Contrato" Multiplicity="*" />
     <ReferentialConstraint>
@@ -241,7 +241,7 @@
     <EntitySet Name="Empleado" EntityType="Self.Empleado" />
     <EntitySet Name="Salud" EntityType="Self.Salud" />
     <EntitySet Name="ValorHora" EntityType="Self.ValorHora" />
-    <AssociationSet Name="Contrato_Afp_fk" Association="Self.Contrato_Afp_fk">
+    <AssociationSet Name="Afp_fk" Association="Self.Afp_fk">
       <End Role="Afp" EntitySet="Afp" />
       <End Role="Contrato" EntitySet="Contrato" />
     </AssociationSet>
@@ -253,19 +253,19 @@
       <End Role="AspNetUsers" EntitySet="AspNetUsers" />
       <End Role="AspNetUserLogins" EntitySet="AspNetUserLogins" />
     </AssociationSet>
-    <AssociationSet Name="Contrato_Bonificacion_fk" Association="Self.Contrato_Bonificacion_fk">
+    <AssociationSet Name="Bonificacion_fk" Association="Self.Bonificacion_fk">
       <End Role="Bonificacion" EntitySet="Bonificacion" />
       <End Role="Contrato" EntitySet="Contrato" />
     </AssociationSet>
-    <AssociationSet Name="Contrato_Empleado_fk" Association="Self.Contrato_Empleado_fk">
+    <AssociationSet Name="Empleado_fk" Association="Self.Empleado_fk">
       <End Role="Empleado" EntitySet="Empleado" />
       <End Role="Contrato" EntitySet="Contrato" />
     </AssociationSet>
-    <AssociationSet Name="Contrato_Salud_fk" Association="Self.Contrato_Salud_fk">
+    <AssociationSet Name="Salud_fk" Association="Self.Salud_fk">
       <End Role="Salud" EntitySet="Salud" />
       <End Role="Contrato" EntitySet="Contrato" />
     </AssociationSet>
-    <AssociationSet Name="Contrato_ValorHora_fk" Association="Self.Contrato_ValorHora_fk">
+    <AssociationSet Name="ValorHora_fk" Association="Self.ValorHora_fk">
       <End Role="ValorHora" EntitySet="ValorHora" />
       <End Role="Contrato" EntitySet="Contrato" />
     </AssociationSet>

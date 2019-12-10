@@ -40,7 +40,7 @@ namespace EmpleadosCRUD
                     em.Genero = txtGenero.Text;
                     em.FechaNacimiento = DateTime.Parse(FechaNacimiento.SelectedDate.ToString());
                     em.Direccion = txtDireccion.Text;
-                    em.Telefono = int.Parse(txtTelefono.Text);
+                    em.Telefono = txtTelefono.Text;
                     em.Profesion = txtProfesion.Text;
                     em.Email = txtEmail.Text;
                     em.ImagePath = null;
@@ -106,7 +106,7 @@ namespace EmpleadosCRUD
                     em.Genero = txtGenero.Text;
                     em.FechaNacimiento = DateTime.Parse(FechaNacimiento.SelectedDate.ToString());
                     em.Direccion = txtDireccion.Text;
-                    em.Telefono = int.Parse(txtTelefono.Text);
+                    em.Telefono = txtTelefono.Text;
                     em.Profesion = txtProfesion.Text;
                     em.Email = txtEmail.Text;
                     em.CargasFamiliares = int.Parse(txtCargasFamiliares.Text);

@@ -110,7 +110,7 @@ namespace BLL
             return lista;
         }
 
-        public int EmpleadoId { get; set; }
+        public long EmpleadoId { get; set; }
         private string rut;
         public string Rut
         {
@@ -199,7 +199,26 @@ namespace BLL
                 }
             }
         }
-        public int Telefono { get; set; }
+        private string telefono;
+        public string Telefono
+        {
+            get
+            {
+                return telefono;
+
+            }
+            set
+            {
+                if (!string.IsNullOrEmpty(value))
+                {
+                    telefono = value;
+                }
+                else
+                {
+                    throw new Exception("Telefono no puede estar vacio");
+                }
+            }
+        }
         public string Profesion { get; set; }
         private string email;
         public string Email
@@ -221,6 +240,6 @@ namespace BLL
             }
         }
         public string ImagePath { get; set; }
-        public Nullable<int> CargasFamiliares { get; set; }
+        public int CargasFamiliares { get; set; }
     }
 }
