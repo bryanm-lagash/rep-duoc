@@ -12,3 +12,17 @@ C:\Users\Usuario\Desktop\rep-duoc\SLN Proyect\BLL\obj\Debug\BLL.csprojAssemblyRe
 C:\Users\Usuario\Desktop\rep-duoc\SLN Proyect\BLL\obj\Debug\BLL.csproj.CopyComplete
 C:\Users\Usuario\Desktop\rep-duoc\SLN Proyect\BLL\obj\Debug\BLL.dll
 C:\Users\Usuario\Desktop\rep-duoc\SLN Proyect\BLL\obj\Debug\BLL.pdb
+C:\Users\Usuario\Documents\GitHub\rep-duoc\SLN Proyect\BLL\bin\Debug\BLL.dll.config
+C:\Users\Usuario\Documents\GitHub\rep-duoc\SLN Proyect\BLL\bin\Debug\BLL.dll
+C:\Users\Usuario\Documents\GitHub\rep-duoc\SLN Proyect\BLL\bin\Debug\BLL.pdb
+C:\Users\Usuario\Documents\GitHub\rep-duoc\SLN Proyect\BLL\bin\Debug\DAL.dll
+C:\Users\Usuario\Documents\GitHub\rep-duoc\SLN Proyect\BLL\bin\Debug\EntityFramework.dll
+C:\Users\Usuario\Documents\GitHub\rep-duoc\SLN Proyect\BLL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Usuario\Documents\GitHub\rep-duoc\SLN Proyect\BLL\bin\Debug\DAL.pdb
+C:\Users\Usuario\Documents\GitHub\rep-duoc\SLN Proyect\BLL\bin\Debug\DAL.dll.config
+C:\Users\Usuario\Documents\GitHub\rep-duoc\SLN Proyect\BLL\bin\Debug\EntityFramework.xml
+C:\Users\Usuario\Documents\GitHub\rep-duoc\SLN Proyect\BLL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Usuario\Documents\GitHub\rep-duoc\SLN Proyect\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+C:\Users\Usuario\Documents\GitHub\rep-duoc\SLN Proyect\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\Usuario\Documents\GitHub\rep-duoc\SLN Proyect\BLL\obj\Debug\BLL.dll
+C:\Users\Usuario\Documents\GitHub\rep-duoc\SLN Proyect\BLL\obj\Debug\BLL.pdb

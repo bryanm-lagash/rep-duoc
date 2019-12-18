@@ -193,7 +193,6 @@ namespace EmpleadosCRUD
 
         private void txtFiltrarPorRut_TargetUpdated(object sender, DataTransferEventArgs e)
         {
-
             GrillaEmpleados.ItemsSource = new EmpleadoBLL().ListaEmpleados().Where(a => a.Rut.Contains(txtRutEmpleado.Text)).ToList();
         }
     }
