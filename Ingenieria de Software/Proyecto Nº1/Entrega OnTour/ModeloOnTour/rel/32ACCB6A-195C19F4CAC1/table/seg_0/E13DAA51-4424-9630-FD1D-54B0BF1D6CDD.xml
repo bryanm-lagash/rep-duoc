@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E13DAA51-4424-9630-FD1D-54B0BF1D6CDD" name="Ejecutivo">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-09 06:57:39 UTC</createdTime>
+<generatorID>D381D020-1595-F644-8241-085D9A6341A9</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="RutEjecutivo" id="15846615-9461-30EF-835C-2BC13DC8532D">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-09 06:57:39 UTC</createdTime>
+<generatorID>CD4E824F-ADF2-3868-0BBD-8B34FF7697C6</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre" id="3DE77672-21D8-5C20-F417-3FEE2AC6026B">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-09 06:57:39 UTC</createdTime>
+<generatorID>EF8D7411-13A2-D74E-754D-001B553ABB0E</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Apaterno" id="DDB9FCF3-EE40-1B1C-26E6-9E081803C5D1">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-09 06:57:39 UTC</createdTime>
+<generatorID>69463187-AA2A-2F9A-9DDC-A32A6A2FEB52</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Amaterno" id="AFA02E3E-6773-B303-EB4C-9215D64ED60D">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-09 06:57:39 UTC</createdTime>
+<generatorID>3A3EFE62-95DD-301E-BEF8-BAA9F7FEB45F</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Direccion" id="9EE5B36D-E8D3-6198-ABE3-B862475ADB18">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-09 06:57:39 UTC</createdTime>
+<generatorID>EFC33E6A-C77E-7D13-729A-1330734BD4F1</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7127BF18-8F9D-7AC6-40C1-42C131262892" name="Ejecutivo_PK">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-09 06:57:39 UTC</createdTime>
+<generatorID>3A190202-A83A-DB09-E6F9-55CDB46B1993</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="15846615-9461-30EF-835C-2BC13DC8532D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

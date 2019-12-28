@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B7A52F0E-FA9C-A957-865C-36F64EF67910" name="Usuario">
+<createdBy>jose</createdBy>
+<createdTime>2019-07-08 04:21:11 UTC</createdTime>
+<generatorID>92D4117F-815F-89B2-8C59-F5D513EB2604</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="RutUsu" id="8D79955D-074B-0B39-3685-9B8A310BACA0">
+<createdBy>jose</createdBy>
+<createdTime>2019-07-08 04:21:11 UTC</createdTime>
+<generatorID>74055B32-F298-568B-E01D-E3C18D4A4CD6</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre" id="83910BF1-FB2E-EEB2-EE7C-24987D64E267">
+<createdBy>jose</createdBy>
+<createdTime>2019-07-08 04:21:11 UTC</createdTime>
+<generatorID>AEC90D91-E407-91F5-9B70-8446B0DCB460</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Apaterno" id="C3E56EFC-F9F1-289A-AF57-4A2ED88FF373">
+<createdBy>jose</createdBy>
+<createdTime>2019-07-08 04:21:11 UTC</createdTime>
+<generatorID>098DB3D0-C69A-55C1-7AC6-E82F45461E51</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Amaterno" id="46212898-5B57-8FD4-A500-1FEDEA966A06">
+<createdBy>jose</createdBy>
+<createdTime>2019-07-08 04:21:11 UTC</createdTime>
+<generatorID>E5808EAB-5B84-06F7-77AC-791CCA04FC82</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Direccion" id="D7241771-EA47-8853-07B0-4CA5250993EE">
+<createdBy>jose</createdBy>
+<createdTime>2019-07-08 04:21:11 UTC</createdTime>
+<generatorID>7C50FE38-2E6C-6B6D-B468-EA7A41461AC7</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Email" id="5F52F5DA-AE0D-C1C5-9F45-4EAB14A46F81">
+<createdBy>jose</createdBy>
+<createdTime>2019-07-08 04:21:11 UTC</createdTime>
+<generatorID>BC460B21-F948-6494-54E5-DE6B94784986</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="45A79957-6B68-BD21-50A4-13F763A5110B" name="Usuario_PK">
+<createdBy>jose</createdBy>
+<createdTime>2019-07-08 04:21:11 UTC</createdTime>
+<generatorID>89BCDDAB-28E6-D379-E7ED-062DCDC4E64F</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8D79955D-074B-0B39-3685-9B8A310BACA0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

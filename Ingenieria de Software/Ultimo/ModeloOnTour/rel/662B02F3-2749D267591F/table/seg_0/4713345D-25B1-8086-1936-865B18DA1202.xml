@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4713345D-25B1-8086-1936-865B18DA1202" name="Info_Actividad">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 21:21:11 UTC</createdTime>
+<generatorID>05AE4405-12A8-8B32-3673-F7EEBDACF397</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cant_actividad" id="C9CEB95B-7526-1FB9-7D89-607CA8D3FABF">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 21:21:11 UTC</createdTime>
+<generatorID>FA3BEA01-19A7-C1DB-BE40-9C4950492E90</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Contrato_NumContrato" id="5989158B-56F5-718D-331B-1E47B513D1DC">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 21:21:11 UTC</createdTime>
+<generatorID>B8D70FC6-1182-0534-B8F5-40D79C26C1B2</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="07180774-2F4A-737C-953B-3A6E67CBFD22" referredColumn="F03AC28C-A18A-1C9B-B8ED-05B2DE5A5009"/>
+</associations>
+</Column>
+<Column name="Actividad_IdActividad" id="2C3E9B38-2085-B355-64DE-D38E870F0682">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 21:21:11 UTC</createdTime>
+<generatorID>BB9D1931-7380-70DD-1CE8-6969E57AE057</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2323D3FC-3257-7C87-9EF5-3FBFFCA36CD4" referredColumn="9267CDB6-7A1D-E7AF-4EA0-8B61290CE222"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="821E01EB-3AAE-AB34-C21F-AB01D6A83598" name="Info_Actividad_PK">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 21:21:11 UTC</createdTime>
+<generatorID>50B7C8E9-4890-3FEE-38C3-626F7063D2B2</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5989158B-56F5-718D-331B-1E47B513D1DC"/>
+<colUsage columnID="2C3E9B38-2085-B355-64DE-D38E870F0682"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8468130B-867C-B1C7-FAF2-635453029394" name="Info_Actividad_Actividad_FK">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 21:21:11 UTC</createdTime>
+<generatorID>0D1AD03F-9136-C9EF-0703-B3820D77B082</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2C3E9B38-2085-B355-64DE-D38E870F0682"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="884645A8-A4FD-F5A9-73BA-860ADFC9CF43" name="Info_Actividad_Contrato_FK">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 21:21:11 UTC</createdTime>
+<generatorID>40A868FA-7834-2B87-8A76-1F74EF1F32DD</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5989158B-56F5-718D-331B-1E47B513D1DC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

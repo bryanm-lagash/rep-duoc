@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="ED00C7F3-1B1B-445C-E4F7-1240CF7F5C95" name="Pais">
+<createdBy>jose</createdBy>
+<createdTime>2019-07-07 00:18:23 UTC</createdTime>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="635ED9EF-D8C7-B650-AF71-C3848BCE06E5" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CodPais" id="3C3D167D-0422-4C38-C1BD-EAC149108019">
+<createdBy>jose</createdBy>
+<createdTime>2019-07-07 00:20:31 UTC</createdTime>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="635ED9EF-D8C7-B650-AF71-C3848BCE06E5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre" id="18148B8C-BE4F-8440-A2B6-5972D20375A6">
+<createdBy>jose</createdBy>
+<createdTime>2019-07-07 00:20:31 UTC</createdTime>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="635ED9EF-D8C7-B650-AF71-C3848BCE06E5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7A71CBD9-73E7-359E-ABD1-601E869E2F8C" name="Pais PK">
+<createdBy>jose</createdBy>
+<createdTime>2019-07-07 00:21:10 UTC</createdTime>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="635ED9EF-D8C7-B650-AF71-C3848BCE06E5" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3C3D167D-0422-4C38-C1BD-EAC149108019</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

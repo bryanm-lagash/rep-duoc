@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C5D4B2BA-C464-95C9-2674-16642EE466F6" name="Beneficio">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 20:49:13 UTC</createdTime>
+<generatorID>5A45A3CC-079D-8E8E-9540-B30A37592560</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idBenefico" id="A059DAFC-56C7-4347-2466-157C062658A2">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 20:49:13 UTC</createdTime>
+<generatorID>B4FE2EDE-DEE2-8BAB-3F71-7FCB5CE9BDAF</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre" id="B45B4825-37DB-04EB-8DE9-3591F6BFE80E">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 20:49:13 UTC</createdTime>
+<generatorID>1F8402D1-51E6-3CF8-5CE6-83AB3F0D9464</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PorcDescuento" id="830EB851-CA39-3C72-6AF2-6921646C41FE">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 20:49:13 UTC</createdTime>
+<generatorID>1F0CED36-9946-E984-A53F-494C036C9121</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Contrato_NumContrato" id="54297A0B-36C8-8EFF-66B9-CB32961FC507">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 20:49:13 UTC</createdTime>
+<generatorID>77D5BB4C-B1BA-3788-474B-4C92AD86B40A</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B333144F-4115-6BA6-997E-E1B4E4D9C120" referredColumn="B6A72786-860C-082A-B6C6-294914F2E5C4"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E32D0B69-55D0-E0DE-F10E-2855C3D1E7AD" name="Beneficio_PK">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 20:49:13 UTC</createdTime>
+<generatorID>38CCB72D-F885-3A50-0706-4EC765352CF2</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A059DAFC-56C7-4347-2466-157C062658A2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C82B52F6-5588-C699-45D9-5976435D00C0" name="Beneficio_Contrato_FK">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 20:49:13 UTC</createdTime>
+<generatorID>553BAD3D-0922-2595-560B-7E00A216E0D2</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="54297A0B-36C8-8EFF-66B9-CB32961FC507"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D381D020-1595-F644-8241-085D9A6341A9" name="Ejecutivo">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-06 00:57:32 UTC</createdTime>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="32ACCB6A-201C-36C5-1F7F-195C19F4CAC1" value="true"/>
+<item key="4B805F8D-683E-EAD1-A49B-15918CB62FB7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="RutEjecutivo" id="CD4E824F-ADF2-3868-0BBD-8B34FF7697C6">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-06 00:58:01 UTC</createdTime>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="32ACCB6A-201C-36C5-1F7F-195C19F4CAC1" value="true"/>
+<item key="4B805F8D-683E-EAD1-A49B-15918CB62FB7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre" id="EF8D7411-13A2-D74E-754D-001B553ABB0E">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-06 00:58:17 UTC</createdTime>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="32ACCB6A-201C-36C5-1F7F-195C19F4CAC1" value="true"/>
+<item key="4B805F8D-683E-EAD1-A49B-15918CB62FB7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Apaterno" id="69463187-AA2A-2F9A-9DDC-A32A6A2FEB52">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-06 00:58:32 UTC</createdTime>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="32ACCB6A-201C-36C5-1F7F-195C19F4CAC1" value="true"/>
+<item key="4B805F8D-683E-EAD1-A49B-15918CB62FB7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Amaterno" id="3A3EFE62-95DD-301E-BEF8-BAA9F7FEB45F">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-06 00:58:45 UTC</createdTime>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="32ACCB6A-201C-36C5-1F7F-195C19F4CAC1" value="true"/>
+<item key="4B805F8D-683E-EAD1-A49B-15918CB62FB7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Direccion" id="EFC33E6A-C77E-7D13-729A-1330734BD4F1">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-06 00:59:31 UTC</createdTime>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="32ACCB6A-201C-36C5-1F7F-195C19F4CAC1" value="true"/>
+<item key="4B805F8D-683E-EAD1-A49B-15918CB62FB7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3A190202-A83A-DB09-E6F9-55CDB46B1993" name="Ejecutivo PK">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-06 00:58:16 UTC</createdTime>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="32ACCB6A-201C-36C5-1F7F-195C19F4CAC1" value="true"/>
+<item key="4B805F8D-683E-EAD1-A49B-15918CB62FB7" value="true"/>
+</engineerTo>
+<pk>true</pk>
+</identifier>
+</identifiers>
+</Entity>

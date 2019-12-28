@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="96DF53AB-E0CB-EC65-1253-27829F556991" name="Info_Seguro">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 21:21:11 UTC</createdTime>
+<generatorID>6E3DD83F-86FE-73C1-7324-34BDEB6B6C6C</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cant_seguros" id="1E4CA193-5839-C2A0-096F-93A1E18C8A56">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 21:21:11 UTC</createdTime>
+<generatorID>15EEE5F8-083D-0FFB-70CD-499C9726ECCB</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Contrato_NumContrato" id="FE499090-B737-3C76-7A3D-6410A732C71E">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 21:21:11 UTC</createdTime>
+<generatorID>4980C516-1E37-5619-B0DF-60117BEE8954</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1CEC0252-948B-7430-8974-52548DC4AE54" referredColumn="F03AC28C-A18A-1C9B-B8ED-05B2DE5A5009"/>
+</associations>
+</Column>
+<Column name="Seguro_IdSeguro" id="DD50D6BD-2168-571F-1D81-E416DCF23AEF">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 21:21:11 UTC</createdTime>
+<generatorID>7A5D0488-41BE-5DD5-1143-D02A44D9B71E</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="34325F75-E34D-2EB3-4473-8DAAD1881D92" referredColumn="57150713-5797-316E-5D86-50CD5658D0E3"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6BFE1205-7003-E2A0-DDF9-7988B47561A5" name="Info_Seguro_PK">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 21:21:11 UTC</createdTime>
+<generatorID>4F79211B-E1F4-1747-5034-6512B5794363</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FE499090-B737-3C76-7A3D-6410A732C71E"/>
+<colUsage columnID="DD50D6BD-2168-571F-1D81-E416DCF23AEF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F308F557-AD29-61EA-675C-4DB0AE267A5A" name="Info_Seguro_Contrato_FK">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 21:21:11 UTC</createdTime>
+<generatorID>D7641852-EAE4-202B-7CDC-89B3257718E9</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FE499090-B737-3C76-7A3D-6410A732C71E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="71C9229E-66AF-2B25-E3B1-DCA1EC50E90F" name="Info_Seguro_Seguro_FK">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 21:21:11 UTC</createdTime>
+<generatorID>8957AC01-1F44-DC9E-9651-3E3FECA4E1F2</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DD50D6BD-2168-571F-1D81-E416DCF23AEF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

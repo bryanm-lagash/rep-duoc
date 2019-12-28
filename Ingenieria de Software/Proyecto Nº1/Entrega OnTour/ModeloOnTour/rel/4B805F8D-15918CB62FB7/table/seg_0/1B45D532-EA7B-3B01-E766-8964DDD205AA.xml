@@ -1,0 +1,57 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1B45D532-EA7B-3B01-E766-8964DDD205AA" name="Actividad">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-09 07:22:46 UTC</createdTime>
+<generatorID>D890831A-FE17-D0BB-2BBD-72A525B76BC0</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IdActividad" id="163DFD45-5D9D-0252-BCA7-058CEFE8CDF4">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-09 07:22:46 UTC</createdTime>
+<generatorID>96791C14-3334-465C-C56C-379C7FB2B128</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre" id="CEDD89E3-47BB-4A38-6D3A-724E989FF8FE">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-09 07:22:46 UTC</createdTime>
+<generatorID>67376970-8775-1DFB-8ECE-7705D52C496F</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Costo" id="0197D381-D163-176F-94BD-959CCA0D3F96">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-09 07:22:46 UTC</createdTime>
+<generatorID>7F36CE71-48DD-7F33-9807-0E7635463EE0</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A790D3CF-13BF-31CD-DE45-5B90D38E5C79" name="Actividad_PK">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-09 07:22:46 UTC</createdTime>
+<generatorID>F5C8C859-CE34-812C-04F2-6BD5D9045A64</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+</indexes>
+</Table>

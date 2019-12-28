@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="70C08737-85FB-B2F6-9194-9B1B1BA223D0" name="Detalle_Actividad">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 20:49:13 UTC</createdTime>
+<generatorID>5BF6128A-B184-C2AB-42C8-F3BA91C38DD8</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IdDetAct" id="CEF121B0-77B0-B6C7-B9B6-41103FF4FD71">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 20:49:13 UTC</createdTime>
+<generatorID>76BC48BA-0FF2-9787-2C7E-E24B8BB4756E</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Actividad_IdActividad" id="05727B1C-9BCE-09F7-08C6-B8AE6CD8DA1E">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 20:49:13 UTC</createdTime>
+<generatorID>9CA13767-F684-6445-7287-36F601826BA1</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EB905D9C-A115-FCF7-3563-949047F85BB5" referredColumn="216A9361-DB36-D1FF-4F36-FC16CE59C2AD"/>
+</associations>
+</Column>
+<Column name="NumContrato" id="B89A129E-7193-AB86-2919-A67F7AFC8DB9">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 20:49:13 UTC</createdTime>
+<generatorID>6C363313-60B0-E139-A020-7247B8F3EA03</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0418B871-80F6-0455-FC30-6B75758751CA" name="Detalle_Actividad_PK">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 20:49:13 UTC</createdTime>
+<generatorID>94176347-B5FD-D384-0903-CFADA6910B84</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CEF121B0-77B0-B6C7-B9B6-41103FF4FD71"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3C8E70E1-7950-C794-BDF0-47B1C5A4A307" name="Detalle_Actividad_Actividad_FK">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 20:49:13 UTC</createdTime>
+<generatorID>AF937BA9-A69D-FE91-C333-F8EAA68CF546</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="05727B1C-9BCE-09F7-08C6-B8AE6CD8DA1E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

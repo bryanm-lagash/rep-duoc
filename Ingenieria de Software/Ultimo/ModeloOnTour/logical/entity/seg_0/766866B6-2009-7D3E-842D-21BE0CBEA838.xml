@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="766866B6-2009-7D3E-842D-21BE0CBEA838" name="Tasa Interes">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-06 02:09:04 UTC</createdTime>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<engineerTo>
+<item key="77C8451F-21F8-09E6-56EF-EDF2BAC715BF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="IdInteres" id="FDBC838D-47FE-CA7A-DD8D-475A57887BDA">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-06 02:09:23 UTC</createdTime>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<engineerTo>
+<item key="77C8451F-21F8-09E6-56EF-EDF2BAC715BF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DiasIni" id="9449E2BD-20D4-64EF-AE43-A23C23C2C12D">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-06 02:09:46 UTC</createdTime>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<engineerTo>
+<item key="77C8451F-21F8-09E6-56EF-EDF2BAC715BF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DiasTerm" id="CB7B1CE5-A023-4DC1-7A29-6543A9835CB9">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-09 23:17:50 UTC</createdTime>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<engineerTo>
+<item key="77C8451F-21F8-09E6-56EF-EDF2BAC715BF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PorcMulta" id="AD0D9600-FA13-8E29-F16D-F9F6129EC634">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-06 02:10:31 UTC</createdTime>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<engineerTo>
+<item key="77C8451F-21F8-09E6-56EF-EDF2BAC715BF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="945F262C-F763-8B36-2D94-6817F3D52A52" name="Tasa_Interes_PK">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-06 02:09:46 UTC</createdTime>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<engineerTo>
+<item key="77C8451F-21F8-09E6-56EF-EDF2BAC715BF" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>FDBC838D-47FE-CA7A-DD8D-475A57887BDA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

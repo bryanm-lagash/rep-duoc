@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D3580D2C-5EC1-4136-405B-F20C5255E551" name="Detalle_Actividad">
+<createdBy>jose</createdBy>
+<createdTime>2019-07-08 04:21:11 UTC</createdTime>
+<generatorID>06AE4CE5-7E8E-21D8-43E2-9CDAF31A48BF</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IdDetAct" id="8217AFA2-DAA1-C7E6-2C45-880910C9FEE3">
+<createdBy>jose</createdBy>
+<createdTime>2019-07-08 04:21:11 UTC</createdTime>
+<generatorID>1B107172-026B-0F91-81B2-15347E048142</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cant_Actividades" id="F185C750-0AB7-B953-ECA2-4EE827E17374">
+<createdBy>jose</createdBy>
+<createdTime>2019-07-08 04:21:11 UTC</createdTime>
+<generatorID>B28CB3C4-ACC0-BD26-5C31-68D8D7B6FCF0</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Actividad_IdActividad" id="98C3D26C-2185-C5F7-9B2C-6EBE0DD6B4C6">
+<createdBy>jose</createdBy>
+<createdTime>2019-07-08 04:21:11 UTC</createdTime>
+<generatorID>7B67DBC9-17D6-D21A-E58C-769E77C0C088</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F2E07F2D-EFF2-A5C0-3FDD-88E51987B156" referredColumn="77017DBC-6BE4-8CD1-C3CC-FAF0CDE7A3C9"/>
+</associations>
+</Column>
+<Column name="Contrato_NumContrato" id="1B3E7454-1592-38EC-0C49-F6FB039F9267">
+<createdBy>jose</createdBy>
+<createdTime>2019-07-08 04:21:11 UTC</createdTime>
+<generatorID>E7BEC176-4BC7-7230-EAFA-60B0BC00DB3F</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A3EFFF9F-1B6F-49AF-2EA0-E275A4E5E409" referredColumn="3C82C467-F005-AD86-061F-917E5B8F1EC7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6DFFF7EC-7325-E026-AC22-27DEC65FCE4D" name="Detalle_Actividad_PK">
+<createdBy>jose</createdBy>
+<createdTime>2019-07-08 04:21:11 UTC</createdTime>
+<generatorID>58DB2A75-3D82-5767-2BD9-E9D901A65339</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8217AFA2-DAA1-C7E6-2C45-880910C9FEE3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D687182D-53D6-3BD6-C6A6-F6CDDA38D17C" name="Detalle_Actividad_Actividad_FK">
+<createdBy>jose</createdBy>
+<createdTime>2019-07-08 04:21:11 UTC</createdTime>
+<generatorID>AFAE3CD8-C191-1FCF-90A5-19AB9EA5EA92</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="98C3D26C-2185-C5F7-9B2C-6EBE0DD6B4C6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="03CF5048-DEE4-B939-4F8C-DBE25218A466" name="Detalle_Actividad_Contrato_FK">
+<createdBy>jose</createdBy>
+<createdTime>2019-07-08 04:21:11 UTC</createdTime>
+<generatorID>EE8A31D4-7CBB-4D54-C400-7166330EFCBB</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1B3E7454-1592-38EC-0C49-F6FB039F9267"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

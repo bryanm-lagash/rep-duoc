@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Contrato Ciudad FK" directorySegmentName="seg_0" id="55D95963-3EE1-740E-5058-784E11E06348">
+<createdBy>jose</createdBy>
+<createdTime>2019-07-07 00:22:10 UTC</createdTime>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="635ED9EF-D8C7-B650-AF71-C3848BCE06E5" value="true"/>
+</engineerTo>
+<sourcePk>5A2C1493-FCFA-79E4-2DDE-CBAFA01C3858</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>FE96C46D-6461-C4C0-D070-AF304E2830B4</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D2582134-FDB0-FB3B-188D-D72D9B974C21</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7DF3AD43-2223-D04B-D7FD-06691AD715AD" name="Cta_Usuario">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 21:21:11 UTC</createdTime>
+<generatorID>C359F17E-3BE4-F2EB-757D-380578EE07DD</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Usuario" id="C63FBF61-AF60-5AE7-E7CC-DFD715AE7DF8">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 21:21:11 UTC</createdTime>
+<generatorID>6F85D190-E21C-F6F3-8628-09C754D2AB05</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Contraseña" id="52A2F158-B1D3-19EC-1934-B1BEAAD04677">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 21:21:11 UTC</createdTime>
+<generatorID>0880424F-A189-84ED-0ED4-A4B5FCD768EA</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre" id="228DA38D-0F67-0B75-DE28-9023BE40AECA">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 21:21:11 UTC</createdTime>
+<generatorID>5FE39E7E-FB6F-A758-1717-DEFBB781F5CB</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Usuario_RutUsu" id="0E870FF5-3E97-A562-EBBF-70122D447FAA">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 21:21:11 UTC</createdTime>
+<generatorID>641815CF-ACCE-DE43-0259-E55CEAD2F62B</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="12EADE30-9F84-BA31-409C-53A5F2C30545" referredColumn="0B2FD964-851E-4701-C0EC-77A36F37B47D"/>
+</associations>
+</Column>
+<Column name="TipCuenta_idTipoCta" id="973470CD-8D6E-A3DE-4534-8971B84D5B70">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 21:21:11 UTC</createdTime>
+<generatorID>F880F951-656B-DC91-BFB3-C41636EDA304</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="28B4ECF7-308B-067E-90AA-94D79CEC5D86" referredColumn="124C7B3C-04E9-5D3E-FC2B-399CC80A5E91"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="95503F62-C290-16EE-6C03-A3407ED3E090" name="Cta_Usuario_PK">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 21:21:11 UTC</createdTime>
+<generatorID>BED5532B-D8DB-06BF-C853-A80A4DD220EA</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C63FBF61-AF60-5AE7-E7CC-DFD715AE7DF8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4F8066B6-6002-E95C-C522-4D709A685837" name="Cta_Usuario_TipCuenta_FK">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 21:21:11 UTC</createdTime>
+<generatorID>11367CFB-F060-BA80-4D73-1C18B65F97E2</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="973470CD-8D6E-A3DE-4534-8971B84D5B70"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="67E1BC19-B70C-8C12-7001-CE0EF4C9B851" name="Cta_Usuario_Usuario_FK">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 21:21:11 UTC</createdTime>
+<generatorID>1198C19C-74DA-DBEF-FC30-1CE205DD6E07</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0E870FF5-3E97-A562-EBBF-70122D447FAA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

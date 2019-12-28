@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0268A2EF-4D5F-45E8-6219-EEC37F73875A" containerWithKeyObject="783328DA-C41B-3222-D9C5-411F9B19EB1E" localFKIndex="A183B1D8-EC7F-0DCA-A9EF-42F813EDC228" name="Colegio_TipCole_FK">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-09 07:22:46 UTC</createdTime>
+<generatorID>A0C98746-895D-60C6-6C59-D376CE1A45C5</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<referredTableLongName>TipCole</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>16BABD0D-2482-BD1B-D99E-0C6AB08C42E0</referredTableID>
+<keyObject>95907AD2-BBAA-1333-5A37-A99D437D2158</keyObject>
+<referredKeyID>95907AD2-BBAA-1333-5A37-A99D437D2158</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>idTipo</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

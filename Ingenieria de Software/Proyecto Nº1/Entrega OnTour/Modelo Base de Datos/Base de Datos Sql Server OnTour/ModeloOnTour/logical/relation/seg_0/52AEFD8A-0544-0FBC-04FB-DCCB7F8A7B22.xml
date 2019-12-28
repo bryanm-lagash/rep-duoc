@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Contrato Usuario FK" directorySegmentName="seg_0" id="52AEFD8A-0544-0FBC-04FB-DCCB7F8A7B22">
+<createdBy>jose</createdBy>
+<createdTime>2019-07-08 03:29:19 UTC</createdTime>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="635ED9EF-D8C7-B650-AF71-C3848BCE06E5" value="true"/>
+</engineerTo>
+<sourcePk>89BCDDAB-28E6-D379-E7ED-062DCDC4E64F</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>92D4117F-815F-89B2-8C59-F5D513EB2604</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D2582134-FDB0-FB3B-188D-D72D9B974C21</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

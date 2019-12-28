@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Seguro EmpAseg FK" directorySegmentName="seg_0" id="2F31E3A0-B167-6DFD-7572-DA17BAF9E9F6">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-06 01:37:34 UTC</createdTime>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="635ED9EF-D8C7-B650-AF71-C3848BCE06E5" value="true"/>
+</engineerTo>
+<sourcePk>611D7DDF-83D0-F59E-06B0-B15711B57C8B</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>30D233B5-BD6B-4C6E-8F33-62DF244DFA38</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>593FE002-707D-255A-C74B-260D6F626BA3</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

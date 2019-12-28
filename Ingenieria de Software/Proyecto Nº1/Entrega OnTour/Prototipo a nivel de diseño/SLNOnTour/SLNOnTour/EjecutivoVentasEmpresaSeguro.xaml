@@ -1,0 +1,26 @@
+﻿<Window x:Class="SLNOnTour.EjecutivoVentasEmpresaSeguro"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SLNOnTour"
+        mc:Ignorable="d"
+        Title="EjecutivoVentasEmpresaSeguro" Height="496.25" Width="575">
+    <Grid Margin="0,0,2,0">
+        <Label Content="REGISTRO DE LA EMPRESA ASEGURADORA" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Rut" HorizontalAlignment="Left" Margin="36,41,0,0" VerticalAlignment="Top" Width="28" RenderTransformOrigin="0.833,0.712"/>
+        <Label Content="Nombre" HorizontalAlignment="Left" Margin="288,46,0,0" VerticalAlignment="Top"/>
+        <Label Content="Direccion " HorizontalAlignment="Left" Margin="10,79,0,0" VerticalAlignment="Top"/>
+        <Label Content="Telefono" HorizontalAlignment="Left" Margin="288,79,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="71,46,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="21" Margin="347,48,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="71,81,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="349,79,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <DataGrid HorizontalAlignment="Left" Height="278" Margin="36,124,0,0" VerticalAlignment="Top" Width="496"/>
+        <Button Content="Buscar" HorizontalAlignment="Left" Margin="196,46,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Agregar" HorizontalAlignment="Left" Margin="36,407,0,0" VerticalAlignment="Top" Width="76"/>
+        <Button Content="Actualizar" HorizontalAlignment="Left" Margin="254,407,0,0" VerticalAlignment="Top" Width="76"/>
+        <Button Content="Eliminar" HorizontalAlignment="Left" Margin="457,407,0,0" VerticalAlignment="Top" Width="75"/>
+
+    </Grid>
+</Window>

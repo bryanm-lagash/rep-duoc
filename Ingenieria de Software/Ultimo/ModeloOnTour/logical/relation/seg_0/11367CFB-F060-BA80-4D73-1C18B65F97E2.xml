@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Cta Usuario TipCuenta FK" directorySegmentName="seg_0" id="11367CFB-F060-BA80-4D73-1C18B65F97E2">
+<createdBy>jose</createdBy>
+<createdTime>2019-07-08 03:30:05 UTC</createdTime>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<engineerTo>
+<item key="77C8451F-21F8-09E6-56EF-EDF2BAC715BF" value="true"/>
+</engineerTo>
+<sourcePk>A127427C-F0A0-79D6-0321-785C6FA24AE9</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D7D6C7EE-572E-4329-AB64-F4F534F06D2C</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C359F17E-3BE4-F2EB-757D-380578EE07DD</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

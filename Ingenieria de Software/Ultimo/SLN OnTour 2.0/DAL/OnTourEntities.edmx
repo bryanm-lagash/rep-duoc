@@ -1,0 +1,1523 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="OnTourModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="actividad">
+          <Key>
+            <PropertyRef Name="idactividad" />
+          </Key>
+          <Property Name="idactividad" Type="int" Nullable="false" />
+          <Property Name="nombre" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="costo" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="alumno">
+          <Key>
+            <PropertyRef Name="rutalumno" />
+          </Key>
+          <Property Name="rutalumno" Type="nvarchar" MaxLength="11" Nullable="false" />
+          <Property Name="nombre" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="apaterno" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="amaterno" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="direccion" Type="nvarchar" MaxLength="70" Nullable="false" />
+          <Property Name="curso_idcurso" Type="nvarchar" MaxLength="10" Nullable="false" />
+        </EntityType>
+        <EntityType Name="beneficio">
+          <Key>
+            <PropertyRef Name="idbenefico" />
+          </Key>
+          <Property Name="idbenefico" Type="int" Nullable="false" />
+          <Property Name="nombre" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="porcdescuento" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ciudad">
+          <Key>
+            <PropertyRef Name="codciudad" />
+          </Key>
+          <Property Name="codciudad" Type="int" Nullable="false" />
+          <Property Name="nombre" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="pais_codpais" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="colegio">
+          <Key>
+            <PropertyRef Name="codcolegio" />
+          </Key>
+          <Property Name="codcolegio" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="nombre" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="direccion" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="tipcole_idtipo" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="contrato">
+          <Key>
+            <PropertyRef Name="numcontrato" />
+          </Key>
+          <Property Name="numcontrato" Type="int" Nullable="false" />
+          <Property Name="fechacreacion" Type="date" Nullable="false" />
+          <Property Name="fechatermino" Type="date" Nullable="false" />
+          <Property Name="duraciondias" Type="int" Nullable="false" />
+          <Property Name="fechaini" Type="date" Nullable="false" />
+          <Property Name="fechaterm" Type="date" Nullable="false" />
+          <Property Name="fechapagos" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="costototseguros" Type="int" Nullable="false" />
+          <Property Name="costototactividades" Type="int" Nullable="false" />
+          <Property Name="porctotbeneficios" Type="int" Nullable="false" />
+          <Property Name="costoservicios" Type="int" Nullable="false" />
+          <Property Name="meta" Type="int" Nullable="false" />
+          <Property Name="tipactividad_idtipoact" Type="int" Nullable="false" />
+          <Property Name="curso_idcurso" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="ciudad_codciudad" Type="int" Nullable="false" />
+          <Property Name="usuario_rutusu" Type="nvarchar" MaxLength="11" Nullable="false" />
+        </EntityType>
+        <EntityType Name="cta_usuario">
+          <Key>
+            <PropertyRef Name="usuario" />
+          </Key>
+          <Property Name="usuario" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="contraseña" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="nombre" Type="nvarchar" MaxLength="25" Nullable="false" />
+          <Property Name="usuario_rutusu" Type="nvarchar" MaxLength="11" Nullable="false" />
+          <Property Name="tipcuenta_idtipocta" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="curso">
+          <Key>
+            <PropertyRef Name="idcurso" />
+          </Key>
+          <Property Name="idcurso" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="numalumnos" Type="int" Nullable="false" />
+          <Property Name="colegio_codcolegio" Type="nvarchar" MaxLength="10" Nullable="false" />
+        </EntityType>
+        <EntityType Name="deposito">
+          <Key>
+            <PropertyRef Name="iddeposito" />
+          </Key>
+          <Property Name="iddeposito" Type="int" Nullable="false" />
+          <Property Name="fechadeposito" Type="date" Nullable="false" />
+          <Property Name="montodeposito" Type="int" Nullable="false" />
+          <Property Name="curso_idcurso" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="rutdepos" Type="nvarchar" MaxLength="11" Nullable="false" />
+          <Property Name="nombredepos" Type="nvarchar" MaxLength="40" Nullable="false" />
+        </EntityType>
+        <EntityType Name="detalle_actividad">
+          <Key>
+            <PropertyRef Name="iddetact" />
+          </Key>
+          <Property Name="iddetact" Type="int" Nullable="false" />
+          <Property Name="numcontrato" Type="int" Nullable="false" />
+          <Property Name="actividad_idactividad" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="detalle_beneficio">
+          <Key>
+            <PropertyRef Name="iddetben" />
+          </Key>
+          <Property Name="iddetben" Type="int" Nullable="false" />
+          <Property Name="numcontrato" Type="int" Nullable="false" />
+          <Property Name="beneficio_idbenefico" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="detalle_seguro">
+          <Key>
+            <PropertyRef Name="iddetseg" />
+          </Key>
+          <Property Name="iddetseg" Type="int" Nullable="false" />
+          <Property Name="numcontrato" Type="int" Nullable="false" />
+          <Property Name="seguro_idseguro" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="empaseg">
+          <Key>
+            <PropertyRef Name="rutemp" />
+          </Key>
+          <Property Name="rutemp" Type="nvarchar" MaxLength="11" Nullable="false" />
+          <Property Name="nombre" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="direccion" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="telefono" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="info_actividad">
+          <Key>
+            <PropertyRef Name="contrato_numcontrato" />
+            <PropertyRef Name="actividad_idactividad" />
+          </Key>
+          <Property Name="cant_actividad" Type="int" Nullable="false" />
+          <Property Name="contrato_numcontrato" Type="int" Nullable="false" />
+          <Property Name="actividad_idactividad" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="info_beneficio">
+          <Key>
+            <PropertyRef Name="contrato_numcontrato" />
+            <PropertyRef Name="beneficio_idbenefico" />
+          </Key>
+          <Property Name="cant_beneficio" Type="int" Nullable="false" />
+          <Property Name="contrato_numcontrato" Type="int" Nullable="false" />
+          <Property Name="beneficio_idbenefico" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="info_seguro">
+          <Key>
+            <PropertyRef Name="contrato_numcontrato" />
+            <PropertyRef Name="seguro_idseguro" />
+          </Key>
+          <Property Name="cant_seguros" Type="int" Nullable="false" />
+          <Property Name="contrato_numcontrato" Type="int" Nullable="false" />
+          <Property Name="seguro_idseguro" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="modaporte">
+          <Key>
+            <PropertyRef Name="idmod" />
+          </Key>
+          <Property Name="idmod" Type="int" Nullable="false" />
+          <Property Name="nombre" Type="nvarchar" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <EntityType Name="pais">
+          <Key>
+            <PropertyRef Name="codpais" />
+          </Key>
+          <Property Name="codpais" Type="int" Nullable="false" />
+          <Property Name="nombre" Type="nvarchar" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <EntityType Name="seguro">
+          <Key>
+            <PropertyRef Name="idseguro" />
+          </Key>
+          <Property Name="idseguro" Type="int" Nullable="false" />
+          <Property Name="nombre" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="descripcion" Type="nvarchar" MaxLength="70" Nullable="false" />
+          <Property Name="costo" Type="int" Nullable="false" />
+          <Property Name="empaseg_rutemp" Type="nvarchar" MaxLength="11" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tasa_interes">
+          <Key>
+            <PropertyRef Name="idinteres" />
+          </Key>
+          <Property Name="idinteres" Type="int" Nullable="false" />
+          <Property Name="diasini" Type="int" Nullable="false" />
+          <Property Name="diasterm" Type="int" Nullable="false" />
+          <Property Name="porcmulta" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tipactividad">
+          <Key>
+            <PropertyRef Name="idtipoact" />
+          </Key>
+          <Property Name="idtipoact" Type="int" Nullable="false" />
+          <Property Name="nombre" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="modaporte_idmod" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tipcole">
+          <Key>
+            <PropertyRef Name="idtipo" />
+          </Key>
+          <Property Name="idtipo" Type="int" Nullable="false" />
+          <Property Name="nombre" Type="nvarchar" MaxLength="30" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tipcuenta">
+          <Key>
+            <PropertyRef Name="idtipocta" />
+          </Key>
+          <Property Name="idtipocta" Type="int" Nullable="false" />
+          <Property Name="nombre" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="usuario">
+          <Key>
+            <PropertyRef Name="rutusu" />
+          </Key>
+          <Property Name="rutusu" Type="nvarchar" MaxLength="11" Nullable="false" />
+          <Property Name="nombre" Type="nvarchar" MaxLength="40" Nullable="false" />
+          <Property Name="apaterno" Type="nvarchar" MaxLength="40" Nullable="false" />
+          <Property Name="amaterno" Type="nvarchar" MaxLength="40" Nullable="false" />
+          <Property Name="direccion" Type="nvarchar" MaxLength="40" Nullable="false" />
+          <Property Name="email" Type="nvarchar" MaxLength="40" Nullable="false" />
+        </EntityType>
+        <Association Name="alumno_curso_fk">
+          <End Role="curso" Type="Self.curso" Multiplicity="1" />
+          <End Role="alumno" Type="Self.alumno" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="curso">
+              <PropertyRef Name="idcurso" />
+            </Principal>
+            <Dependent Role="alumno">
+              <PropertyRef Name="curso_idcurso" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ciudad_pais_fk">
+          <End Role="pais" Type="Self.pais" Multiplicity="1" />
+          <End Role="ciudad" Type="Self.ciudad" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="pais">
+              <PropertyRef Name="codpais" />
+            </Principal>
+            <Dependent Role="ciudad">
+              <PropertyRef Name="pais_codpais" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="colegio_tipcole_fk">
+          <End Role="tipcole" Type="Self.tipcole" Multiplicity="1" />
+          <End Role="colegio" Type="Self.colegio" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tipcole">
+              <PropertyRef Name="idtipo" />
+            </Principal>
+            <Dependent Role="colegio">
+              <PropertyRef Name="tipcole_idtipo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="contrato_ciudad_fk">
+          <End Role="ciudad" Type="Self.ciudad" Multiplicity="1" />
+          <End Role="contrato" Type="Self.contrato" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ciudad">
+              <PropertyRef Name="codciudad" />
+            </Principal>
+            <Dependent Role="contrato">
+              <PropertyRef Name="ciudad_codciudad" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="contrato_curso_fk">
+          <End Role="curso" Type="Self.curso" Multiplicity="1" />
+          <End Role="contrato" Type="Self.contrato" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="curso">
+              <PropertyRef Name="idcurso" />
+            </Principal>
+            <Dependent Role="contrato">
+              <PropertyRef Name="curso_idcurso" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="contrato_tipactividad_fk">
+          <End Role="tipactividad" Type="Self.tipactividad" Multiplicity="1" />
+          <End Role="contrato" Type="Self.contrato" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tipactividad">
+              <PropertyRef Name="idtipoact" />
+            </Principal>
+            <Dependent Role="contrato">
+              <PropertyRef Name="tipactividad_idtipoact" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="contrato_usuario_fk">
+          <End Role="usuario" Type="Self.usuario" Multiplicity="1" />
+          <End Role="contrato" Type="Self.contrato" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="usuario">
+              <PropertyRef Name="rutusu" />
+            </Principal>
+            <Dependent Role="contrato">
+              <PropertyRef Name="usuario_rutusu" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="cta_usuario_tipcuenta_fk">
+          <End Role="tipcuenta" Type="Self.tipcuenta" Multiplicity="1" />
+          <End Role="cta_usuario" Type="Self.cta_usuario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tipcuenta">
+              <PropertyRef Name="idtipocta" />
+            </Principal>
+            <Dependent Role="cta_usuario">
+              <PropertyRef Name="tipcuenta_idtipocta" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="cta_usuario_usuario_fk">
+          <End Role="usuario" Type="Self.usuario" Multiplicity="1" />
+          <End Role="cta_usuario" Type="Self.cta_usuario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="usuario">
+              <PropertyRef Name="rutusu" />
+            </Principal>
+            <Dependent Role="cta_usuario">
+              <PropertyRef Name="usuario_rutusu" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="curso_colegio_fk">
+          <End Role="colegio" Type="Self.colegio" Multiplicity="1" />
+          <End Role="curso" Type="Self.curso" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="colegio">
+              <PropertyRef Name="codcolegio" />
+            </Principal>
+            <Dependent Role="curso">
+              <PropertyRef Name="colegio_codcolegio" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="deposito_curso_fk">
+          <End Role="curso" Type="Self.curso" Multiplicity="1" />
+          <End Role="deposito" Type="Self.deposito" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="curso">
+              <PropertyRef Name="idcurso" />
+            </Principal>
+            <Dependent Role="deposito">
+              <PropertyRef Name="curso_idcurso" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="detalle_actividad_actividad_fk">
+          <End Role="actividad" Type="Self.actividad" Multiplicity="1" />
+          <End Role="detalle_actividad" Type="Self.detalle_actividad" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="actividad">
+              <PropertyRef Name="idactividad" />
+            </Principal>
+            <Dependent Role="detalle_actividad">
+              <PropertyRef Name="actividad_idactividad" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="detalle_beneficio_beneficio_fk">
+          <End Role="beneficio" Type="Self.beneficio" Multiplicity="1" />
+          <End Role="detalle_beneficio" Type="Self.detalle_beneficio" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="beneficio">
+              <PropertyRef Name="idbenefico" />
+            </Principal>
+            <Dependent Role="detalle_beneficio">
+              <PropertyRef Name="beneficio_idbenefico" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="detalle_seguro_seguro_fk">
+          <End Role="seguro" Type="Self.seguro" Multiplicity="1" />
+          <End Role="detalle_seguro" Type="Self.detalle_seguro" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="seguro">
+              <PropertyRef Name="idseguro" />
+            </Principal>
+            <Dependent Role="detalle_seguro">
+              <PropertyRef Name="seguro_idseguro" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="info_actividad_actividad_fk">
+          <End Role="actividad" Type="Self.actividad" Multiplicity="1" />
+          <End Role="info_actividad" Type="Self.info_actividad" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="actividad">
+              <PropertyRef Name="idactividad" />
+            </Principal>
+            <Dependent Role="info_actividad">
+              <PropertyRef Name="actividad_idactividad" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="info_actividad_contrato_fk">
+          <End Role="contrato" Type="Self.contrato" Multiplicity="1" />
+          <End Role="info_actividad" Type="Self.info_actividad" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="contrato">
+              <PropertyRef Name="numcontrato" />
+            </Principal>
+            <Dependent Role="info_actividad">
+              <PropertyRef Name="contrato_numcontrato" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="info_beneficio_beneficio_fk">
+          <End Role="beneficio" Type="Self.beneficio" Multiplicity="1" />
+          <End Role="info_beneficio" Type="Self.info_beneficio" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="beneficio">
+              <PropertyRef Name="idbenefico" />
+            </Principal>
+            <Dependent Role="info_beneficio">
+              <PropertyRef Name="beneficio_idbenefico" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="info_beneficio_contrato_fk">
+          <End Role="contrato" Type="Self.contrato" Multiplicity="1" />
+          <End Role="info_beneficio" Type="Self.info_beneficio" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="contrato">
+              <PropertyRef Name="numcontrato" />
+            </Principal>
+            <Dependent Role="info_beneficio">
+              <PropertyRef Name="contrato_numcontrato" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="info_seguro_contrato_fk">
+          <End Role="contrato" Type="Self.contrato" Multiplicity="1" />
+          <End Role="info_seguro" Type="Self.info_seguro" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="contrato">
+              <PropertyRef Name="numcontrato" />
+            </Principal>
+            <Dependent Role="info_seguro">
+              <PropertyRef Name="contrato_numcontrato" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="info_seguro_seguro_fk">
+          <End Role="seguro" Type="Self.seguro" Multiplicity="1" />
+          <End Role="info_seguro" Type="Self.info_seguro" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="seguro">
+              <PropertyRef Name="idseguro" />
+            </Principal>
+            <Dependent Role="info_seguro">
+              <PropertyRef Name="seguro_idseguro" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="seguro_empaseg_fk">
+          <End Role="empaseg" Type="Self.empaseg" Multiplicity="1" />
+          <End Role="seguro" Type="Self.seguro" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="empaseg">
+              <PropertyRef Name="rutemp" />
+            </Principal>
+            <Dependent Role="seguro">
+              <PropertyRef Name="empaseg_rutemp" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="tipactividad_modaporte_fk">
+          <End Role="modaporte" Type="Self.modaporte" Multiplicity="1" />
+          <End Role="tipactividad" Type="Self.tipactividad" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="modaporte">
+              <PropertyRef Name="idmod" />
+            </Principal>
+            <Dependent Role="tipactividad">
+              <PropertyRef Name="modaporte_idmod" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="OnTourModelStoreContainer">
+          <EntitySet Name="actividad" EntityType="Self.actividad" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="alumno" EntityType="Self.alumno" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="beneficio" EntityType="Self.beneficio" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ciudad" EntityType="Self.ciudad" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="colegio" EntityType="Self.colegio" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="contrato" EntityType="Self.contrato" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="cta_usuario" EntityType="Self.cta_usuario" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="curso" EntityType="Self.curso" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="deposito" EntityType="Self.deposito" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="detalle_actividad" EntityType="Self.detalle_actividad" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="detalle_beneficio" EntityType="Self.detalle_beneficio" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="detalle_seguro" EntityType="Self.detalle_seguro" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="empaseg" EntityType="Self.empaseg" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="info_actividad" EntityType="Self.info_actividad" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="info_beneficio" EntityType="Self.info_beneficio" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="info_seguro" EntityType="Self.info_seguro" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="modaporte" EntityType="Self.modaporte" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="pais" EntityType="Self.pais" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="seguro" EntityType="Self.seguro" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tasa_interes" EntityType="Self.tasa_interes" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tipactividad" EntityType="Self.tipactividad" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tipcole" EntityType="Self.tipcole" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tipcuenta" EntityType="Self.tipcuenta" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="usuario" EntityType="Self.usuario" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="alumno_curso_fk" Association="Self.alumno_curso_fk">
+            <End Role="curso" EntitySet="curso" />
+            <End Role="alumno" EntitySet="alumno" />
+          </AssociationSet>
+          <AssociationSet Name="ciudad_pais_fk" Association="Self.ciudad_pais_fk">
+            <End Role="pais" EntitySet="pais" />
+            <End Role="ciudad" EntitySet="ciudad" />
+          </AssociationSet>
+          <AssociationSet Name="colegio_tipcole_fk" Association="Self.colegio_tipcole_fk">
+            <End Role="tipcole" EntitySet="tipcole" />
+            <End Role="colegio" EntitySet="colegio" />
+          </AssociationSet>
+          <AssociationSet Name="contrato_ciudad_fk" Association="Self.contrato_ciudad_fk">
+            <End Role="ciudad" EntitySet="ciudad" />
+            <End Role="contrato" EntitySet="contrato" />
+          </AssociationSet>
+          <AssociationSet Name="contrato_curso_fk" Association="Self.contrato_curso_fk">
+            <End Role="curso" EntitySet="curso" />
+            <End Role="contrato" EntitySet="contrato" />
+          </AssociationSet>
+          <AssociationSet Name="contrato_tipactividad_fk" Association="Self.contrato_tipactividad_fk">
+            <End Role="tipactividad" EntitySet="tipactividad" />
+            <End Role="contrato" EntitySet="contrato" />
+          </AssociationSet>
+          <AssociationSet Name="contrato_usuario_fk" Association="Self.contrato_usuario_fk">
+            <End Role="usuario" EntitySet="usuario" />
+            <End Role="contrato" EntitySet="contrato" />
+          </AssociationSet>
+          <AssociationSet Name="cta_usuario_tipcuenta_fk" Association="Self.cta_usuario_tipcuenta_fk">
+            <End Role="tipcuenta" EntitySet="tipcuenta" />
+            <End Role="cta_usuario" EntitySet="cta_usuario" />
+          </AssociationSet>
+          <AssociationSet Name="cta_usuario_usuario_fk" Association="Self.cta_usuario_usuario_fk">
+            <End Role="usuario" EntitySet="usuario" />
+            <End Role="cta_usuario" EntitySet="cta_usuario" />
+          </AssociationSet>
+          <AssociationSet Name="curso_colegio_fk" Association="Self.curso_colegio_fk">
+            <End Role="colegio" EntitySet="colegio" />
+            <End Role="curso" EntitySet="curso" />
+          </AssociationSet>
+          <AssociationSet Name="deposito_curso_fk" Association="Self.deposito_curso_fk">
+            <End Role="curso" EntitySet="curso" />
+            <End Role="deposito" EntitySet="deposito" />
+          </AssociationSet>
+          <AssociationSet Name="detalle_actividad_actividad_fk" Association="Self.detalle_actividad_actividad_fk">
+            <End Role="actividad" EntitySet="actividad" />
+            <End Role="detalle_actividad" EntitySet="detalle_actividad" />
+          </AssociationSet>
+          <AssociationSet Name="detalle_beneficio_beneficio_fk" Association="Self.detalle_beneficio_beneficio_fk">
+            <End Role="beneficio" EntitySet="beneficio" />
+            <End Role="detalle_beneficio" EntitySet="detalle_beneficio" />
+          </AssociationSet>
+          <AssociationSet Name="detalle_seguro_seguro_fk" Association="Self.detalle_seguro_seguro_fk">
+            <End Role="seguro" EntitySet="seguro" />
+            <End Role="detalle_seguro" EntitySet="detalle_seguro" />
+          </AssociationSet>
+          <AssociationSet Name="info_actividad_actividad_fk" Association="Self.info_actividad_actividad_fk">
+            <End Role="actividad" EntitySet="actividad" />
+            <End Role="info_actividad" EntitySet="info_actividad" />
+          </AssociationSet>
+          <AssociationSet Name="info_actividad_contrato_fk" Association="Self.info_actividad_contrato_fk">
+            <End Role="contrato" EntitySet="contrato" />
+            <End Role="info_actividad" EntitySet="info_actividad" />
+          </AssociationSet>
+          <AssociationSet Name="info_beneficio_beneficio_fk" Association="Self.info_beneficio_beneficio_fk">
+            <End Role="beneficio" EntitySet="beneficio" />
+            <End Role="info_beneficio" EntitySet="info_beneficio" />
+          </AssociationSet>
+          <AssociationSet Name="info_beneficio_contrato_fk" Association="Self.info_beneficio_contrato_fk">
+            <End Role="contrato" EntitySet="contrato" />
+            <End Role="info_beneficio" EntitySet="info_beneficio" />
+          </AssociationSet>
+          <AssociationSet Name="info_seguro_contrato_fk" Association="Self.info_seguro_contrato_fk">
+            <End Role="contrato" EntitySet="contrato" />
+            <End Role="info_seguro" EntitySet="info_seguro" />
+          </AssociationSet>
+          <AssociationSet Name="info_seguro_seguro_fk" Association="Self.info_seguro_seguro_fk">
+            <End Role="seguro" EntitySet="seguro" />
+            <End Role="info_seguro" EntitySet="info_seguro" />
+          </AssociationSet>
+          <AssociationSet Name="seguro_empaseg_fk" Association="Self.seguro_empaseg_fk">
+            <End Role="empaseg" EntitySet="empaseg" />
+            <End Role="seguro" EntitySet="seguro" />
+          </AssociationSet>
+          <AssociationSet Name="tipactividad_modaporte_fk" Association="Self.tipactividad_modaporte_fk">
+            <End Role="modaporte" EntitySet="modaporte" />
+            <End Role="tipactividad" EntitySet="tipactividad" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="OnTourModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="actividad">
+          <Key>
+            <PropertyRef Name="idactividad" />
+          </Key>
+          <Property Name="idactividad" Type="Int32" Nullable="false" />
+          <Property Name="nombre" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="costo" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="detalle_actividad" Relationship="Self.detalle_actividad_actividad_fk" FromRole="actividad" ToRole="detalle_actividad" />
+          <NavigationProperty Name="info_actividad" Relationship="Self.info_actividad_actividad_fk" FromRole="actividad" ToRole="info_actividad" />
+        </EntityType>
+        <EntityType Name="alumno">
+          <Key>
+            <PropertyRef Name="rutalumno" />
+          </Key>
+          <Property Name="rutalumno" Type="String" MaxLength="11" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="apaterno" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="amaterno" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="direccion" Type="String" MaxLength="70" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="curso_idcurso" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="curso" Relationship="Self.alumno_curso_fk" FromRole="alumno" ToRole="curso" />
+        </EntityType>
+        <EntityType Name="beneficio">
+          <Key>
+            <PropertyRef Name="idbenefico" />
+          </Key>
+          <Property Name="idbenefico" Type="Int32" Nullable="false" />
+          <Property Name="nombre" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="porcdescuento" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="detalle_beneficio" Relationship="Self.detalle_beneficio_beneficio_fk" FromRole="beneficio" ToRole="detalle_beneficio" />
+          <NavigationProperty Name="info_beneficio" Relationship="Self.info_beneficio_beneficio_fk" FromRole="beneficio" ToRole="info_beneficio" />
+        </EntityType>
+        <EntityType Name="ciudad">
+          <Key>
+            <PropertyRef Name="codciudad" />
+          </Key>
+          <Property Name="codciudad" Type="Int32" Nullable="false" />
+          <Property Name="nombre" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="pais_codpais" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="pais" Relationship="Self.ciudad_pais_fk" FromRole="ciudad" ToRole="pais" />
+          <NavigationProperty Name="contrato" Relationship="Self.contrato_ciudad_fk" FromRole="ciudad" ToRole="contrato" />
+        </EntityType>
+        <EntityType Name="colegio">
+          <Key>
+            <PropertyRef Name="codcolegio" />
+          </Key>
+          <Property Name="codcolegio" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="direccion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="tipcole_idtipo" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="tipcole" Relationship="Self.colegio_tipcole_fk" FromRole="colegio" ToRole="tipcole" />
+          <NavigationProperty Name="curso" Relationship="Self.curso_colegio_fk" FromRole="colegio" ToRole="curso" />
+        </EntityType>
+        <EntityType Name="contrato">
+          <Key>
+            <PropertyRef Name="numcontrato" />
+          </Key>
+          <Property Name="numcontrato" Type="Int32" Nullable="false" />
+          <Property Name="fechacreacion" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="fechatermino" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="duraciondias" Type="Int32" Nullable="false" />
+          <Property Name="fechaini" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="fechaterm" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="fechapagos" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="costototseguros" Type="Int32" Nullable="false" />
+          <Property Name="costototactividades" Type="Int32" Nullable="false" />
+          <Property Name="porctotbeneficios" Type="Int32" Nullable="false" />
+          <Property Name="costoservicios" Type="Int32" Nullable="false" />
+          <Property Name="meta" Type="Int32" Nullable="false" />
+          <Property Name="tipactividad_idtipoact" Type="Int32" Nullable="false" />
+          <Property Name="curso_idcurso" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ciudad_codciudad" Type="Int32" Nullable="false" />
+          <Property Name="usuario_rutusu" Type="String" MaxLength="11" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="ciudad" Relationship="Self.contrato_ciudad_fk" FromRole="contrato" ToRole="ciudad" />
+          <NavigationProperty Name="curso" Relationship="Self.contrato_curso_fk" FromRole="contrato" ToRole="curso" />
+          <NavigationProperty Name="tipactividad" Relationship="Self.contrato_tipactividad_fk" FromRole="contrato" ToRole="tipactividad" />
+          <NavigationProperty Name="usuario" Relationship="Self.contrato_usuario_fk" FromRole="contrato" ToRole="usuario" />
+          <NavigationProperty Name="info_actividad" Relationship="Self.info_actividad_contrato_fk" FromRole="contrato" ToRole="info_actividad" />
+          <NavigationProperty Name="info_beneficio" Relationship="Self.info_beneficio_contrato_fk" FromRole="contrato" ToRole="info_beneficio" />
+          <NavigationProperty Name="info_seguro" Relationship="Self.info_seguro_contrato_fk" FromRole="contrato" ToRole="info_seguro" />
+        </EntityType>
+        <EntityType Name="cta_usuario">
+          <Key>
+            <PropertyRef Name="usuario" />
+          </Key>
+          <Property Name="usuario" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="contraseña" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="nombre" Type="String" MaxLength="25" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="usuario_rutusu" Type="String" MaxLength="11" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="tipcuenta_idtipocta" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="tipcuenta" Relationship="Self.cta_usuario_tipcuenta_fk" FromRole="cta_usuario" ToRole="tipcuenta" />
+          <NavigationProperty Name="usuario1" Relationship="Self.cta_usuario_usuario_fk" FromRole="cta_usuario" ToRole="usuario" />
+        </EntityType>
+        <EntityType Name="curso">
+          <Key>
+            <PropertyRef Name="idcurso" />
+          </Key>
+          <Property Name="idcurso" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="numalumnos" Type="Int32" Nullable="false" />
+          <Property Name="colegio_codcolegio" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="alumno" Relationship="Self.alumno_curso_fk" FromRole="curso" ToRole="alumno" />
+          <NavigationProperty Name="colegio" Relationship="Self.curso_colegio_fk" FromRole="curso" ToRole="colegio" />
+          <NavigationProperty Name="contrato" Relationship="Self.contrato_curso_fk" FromRole="curso" ToRole="contrato" />
+          <NavigationProperty Name="deposito" Relationship="Self.deposito_curso_fk" FromRole="curso" ToRole="deposito" />
+        </EntityType>
+        <EntityType Name="deposito">
+          <Key>
+            <PropertyRef Name="iddeposito" />
+          </Key>
+          <Property Name="iddeposito" Type="Int32" Nullable="false" />
+          <Property Name="fechadeposito" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="montodeposito" Type="Int32" Nullable="false" />
+          <Property Name="curso_idcurso" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="rutdepos" Type="String" MaxLength="11" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="nombredepos" Type="String" MaxLength="40" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="curso" Relationship="Self.deposito_curso_fk" FromRole="deposito" ToRole="curso" />
+        </EntityType>
+        <EntityType Name="detalle_actividad">
+          <Key>
+            <PropertyRef Name="iddetact" />
+          </Key>
+          <Property Name="iddetact" Type="Int32" Nullable="false" />
+          <Property Name="numcontrato" Type="Int32" Nullable="false" />
+          <Property Name="actividad_idactividad" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="actividad" Relationship="Self.detalle_actividad_actividad_fk" FromRole="detalle_actividad" ToRole="actividad" />
+        </EntityType>
+        <EntityType Name="detalle_beneficio">
+          <Key>
+            <PropertyRef Name="iddetben" />
+          </Key>
+          <Property Name="iddetben" Type="Int32" Nullable="false" />
+          <Property Name="numcontrato" Type="Int32" Nullable="false" />
+          <Property Name="beneficio_idbenefico" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="beneficio" Relationship="Self.detalle_beneficio_beneficio_fk" FromRole="detalle_beneficio" ToRole="beneficio" />
+        </EntityType>
+        <EntityType Name="detalle_seguro">
+          <Key>
+            <PropertyRef Name="iddetseg" />
+          </Key>
+          <Property Name="iddetseg" Type="Int32" Nullable="false" />
+          <Property Name="numcontrato" Type="Int32" Nullable="false" />
+          <Property Name="seguro_idseguro" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="seguro" Relationship="Self.detalle_seguro_seguro_fk" FromRole="detalle_seguro" ToRole="seguro" />
+        </EntityType>
+        <EntityType Name="empaseg">
+          <Key>
+            <PropertyRef Name="rutemp" />
+          </Key>
+          <Property Name="rutemp" Type="String" MaxLength="11" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="nombre" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="direccion" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="telefono" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="seguro" Relationship="Self.seguro_empaseg_fk" FromRole="empaseg" ToRole="seguro" />
+        </EntityType>
+        <EntityType Name="info_actividad">
+          <Key>
+            <PropertyRef Name="contrato_numcontrato" />
+            <PropertyRef Name="actividad_idactividad" />
+          </Key>
+          <Property Name="cant_actividad" Type="Int32" Nullable="false" />
+          <Property Name="contrato_numcontrato" Type="Int32" Nullable="false" />
+          <Property Name="actividad_idactividad" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="actividad" Relationship="Self.info_actividad_actividad_fk" FromRole="info_actividad" ToRole="actividad" />
+          <NavigationProperty Name="contrato" Relationship="Self.info_actividad_contrato_fk" FromRole="info_actividad" ToRole="contrato" />
+        </EntityType>
+        <EntityType Name="info_beneficio">
+          <Key>
+            <PropertyRef Name="contrato_numcontrato" />
+            <PropertyRef Name="beneficio_idbenefico" />
+          </Key>
+          <Property Name="cant_beneficio" Type="Int32" Nullable="false" />
+          <Property Name="contrato_numcontrato" Type="Int32" Nullable="false" />
+          <Property Name="beneficio_idbenefico" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="beneficio" Relationship="Self.info_beneficio_beneficio_fk" FromRole="info_beneficio" ToRole="beneficio" />
+          <NavigationProperty Name="contrato" Relationship="Self.info_beneficio_contrato_fk" FromRole="info_beneficio" ToRole="contrato" />
+        </EntityType>
+        <EntityType Name="info_seguro">
+          <Key>
+            <PropertyRef Name="contrato_numcontrato" />
+            <PropertyRef Name="seguro_idseguro" />
+          </Key>
+          <Property Name="cant_seguros" Type="Int32" Nullable="false" />
+          <Property Name="contrato_numcontrato" Type="Int32" Nullable="false" />
+          <Property Name="seguro_idseguro" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="contrato" Relationship="Self.info_seguro_contrato_fk" FromRole="info_seguro" ToRole="contrato" />
+          <NavigationProperty Name="seguro" Relationship="Self.info_seguro_seguro_fk" FromRole="info_seguro" ToRole="seguro" />
+        </EntityType>
+        <EntityType Name="modaporte">
+          <Key>
+            <PropertyRef Name="idmod" />
+          </Key>
+          <Property Name="idmod" Type="Int32" Nullable="false" />
+          <Property Name="nombre" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="tipactividad" Relationship="Self.tipactividad_modaporte_fk" FromRole="modaporte" ToRole="tipactividad" />
+        </EntityType>
+        <EntityType Name="pais">
+          <Key>
+            <PropertyRef Name="codpais" />
+          </Key>
+          <Property Name="codpais" Type="Int32" Nullable="false" />
+          <Property Name="nombre" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="ciudad" Relationship="Self.ciudad_pais_fk" FromRole="pais" ToRole="ciudad" />
+        </EntityType>
+        <EntityType Name="seguro">
+          <Key>
+            <PropertyRef Name="idseguro" />
+          </Key>
+          <Property Name="idseguro" Type="Int32" Nullable="false" />
+          <Property Name="nombre" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="descripcion" Type="String" MaxLength="70" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="costo" Type="Int32" Nullable="false" />
+          <Property Name="empaseg_rutemp" Type="String" MaxLength="11" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="detalle_seguro" Relationship="Self.detalle_seguro_seguro_fk" FromRole="seguro" ToRole="detalle_seguro" />
+          <NavigationProperty Name="empaseg" Relationship="Self.seguro_empaseg_fk" FromRole="seguro" ToRole="empaseg" />
+          <NavigationProperty Name="info_seguro" Relationship="Self.info_seguro_seguro_fk" FromRole="seguro" ToRole="info_seguro" />
+        </EntityType>
+        <EntityType Name="tasa_interes">
+          <Key>
+            <PropertyRef Name="idinteres" />
+          </Key>
+          <Property Name="idinteres" Type="Int32" Nullable="false" />
+          <Property Name="diasini" Type="Int32" Nullable="false" />
+          <Property Name="diasterm" Type="Int32" Nullable="false" />
+          <Property Name="porcmulta" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tipactividad">
+          <Key>
+            <PropertyRef Name="idtipoact" />
+          </Key>
+          <Property Name="idtipoact" Type="Int32" Nullable="false" />
+          <Property Name="nombre" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="modaporte_idmod" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="contrato" Relationship="Self.contrato_tipactividad_fk" FromRole="tipactividad" ToRole="contrato" />
+          <NavigationProperty Name="modaporte" Relationship="Self.tipactividad_modaporte_fk" FromRole="tipactividad" ToRole="modaporte" />
+        </EntityType>
+        <EntityType Name="tipcole">
+          <Key>
+            <PropertyRef Name="idtipo" />
+          </Key>
+          <Property Name="idtipo" Type="Int32" Nullable="false" />
+          <Property Name="nombre" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="colegio" Relationship="Self.colegio_tipcole_fk" FromRole="tipcole" ToRole="colegio" />
+        </EntityType>
+        <EntityType Name="tipcuenta">
+          <Key>
+            <PropertyRef Name="idtipocta" />
+          </Key>
+          <Property Name="idtipocta" Type="Int32" Nullable="false" />
+          <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="cta_usuario" Relationship="Self.cta_usuario_tipcuenta_fk" FromRole="tipcuenta" ToRole="cta_usuario" />
+        </EntityType>
+        <EntityType Name="usuario">
+          <Key>
+            <PropertyRef Name="rutusu" />
+          </Key>
+          <Property Name="rutusu" Type="String" MaxLength="11" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="nombre" Type="String" MaxLength="40" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="apaterno" Type="String" MaxLength="40" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="amaterno" Type="String" MaxLength="40" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="direccion" Type="String" MaxLength="40" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="email" Type="String" MaxLength="40" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="contrato" Relationship="Self.contrato_usuario_fk" FromRole="usuario" ToRole="contrato" />
+          <NavigationProperty Name="cta_usuario" Relationship="Self.cta_usuario_usuario_fk" FromRole="usuario" ToRole="cta_usuario" />
+        </EntityType>
+        <Association Name="detalle_actividad_actividad_fk">
+          <End Role="actividad" Type="Self.actividad" Multiplicity="1" />
+          <End Role="detalle_actividad" Type="Self.detalle_actividad" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="actividad">
+              <PropertyRef Name="idactividad" />
+            </Principal>
+            <Dependent Role="detalle_actividad">
+              <PropertyRef Name="actividad_idactividad" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="info_actividad_actividad_fk">
+          <End Role="actividad" Type="Self.actividad" Multiplicity="1" />
+          <End Role="info_actividad" Type="Self.info_actividad" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="actividad">
+              <PropertyRef Name="idactividad" />
+            </Principal>
+            <Dependent Role="info_actividad">
+              <PropertyRef Name="actividad_idactividad" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="alumno_curso_fk">
+          <End Role="curso" Type="Self.curso" Multiplicity="1" />
+          <End Role="alumno" Type="Self.alumno" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="curso">
+              <PropertyRef Name="idcurso" />
+            </Principal>
+            <Dependent Role="alumno">
+              <PropertyRef Name="curso_idcurso" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="detalle_beneficio_beneficio_fk">
+          <End Role="beneficio" Type="Self.beneficio" Multiplicity="1" />
+          <End Role="detalle_beneficio" Type="Self.detalle_beneficio" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="beneficio">
+              <PropertyRef Name="idbenefico" />
+            </Principal>
+            <Dependent Role="detalle_beneficio">
+              <PropertyRef Name="beneficio_idbenefico" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="info_beneficio_beneficio_fk">
+          <End Role="beneficio" Type="Self.beneficio" Multiplicity="1" />
+          <End Role="info_beneficio" Type="Self.info_beneficio" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="beneficio">
+              <PropertyRef Name="idbenefico" />
+            </Principal>
+            <Dependent Role="info_beneficio">
+              <PropertyRef Name="beneficio_idbenefico" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ciudad_pais_fk">
+          <End Role="pais" Type="Self.pais" Multiplicity="1" />
+          <End Role="ciudad" Type="Self.ciudad" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="pais">
+              <PropertyRef Name="codpais" />
+            </Principal>
+            <Dependent Role="ciudad">
+              <PropertyRef Name="pais_codpais" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="contrato_ciudad_fk">
+          <End Role="ciudad" Type="Self.ciudad" Multiplicity="1" />
+          <End Role="contrato" Type="Self.contrato" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ciudad">
+              <PropertyRef Name="codciudad" />
+            </Principal>
+            <Dependent Role="contrato">
+              <PropertyRef Name="ciudad_codciudad" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="colegio_tipcole_fk">
+          <End Role="tipcole" Type="Self.tipcole" Multiplicity="1" />
+          <End Role="colegio" Type="Self.colegio" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tipcole">
+              <PropertyRef Name="idtipo" />
+            </Principal>
+            <Dependent Role="colegio">
+              <PropertyRef Name="tipcole_idtipo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="curso_colegio_fk">
+          <End Role="colegio" Type="Self.colegio" Multiplicity="1" />
+          <End Role="curso" Type="Self.curso" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="colegio">
+              <PropertyRef Name="codcolegio" />
+            </Principal>
+            <Dependent Role="curso">
+              <PropertyRef Name="colegio_codcolegio" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="contrato_curso_fk">
+          <End Role="curso" Type="Self.curso" Multiplicity="1" />
+          <End Role="contrato" Type="Self.contrato" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="curso">
+              <PropertyRef Name="idcurso" />
+            </Principal>
+            <Dependent Role="contrato">
+              <PropertyRef Name="curso_idcurso" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="contrato_tipactividad_fk">
+          <End Role="tipactividad" Type="Self.tipactividad" Multiplicity="1" />
+          <End Role="contrato" Type="Self.contrato" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tipactividad">
+              <PropertyRef Name="idtipoact" />
+            </Principal>
+            <Dependent Role="contrato">
+              <PropertyRef Name="tipactividad_idtipoact" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="contrato_usuario_fk">
+          <End Role="usuario" Type="Self.usuario" Multiplicity="1" />
+          <End Role="contrato" Type="Self.contrato" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="usuario">
+              <PropertyRef Name="rutusu" />
+            </Principal>
+            <Dependent Role="contrato">
+              <PropertyRef Name="usuario_rutusu" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="info_actividad_contrato_fk">
+          <End Role="contrato" Type="Self.contrato" Multiplicity="1" />
+          <End Role="info_actividad" Type="Self.info_actividad" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="contrato">
+              <PropertyRef Name="numcontrato" />
+            </Principal>
+            <Dependent Role="info_actividad">
+              <PropertyRef Name="contrato_numcontrato" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="info_beneficio_contrato_fk">
+          <End Role="contrato" Type="Self.contrato" Multiplicity="1" />
+          <End Role="info_beneficio" Type="Self.info_beneficio" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="contrato">
+              <PropertyRef Name="numcontrato" />
+            </Principal>
+            <Dependent Role="info_beneficio">
+              <PropertyRef Name="contrato_numcontrato" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="info_seguro_contrato_fk">
+          <End Role="contrato" Type="Self.contrato" Multiplicity="1" />
+          <End Role="info_seguro" Type="Self.info_seguro" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="contrato">
+              <PropertyRef Name="numcontrato" />
+            </Principal>
+            <Dependent Role="info_seguro">
+              <PropertyRef Name="contrato_numcontrato" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="cta_usuario_tipcuenta_fk">
+          <End Role="tipcuenta" Type="Self.tipcuenta" Multiplicity="1" />
+          <End Role="cta_usuario" Type="Self.cta_usuario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tipcuenta">
+              <PropertyRef Name="idtipocta" />
+            </Principal>
+            <Dependent Role="cta_usuario">
+              <PropertyRef Name="tipcuenta_idtipocta" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="cta_usuario_usuario_fk">
+          <End Role="usuario" Type="Self.usuario" Multiplicity="1" />
+          <End Role="cta_usuario" Type="Self.cta_usuario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="usuario">
+              <PropertyRef Name="rutusu" />
+            </Principal>
+            <Dependent Role="cta_usuario">
+              <PropertyRef Name="usuario_rutusu" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="deposito_curso_fk">
+          <End Role="curso" Type="Self.curso" Multiplicity="1" />
+          <End Role="deposito" Type="Self.deposito" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="curso">
+              <PropertyRef Name="idcurso" />
+            </Principal>
+            <Dependent Role="deposito">
+              <PropertyRef Name="curso_idcurso" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="detalle_seguro_seguro_fk">
+          <End Role="seguro" Type="Self.seguro" Multiplicity="1" />
+          <End Role="detalle_seguro" Type="Self.detalle_seguro" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="seguro">
+              <PropertyRef Name="idseguro" />
+            </Principal>
+            <Dependent Role="detalle_seguro">
+              <PropertyRef Name="seguro_idseguro" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="seguro_empaseg_fk">
+          <End Role="empaseg" Type="Self.empaseg" Multiplicity="1" />
+          <End Role="seguro" Type="Self.seguro" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="empaseg">
+              <PropertyRef Name="rutemp" />
+            </Principal>
+            <Dependent Role="seguro">
+              <PropertyRef Name="empaseg_rutemp" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="info_seguro_seguro_fk">
+          <End Role="seguro" Type="Self.seguro" Multiplicity="1" />
+          <End Role="info_seguro" Type="Self.info_seguro" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="seguro">
+              <PropertyRef Name="idseguro" />
+            </Principal>
+            <Dependent Role="info_seguro">
+              <PropertyRef Name="seguro_idseguro" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="tipactividad_modaporte_fk">
+          <End Role="modaporte" Type="Self.modaporte" Multiplicity="1" />
+          <End Role="tipactividad" Type="Self.tipactividad" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="modaporte">
+              <PropertyRef Name="idmod" />
+            </Principal>
+            <Dependent Role="tipactividad">
+              <PropertyRef Name="modaporte_idmod" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="OnTourEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="actividad" EntityType="Self.actividad" />
+          <EntitySet Name="alumno" EntityType="Self.alumno" />
+          <EntitySet Name="beneficio" EntityType="Self.beneficio" />
+          <EntitySet Name="ciudad" EntityType="Self.ciudad" />
+          <EntitySet Name="colegio" EntityType="Self.colegio" />
+          <EntitySet Name="contrato" EntityType="Self.contrato" />
+          <EntitySet Name="cta_usuario" EntityType="Self.cta_usuario" />
+          <EntitySet Name="curso" EntityType="Self.curso" />
+          <EntitySet Name="deposito" EntityType="Self.deposito" />
+          <EntitySet Name="detalle_actividad" EntityType="Self.detalle_actividad" />
+          <EntitySet Name="detalle_beneficio" EntityType="Self.detalle_beneficio" />
+          <EntitySet Name="detalle_seguro" EntityType="Self.detalle_seguro" />
+          <EntitySet Name="empaseg" EntityType="Self.empaseg" />
+          <EntitySet Name="info_actividad" EntityType="Self.info_actividad" />
+          <EntitySet Name="info_beneficio" EntityType="Self.info_beneficio" />
+          <EntitySet Name="info_seguro" EntityType="Self.info_seguro" />
+          <EntitySet Name="modaporte" EntityType="Self.modaporte" />
+          <EntitySet Name="pais" EntityType="Self.pais" />
+          <EntitySet Name="seguro" EntityType="Self.seguro" />
+          <EntitySet Name="tasa_interes" EntityType="Self.tasa_interes" />
+          <EntitySet Name="tipactividad" EntityType="Self.tipactividad" />
+          <EntitySet Name="tipcole" EntityType="Self.tipcole" />
+          <EntitySet Name="tipcuenta" EntityType="Self.tipcuenta" />
+          <EntitySet Name="usuario" EntityType="Self.usuario" />
+          <AssociationSet Name="detalle_actividad_actividad_fk" Association="Self.detalle_actividad_actividad_fk">
+            <End Role="actividad" EntitySet="actividad" />
+            <End Role="detalle_actividad" EntitySet="detalle_actividad" />
+          </AssociationSet>
+          <AssociationSet Name="info_actividad_actividad_fk" Association="Self.info_actividad_actividad_fk">
+            <End Role="actividad" EntitySet="actividad" />
+            <End Role="info_actividad" EntitySet="info_actividad" />
+          </AssociationSet>
+          <AssociationSet Name="alumno_curso_fk" Association="Self.alumno_curso_fk">
+            <End Role="curso" EntitySet="curso" />
+            <End Role="alumno" EntitySet="alumno" />
+          </AssociationSet>
+          <AssociationSet Name="detalle_beneficio_beneficio_fk" Association="Self.detalle_beneficio_beneficio_fk">
+            <End Role="beneficio" EntitySet="beneficio" />
+            <End Role="detalle_beneficio" EntitySet="detalle_beneficio" />
+          </AssociationSet>
+          <AssociationSet Name="info_beneficio_beneficio_fk" Association="Self.info_beneficio_beneficio_fk">
+            <End Role="beneficio" EntitySet="beneficio" />
+            <End Role="info_beneficio" EntitySet="info_beneficio" />
+          </AssociationSet>
+          <AssociationSet Name="ciudad_pais_fk" Association="Self.ciudad_pais_fk">
+            <End Role="pais" EntitySet="pais" />
+            <End Role="ciudad" EntitySet="ciudad" />
+          </AssociationSet>
+          <AssociationSet Name="contrato_ciudad_fk" Association="Self.contrato_ciudad_fk">
+            <End Role="ciudad" EntitySet="ciudad" />
+            <End Role="contrato" EntitySet="contrato" />
+          </AssociationSet>
+          <AssociationSet Name="colegio_tipcole_fk" Association="Self.colegio_tipcole_fk">
+            <End Role="tipcole" EntitySet="tipcole" />
+            <End Role="colegio" EntitySet="colegio" />
+          </AssociationSet>
+          <AssociationSet Name="curso_colegio_fk" Association="Self.curso_colegio_fk">
+            <End Role="colegio" EntitySet="colegio" />
+            <End Role="curso" EntitySet="curso" />
+          </AssociationSet>
+          <AssociationSet Name="contrato_curso_fk" Association="Self.contrato_curso_fk">
+            <End Role="curso" EntitySet="curso" />
+            <End Role="contrato" EntitySet="contrato" />
+          </AssociationSet>
+          <AssociationSet Name="contrato_tipactividad_fk" Association="Self.contrato_tipactividad_fk">
+            <End Role="tipactividad" EntitySet="tipactividad" />
+            <End Role="contrato" EntitySet="contrato" />
+          </AssociationSet>
+          <AssociationSet Name="contrato_usuario_fk" Association="Self.contrato_usuario_fk">
+            <End Role="usuario" EntitySet="usuario" />
+            <End Role="contrato" EntitySet="contrato" />
+          </AssociationSet>
+          <AssociationSet Name="info_actividad_contrato_fk" Association="Self.info_actividad_contrato_fk">
+            <End Role="contrato" EntitySet="contrato" />
+            <End Role="info_actividad" EntitySet="info_actividad" />
+          </AssociationSet>
+          <AssociationSet Name="info_beneficio_contrato_fk" Association="Self.info_beneficio_contrato_fk">
+            <End Role="contrato" EntitySet="contrato" />
+            <End Role="info_beneficio" EntitySet="info_beneficio" />
+          </AssociationSet>
+          <AssociationSet Name="info_seguro_contrato_fk" Association="Self.info_seguro_contrato_fk">
+            <End Role="contrato" EntitySet="contrato" />
+            <End Role="info_seguro" EntitySet="info_seguro" />
+          </AssociationSet>
+          <AssociationSet Name="cta_usuario_tipcuenta_fk" Association="Self.cta_usuario_tipcuenta_fk">
+            <End Role="tipcuenta" EntitySet="tipcuenta" />
+            <End Role="cta_usuario" EntitySet="cta_usuario" />
+          </AssociationSet>
+          <AssociationSet Name="cta_usuario_usuario_fk" Association="Self.cta_usuario_usuario_fk">
+            <End Role="usuario" EntitySet="usuario" />
+            <End Role="cta_usuario" EntitySet="cta_usuario" />
+          </AssociationSet>
+          <AssociationSet Name="deposito_curso_fk" Association="Self.deposito_curso_fk">
+            <End Role="curso" EntitySet="curso" />
+            <End Role="deposito" EntitySet="deposito" />
+          </AssociationSet>
+          <AssociationSet Name="detalle_seguro_seguro_fk" Association="Self.detalle_seguro_seguro_fk">
+            <End Role="seguro" EntitySet="seguro" />
+            <End Role="detalle_seguro" EntitySet="detalle_seguro" />
+          </AssociationSet>
+          <AssociationSet Name="seguro_empaseg_fk" Association="Self.seguro_empaseg_fk">
+            <End Role="empaseg" EntitySet="empaseg" />
+            <End Role="seguro" EntitySet="seguro" />
+          </AssociationSet>
+          <AssociationSet Name="info_seguro_seguro_fk" Association="Self.info_seguro_seguro_fk">
+            <End Role="seguro" EntitySet="seguro" />
+            <End Role="info_seguro" EntitySet="info_seguro" />
+          </AssociationSet>
+          <AssociationSet Name="tipactividad_modaporte_fk" Association="Self.tipactividad_modaporte_fk">
+            <End Role="modaporte" EntitySet="modaporte" />
+            <End Role="tipactividad" EntitySet="tipactividad" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="OnTourModelStoreContainer" CdmEntityContainer="OnTourEntities">
+          <EntitySetMapping Name="actividad">
+            <EntityTypeMapping TypeName="OnTourModel.actividad">
+              <MappingFragment StoreEntitySet="actividad">
+                <ScalarProperty Name="idactividad" ColumnName="idactividad" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="costo" ColumnName="costo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="alumno">
+            <EntityTypeMapping TypeName="OnTourModel.alumno">
+              <MappingFragment StoreEntitySet="alumno">
+                <ScalarProperty Name="rutalumno" ColumnName="rutalumno" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="apaterno" ColumnName="apaterno" />
+                <ScalarProperty Name="amaterno" ColumnName="amaterno" />
+                <ScalarProperty Name="direccion" ColumnName="direccion" />
+                <ScalarProperty Name="curso_idcurso" ColumnName="curso_idcurso" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="beneficio">
+            <EntityTypeMapping TypeName="OnTourModel.beneficio">
+              <MappingFragment StoreEntitySet="beneficio">
+                <ScalarProperty Name="idbenefico" ColumnName="idbenefico" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="porcdescuento" ColumnName="porcdescuento" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ciudad">
+            <EntityTypeMapping TypeName="OnTourModel.ciudad">
+              <MappingFragment StoreEntitySet="ciudad">
+                <ScalarProperty Name="codciudad" ColumnName="codciudad" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="pais_codpais" ColumnName="pais_codpais" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="colegio">
+            <EntityTypeMapping TypeName="OnTourModel.colegio">
+              <MappingFragment StoreEntitySet="colegio">
+                <ScalarProperty Name="codcolegio" ColumnName="codcolegio" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="direccion" ColumnName="direccion" />
+                <ScalarProperty Name="tipcole_idtipo" ColumnName="tipcole_idtipo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="contrato">
+            <EntityTypeMapping TypeName="OnTourModel.contrato">
+              <MappingFragment StoreEntitySet="contrato">
+                <ScalarProperty Name="numcontrato" ColumnName="numcontrato" />
+                <ScalarProperty Name="fechacreacion" ColumnName="fechacreacion" />
+                <ScalarProperty Name="fechatermino" ColumnName="fechatermino" />
+                <ScalarProperty Name="duraciondias" ColumnName="duraciondias" />
+                <ScalarProperty Name="fechaini" ColumnName="fechaini" />
+                <ScalarProperty Name="fechaterm" ColumnName="fechaterm" />
+                <ScalarProperty Name="fechapagos" ColumnName="fechapagos" />
+                <ScalarProperty Name="costototseguros" ColumnName="costototseguros" />
+                <ScalarProperty Name="costototactividades" ColumnName="costototactividades" />
+                <ScalarProperty Name="porctotbeneficios" ColumnName="porctotbeneficios" />
+                <ScalarProperty Name="costoservicios" ColumnName="costoservicios" />
+                <ScalarProperty Name="meta" ColumnName="meta" />
+                <ScalarProperty Name="tipactividad_idtipoact" ColumnName="tipactividad_idtipoact" />
+                <ScalarProperty Name="curso_idcurso" ColumnName="curso_idcurso" />
+                <ScalarProperty Name="ciudad_codciudad" ColumnName="ciudad_codciudad" />
+                <ScalarProperty Name="usuario_rutusu" ColumnName="usuario_rutusu" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="cta_usuario">
+            <EntityTypeMapping TypeName="OnTourModel.cta_usuario">
+              <MappingFragment StoreEntitySet="cta_usuario">
+                <ScalarProperty Name="usuario" ColumnName="usuario" />
+                <ScalarProperty Name="contraseña" ColumnName="contraseña" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="usuario_rutusu" ColumnName="usuario_rutusu" />
+                <ScalarProperty Name="tipcuenta_idtipocta" ColumnName="tipcuenta_idtipocta" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="curso">
+            <EntityTypeMapping TypeName="OnTourModel.curso">
+              <MappingFragment StoreEntitySet="curso">
+                <ScalarProperty Name="idcurso" ColumnName="idcurso" />
+                <ScalarProperty Name="numalumnos" ColumnName="numalumnos" />
+                <ScalarProperty Name="colegio_codcolegio" ColumnName="colegio_codcolegio" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="deposito">
+            <EntityTypeMapping TypeName="OnTourModel.deposito">
+              <MappingFragment StoreEntitySet="deposito">
+                <ScalarProperty Name="iddeposito" ColumnName="iddeposito" />
+                <ScalarProperty Name="fechadeposito" ColumnName="fechadeposito" />
+                <ScalarProperty Name="montodeposito" ColumnName="montodeposito" />
+                <ScalarProperty Name="curso_idcurso" ColumnName="curso_idcurso" />
+                <ScalarProperty Name="rutdepos" ColumnName="rutdepos" />
+                <ScalarProperty Name="nombredepos" ColumnName="nombredepos" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="detalle_actividad">
+            <EntityTypeMapping TypeName="OnTourModel.detalle_actividad">
+              <MappingFragment StoreEntitySet="detalle_actividad">
+                <ScalarProperty Name="iddetact" ColumnName="iddetact" />
+                <ScalarProperty Name="numcontrato" ColumnName="numcontrato" />
+                <ScalarProperty Name="actividad_idactividad" ColumnName="actividad_idactividad" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="detalle_beneficio">
+            <EntityTypeMapping TypeName="OnTourModel.detalle_beneficio">
+              <MappingFragment StoreEntitySet="detalle_beneficio">
+                <ScalarProperty Name="iddetben" ColumnName="iddetben" />
+                <ScalarProperty Name="numcontrato" ColumnName="numcontrato" />
+                <ScalarProperty Name="beneficio_idbenefico" ColumnName="beneficio_idbenefico" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="detalle_seguro">
+            <EntityTypeMapping TypeName="OnTourModel.detalle_seguro">
+              <MappingFragment StoreEntitySet="detalle_seguro">
+                <ScalarProperty Name="iddetseg" ColumnName="iddetseg" />
+                <ScalarProperty Name="numcontrato" ColumnName="numcontrato" />
+                <ScalarProperty Name="seguro_idseguro" ColumnName="seguro_idseguro" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="empaseg">
+            <EntityTypeMapping TypeName="OnTourModel.empaseg">
+              <MappingFragment StoreEntitySet="empaseg">
+                <ScalarProperty Name="rutemp" ColumnName="rutemp" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="direccion" ColumnName="direccion" />
+                <ScalarProperty Name="telefono" ColumnName="telefono" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="info_actividad">
+            <EntityTypeMapping TypeName="OnTourModel.info_actividad">
+              <MappingFragment StoreEntitySet="info_actividad">
+                <ScalarProperty Name="cant_actividad" ColumnName="cant_actividad" />
+                <ScalarProperty Name="contrato_numcontrato" ColumnName="contrato_numcontrato" />
+                <ScalarProperty Name="actividad_idactividad" ColumnName="actividad_idactividad" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="info_beneficio">
+            <EntityTypeMapping TypeName="OnTourModel.info_beneficio">
+              <MappingFragment StoreEntitySet="info_beneficio">
+                <ScalarProperty Name="cant_beneficio" ColumnName="cant_beneficio" />
+                <ScalarProperty Name="contrato_numcontrato" ColumnName="contrato_numcontrato" />
+                <ScalarProperty Name="beneficio_idbenefico" ColumnName="beneficio_idbenefico" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="info_seguro">
+            <EntityTypeMapping TypeName="OnTourModel.info_seguro">
+              <MappingFragment StoreEntitySet="info_seguro">
+                <ScalarProperty Name="cant_seguros" ColumnName="cant_seguros" />
+                <ScalarProperty Name="contrato_numcontrato" ColumnName="contrato_numcontrato" />
+                <ScalarProperty Name="seguro_idseguro" ColumnName="seguro_idseguro" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="modaporte">
+            <EntityTypeMapping TypeName="OnTourModel.modaporte">
+              <MappingFragment StoreEntitySet="modaporte">
+                <ScalarProperty Name="idmod" ColumnName="idmod" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="pais">
+            <EntityTypeMapping TypeName="OnTourModel.pais">
+              <MappingFragment StoreEntitySet="pais">
+                <ScalarProperty Name="codpais" ColumnName="codpais" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="seguro">
+            <EntityTypeMapping TypeName="OnTourModel.seguro">
+              <MappingFragment StoreEntitySet="seguro">
+                <ScalarProperty Name="idseguro" ColumnName="idseguro" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+                <ScalarProperty Name="costo" ColumnName="costo" />
+                <ScalarProperty Name="empaseg_rutemp" ColumnName="empaseg_rutemp" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tasa_interes">
+            <EntityTypeMapping TypeName="OnTourModel.tasa_interes">
+              <MappingFragment StoreEntitySet="tasa_interes">
+                <ScalarProperty Name="idinteres" ColumnName="idinteres" />
+                <ScalarProperty Name="diasini" ColumnName="diasini" />
+                <ScalarProperty Name="diasterm" ColumnName="diasterm" />
+                <ScalarProperty Name="porcmulta" ColumnName="porcmulta" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tipactividad">
+            <EntityTypeMapping TypeName="OnTourModel.tipactividad">
+              <MappingFragment StoreEntitySet="tipactividad">
+                <ScalarProperty Name="idtipoact" ColumnName="idtipoact" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="modaporte_idmod" ColumnName="modaporte_idmod" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tipcole">
+            <EntityTypeMapping TypeName="OnTourModel.tipcole">
+              <MappingFragment StoreEntitySet="tipcole">
+                <ScalarProperty Name="idtipo" ColumnName="idtipo" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tipcuenta">
+            <EntityTypeMapping TypeName="OnTourModel.tipcuenta">
+              <MappingFragment StoreEntitySet="tipcuenta">
+                <ScalarProperty Name="idtipocta" ColumnName="idtipocta" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="usuario">
+            <EntityTypeMapping TypeName="OnTourModel.usuario">
+              <MappingFragment StoreEntitySet="usuario">
+                <ScalarProperty Name="rutusu" ColumnName="rutusu" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="apaterno" ColumnName="apaterno" />
+                <ScalarProperty Name="amaterno" ColumnName="amaterno" />
+                <ScalarProperty Name="direccion" ColumnName="direccion" />
+                <ScalarProperty Name="email" ColumnName="email" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

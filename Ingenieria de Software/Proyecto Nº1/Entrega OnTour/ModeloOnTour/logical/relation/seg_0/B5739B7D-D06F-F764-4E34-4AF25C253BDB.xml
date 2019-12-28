@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="rln_contrato_detalleBeneficio" directorySegmentName="seg_0" id="B5739B7D-D06F-F764-4E34-4AF25C253BDB">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-07 10:38:48 UTC</createdTime>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="32ACCB6A-201C-36C5-1F7F-195C19F4CAC1" value="true"/>
+</engineerTo>
+<sourcePk>05786FE4-3FF6-BD03-24D2-A77B18577E3B</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D2582134-FDB0-FB3B-188D-D72D9B974C21</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>3EECDD76-8ED7-6FAB-E6C5-965CC30ED1BF</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

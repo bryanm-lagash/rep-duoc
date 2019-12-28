@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="03AFA6F4-814E-8DBD-4B1B-A0327A895DD3" name="Deposito">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 20:49:13 UTC</createdTime>
+<generatorID>577046C7-C5B5-FA3B-507F-95ABB07E4E23</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IdDeposito" id="255509FB-FE5C-73C6-B919-13E6F2FEAF92">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 20:49:13 UTC</createdTime>
+<generatorID>0E827628-8A66-85CB-EBA4-6E3A3198EA01</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FechaDeposito" id="9F41CA78-A036-F0E1-74B7-1C6E1D251425">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 20:49:13 UTC</createdTime>
+<generatorID>D8D325A4-4D7E-BBA8-1D9A-1138BAFFC9B0</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MontoDeposito" id="6A1BB814-D5F3-AFC7-47A5-8C3F632D328D">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 20:49:13 UTC</createdTime>
+<generatorID>938383A2-8AAD-FE40-8626-E8C7AB33687E</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Curso_IdCurso" id="9EEA20E5-918D-2A05-364F-4CA4A0773E9A">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 20:49:13 UTC</createdTime>
+<generatorID>27BB9D34-13E4-D399-8841-9148621D3706</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CFB7DE1A-859C-EF95-FFE3-F4BD4B855328" referredColumn="43F5CF2A-D44F-F8A5-5045-106A5AF5F0A6"/>
+</associations>
+</Column>
+<Column name="RutDepos" id="B128190A-1BB4-9654-EB18-EE8533A862CD">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 20:49:13 UTC</createdTime>
+<generatorID>26129060-E1EC-614C-CB84-B70F6A1396C6</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NombreDepos" id="07A827AC-6E97-D8E9-7560-C137FC2A30A9">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 20:49:13 UTC</createdTime>
+<generatorID>157C9BE2-4429-9336-EDCC-ABB3B574C5CD</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AAE1FB3F-7089-0D8A-E576-9CE20A4E2096" name="Deposito_PK">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 20:49:13 UTC</createdTime>
+<generatorID>8A27A001-406B-6379-1E55-EC301496EB6A</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="255509FB-FE5C-73C6-B919-13E6F2FEAF92"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CDF3340C-4B34-4903-87AE-AB4F8959A193" name="Deposito_Curso_FK">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 20:49:13 UTC</createdTime>
+<generatorID>D09BA76E-92D3-4990-1E1C-D854C3D4EC40</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9EEA20E5-918D-2A05-364F-4CA4A0773E9A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

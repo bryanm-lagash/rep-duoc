@@ -1,0 +1,537 @@
+C:\Users\anton\source\repos\OnTourWPF2.0\OnTourWPF2.0\bin\Debug\OnTourWPF2.0.exe.config
+C:\Users\anton\source\repos\OnTourWPF2.0\OnTourWPF2.0\bin\Debug\OnTourWPF2.0.exe
+C:\Users\anton\source\repos\OnTourWPF2.0\OnTourWPF2.0\bin\Debug\OnTourWPF2.0.pdb
+C:\Users\anton\source\repos\OnTourWPF2.0\OnTourWPF2.0\bin\Debug\ControlzEx.dll
+C:\Users\anton\source\repos\OnTourWPF2.0\OnTourWPF2.0\bin\Debug\MaterialDesignColors.dll
+C:\Users\anton\source\repos\OnTourWPF2.0\OnTourWPF2.0\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\anton\source\repos\OnTourWPF2.0\OnTourWPF2.0\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\anton\source\repos\OnTourWPF2.0\OnTourWPF2.0\bin\Debug\ControlzEx.pdb
+C:\Users\anton\source\repos\OnTourWPF2.0\OnTourWPF2.0\bin\Debug\ControlzEx.xml
+C:\Users\anton\source\repos\OnTourWPF2.0\OnTourWPF2.0\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\anton\source\repos\OnTourWPF2.0\OnTourWPF2.0\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\anton\source\repos\OnTourWPF2.0\OnTourWPF2.0\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\Users\anton\source\repos\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.csprojAssemblyReference.cache
+C:\Users\anton\source\repos\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\MainWindow.g.cs
+C:\Users\anton\source\repos\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\App.g.cs
+C:\Users\anton\source\repos\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2.0_MarkupCompile.cache
+C:\Users\anton\source\repos\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2.0_MarkupCompile.lref
+C:\Users\anton\source\repos\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\App.baml
+C:\Users\anton\source\repos\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\MainWindow.baml
+C:\Users\anton\source\repos\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.g.resources
+C:\Users\anton\source\repos\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2._0.Properties.Resources.resources
+C:\Users\anton\source\repos\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.csproj.GenerateResource.cache
+C:\Users\anton\source\repos\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.csproj.CoreCompileInputs.cache
+C:\Users\anton\source\repos\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.csproj.CopyComplete
+C:\Users\anton\source\repos\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.exe
+C:\Users\anton\source\repos\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.pdb
+C:\Users\anton\source\repos\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\Principal.g.cs
+C:\Users\anton\source\repos\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\Principal.baml
+C:\Users\anton\source\repos\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\Pages\PageRegistroViajes.g.cs
+C:\Users\anton\source\repos\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\Pages\PageRegistroViajes2.g.cs
+C:\Users\anton\source\repos\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\Pages\PageRegistroViajes.baml
+C:\Users\anton\source\repos\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\Pages\PageRegistroViajes2.baml
+C:\Users\anton\source\repos\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\Pages\PageRegistroViajes3.g.cs
+C:\Users\anton\source\repos\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\Pages\PageRegistroViajes3.baml
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Desarrollo de Software de Escritorio y Gestion\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.csprojAssemblyReference.cache
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Desarrollo de Software de Escritorio y Gestion\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\MainWindow.g.cs
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Desarrollo de Software de Escritorio y Gestion\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\EjecutivoVentas\EjecutivoVentas.g.cs
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Desarrollo de Software de Escritorio y Gestion\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\App.g.cs
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Desarrollo de Software de Escritorio y Gestion\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2.0_MarkupCompile.cache
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Desarrollo de Software de Escritorio y Gestion\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2.0_MarkupCompile.lref
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Desarrollo de Software de Escritorio y Gestion\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.exe
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Desarrollo de Software de Escritorio y Gestion\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.pdb
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Desarrollo de Software de Escritorio y Gestion\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\bin\Debug\OnTourWPF2.0.exe.config
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Desarrollo de Software de Escritorio y Gestion\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\bin\Debug\OnTourWPF2.0.exe
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Desarrollo de Software de Escritorio y Gestion\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\bin\Debug\OnTourWPF2.0.pdb
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Desarrollo de Software de Escritorio y Gestion\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\bin\Debug\ControlzEx.dll
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Desarrollo de Software de Escritorio y Gestion\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\bin\Debug\MaterialDesignColors.dll
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Desarrollo de Software de Escritorio y Gestion\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\bin\Debug\ControlzEx.pdb
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Desarrollo de Software de Escritorio y Gestion\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\bin\Debug\ControlzEx.xml
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Desarrollo de Software de Escritorio y Gestion\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Desarrollo de Software de Escritorio y Gestion\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Desarrollo de Software de Escritorio y Gestion\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Desarrollo de Software de Escritorio y Gestion\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\App.baml
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Desarrollo de Software de Escritorio y Gestion\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\MainWindow.baml
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Desarrollo de Software de Escritorio y Gestion\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\EjecutivoVentas\EjecutivoVentas.baml
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Desarrollo de Software de Escritorio y Gestion\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.g.resources
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Desarrollo de Software de Escritorio y Gestion\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2._0.Properties.Resources.resources
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Desarrollo de Software de Escritorio y Gestion\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.csproj.GenerateResource.cache
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Desarrollo de Software de Escritorio y Gestion\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.csproj.CoreCompileInputs.cache
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Desarrollo de Software de Escritorio y Gestion\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.csproj.CopyComplete
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Desarrollo de Software de Escritorio y Gestion\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\AdminSistemas\AdminSistemas.g.cs
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Desarrollo de Software de Escritorio y Gestion\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\Apoderados\Apoderados.g.cs
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Desarrollo de Software de Escritorio y Gestion\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\AdminSistemas\AdminSistemas.baml
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Desarrollo de Software de Escritorio y Gestion\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\Apoderados\Apoderados.baml
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Desarrollo de Software de Escritorio y Gestion\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\bin\Debug\MahApps.Metro.dll
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Desarrollo de Software de Escritorio y Gestion\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\bin\Debug\MahApps.Metro.pdb
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Desarrollo de Software de Escritorio y Gestion\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\bin\Debug\MahApps.Metro.xml
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Desarrollo de Software de Escritorio y Gestion\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\Ventanas\Actividades.g.cs
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Desarrollo de Software de Escritorio y Gestion\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\Ventanas\Actividades.baml
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\bin\Debug\OnTourWPF2.0.exe.config
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\bin\Debug\OnTourWPF2.0.exe
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\bin\Debug\OnTourWPF2.0.pdb
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\bin\Debug\ControlzEx.dll
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\bin\Debug\MahApps.Metro.dll
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\bin\Debug\MaterialDesignColors.dll
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\bin\Debug\ControlzEx.pdb
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\bin\Debug\ControlzEx.xml
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\bin\Debug\MahApps.Metro.pdb
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\bin\Debug\MahApps.Metro.xml
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.csprojAssemblyReference.cache
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\AdminSistemas\AdminSistemas.g.cs
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\Apoderados\Apoderados.g.cs
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\MainWindow.g.cs
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\EjecutivoVentas\EjecutivoVentas.g.cs
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\Ventanas\Actividades.g.cs
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\Ventanas\Seguros.g.cs
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\App.g.cs
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2.0_MarkupCompile.cache
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2.0_MarkupCompile.lref
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\App.baml
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\AdminSistemas\AdminSistemas.baml
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\Apoderados\Apoderados.baml
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\MainWindow.baml
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\EjecutivoVentas\EjecutivoVentas.baml
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\Ventanas\Actividades.baml
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\Ventanas\Seguros.baml
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.g.resources
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2._0.Properties.Resources.resources
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.csproj.GenerateResource.cache
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.csproj.CoreCompileInputs.cache
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.csproj.CopyComplete
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.exe
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.pdb
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\Dueño\Dueño.g.cs
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\obj\Debug\Dueño\Dueño.baml
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\bin\Debug\EntityFramework.dll
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\bin\Debug\EntityFramework.xml
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\bin\Debug\BLL.dll
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\bin\Debug\DAL.dll
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\bin\Debug\BLL.pdb
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\bin\Debug\BLL.dll.config
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\bin\Debug\DAL.pdb
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\OnTourWPF2.0\bin\Debug\DAL.dll.config
+C:\Users\steds\Desktop\SLN OnTour\OnTourWPF2.0\bin\Debug\OnTourWPF2.0.exe.config
+C:\Users\steds\Desktop\SLN OnTour\OnTourWPF2.0\bin\Debug\OnTourWPF2.0.exe
+C:\Users\steds\Desktop\SLN OnTour\OnTourWPF2.0\bin\Debug\OnTourWPF2.0.pdb
+C:\Users\steds\Desktop\SLN OnTour\OnTourWPF2.0\bin\Debug\BLL.dll
+C:\Users\steds\Desktop\SLN OnTour\OnTourWPF2.0\bin\Debug\ControlzEx.dll
+C:\Users\steds\Desktop\SLN OnTour\OnTourWPF2.0\bin\Debug\EntityFramework.dll
+C:\Users\steds\Desktop\SLN OnTour\OnTourWPF2.0\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\steds\Desktop\SLN OnTour\OnTourWPF2.0\bin\Debug\MahApps.Metro.dll
+C:\Users\steds\Desktop\SLN OnTour\OnTourWPF2.0\bin\Debug\MaterialDesignColors.dll
+C:\Users\steds\Desktop\SLN OnTour\OnTourWPF2.0\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\steds\Desktop\SLN OnTour\OnTourWPF2.0\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\steds\Desktop\SLN OnTour\OnTourWPF2.0\bin\Debug\DAL.dll
+C:\Users\steds\Desktop\SLN OnTour\OnTourWPF2.0\bin\Debug\BLL.pdb
+C:\Users\steds\Desktop\SLN OnTour\OnTourWPF2.0\bin\Debug\BLL.dll.config
+C:\Users\steds\Desktop\SLN OnTour\OnTourWPF2.0\bin\Debug\ControlzEx.pdb
+C:\Users\steds\Desktop\SLN OnTour\OnTourWPF2.0\bin\Debug\ControlzEx.xml
+C:\Users\steds\Desktop\SLN OnTour\OnTourWPF2.0\bin\Debug\EntityFramework.xml
+C:\Users\steds\Desktop\SLN OnTour\OnTourWPF2.0\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\steds\Desktop\SLN OnTour\OnTourWPF2.0\bin\Debug\MahApps.Metro.pdb
+C:\Users\steds\Desktop\SLN OnTour\OnTourWPF2.0\bin\Debug\MahApps.Metro.xml
+C:\Users\steds\Desktop\SLN OnTour\OnTourWPF2.0\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\steds\Desktop\SLN OnTour\OnTourWPF2.0\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\steds\Desktop\SLN OnTour\OnTourWPF2.0\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\Users\steds\Desktop\SLN OnTour\OnTourWPF2.0\bin\Debug\DAL.pdb
+C:\Users\steds\Desktop\SLN OnTour\OnTourWPF2.0\bin\Debug\DAL.dll.config
+C:\Users\steds\Desktop\SLN OnTour\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.csprojAssemblyReference.cache
+C:\Users\steds\Desktop\SLN OnTour\OnTourWPF2.0\obj\Debug\AdminSistemas\AdminSistemas.g.cs
+C:\Users\steds\Desktop\SLN OnTour\OnTourWPF2.0\obj\Debug\Apoderados\Apoderados.g.cs
+C:\Users\steds\Desktop\SLN OnTour\OnTourWPF2.0\obj\Debug\Dueño\Dueño.g.cs
+C:\Users\steds\Desktop\SLN OnTour\OnTourWPF2.0\obj\Debug\MainWindow.g.cs
+C:\Users\steds\Desktop\SLN OnTour\OnTourWPF2.0\obj\Debug\EjecutivoVentas\EjecutivoVentas.g.cs
+C:\Users\steds\Desktop\SLN OnTour\OnTourWPF2.0\obj\Debug\Ventanas\Actividades.g.cs
+C:\Users\steds\Desktop\SLN OnTour\OnTourWPF2.0\obj\Debug\Ventanas\Seguros.g.cs
+C:\Users\steds\Desktop\SLN OnTour\OnTourWPF2.0\obj\Debug\App.g.cs
+C:\Users\steds\Desktop\SLN OnTour\OnTourWPF2.0\obj\Debug\OnTourWPF2.0_MarkupCompile.cache
+C:\Users\steds\Desktop\SLN OnTour\OnTourWPF2.0\obj\Debug\OnTourWPF2.0_MarkupCompile.lref
+C:\Users\steds\Desktop\SLN OnTour\OnTourWPF2.0\obj\Debug\App.baml
+C:\Users\steds\Desktop\SLN OnTour\OnTourWPF2.0\obj\Debug\AdminSistemas\AdminSistemas.baml
+C:\Users\steds\Desktop\SLN OnTour\OnTourWPF2.0\obj\Debug\Apoderados\Apoderados.baml
+C:\Users\steds\Desktop\SLN OnTour\OnTourWPF2.0\obj\Debug\Dueño\Dueño.baml
+C:\Users\steds\Desktop\SLN OnTour\OnTourWPF2.0\obj\Debug\MainWindow.baml
+C:\Users\steds\Desktop\SLN OnTour\OnTourWPF2.0\obj\Debug\EjecutivoVentas\EjecutivoVentas.baml
+C:\Users\steds\Desktop\SLN OnTour\OnTourWPF2.0\obj\Debug\Ventanas\Actividades.baml
+C:\Users\steds\Desktop\SLN OnTour\OnTourWPF2.0\obj\Debug\Ventanas\Seguros.baml
+C:\Users\steds\Desktop\SLN OnTour\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.g.resources
+C:\Users\steds\Desktop\SLN OnTour\OnTourWPF2.0\obj\Debug\OnTourWPF2._0.Properties.Resources.resources
+C:\Users\steds\Desktop\SLN OnTour\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.csproj.GenerateResource.cache
+C:\Users\steds\Desktop\SLN OnTour\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.csproj.CoreCompileInputs.cache
+C:\Users\steds\Desktop\SLN OnTour\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.csproj.CopyComplete
+C:\Users\steds\Desktop\SLN OnTour\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.exe
+C:\Users\steds\Desktop\SLN OnTour\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.pdb
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\OnTourWPF2.0\bin\Debug\OnTourWPF2.0.exe.config
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\OnTourWPF2.0\bin\Debug\OnTourWPF2.0.exe
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\OnTourWPF2.0\bin\Debug\OnTourWPF2.0.pdb
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\OnTourWPF2.0\bin\Debug\BLL.dll
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\OnTourWPF2.0\bin\Debug\ControlzEx.dll
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\OnTourWPF2.0\bin\Debug\EntityFramework.dll
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\OnTourWPF2.0\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\OnTourWPF2.0\bin\Debug\MahApps.Metro.dll
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\OnTourWPF2.0\bin\Debug\MaterialDesignColors.dll
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\OnTourWPF2.0\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\OnTourWPF2.0\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\OnTourWPF2.0\bin\Debug\DAL.dll
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\OnTourWPF2.0\bin\Debug\BLL.pdb
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\OnTourWPF2.0\bin\Debug\BLL.dll.config
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\OnTourWPF2.0\bin\Debug\ControlzEx.pdb
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\OnTourWPF2.0\bin\Debug\ControlzEx.xml
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\OnTourWPF2.0\bin\Debug\EntityFramework.xml
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\OnTourWPF2.0\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\OnTourWPF2.0\bin\Debug\MahApps.Metro.pdb
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\OnTourWPF2.0\bin\Debug\MahApps.Metro.xml
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\OnTourWPF2.0\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\OnTourWPF2.0\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\OnTourWPF2.0\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\OnTourWPF2.0\bin\Debug\DAL.pdb
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\OnTourWPF2.0\bin\Debug\DAL.dll.config
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.csprojAssemblyReference.cache
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\OnTourWPF2.0\obj\Debug\AdminSistemas\AdminSistemas.g.cs
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\OnTourWPF2.0\obj\Debug\Apoderados\Apoderados.g.cs
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\OnTourWPF2.0\obj\Debug\Dueño\Dueño.g.cs
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\OnTourWPF2.0\obj\Debug\MainWindow.g.cs
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\OnTourWPF2.0\obj\Debug\EjecutivoVentas\EjecutivoVentas.g.cs
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\OnTourWPF2.0\obj\Debug\Ventanas\Actividades.g.cs
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\OnTourWPF2.0\obj\Debug\Ventanas\Seguros.g.cs
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\OnTourWPF2.0\obj\Debug\App.g.cs
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\OnTourWPF2.0\obj\Debug\OnTourWPF2.0_MarkupCompile.cache
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\OnTourWPF2.0\obj\Debug\OnTourWPF2.0_MarkupCompile.lref
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\OnTourWPF2.0\obj\Debug\App.baml
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\OnTourWPF2.0\obj\Debug\AdminSistemas\AdminSistemas.baml
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\OnTourWPF2.0\obj\Debug\Apoderados\Apoderados.baml
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\OnTourWPF2.0\obj\Debug\Dueño\Dueño.baml
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\OnTourWPF2.0\obj\Debug\MainWindow.baml
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\OnTourWPF2.0\obj\Debug\EjecutivoVentas\EjecutivoVentas.baml
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\OnTourWPF2.0\obj\Debug\Ventanas\Actividades.baml
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\OnTourWPF2.0\obj\Debug\Ventanas\Seguros.baml
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.g.resources
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\OnTourWPF2.0\obj\Debug\OnTourWPF2._0.Properties.Resources.resources
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.csproj.GenerateResource.cache
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.csproj.CoreCompileInputs.cache
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.csproj.CopyComplete
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.exe
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.pdb
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\OnTourWPF2.0\obj\Debug\MessBoxes.g.cs
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\OnTourWPF2.0\obj\Debug\MessBoxes.baml
+C:\Users\steds\Desktop\SLN OnTour\OnTourWPF2.0\obj\Debug\MessBoxes.g.cs
+C:\Users\steds\Desktop\SLN OnTour\OnTourWPF2.0\obj\Debug\MessBoxes.baml
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\OnTourWPF2.0\bin\Debug\OnTourWPF2.0.exe.config
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\OnTourWPF2.0\bin\Debug\OnTourWPF2.0.exe
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\OnTourWPF2.0\bin\Debug\OnTourWPF2.0.pdb
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\OnTourWPF2.0\bin\Debug\BLL.dll
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\OnTourWPF2.0\bin\Debug\ControlzEx.dll
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\OnTourWPF2.0\bin\Debug\EntityFramework.dll
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\OnTourWPF2.0\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\OnTourWPF2.0\bin\Debug\MahApps.Metro.dll
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\OnTourWPF2.0\bin\Debug\MaterialDesignColors.dll
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\OnTourWPF2.0\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\OnTourWPF2.0\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\OnTourWPF2.0\bin\Debug\DAL.dll
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\OnTourWPF2.0\bin\Debug\BLL.pdb
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\OnTourWPF2.0\bin\Debug\BLL.dll.config
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\OnTourWPF2.0\bin\Debug\ControlzEx.pdb
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\OnTourWPF2.0\bin\Debug\ControlzEx.xml
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\OnTourWPF2.0\bin\Debug\EntityFramework.xml
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\OnTourWPF2.0\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\OnTourWPF2.0\bin\Debug\MahApps.Metro.pdb
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\OnTourWPF2.0\bin\Debug\MahApps.Metro.xml
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\OnTourWPF2.0\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\OnTourWPF2.0\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\OnTourWPF2.0\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\OnTourWPF2.0\bin\Debug\DAL.pdb
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\OnTourWPF2.0\bin\Debug\DAL.dll.config
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.csprojAssemblyReference.cache
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\OnTourWPF2.0\obj\Debug\AdminSistemas\AdminSistemas.g.cs
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\OnTourWPF2.0\obj\Debug\Apoderados\Apoderados.g.cs
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\OnTourWPF2.0\obj\Debug\Dueño\Dueño.g.cs
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\OnTourWPF2.0\obj\Debug\MainWindow.g.cs
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\OnTourWPF2.0\obj\Debug\EjecutivoVentas\EjecutivoVentas.g.cs
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\OnTourWPF2.0\obj\Debug\MessBoxes.g.cs
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\OnTourWPF2.0\obj\Debug\Ventanas\Actividades.g.cs
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\OnTourWPF2.0\obj\Debug\Ventanas\Seguros.g.cs
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\OnTourWPF2.0\obj\Debug\App.g.cs
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\OnTourWPF2.0\obj\Debug\OnTourWPF2.0_MarkupCompile.cache
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\OnTourWPF2.0\obj\Debug\OnTourWPF2.0_MarkupCompile.lref
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\OnTourWPF2.0\obj\Debug\App.baml
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\OnTourWPF2.0\obj\Debug\AdminSistemas\AdminSistemas.baml
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\OnTourWPF2.0\obj\Debug\Apoderados\Apoderados.baml
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\OnTourWPF2.0\obj\Debug\Dueño\Dueño.baml
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\OnTourWPF2.0\obj\Debug\MainWindow.baml
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\OnTourWPF2.0\obj\Debug\EjecutivoVentas\EjecutivoVentas.baml
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\OnTourWPF2.0\obj\Debug\MessBoxes.baml
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\OnTourWPF2.0\obj\Debug\Ventanas\Actividades.baml
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\OnTourWPF2.0\obj\Debug\Ventanas\Seguros.baml
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.g.resources
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\OnTourWPF2.0\obj\Debug\OnTourWPF2._0.Properties.Resources.resources
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.csproj.GenerateResource.cache
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.csproj.CoreCompileInputs.cache
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.csproj.CopyComplete
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.exe
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.pdb
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\OnTourWPF2.0\obj\Debug\Simple Styles.baml
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\OnTourWPF2.0\obj\Debug\Inicio.g.cs
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\OnTourWPF2.0\obj\Debug\Inicio.baml
+C:\Users\steds\Desktop\SLN OnTour\OnTourWPF2.0\obj\Debug\Simple Styles.baml
+C:\Users\steds\Desktop\SLN OnTour\OnTourWPF2.0\obj\Debug\Inicio.g.cs
+C:\Users\steds\Desktop\SLN OnTour\OnTourWPF2.0\obj\Debug\Inicio.baml
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\bin\Debug\OnTourWPF2.0.exe.config
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\bin\Debug\OnTourWPF2.0.exe
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\bin\Debug\OnTourWPF2.0.pdb
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\bin\Debug\BLL.dll
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\bin\Debug\ControlzEx.dll
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\bin\Debug\EntityFramework.dll
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\bin\Debug\MahApps.Metro.dll
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\bin\Debug\MaterialDesignColors.dll
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\bin\Debug\DAL.dll
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\bin\Debug\BLL.pdb
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\bin\Debug\BLL.dll.config
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\bin\Debug\ControlzEx.pdb
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\bin\Debug\ControlzEx.xml
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\bin\Debug\EntityFramework.xml
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\bin\Debug\MahApps.Metro.pdb
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\bin\Debug\MahApps.Metro.xml
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\bin\Debug\DAL.pdb
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\bin\Debug\DAL.dll.config
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.csprojAssemblyReference.cache
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\obj\Debug\Simple Styles.baml
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\obj\Debug\AdminSistemas\AdminSistemas.g.cs
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\obj\Debug\Apoderados\Apoderados.g.cs
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\obj\Debug\Dueño\Dueño.g.cs
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\obj\Debug\Inicio.g.cs
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\obj\Debug\MainWindow.g.cs
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\obj\Debug\EjecutivoVentas\EjecutivoVentas.g.cs
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\obj\Debug\MessBoxes.g.cs
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\obj\Debug\Ventanas\Actividades.g.cs
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\obj\Debug\Ventanas\Seguros.g.cs
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\obj\Debug\App.g.cs
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\obj\Debug\OnTourWPF2.0_MarkupCompile.cache
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\obj\Debug\OnTourWPF2.0_MarkupCompile.lref
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\obj\Debug\App.baml
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\obj\Debug\AdminSistemas\AdminSistemas.baml
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\obj\Debug\Apoderados\Apoderados.baml
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\obj\Debug\Dueño\Dueño.baml
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\obj\Debug\Inicio.baml
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\obj\Debug\MainWindow.baml
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\obj\Debug\EjecutivoVentas\EjecutivoVentas.baml
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\obj\Debug\MessBoxes.baml
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\obj\Debug\Ventanas\Actividades.baml
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\obj\Debug\Ventanas\Seguros.baml
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.g.resources
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\obj\Debug\OnTourWPF2._0.Properties.Resources.resources
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.csproj.GenerateResource.cache
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.csproj.CoreCompileInputs.cache
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.csproj.CopyComplete
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.exe
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.pdb
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\obj\Debug\rutas\RutaContrato.g.cs
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\obj\Debug\rutas\RutaSeguro.g.cs
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\bin\Debug\itextsharp.dll
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\bin\Debug\itextsharp.xml
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\obj\Debug\rutas\RutaContrato.baml
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\OnTourWPF2.0\obj\Debug\rutas\RutaSeguro.baml
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.exe
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.pdb
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\OnTourWPF2.0.exe.config
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\OnTourWPF2.0.exe
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\OnTourWPF2.0.pdb
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\BLL.dll
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\ControlzEx.dll
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\EntityFramework.dll
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\itextsharp.dll
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\MahApps.Metro.dll
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\MaterialDesignColors.dll
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\DAL.dll
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\BLL.pdb
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\BLL.dll.config
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\ControlzEx.pdb
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\ControlzEx.xml
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\EntityFramework.xml
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\itextsharp.xml
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\MahApps.Metro.pdb
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\MahApps.Metro.xml
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\DAL.pdb
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\DAL.dll.config
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.csprojAssemblyReference.cache
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\Simple Styles.baml
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\AdminSistemas\AdminSistemas.g.cs
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\Apoderados\Apoderados.g.cs
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\Dueño\Dueño.g.cs
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\Inicio.g.cs
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\MainWindow.g.cs
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\EjecutivoVentas\EjecutivoVentas.g.cs
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\MessBoxes.g.cs
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\rutas\RutaContrato.g.cs
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\rutas\RutaSeguro.g.cs
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\Ventanas\Actividades.g.cs
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\Ventanas\Seguros.g.cs
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\App.g.cs
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2.0_MarkupCompile.cache
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2.0_MarkupCompile.lref
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\App.baml
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\AdminSistemas\AdminSistemas.baml
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\Apoderados\Apoderados.baml
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\Dueño\Dueño.baml
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\Inicio.baml
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\MainWindow.baml
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\EjecutivoVentas\EjecutivoVentas.baml
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\MessBoxes.baml
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\rutas\RutaContrato.baml
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\rutas\RutaSeguro.baml
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\Ventanas\Actividades.baml
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\Ventanas\Seguros.baml
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.g.resources
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2._0.Properties.Resources.resources
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.csproj.GenerateResource.cache
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.csproj.CoreCompileInputs.cache
+C:\Users\steds\Desktop\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.csproj.CopyComplete
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\OnTourWPF2.0.exe.config
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\OnTourWPF2.0.exe
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\OnTourWPF2.0.pdb
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\BLL.dll
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\ControlzEx.dll
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\EntityFramework.dll
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\itextsharp.dll
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\MahApps.Metro.dll
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\MaterialDesignColors.dll
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\DAL.dll
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\BLL.pdb
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\BLL.dll.config
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\ControlzEx.pdb
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\ControlzEx.xml
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\EntityFramework.xml
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\itextsharp.xml
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\MahApps.Metro.pdb
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\MahApps.Metro.xml
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\DAL.pdb
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\DAL.dll.config
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.csprojAssemblyReference.cache
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\Simple Styles.baml
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\AdminSistemas\AdminSistemas.g.cs
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\Apoderados\Apoderados.g.cs
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\Dueño\Dueño.g.cs
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\Inicio.g.cs
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\MainWindow.g.cs
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\EjecutivoVentas\EjecutivoVentas.g.cs
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\MessBoxes.g.cs
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\rutas\RutaContrato.g.cs
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\rutas\RutaSeguro.g.cs
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\Ventanas\Actividades.g.cs
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\Ventanas\Seguros.g.cs
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\App.g.cs
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2.0_MarkupCompile.cache
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2.0_MarkupCompile.lref
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\App.baml
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\AdminSistemas\AdminSistemas.baml
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\Apoderados\Apoderados.baml
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\Dueño\Dueño.baml
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\Inicio.baml
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\MainWindow.baml
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\EjecutivoVentas\EjecutivoVentas.baml
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\MessBoxes.baml
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\rutas\RutaContrato.baml
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\rutas\RutaSeguro.baml
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\Ventanas\Actividades.baml
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\Ventanas\Seguros.baml
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.g.resources
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2._0.Properties.Resources.resources
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.csproj.GenerateResource.cache
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.csproj.CoreCompileInputs.cache
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.csproj.CopyComplete
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.exe
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.pdb
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\Ventanas\Alumnos.g.cs
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\Ventanas\Alumnos.baml
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\OnTourWPF2.0.exe.config
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\OnTourWPF2.0.exe
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\OnTourWPF2.0.pdb
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\BLL.dll
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\ControlzEx.dll
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\EntityFramework.dll
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\itextsharp.dll
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\MahApps.Metro.dll
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\MaterialDesignColors.dll
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\DAL.dll
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\BLL.pdb
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\BLL.dll.config
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\ControlzEx.pdb
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\ControlzEx.xml
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\EntityFramework.xml
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\itextsharp.xml
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\MahApps.Metro.pdb
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\MahApps.Metro.xml
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\DAL.pdb
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\bin\Debug\DAL.dll.config
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.csprojAssemblyReference.cache
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\Simple Styles.baml
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\AdminSistemas\AdminSistemas.g.cs
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\Apoderados\Apoderados.g.cs
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\Dueño\Dueño.g.cs
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\Inicio.g.cs
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\MainWindow.g.cs
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\EjecutivoVentas\EjecutivoVentas.g.cs
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\MessBoxes.g.cs
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\rutas\RutaContrato.g.cs
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\rutas\RutaSeguro.g.cs
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\Ventanas\Actividades.g.cs
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\Ventanas\Alumnos.g.cs
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\Ventanas\Seguros.g.cs
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\App.g.cs
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2.0_MarkupCompile.cache
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2.0_MarkupCompile.lref
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\App.baml
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\AdminSistemas\AdminSistemas.baml
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\Apoderados\Apoderados.baml
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\Dueño\Dueño.baml
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\Inicio.baml
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\MainWindow.baml
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\EjecutivoVentas\EjecutivoVentas.baml
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\MessBoxes.baml
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\rutas\RutaContrato.baml
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\rutas\RutaSeguro.baml
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\Ventanas\Actividades.baml
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\Ventanas\Alumnos.baml
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\Ventanas\Seguros.baml
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.g.resources
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2._0.Properties.Resources.resources
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.csproj.GenerateResource.cache
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.csproj.CoreCompileInputs.cache
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.csproj.CopyComplete
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.exe
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\OnTourWPF2.0\obj\Debug\OnTourWPF2.0.pdb

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="89C4EBB1-ACC0-CDDB-A4D6-B1CFF0A4A02A" containerWithKeyObject="E9772A7D-11AC-F1DF-FB50-FAE7BD54537A" localFKIndex="4309659B-6010-14D1-ACC3-8333C5B05A52" name="Detalle_Seguro_Contrato_FK">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-09 07:22:46 UTC</createdTime>
+<generatorID>64324188-7A4E-5EE5-4B63-25CD2FBA847F</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<referredTableLongName>Contrato</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>8FC9679F-85C2-8ACB-DB5A-B600A8D85643</referredTableID>
+<keyObject>572FA214-43E6-ADE5-88F4-F5513F4BEFD0</keyObject>
+<referredKeyID>572FA214-43E6-ADE5-88F4-F5513F4BEFD0</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>NumContrato,Curso_IdCurso,Curso_Colegio_CodColegio,Curso_Colegio_idTipo,Ejecutivo_RutEjecutivo,Destino_idDestino,TipActividad_idTipoAct,TipActividad_ModAporte_idMod</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5BF6128A-B184-C2AB-42C8-F3BA91C38DD8" name="Detalle_Actividad">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 20:46:41 UTC</createdTime>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<engineerTo>
+<item key="77C8451F-21F8-09E6-56EF-EDF2BAC715BF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="IdDetAct" id="76BC48BA-0FF2-9787-2C7E-E24B8BB4756E">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 20:48:13 UTC</createdTime>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<engineerTo>
+<item key="77C8451F-21F8-09E6-56EF-EDF2BAC715BF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IdActividad" id="9CA13767-F684-6445-7287-36F601826BA1">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 20:47:05 UTC</createdTime>
+<generatorID>AF937BA9-A69D-FE91-C333-F8EAA68CF546</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<engineerTo>
+<item key="77C8451F-21F8-09E6-56EF-EDF2BAC715BF" value="true"/>
+</engineerTo>
+<referedAttribute>96791C14-3334-465C-C56C-379C7FB2B128</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NumContrato" id="6C363313-60B0-E139-A020-7247B8F3EA03">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 20:47:50 UTC</createdTime>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<engineerTo>
+<item key="77C8451F-21F8-09E6-56EF-EDF2BAC715BF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="94176347-B5FD-D384-0903-CFADA6910B84" name="Detalle_Actividad PK">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 20:47:05 UTC</createdTime>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<engineerTo>
+<item key="77C8451F-21F8-09E6-56EF-EDF2BAC715BF" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>76BC48BA-0FF2-9787-2C7E-E24B8BB4756E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F1491960-0102-D816-1246-460ADCF54C14" containerWithKeyObject="E0261C03-E76E-9A76-11B9-AE0E9C5DA6BB" localFKIndex="93FE666C-3E1A-D867-0E9E-7BC4E6975135" name="Ciudad_Pais_FK">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 21:21:11 UTC</createdTime>
+<generatorID>7BE47BAF-D7BB-973D-5D17-D3E627C33790</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<referredTableLongName>Pais</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>328FF70E-9F7C-A603-8470-7883FC5A6087</referredTableID>
+<keyObject>E70BBA7D-F8A1-3B74-F660-7CEFB50276E5</keyObject>
+<referredKeyID>E70BBA7D-F8A1-3B74-F660-7CEFB50276E5</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CodPais</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

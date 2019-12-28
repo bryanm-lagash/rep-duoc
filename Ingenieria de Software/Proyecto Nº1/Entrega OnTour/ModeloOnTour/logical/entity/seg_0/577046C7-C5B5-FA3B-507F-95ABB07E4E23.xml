@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="577046C7-C5B5-FA3B-507F-95ABB07E4E23" name="Deposito">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-07 19:45:37 UTC</createdTime>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="32ACCB6A-201C-36C5-1F7F-195C19F4CAC1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="IdDeposito" id="0E827628-8A66-85CB-EBA4-6E3A3198EA01">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-07 19:45:43 UTC</createdTime>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="32ACCB6A-201C-36C5-1F7F-195C19F4CAC1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FechaDeposito" id="D8D325A4-4D7E-BBA8-1D9A-1138BAFFC9B0">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-07 19:46:02 UTC</createdTime>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="32ACCB6A-201C-36C5-1F7F-195C19F4CAC1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MontoDeposito" id="938383A2-8AAD-FE40-8626-E8C7AB33687E">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-07 20:48:30 UTC</createdTime>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="32ACCB6A-201C-36C5-1F7F-195C19F4CAC1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IdCurso" id="27BB9D34-13E4-D399-8841-9148621D3706">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-07 20:49:30 UTC</createdTime>
+<generatorID>D09BA76E-92D3-4990-1E1C-D854C3D4EC40</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="32ACCB6A-201C-36C5-1F7F-195C19F4CAC1" value="true"/>
+</engineerTo>
+<referedAttribute>58478BE4-6916-D36D-7DD0-F7A02AED87D0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CodColegio" id="77C3E646-30A8-E511-BC1E-2F92CF2F504F">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-07 20:49:30 UTC</createdTime>
+<generatorID>D09BA76E-92D3-4990-1E1C-D854C3D4EC40</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="32ACCB6A-201C-36C5-1F7F-195C19F4CAC1" value="true"/>
+</engineerTo>
+<referedAttribute>6C7AD40A-8F9D-7DCB-309B-AEDBC90C09BB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idTipo" id="5E31316D-5359-6C87-7E26-3C8E860503E9">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-07 20:49:30 UTC</createdTime>
+<generatorID>D09BA76E-92D3-4990-1E1C-D854C3D4EC40</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="32ACCB6A-201C-36C5-1F7F-195C19F4CAC1" value="true"/>
+</engineerTo>
+<referedAttribute>1DE7920F-3228-14B2-ECD6-3AA49587DF07</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8A27A001-406B-6379-1E55-EC301496EB6A" name="Deposito PK">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-07 19:46:01 UTC</createdTime>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="32ACCB6A-201C-36C5-1F7F-195C19F4CAC1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0E827628-8A66-85CB-EBA4-6E3A3198EA01</attributeRef>
+<attributeRef>27BB9D34-13E4-D399-8841-9148621D3706</attributeRef>
+<attributeRef>77C3E646-30A8-E511-BC1E-2F92CF2F504F</attributeRef>
+<attributeRef>5E31316D-5359-6C87-7E26-3C8E860503E9</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

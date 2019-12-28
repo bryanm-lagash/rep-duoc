@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="OnTourModelStoreContainer" CdmEntityContainer="OnTourEntities">
+    <EntitySetMapping Name="actividad">
+      <EntityTypeMapping TypeName="OnTourModel.actividad">
+        <MappingFragment StoreEntitySet="actividad">
+          <ScalarProperty Name="idactividad" ColumnName="idactividad" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="costo" ColumnName="costo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="alumno">
+      <EntityTypeMapping TypeName="OnTourModel.alumno">
+        <MappingFragment StoreEntitySet="alumno">
+          <ScalarProperty Name="rutalumno" ColumnName="rutalumno" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="apaterno" ColumnName="apaterno" />
+          <ScalarProperty Name="amaterno" ColumnName="amaterno" />
+          <ScalarProperty Name="direccion" ColumnName="direccion" />
+          <ScalarProperty Name="curso_idcurso" ColumnName="curso_idcurso" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="beneficio">
+      <EntityTypeMapping TypeName="OnTourModel.beneficio">
+        <MappingFragment StoreEntitySet="beneficio">
+          <ScalarProperty Name="idbenefico" ColumnName="idbenefico" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="porcdescuento" ColumnName="porcdescuento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ciudad">
+      <EntityTypeMapping TypeName="OnTourModel.ciudad">
+        <MappingFragment StoreEntitySet="ciudad">
+          <ScalarProperty Name="codciudad" ColumnName="codciudad" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="pais_codpais" ColumnName="pais_codpais" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="colegio">
+      <EntityTypeMapping TypeName="OnTourModel.colegio">
+        <MappingFragment StoreEntitySet="colegio">
+          <ScalarProperty Name="codcolegio" ColumnName="codcolegio" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="direccion" ColumnName="direccion" />
+          <ScalarProperty Name="tipcole_idtipo" ColumnName="tipcole_idtipo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="contrato">
+      <EntityTypeMapping TypeName="OnTourModel.contrato">
+        <MappingFragment StoreEntitySet="contrato">
+          <ScalarProperty Name="numcontrato" ColumnName="numcontrato" />
+          <ScalarProperty Name="fechacreacion" ColumnName="fechacreacion" />
+          <ScalarProperty Name="fechatermino" ColumnName="fechatermino" />
+          <ScalarProperty Name="duraciondias" ColumnName="duraciondias" />
+          <ScalarProperty Name="fechaini" ColumnName="fechaini" />
+          <ScalarProperty Name="fechaterm" ColumnName="fechaterm" />
+          <ScalarProperty Name="fechapagos" ColumnName="fechapagos" />
+          <ScalarProperty Name="costototseguros" ColumnName="costototseguros" />
+          <ScalarProperty Name="costototactividades" ColumnName="costototactividades" />
+          <ScalarProperty Name="porctotbeneficios" ColumnName="porctotbeneficios" />
+          <ScalarProperty Name="costoservicios" ColumnName="costoservicios" />
+          <ScalarProperty Name="meta" ColumnName="meta" />
+          <ScalarProperty Name="tipactividad_idtipoact" ColumnName="tipactividad_idtipoact" />
+          <ScalarProperty Name="curso_idcurso" ColumnName="curso_idcurso" />
+          <ScalarProperty Name="ciudad_codciudad" ColumnName="ciudad_codciudad" />
+          <ScalarProperty Name="usuario_rutusu" ColumnName="usuario_rutusu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cta_usuario">
+      <EntityTypeMapping TypeName="OnTourModel.cta_usuario">
+        <MappingFragment StoreEntitySet="cta_usuario">
+          <ScalarProperty Name="usuario" ColumnName="usuario" />
+          <ScalarProperty Name="contraseña" ColumnName="contraseña" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="usuario_rutusu" ColumnName="usuario_rutusu" />
+          <ScalarProperty Name="tipcuenta_idtipocta" ColumnName="tipcuenta_idtipocta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="curso">
+      <EntityTypeMapping TypeName="OnTourModel.curso">
+        <MappingFragment StoreEntitySet="curso">
+          <ScalarProperty Name="idcurso" ColumnName="idcurso" />
+          <ScalarProperty Name="numalumnos" ColumnName="numalumnos" />
+          <ScalarProperty Name="colegio_codcolegio" ColumnName="colegio_codcolegio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="deposito">
+      <EntityTypeMapping TypeName="OnTourModel.deposito">
+        <MappingFragment StoreEntitySet="deposito">
+          <ScalarProperty Name="iddeposito" ColumnName="iddeposito" />
+          <ScalarProperty Name="fechadeposito" ColumnName="fechadeposito" />
+          <ScalarProperty Name="montodeposito" ColumnName="montodeposito" />
+          <ScalarProperty Name="curso_idcurso" ColumnName="curso_idcurso" />
+          <ScalarProperty Name="rutdepos" ColumnName="rutdepos" />
+          <ScalarProperty Name="nombredepos" ColumnName="nombredepos" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="detalle_actividad">
+      <EntityTypeMapping TypeName="OnTourModel.detalle_actividad">
+        <MappingFragment StoreEntitySet="detalle_actividad">
+          <ScalarProperty Name="iddetact" ColumnName="iddetact" />
+          <ScalarProperty Name="numcontrato" ColumnName="numcontrato" />
+          <ScalarProperty Name="actividad_idactividad" ColumnName="actividad_idactividad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="detalle_beneficio">
+      <EntityTypeMapping TypeName="OnTourModel.detalle_beneficio">
+        <MappingFragment StoreEntitySet="detalle_beneficio">
+          <ScalarProperty Name="iddetben" ColumnName="iddetben" />
+          <ScalarProperty Name="numcontrato" ColumnName="numcontrato" />
+          <ScalarProperty Name="beneficio_idbenefico" ColumnName="beneficio_idbenefico" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="detalle_seguro">
+      <EntityTypeMapping TypeName="OnTourModel.detalle_seguro">
+        <MappingFragment StoreEntitySet="detalle_seguro">
+          <ScalarProperty Name="iddetseg" ColumnName="iddetseg" />
+          <ScalarProperty Name="numcontrato" ColumnName="numcontrato" />
+          <ScalarProperty Name="seguro_idseguro" ColumnName="seguro_idseguro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="empaseg">
+      <EntityTypeMapping TypeName="OnTourModel.empaseg">
+        <MappingFragment StoreEntitySet="empaseg">
+          <ScalarProperty Name="rutemp" ColumnName="rutemp" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="direccion" ColumnName="direccion" />
+          <ScalarProperty Name="telefono" ColumnName="telefono" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="info_actividad">
+      <EntityTypeMapping TypeName="OnTourModel.info_actividad">
+        <MappingFragment StoreEntitySet="info_actividad">
+          <ScalarProperty Name="cant_actividad" ColumnName="cant_actividad" />
+          <ScalarProperty Name="contrato_numcontrato" ColumnName="contrato_numcontrato" />
+          <ScalarProperty Name="actividad_idactividad" ColumnName="actividad_idactividad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="info_beneficio">
+      <EntityTypeMapping TypeName="OnTourModel.info_beneficio">
+        <MappingFragment StoreEntitySet="info_beneficio">
+          <ScalarProperty Name="cant_beneficio" ColumnName="cant_beneficio" />
+          <ScalarProperty Name="contrato_numcontrato" ColumnName="contrato_numcontrato" />
+          <ScalarProperty Name="beneficio_idbenefico" ColumnName="beneficio_idbenefico" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="info_seguro">
+      <EntityTypeMapping TypeName="OnTourModel.info_seguro">
+        <MappingFragment StoreEntitySet="info_seguro">
+          <ScalarProperty Name="cant_seguros" ColumnName="cant_seguros" />
+          <ScalarProperty Name="contrato_numcontrato" ColumnName="contrato_numcontrato" />
+          <ScalarProperty Name="seguro_idseguro" ColumnName="seguro_idseguro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="modaporte">
+      <EntityTypeMapping TypeName="OnTourModel.modaporte">
+        <MappingFragment StoreEntitySet="modaporte">
+          <ScalarProperty Name="idmod" ColumnName="idmod" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pais">
+      <EntityTypeMapping TypeName="OnTourModel.pais">
+        <MappingFragment StoreEntitySet="pais">
+          <ScalarProperty Name="codpais" ColumnName="codpais" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="seguro">
+      <EntityTypeMapping TypeName="OnTourModel.seguro">
+        <MappingFragment StoreEntitySet="seguro">
+          <ScalarProperty Name="idseguro" ColumnName="idseguro" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="costo" ColumnName="costo" />
+          <ScalarProperty Name="empaseg_rutemp" ColumnName="empaseg_rutemp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tasa_interes">
+      <EntityTypeMapping TypeName="OnTourModel.tasa_interes">
+        <MappingFragment StoreEntitySet="tasa_interes">
+          <ScalarProperty Name="idinteres" ColumnName="idinteres" />
+          <ScalarProperty Name="diasini" ColumnName="diasini" />
+          <ScalarProperty Name="diasterm" ColumnName="diasterm" />
+          <ScalarProperty Name="porcmulta" ColumnName="porcmulta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tipactividad">
+      <EntityTypeMapping TypeName="OnTourModel.tipactividad">
+        <MappingFragment StoreEntitySet="tipactividad">
+          <ScalarProperty Name="idtipoact" ColumnName="idtipoact" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="modaporte_idmod" ColumnName="modaporte_idmod" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tipcole">
+      <EntityTypeMapping TypeName="OnTourModel.tipcole">
+        <MappingFragment StoreEntitySet="tipcole">
+          <ScalarProperty Name="idtipo" ColumnName="idtipo" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tipcuenta">
+      <EntityTypeMapping TypeName="OnTourModel.tipcuenta">
+        <MappingFragment StoreEntitySet="tipcuenta">
+          <ScalarProperty Name="idtipocta" ColumnName="idtipocta" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="usuario">
+      <EntityTypeMapping TypeName="OnTourModel.usuario">
+        <MappingFragment StoreEntitySet="usuario">
+          <ScalarProperty Name="rutusu" ColumnName="rutusu" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="apaterno" ColumnName="apaterno" />
+          <ScalarProperty Name="amaterno" ColumnName="amaterno" />
+          <ScalarProperty Name="direccion" ColumnName="direccion" />
+          <ScalarProperty Name="email" ColumnName="email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

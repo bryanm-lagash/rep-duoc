@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="rlc_seguro_infoseguros" directorySegmentName="seg_0" id="8957AC01-1F44-DC9E-9651-3E3FECA4E1F2">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 21:20:29 UTC</createdTime>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<engineerTo>
+<item key="662B02F3-6BD5-9576-B079-2749D267591F" value="true"/>
+</engineerTo>
+<sourcePk>740A6DCD-EFF6-07CC-B8F3-560A8880D6EA</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>593FE002-707D-255A-C74B-260D6F626BA3</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>6E3DD83F-86FE-73C1-7324-34BDEB6B6C6C</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

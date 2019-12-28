@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Ciudad Pais FK" directorySegmentName="seg_0" id="7BE47BAF-D7BB-973D-5D17-D3E627C33790">
+<createdBy>jose</createdBy>
+<createdTime>2019-07-07 00:22:01 UTC</createdTime>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<engineerTo>
+<item key="77C8451F-21F8-09E6-56EF-EDF2BAC715BF" value="true"/>
+</engineerTo>
+<sourcePk>7A71CBD9-73E7-359E-ABD1-601E869E2F8C</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>ED00C7F3-1B1B-445C-E4F7-1240CF7F5C95</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>FE96C46D-6461-C4C0-D070-AF304E2830B4</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

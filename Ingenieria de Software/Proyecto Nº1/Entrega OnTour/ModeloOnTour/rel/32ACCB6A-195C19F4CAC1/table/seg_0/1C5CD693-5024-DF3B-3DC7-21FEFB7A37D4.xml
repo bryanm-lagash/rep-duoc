@@ -1,0 +1,230 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1C5CD693-5024-DF3B-3DC7-21FEFB7A37D4" name="Detalle_Seguro">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-09 06:57:39 UTC</createdTime>
+<generatorID>E0F0EADC-439A-5A29-C55A-6494C7ED8B5B</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Cant_Seguros" id="29DF0F94-5467-B256-FB78-1F00B55981F9">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-09 06:57:39 UTC</createdTime>
+<generatorID>C85B1685-0B30-D302-94F7-60CB943C2557</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Seguro_IdSeguro" id="FFAF3F39-AEEB-9F49-B27D-E5FEF5C1F042">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-09 06:57:39 UTC</createdTime>
+<generatorID>4147F307-52C1-D31E-DE37-C5F1EC85DF62</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="20FC3264-2C6D-22C4-0061-31DEC76D7025" referredColumn="02C539AC-8105-5C56-8E9F-90126D7201DC"/>
+</associations>
+</Column>
+<Column name="Seguro_EmpAseguradora_RutEmpresa" id="11BD08EE-DA17-B49A-0E08-BFD868C48E72">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-09 06:57:39 UTC</createdTime>
+<generatorID>25401C9A-D200-D4BD-B257-23ED0DC2C0F9</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="20FC3264-2C6D-22C4-0061-31DEC76D7025" referredColumn="94664D9D-9B8B-5576-6E03-D50E694485DD"/>
+</associations>
+</Column>
+<Column name="Contrato_NumContrato" id="BF4ADEA9-44EC-CB91-508A-7FB2ED2970AD">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-09 06:57:39 UTC</createdTime>
+<generatorID>B41AAA64-B4B9-C286-3061-2E672933FE84</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="50738572-0ED2-73D7-9F7F-F05BF64B3171" referredColumn="89956069-4822-2B6D-8DEB-4414065C5765"/>
+</associations>
+</Column>
+<Column name="Contrato_Curso_IdCurso" id="8F4744FA-3D79-320B-29E9-5A541E1B3BE4">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-09 06:57:39 UTC</createdTime>
+<generatorID>17FF4E0D-5DCB-ED47-FBE6-28E6EFD611CE</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="50738572-0ED2-73D7-9F7F-F05BF64B3171" referredColumn="B7672862-9DCC-B076-9702-745B353616E7"/>
+</associations>
+</Column>
+<Column name="Contrato_Curso_Colegio_CodColegio" id="8821B7C8-097A-B557-BE2D-7A2F92B33E52">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-09 06:57:39 UTC</createdTime>
+<generatorID>97CEC077-1880-378D-C152-4CB7BE9D65AA</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="50738572-0ED2-73D7-9F7F-F05BF64B3171" referredColumn="F82D55F6-CBDE-D946-BD33-5F3DE010C188"/>
+</associations>
+</Column>
+<Column name="Contrato_Ejecutivo_RutEjecutivo" id="37A855D8-35E3-D9D2-896E-F90A6FE3996A">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-09 06:57:39 UTC</createdTime>
+<generatorID>300D8E25-7720-390A-09DD-103805C273C6</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="50738572-0ED2-73D7-9F7F-F05BF64B3171" referredColumn="EA774DCD-2E70-50D1-C40B-1AC8315412E2"/>
+</associations>
+</Column>
+<Column name="Contrato_Destino_idDestino" id="6335EF4B-EBB8-B580-3D45-03E035B6E941">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-09 06:57:39 UTC</createdTime>
+<generatorID>2005F443-18B0-A5F9-58AF-A663CCE3E6D0</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="50738572-0ED2-73D7-9F7F-F05BF64B3171" referredColumn="AC997B2D-2F5C-5E23-40BF-12D7E367265B"/>
+</associations>
+</Column>
+<Column name="Contrato_Tipo_Actividad_idTipoActividad" id="C381B1A6-E454-7EE9-2D59-108513DEAAF5">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-09 06:57:39 UTC</createdTime>
+<generatorID>A360EF0A-BA73-F466-055F-D7EB54B9E616</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="50738572-0ED2-73D7-9F7F-F05BF64B3171" referredColumn="1B4AC393-EC21-D93E-D878-0B1BBB365B5D"/>
+</associations>
+</Column>
+<Column name="Contrato_Tipo_Actividad_Modalidad_Aporte_idModalidad" id="11C637E8-814E-19AF-6A2C-D7E828D641F8">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-09 06:57:39 UTC</createdTime>
+<generatorID>3705BDEA-CECE-EBF3-B798-BAD46E01D4E2</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="50738572-0ED2-73D7-9F7F-F05BF64B3171" referredColumn="F03A8249-7F9C-EF59-182F-3D863A4C86AE"/>
+</associations>
+</Column>
+<Column name="Contrato_Curso_Colegio_Tipo_Colegio_idTipo" id="ACDCA8EA-EF71-EF6F-E477-E6B09A40EFB9">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-09 06:57:39 UTC</createdTime>
+<generatorID>32282159-5A79-6610-0D8F-98398AE4B834</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="50738572-0ED2-73D7-9F7F-F05BF64B3171" referredColumn="81198172-30BC-7014-1779-1670AD1B8593"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0E0FF7F2-0571-9DFA-FF96-086B0C6D1693" name="Detalle_Seguro_PK">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-09 06:57:39 UTC</createdTime>
+<generatorID>41ACC2F2-7BAB-66E1-020B-DA4D52F707BF</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FFAF3F39-AEEB-9F49-B27D-E5FEF5C1F042"/>
+<colUsage columnID="11BD08EE-DA17-B49A-0E08-BFD868C48E72"/>
+<colUsage columnID="BF4ADEA9-44EC-CB91-508A-7FB2ED2970AD"/>
+<colUsage columnID="8F4744FA-3D79-320B-29E9-5A541E1B3BE4"/>
+<colUsage columnID="8821B7C8-097A-B557-BE2D-7A2F92B33E52"/>
+<colUsage columnID="37A855D8-35E3-D9D2-896E-F90A6FE3996A"/>
+<colUsage columnID="6335EF4B-EBB8-B580-3D45-03E035B6E941"/>
+<colUsage columnID="C381B1A6-E454-7EE9-2D59-108513DEAAF5"/>
+<colUsage columnID="11C637E8-814E-19AF-6A2C-D7E828D641F8"/>
+<colUsage columnID="ACDCA8EA-EF71-EF6F-E477-E6B09A40EFB9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F1692CA1-C04C-067B-9A1C-4FC5313A1B0E" name="Detalle_Seguro_Contrato_FK">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-09 06:57:39 UTC</createdTime>
+<generatorID>64324188-7A4E-5EE5-4B63-25CD2FBA847F</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BF4ADEA9-44EC-CB91-508A-7FB2ED2970AD"/>
+<colUsage columnID="8F4744FA-3D79-320B-29E9-5A541E1B3BE4"/>
+<colUsage columnID="8821B7C8-097A-B557-BE2D-7A2F92B33E52"/>
+<colUsage columnID="ACDCA8EA-EF71-EF6F-E477-E6B09A40EFB9"/>
+<colUsage columnID="37A855D8-35E3-D9D2-896E-F90A6FE3996A"/>
+<colUsage columnID="6335EF4B-EBB8-B580-3D45-03E035B6E941"/>
+<colUsage columnID="C381B1A6-E454-7EE9-2D59-108513DEAAF5"/>
+<colUsage columnID="11C637E8-814E-19AF-6A2C-D7E828D641F8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="88AACDBE-7993-BA52-1722-19939D073B79" name="Detalle_Seguro_Seguro_FK">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-09 06:57:39 UTC</createdTime>
+<generatorID>4AC9718A-2A9F-8FB2-BAA0-B53C9387B9A6</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FFAF3F39-AEEB-9F49-B27D-E5FEF5C1F042"/>
+<colUsage columnID="11BD08EE-DA17-B49A-0E08-BFD868C48E72"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

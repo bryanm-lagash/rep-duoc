@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F35DAFD0-B0AE-57C1-F672-596033415B10" containerWithKeyObject="22124E65-B5EE-0059-64BB-FF2AABFC6B8A" localFKIndex="88FF936E-B6E9-26F1-5E14-AE644A7707AC" name="Cta_Usuario_TipCuenta_FK">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 20:49:13 UTC</createdTime>
+<generatorID>11367CFB-F060-BA80-4D73-1C18B65F97E2</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<referredTableLongName>TipCuenta</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>37F1D0B3-9558-F3FE-0043-C06102EFB2A8</referredTableID>
+<keyObject>3D80FD1D-F559-66B1-BCBB-562B816800B0</keyObject>
+<referredKeyID>3D80FD1D-F559-66B1-BCBB-562B816800B0</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>idTipoCta</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

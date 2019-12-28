@@ -1,0 +1,236 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D2582134-FDB0-FB3B-188D-D72D9B974C21" name="Contrato">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-04 00:39:50 UTC</createdTime>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<engineerTo>
+<item key="662B02F3-6BD5-9576-B079-2749D267591F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="NumContrato" id="DD17BE5E-9CAC-12D3-7CB1-E7449ADD96B9">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-04 01:00:01 UTC</createdTime>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<engineerTo>
+<item key="662B02F3-6BD5-9576-B079-2749D267591F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FechaCreacion" id="F0C6320F-6630-34C7-07C7-CCDB6DA6DB04">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-04 01:00:23 UTC</createdTime>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<engineerTo>
+<item key="662B02F3-6BD5-9576-B079-2749D267591F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FechaTermino" id="B40A4EB1-8AD3-C877-C14F-5F73D8E43406">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-04 01:01:06 UTC</createdTime>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<engineerTo>
+<item key="662B02F3-6BD5-9576-B079-2749D267591F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DuracionDias" id="5107F074-018E-CFC0-E5AD-EEB6B4EB255E">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-04 01:02:02 UTC</createdTime>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<engineerTo>
+<item key="662B02F3-6BD5-9576-B079-2749D267591F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FechaIni" id="35A14618-73FC-AA5E-D9BD-61285517D3E0">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-04 01:02:24 UTC</createdTime>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<engineerTo>
+<item key="662B02F3-6BD5-9576-B079-2749D267591F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FechaTerm" id="776CF72C-A235-6054-FC51-5A1E85F7B860">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-04 01:03:02 UTC</createdTime>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<engineerTo>
+<item key="662B02F3-6BD5-9576-B079-2749D267591F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FechaPagos" id="94931988-8613-CD6D-3151-327D0794A711">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-06 02:08:27 UTC</createdTime>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<engineerTo>
+<item key="662B02F3-6BD5-9576-B079-2749D267591F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CostoTotSeguros" id="84592DA7-4D40-91A8-475B-A0C9F1F18BC6">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-06 02:13:10 UTC</createdTime>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<engineerTo>
+<item key="662B02F3-6BD5-9576-B079-2749D267591F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CostoTotActividades" id="A3B9D727-2E63-927A-484D-A9D6185AF029">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-06 02:13:24 UTC</createdTime>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<engineerTo>
+<item key="662B02F3-6BD5-9576-B079-2749D267591F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PorcTotBeneficios" id="BF975CFC-B8F6-1FCB-E456-B8EFA9A873C6">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-06 02:13:46 UTC</createdTime>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<engineerTo>
+<item key="662B02F3-6BD5-9576-B079-2749D267591F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CostoServicios" id="7F24099B-5F91-2910-8CD0-E2C6F8FB1B05">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-06 02:14:22 UTC</createdTime>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<engineerTo>
+<item key="662B02F3-6BD5-9576-B079-2749D267591F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Meta" id="E73255FD-8F43-D737-EC34-4020392E26BC">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-06 02:15:08 UTC</createdTime>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<engineerTo>
+<item key="662B02F3-6BD5-9576-B079-2749D267591F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TipActividad idTipoAct" id="6DBF0F36-68E7-3EA5-B015-23AFCB98852B">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-06 02:07:57 UTC</createdTime>
+<generatorID>38B9708F-4524-C2C2-9565-20E7BAFA2C40</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<engineerTo>
+<item key="662B02F3-6BD5-9576-B079-2749D267591F" value="true"/>
+</engineerTo>
+<referedAttribute>DFDC4A3C-9826-3950-21E6-3DFA45AC02C6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Curso IdCurso" id="2CA78365-D8DA-CDC3-D4E7-873464459BFA">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-04 01:26:12 UTC</createdTime>
+<generatorID>A084FFDE-E4DD-737B-BEF6-6F9A3ACEB578</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<engineerTo>
+<item key="662B02F3-6BD5-9576-B079-2749D267591F" value="true"/>
+</engineerTo>
+<referedAttribute>58478BE4-6916-D36D-7DD0-F7A02AED87D0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Ciudad CodCiudad" id="C9C63613-96A9-1CA1-393D-0296FCD9A395">
+<createdBy>jose</createdBy>
+<createdTime>2019-07-07 00:22:10 UTC</createdTime>
+<generatorID>55D95963-3EE1-740E-5058-784E11E06348</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<engineerTo>
+<item key="662B02F3-6BD5-9576-B079-2749D267591F" value="true"/>
+</engineerTo>
+<referedAttribute>28F06F31-5836-3626-B7F6-CF956F331736</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Usuario RutUsu" id="89AE0657-5D20-C342-5BDD-592139586D2E">
+<createdBy>jose</createdBy>
+<createdTime>2019-07-08 03:29:19 UTC</createdTime>
+<generatorID>52AEFD8A-0544-0FBC-04FB-DCCB7F8A7B22</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<engineerTo>
+<item key="662B02F3-6BD5-9576-B079-2749D267591F" value="true"/>
+</engineerTo>
+<referedAttribute>74055B32-F298-568B-E01D-E3C18D4A4CD6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="05786FE4-3FF6-BD03-24D2-A77B18577E3B" name="Contrato PK">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-04 01:00:17 UTC</createdTime>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<engineerTo>
+<item key="662B02F3-6BD5-9576-B079-2749D267591F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DD17BE5E-9CAC-12D3-7CB1-E7449ADD96B9</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

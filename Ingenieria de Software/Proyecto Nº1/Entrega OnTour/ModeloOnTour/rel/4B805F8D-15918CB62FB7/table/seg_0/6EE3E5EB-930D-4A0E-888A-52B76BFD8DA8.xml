@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6EE3E5EB-930D-4A0E-888A-52B76BFD8DA8" name="Usuarios">
+<createdBy>steds</createdBy>
+<createdTime>2019-06-15 20:31:24 UTC</createdTime>
+<generatorID>1D461018-34E6-40AE-8B97-499D336AD7E0</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idUsuario" id="D38E8C75-28D4-30B7-1B5A-A36914B10546">
+<createdBy>steds</createdBy>
+<createdTime>2019-06-15 20:31:24 UTC</createdTime>
+<generatorID>EC15C118-BB89-5372-CFC8-F8379C86E558</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="445AA2D9-1FEC-47DA-D235-8DA8119E7772" name="Usuarios_PK">
+<createdBy>steds</createdBy>
+<createdTime>2019-06-15 20:31:24 UTC</createdTime>
+<generatorID>CC57E857-37BF-5776-D2B7-B81FF5B2C56E</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+<ind_PK_UK id="928C1B89-8C02-23B5-29D8-1490A3C5E434" name="Usuarios_Adm_Sis_FK">
+<createdBy>steds</createdBy>
+<createdTime>2019-06-15 20:32:51 UTC</createdTime>
+<generatorID>A444B18E-14D7-940A-E956-ACC9BB517ECC</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+<ind_PK_UK id="0E7AC93E-1DEB-2D89-8D53-B33D8EB20071" name="Usuarios_Apoderado_FK">
+<createdBy>steds</createdBy>
+<createdTime>2019-06-15 20:32:51 UTC</createdTime>
+<generatorID>BE4DD034-5A74-AED2-0DDF-73F1D425F735</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+<ind_PK_UK id="5FD5F2B0-E860-4DF2-9FAD-2941E7CBFC18" name="Usuarios_Dueño_FK">
+<createdBy>steds</createdBy>
+<createdTime>2019-06-15 20:32:51 UTC</createdTime>
+<generatorID>EC44A614-110C-9C8E-C759-57501DA0C28F</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+<ind_PK_UK id="0B1B8BE8-818A-466C-4AA5-92DCCCA71775" name="Usuarios_Ejecutivo_FK">
+<createdBy>steds</createdBy>
+<createdTime>2019-06-15 20:32:51 UTC</createdTime>
+<generatorID>E7C453BB-0904-47C3-CD3C-F6770B6035D4</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+</indexes>
+</Table>

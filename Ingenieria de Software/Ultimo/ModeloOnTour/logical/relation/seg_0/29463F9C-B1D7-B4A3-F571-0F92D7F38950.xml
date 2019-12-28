@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="rlc_beneficio_detbeneficio" directorySegmentName="seg_0" id="29463F9C-B1D7-B4A3-F571-0F92D7F38950">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 20:46:18 UTC</createdTime>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<engineerTo>
+<item key="77C8451F-21F8-09E6-56EF-EDF2BAC715BF" value="true"/>
+</engineerTo>
+<sourcePk>38CCB72D-F885-3A50-0706-4EC765352CF2</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>5A45A3CC-079D-8E8E-9540-B30A37592560</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>17364BD7-3B5B-431F-F267-54E71E57C435</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

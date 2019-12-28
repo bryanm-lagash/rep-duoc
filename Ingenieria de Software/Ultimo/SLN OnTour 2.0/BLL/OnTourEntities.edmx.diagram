@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="3ae9979fb70741498fcbb27b6ad465a5" Name="Diagram1">
+        <EntityTypeShape EntityType="OnTourModel.actividad" Width="1.5" PointX="6" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnTourModel.adm_sis" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnTourModel.alumno" Width="1.5" PointX="8" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnTourModel.apoderado" Width="1.5" PointX="3.75" PointY="19.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnTourModel.beneficio" Width="1.5" PointX="3" PointY="17" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnTourModel.colegio" Width="1.5" PointX="1.5" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnTourModel.contrato" Width="1.5" PointX="3" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnTourModel.cta_usuario" Width="1.5" PointX="10" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnTourModel.curso" Width="1.5" PointX="0.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnTourModel.deposito" Width="1.5" PointX="3" PointY="32" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnTourModel.destino" Width="1.5" PointX="0.75" PointY="17.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnTourModel.detalle_actividad" Width="1.5" PointX="8.25" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnTourModel.detalle_beneficio" Width="1.5" PointX="5.25" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnTourModel.detalle_seguro" Width="1.5" PointX="5.25" PointY="12.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnTourModel.dueño" Width="1.5" PointX="3.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnTourModel.ejecutivo" Width="1.5" PointX="0.75" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnTourModel.empaseg" Width="1.5" PointX="0.75" PointY="25.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnTourModel.modaporte" Width="1.5" PointX="1.5" PointY="23" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnTourModel.seguro" Width="1.5" PointX="3" PointY="25.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnTourModel.tasa_interes" Width="1.5" PointX="8.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnTourModel.tipactividad" Width="1.5" PointX="0.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnTourModel.tipcole" Width="1.5" PointX="1.5" PointY="14.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnTourModel.tipcuenta" Width="1.5" PointX="7.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnTourModel.usuarios" Width="1.5" PointX="6" PointY="8.375" IsExpanded="true" />
+        <AssociationConnector Association="OnTourModel.detalle_actividad_actividad_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="OnTourModel.usuarios_adm_sis_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="OnTourModel.alumno_apoderado_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="OnTourModel.alumno_curso_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="OnTourModel.usuarios_apoderado_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="OnTourModel.detalle_beneficio_beneficio_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="OnTourModel.colegio_tipcole_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="OnTourModel.curso_colegio_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="OnTourModel.contrato_curso_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="OnTourModel.contrato_destino_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="OnTourModel.contrato_ejecutivo_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="OnTourModel.contrato_tipactividad_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="OnTourModel.detalle_actividad_contrato_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="OnTourModel.detalle_beneficio_contrato_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="OnTourModel.detalle_seguro_contrato_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="OnTourModel.cta_usuario_tipcuenta_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="OnTourModel.deposito_curso_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="OnTourModel.detalle_seguro_seguro_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="OnTourModel.usuarios_dueño_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="OnTourModel.usuarios_ejecutivo_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="OnTourModel.seguro_empaseg_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="OnTourModel.tipactividad_modaporte_fk" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

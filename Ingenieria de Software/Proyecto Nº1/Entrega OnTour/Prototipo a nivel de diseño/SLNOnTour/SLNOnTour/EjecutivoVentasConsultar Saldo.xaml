@@ -1,0 +1,29 @@
+﻿<Window x:Class="SLNOnTour.Consultar_Saldo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SLNOnTour"
+        mc:Ignorable="d"
+        Title="Consultar_Saldo" Height="366" Width="732.5">
+    <Grid Margin="0,0,2,0">
+        <Button Content="Filtrar" HorizontalAlignment="Left" Margin="612,17,0,0" VerticalAlignment="Top" Width="75"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="108,15,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="126"/>
+        <DataGrid HorizontalAlignment="Left" Height="214" Margin="10,60,0,0" VerticalAlignment="Top" Width="677">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Codigo Colegio"/>
+                <DataGridCheckBoxColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Nombre Institucion"/>
+                <DataGridCheckBoxColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Tipo Institucion"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Curso"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Monto Actual Acumulado"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Monto por Completar"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="CURSO" HorizontalAlignment="Left" Margin="239,12,0,0" VerticalAlignment="Top"/>
+        <Label Content="TIPO" HorizontalAlignment="Left" Margin="424,12,0,0" VerticalAlignment="Top" Width="38"/>
+        <ComboBox HorizontalAlignment="Left" Margin="462,15,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Codigo Colegio" HorizontalAlignment="Left" Margin="10,13,0,0" VerticalAlignment="Top"/>
+        <ComboBox HorizontalAlignment="Left" Margin="287,15,0,0" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>

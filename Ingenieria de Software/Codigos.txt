@@ -1,0 +1,142 @@
+SELECT RutCliente AS 'Rut', NombreContacto AS 'Nombre', RazonSocial AS 'Razon Social', Telefono, MailContacto AS 'Mail', Direccion, a.Descripcion AS 'Actividad Empresa', t.Descripcion AS 'Tipo Empresa' FROM OnBreak.dbo.Cliente c JOIN OnBreak.dbo.ActividadEmpresa a ON c.IdActividadEmpresa = a.IdActividadEmpresa JOIN OnBreak.dbo.TipoEmpresa t ON c.IdTipoEmpresa = t.IdTipoEmpresa
+SELECT RutCliente AS 'Rut Cliente',Numero, Creacion AS 'Fecha Creacion', Termino AS 'Fecha Termino', Realizado ,m.Nombre AS 'Modalidad Servicio', t.Descripcion AS 'Tipo Evento', FechaHoraInicio AS 'Fecha/Hora Inicio', FechaHoraTermino AS 'Fecha/Hora Termino', Asistentes, PersonalAdicional AS 'Personal Adicional', ValorTotalContrato AS 'Valor Total Contrato', Observaciones FROM OnBreak.dbo.Contrato c JOIN OnBreak.dbo.ModalidadServicio m ON c.IdModalidad = m.IdModalidad JOIN OnBreak.dbo.TipoEvento t ON c.IdTipoEvento = t.IdTipoEvento
+
+conn.Open();
+            SqlCommand cmd = conn.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "select * from Cliente where IdActividadEmpresa like ('" + Convert.ToInt32(cboActividadFiltro.SelectedValue)+ "%')";
+            cmd.ExecuteNonQuery();
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(dt);
+            myDataGrid.ItemsSource = dt.DefaultView;
+            conn.Close();
+
+
+private void TxtRut1_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            conn.Open();
+            SqlCommand cmd = conn.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "select * from Cliente where RutCliente like ('" + txtRut1.Text + "%')";
+            cmd.ExecuteNonQuery();
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(dt);
+            myDataGrid.ItemsSource = dt.DefaultView;
+            conn.Close();
+        } 
+
+
+
+//actualizar clientes
+        private void Btn_actualizar_Click(object sender, RoutedEventArgs e)
+        {
+            ClienteBLL editado = new ClienteBLL();
+            editado.RutCliente = txtRut.Text;
+            editado.RazonSocial = txtRazon.Text;
+            editado.NombreContacto = txtNombre.Text;
+            editado.MailContacto = txtMail.Text;
+            editado.Direccion = txtDireccion.Text;
+            editado.Telefono = txtTelefono.Text;
+            editado.IdActividadEmpresa = Convert.ToInt32(cboActividad.SelectedValue);
+            editado.IdTipoEmpresa = Convert.ToInt32(cboTipo.SelectedValue);
+            editado.Modificar(txtRut.Text);
+
+        }
+        public void Modificar(string rut)
+        {
+            OnBreakEntities modelo = new OnBreakEntities();
+            Cliente editado = modelo.Cliente.Where(u => u.RutCliente == RutCliente).FirstOrDefault();
+            editado.RutCliente = this.RutCliente;
+            editado.RazonSocial = this.RazonSocial;
+            editado.NombreContacto = this.NombreContacto;
+            editado.MailContacto = this.MailContacto;
+            editado.Direccion = this.Direccion;
+            editado.Telefono = this.Telefono;
+            editado.IdActividadEmpresa = this.IdActividadEmpresa;
+            editado.IdTipoEmpresa = this.IdTipoEmpresa;
+
+            modelo.SaveChanges();
+        }
+[2:59 PM, 5/20/2019] +56 9 6238 2848: //metodo  eliminar clientes
+        public void eliminar(string rut)
+        {
+            OnBreakEntities modelo = new OnBreakEntities();
+            Cliente matado = modelo.Cliente.Where(u => u.RutCliente == RutCliente).FirstOrDefault();
+            modelo.Cliente.Remove(matado);
+            modelo.SaveChanges();
+
+        }
+[2:59 PM, 5/20/2019] +56 9 6238 2848: //boton eliminar clientes
+        private void Btn_eliminar_Click(object sender, RoutedEventArgs e)
+        {
+            ClienteBLL eliminado = new ClienteBLL();
+            string RutCliente = txtRut.Text;
+            eliminado.RutCliente = txtRut.Text;
+            eliminado.eliminar(RutCliente);
+        }
+
+
+
+Codigo para mostrar en una lista lo que hay en la base de datos
+public List<EmpresaBll> ListaEmpresas()
+        {
+            EmpresasEntities modelo = new EmpresasEntities();
+            List<EmpresaBll> lista = new List<EmpresaBll>();
+
+            foreach (Empresa item in modelo.Empresa.ToList())
+            {
+                EmpresaBll em = new EmpresaBll();
+                em.Rut = item.Rut;
+                em.Dv = item.Dv;
+                em.RazonSocial = item.RazonSocial;
+                lista.Add(em);
+            }
+
+            return lista;
+        }
+
+
+
+
+
+
+private void BtnFiltrar_Click(object sender, RoutedEventArgs e)
+        {
+            string rutBuscado = txtRutFiltro.Text;
+            foreach (Cliente c in clientes)
+            {
+                if (c.Rut.Equals(rutBuscado))
+                {
+                    busquedaClientes.Add(c);
+                    myDataGrid.ItemsSource = busquedaClientes.ToList();
+
+                }
+            }
+            if (cboTipoFiltro.SelectedIndex >= 0)
+            {
+                Cliente clienteBuscado;
+                clienteBuscado = (from cli in clientes
+                                  where cli.tipoEmp == (TipoEmpresa)cboTipoFiltro.SelectedItem
+                                  select cli).FirstOrDefault();
+                if (clienteBuscado != null)
+                {
+                    busquedaClientes.Add(clienteBuscado);
+                    myDataGrid.ItemsSource = busquedaClientes.ToList();
+                } 
+            }
+            if (cboActividadFiltro.SelectedIndex >= 0)
+            {
+                Cliente clienteActividad;
+                clienteActividad = (from cli in clientes
+                                    where cli.Actividad == (ActividadEmpresa)cboActividadFiltro.SelectedItem
+                                    select cli).FirstOrDefault();
+
+                if (clienteActividad != null)
+                {
+                    busquedaClientes.Add(clienteActividad);
+                    myDataGrid.ItemsSource = busquedaClientes.ToList();
+                }
+            }
+        }

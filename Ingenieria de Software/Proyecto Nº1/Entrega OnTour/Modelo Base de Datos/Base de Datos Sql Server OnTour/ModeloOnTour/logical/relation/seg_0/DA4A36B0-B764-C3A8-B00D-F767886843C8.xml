@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Alumno Curso FK" directorySegmentName="seg_0" id="DA4A36B0-B764-C3A8-B00D-F767886843C8">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-04 00:32:47 UTC</createdTime>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="635ED9EF-D8C7-B650-AF71-C3848BCE06E5" value="true"/>
+</engineerTo>
+<sourcePk>33D8B441-E7D9-AD12-8CB8-1075600488B1</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>8E9B6DEE-57C2-504F-B4C6-071B2FA5E947</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>05EC0658-6D36-316A-8E15-CE9C12D5AD45</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

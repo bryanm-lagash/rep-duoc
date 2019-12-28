@@ -1,0 +1,161 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="05EC0658-6D36-316A-8E15-CE9C12D5AD45" name="Alumno">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-04 00:25:44 UTC</createdTime>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="32ACCB6A-201C-36C5-1F7F-195C19F4CAC1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="RutAlumno" id="3363711A-8FFB-FC8A-402B-6F8DB2223C8E">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-04 00:25:54 UTC</createdTime>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="32ACCB6A-201C-36C5-1F7F-195C19F4CAC1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre" id="CC54ADC0-AB30-3F0A-09E6-B61290BCF0A4">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-04 00:27:11 UTC</createdTime>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="32ACCB6A-201C-36C5-1F7F-195C19F4CAC1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Apaterno" id="7B020D89-CE82-A57B-7DFD-0A84766CE5AC">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-04 00:27:38 UTC</createdTime>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="32ACCB6A-201C-36C5-1F7F-195C19F4CAC1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Amaterno" id="4CDC1734-FC79-33FE-5A75-033724381258">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-04 00:27:49 UTC</createdTime>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="32ACCB6A-201C-36C5-1F7F-195C19F4CAC1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Direccion" id="200F19BA-4605-1930-0331-E20CE54DC3BE">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-04 00:28:04 UTC</createdTime>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="32ACCB6A-201C-36C5-1F7F-195C19F4CAC1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>70</dataTypeSize>
+<ownDataTypeParameters>70,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IdCurso" id="B86107EA-72B5-4597-FEA1-9ADA857C88E0">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-04 00:32:47 UTC</createdTime>
+<generatorID>DA4A36B0-B764-C3A8-B00D-F767886843C8</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="32ACCB6A-201C-36C5-1F7F-195C19F4CAC1" value="true"/>
+</engineerTo>
+<referedAttribute>58478BE4-6916-D36D-7DD0-F7A02AED87D0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CodColegio" id="651731D6-FE17-2AC2-04A4-745FADE8B6B8">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-04 00:32:47 UTC</createdTime>
+<generatorID>DA4A36B0-B764-C3A8-B00D-F767886843C8</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="32ACCB6A-201C-36C5-1F7F-195C19F4CAC1" value="true"/>
+</engineerTo>
+<referedAttribute>6C7AD40A-8F9D-7DCB-309B-AEDBC90C09BB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idTipo" id="BE9B3D49-5DB1-6A71-2C1A-2B68CC2F5C84">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-07 19:20:40 UTC</createdTime>
+<generatorID>DA4A36B0-B764-C3A8-B00D-F767886843C8</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="32ACCB6A-201C-36C5-1F7F-195C19F4CAC1" value="true"/>
+</engineerTo>
+<referedAttribute>1DE7920F-3228-14B2-ECD6-3AA49587DF07</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RutApoderado" id="DDF466F4-1800-EB61-EBE6-DE026C177A9A">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-07 20:52:48 UTC</createdTime>
+<generatorID>49C476D6-1025-A802-E0BB-06CA9069E259</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="32ACCB6A-201C-36C5-1F7F-195C19F4CAC1" value="true"/>
+</engineerTo>
+<referedAttribute>6FF75F98-13DB-6AE2-3AB8-DFEBC49E71B1</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="01FEBA29-E4B1-C5FD-BA45-1FD54B0B292D" name="Alumno PK">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-04 00:27:10 UTC</createdTime>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="32ACCB6A-201C-36C5-1F7F-195C19F4CAC1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3363711A-8FFB-FC8A-402B-6F8DB2223C8E</attributeRef>
+<attributeRef>B86107EA-72B5-4597-FEA1-9ADA857C88E0</attributeRef>
+<attributeRef>651731D6-FE17-2AC2-04A4-745FADE8B6B8</attributeRef>
+<attributeRef>BE9B3D49-5DB1-6A71-2C1A-2B68CC2F5C84</attributeRef>
+<attributeRef>DDF466F4-1800-EB61-EBE6-DE026C177A9A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="17364BD7-3B5B-431F-F267-54E71E57C435" name="Detalle Beneficio">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 20:44:29 UTC</createdTime>
+<generatorID>D34B1E44-3580-ABD0-4266-F6C1B3176796</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<engineerTo>
+<item key="77C8451F-21F8-09E6-56EF-EDF2BAC715BF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="IdDetBen" id="BCC259E7-065C-2E20-0B14-2C7C76483B3E">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 20:44:29 UTC</createdTime>
+<generatorID>07675D07-ED42-3B6F-94B9-699098E3A71B</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<engineerTo>
+<item key="77C8451F-21F8-09E6-56EF-EDF2BAC715BF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NumContrato" id="97D2C333-0FD3-3692-7EC9-822F15BE9359">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 20:44:29 UTC</createdTime>
+<generatorID>5DE62925-C069-4DBE-CAA0-B114EF55FFC7</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<engineerTo>
+<item key="77C8451F-21F8-09E6-56EF-EDF2BAC715BF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idBenefico" id="CF1996AC-D53B-ECC8-BE71-6A1385B04238">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 20:46:18 UTC</createdTime>
+<generatorID>29463F9C-B1D7-B4A3-F571-0F92D7F38950</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<engineerTo>
+<item key="77C8451F-21F8-09E6-56EF-EDF2BAC715BF" value="true"/>
+</engineerTo>
+<referedAttribute>B4FE2EDE-DEE2-8BAB-3F71-7FCB5CE9BDAF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="24759F2E-387E-948C-23C2-32CC0ED3BFB8" name="Detalle Beneficio PK">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 20:44:29 UTC</createdTime>
+<generatorID>237EB447-DF26-9AAC-7C5A-420F7826F41E</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<engineerTo>
+<item key="77C8451F-21F8-09E6-56EF-EDF2BAC715BF" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BCC259E7-065C-2E20-0B14-2C7C76483B3E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

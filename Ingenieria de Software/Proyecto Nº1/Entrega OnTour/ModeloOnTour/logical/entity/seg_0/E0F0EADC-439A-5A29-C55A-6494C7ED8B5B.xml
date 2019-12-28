@@ -1,0 +1,199 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E0F0EADC-439A-5A29-C55A-6494C7ED8B5B" name="Detalle_Seguro">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-06 01:50:41 UTC</createdTime>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="32ACCB6A-201C-36C5-1F7F-195C19F4CAC1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Cant_Seguros" id="C85B1685-0B30-D302-94F7-60CB943C2557">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-06 01:51:06 UTC</createdTime>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="32ACCB6A-201C-36C5-1F7F-195C19F4CAC1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IdSeguro" id="4147F307-52C1-D31E-DE37-C5F1EC85DF62">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-06 01:52:33 UTC</createdTime>
+<generatorID>4AC9718A-2A9F-8FB2-BAA0-B53C9387B9A6</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="32ACCB6A-201C-36C5-1F7F-195C19F4CAC1" value="true"/>
+</engineerTo>
+<referedAttribute>AC7EA2D5-7932-393D-8B52-48E8AAADF54A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RutEmp" id="25401C9A-D200-D4BD-B257-23ED0DC2C0F9">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-06 01:52:33 UTC</createdTime>
+<generatorID>4AC9718A-2A9F-8FB2-BAA0-B53C9387B9A6</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="32ACCB6A-201C-36C5-1F7F-195C19F4CAC1" value="true"/>
+</engineerTo>
+<referedAttribute>17FFDB3B-9DA1-CB59-B4D0-AFB6468EA296</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NumContrato" id="B41AAA64-B4B9-C286-3061-2E672933FE84">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-06 01:54:44 UTC</createdTime>
+<generatorID>64324188-7A4E-5EE5-4B63-25CD2FBA847F</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="32ACCB6A-201C-36C5-1F7F-195C19F4CAC1" value="true"/>
+</engineerTo>
+<referedAttribute>DD17BE5E-9CAC-12D3-7CB1-E7449ADD96B9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IdCurso" id="17FF4E0D-5DCB-ED47-FBE6-28E6EFD611CE">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-06 01:54:44 UTC</createdTime>
+<generatorID>64324188-7A4E-5EE5-4B63-25CD2FBA847F</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="32ACCB6A-201C-36C5-1F7F-195C19F4CAC1" value="true"/>
+</engineerTo>
+<referedAttribute>2CA78365-D8DA-CDC3-D4E7-873464459BFA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CodColegio" id="97CEC077-1880-378D-C152-4CB7BE9D65AA">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-06 01:54:44 UTC</createdTime>
+<generatorID>64324188-7A4E-5EE5-4B63-25CD2FBA847F</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="32ACCB6A-201C-36C5-1F7F-195C19F4CAC1" value="true"/>
+</engineerTo>
+<referedAttribute>8E456B95-F1DB-5497-F9D1-32EEF8E21431</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RutEjecutivo" id="300D8E25-7720-390A-09DD-103805C273C6">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-06 01:54:44 UTC</createdTime>
+<generatorID>64324188-7A4E-5EE5-4B63-25CD2FBA847F</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="32ACCB6A-201C-36C5-1F7F-195C19F4CAC1" value="true"/>
+</engineerTo>
+<referedAttribute>A9C3BA62-167A-B14C-B836-11320187E2AE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idDestino" id="2005F443-18B0-A5F9-58AF-A663CCE3E6D0">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-06 01:54:44 UTC</createdTime>
+<generatorID>64324188-7A4E-5EE5-4B63-25CD2FBA847F</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="32ACCB6A-201C-36C5-1F7F-195C19F4CAC1" value="true"/>
+</engineerTo>
+<referedAttribute>44460136-DD22-13B8-E291-0CE96AD21940</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idTipoAct" id="A360EF0A-BA73-F466-055F-D7EB54B9E616">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-06 02:07:57 UTC</createdTime>
+<generatorID>64324188-7A4E-5EE5-4B63-25CD2FBA847F</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="32ACCB6A-201C-36C5-1F7F-195C19F4CAC1" value="true"/>
+</engineerTo>
+<referedAttribute>6DBF0F36-68E7-3EA5-B015-23AFCB98852B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idMod" id="3705BDEA-CECE-EBF3-B798-BAD46E01D4E2">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-07 10:45:42 UTC</createdTime>
+<generatorID>64324188-7A4E-5EE5-4B63-25CD2FBA847F</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="32ACCB6A-201C-36C5-1F7F-195C19F4CAC1" value="true"/>
+</engineerTo>
+<referedAttribute>C43AC68A-4AE9-60E6-B953-28C6ABB4714B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idTipo" id="32282159-5A79-6610-0D8F-98398AE4B834">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-07 19:20:40 UTC</createdTime>
+<generatorID>64324188-7A4E-5EE5-4B63-25CD2FBA847F</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="32ACCB6A-201C-36C5-1F7F-195C19F4CAC1" value="true"/>
+</engineerTo>
+<referedAttribute>6E378E82-C11D-E486-CF4B-773E59504FF3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="41ACC2F2-7BAB-66E1-020B-DA4D52F707BF" name="Detalle_Seguro PK">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-06 01:52:33 UTC</createdTime>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="32ACCB6A-201C-36C5-1F7F-195C19F4CAC1" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4147F307-52C1-D31E-DE37-C5F1EC85DF62</attributeRef>
+<attributeRef>25401C9A-D200-D4BD-B257-23ED0DC2C0F9</attributeRef>
+<attributeRef>B41AAA64-B4B9-C286-3061-2E672933FE84</attributeRef>
+<attributeRef>17FF4E0D-5DCB-ED47-FBE6-28E6EFD611CE</attributeRef>
+<attributeRef>97CEC077-1880-378D-C152-4CB7BE9D65AA</attributeRef>
+<attributeRef>32282159-5A79-6610-0D8F-98398AE4B834</attributeRef>
+<attributeRef>300D8E25-7720-390A-09DD-103805C273C6</attributeRef>
+<attributeRef>2005F443-18B0-A5F9-58AF-A663CCE3E6D0</attributeRef>
+<attributeRef>A360EF0A-BA73-F466-055F-D7EB54B9E616</attributeRef>
+<attributeRef>3705BDEA-CECE-EBF3-B798-BAD46E01D4E2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,33 @@
+﻿<Window x:Class="SLNOnTour.EjecutivoVentasCurso"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SLNOnTour"
+        mc:Ignorable="d"
+        Title="EjecutivoVentasCurso" Height="390.001" Width="617.333">
+    <Grid Height="379" VerticalAlignment="Top">
+        <Label Content="DATOS DEL COLEGIO" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Codigo Colegio" HorizontalAlignment="Left" Margin="34,36,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="131,38,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Buscar" HorizontalAlignment="Left" Margin="256,38,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Buscar Aux" HorizontalAlignment="Left" Margin="336,38,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label Content="Nombre" HorizontalAlignment="Left" Margin="72,67,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="131,69,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Direccion" HorizontalAlignment="Left" Margin="271,67,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="336,67,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="248"/>
+        <Label Content="Tipo Colegio" HorizontalAlignment="Left" Margin="49,93,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="131,95,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Label Content="DATOS CURSO" HorizontalAlignment="Left" Margin="10,124,0,0" VerticalAlignment="Top"/>
+        <Label Content="Curso" HorizontalAlignment="Left" Margin="85,155,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="131,158,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Label Content="N° Alumnos" HorizontalAlignment="Left" Margin="258,155,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="336,158,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Agregar Aux" HorizontalAlignment="Left" Margin="461,158,0,0" VerticalAlignment="Top" Width="75"/>
+        <DataGrid HorizontalAlignment="Left" Height="100" Margin="26,201,0,0" VerticalAlignment="Top" Width="558"/>
+        <Button Content="Agregar" HorizontalAlignment="Left" Margin="26,312,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Eliminar" HorizontalAlignment="Left" Margin="271,312,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Actualizar" HorizontalAlignment="Left" Margin="509,312,0,0" VerticalAlignment="Top" Width="75"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,27 @@
+﻿<Window x:Class="SLNOnTour.DueñoConsultarSaldoAlumno"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SLNOnTour"
+        mc:Ignorable="d"
+        Title="DueñoConsultarSaldoAlumno" Height="450" Width="971">
+    <Grid Margin="0,0,2,0">
+        <DataGrid HorizontalAlignment="Left" Height="297" Margin="24,59,-105,0" VerticalAlignment="Top" Width="873">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="RUT ALUMNO"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="NOMBRE"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="APATERNO"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="AMATERNO"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="FECHA DEPOSITO"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="MONTO DEPOSITADO"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="SALDO ALUMNO"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="MONTO POR COMPLETAR"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="RUT" HorizontalAlignment="Left" Margin="24,28,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="61,28,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Buscar" HorizontalAlignment="Left" Margin="186,28,0,0" VerticalAlignment="Top" Width="76"/>
+
+    </Grid>
+</Window>

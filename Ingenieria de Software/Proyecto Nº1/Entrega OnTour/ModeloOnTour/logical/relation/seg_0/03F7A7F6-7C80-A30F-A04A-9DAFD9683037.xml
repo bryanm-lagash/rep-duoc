@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="rln_destino_contrato" directorySegmentName="seg_0" id="03F7A7F6-7C80-A30F-A04A-9DAFD9683037">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-06 01:03:05 UTC</createdTime>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="32ACCB6A-201C-36C5-1F7F-195C19F4CAC1" value="true"/>
+</engineerTo>
+<sourcePk>53980AD9-32A0-936C-DEB9-AE39D2CFF152</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>96C16BC3-9ADA-5BB3-CC2E-C17CF0FCA7BA</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D2582134-FDB0-FB3B-188D-D72D9B974C21</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

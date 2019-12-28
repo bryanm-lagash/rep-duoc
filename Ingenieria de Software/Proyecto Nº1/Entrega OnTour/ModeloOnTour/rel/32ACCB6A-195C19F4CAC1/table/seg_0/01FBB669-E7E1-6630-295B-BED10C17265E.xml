@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="01FBB669-E7E1-6630-295B-BED10C17265E" name="Curso">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-09 06:57:39 UTC</createdTime>
+<generatorID>8E9B6DEE-57C2-504F-B4C6-071B2FA5E947</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IdCurso" id="90F26654-03BC-C6A7-254A-B5E417E0EB3E">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-09 06:57:39 UTC</createdTime>
+<generatorID>58478BE4-6916-D36D-7DD0-F7A02AED87D0</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NumAlumnos" id="62634E69-E569-3AA2-4B42-F042B9BE0C33">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-09 06:57:39 UTC</createdTime>
+<generatorID>BF10658E-AED6-33D3-8308-00B738E6FD80</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Colegio_CodColegio" id="B0C520ED-79AB-1FED-F22A-8C8D02369933">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-09 06:57:39 UTC</createdTime>
+<generatorID>6C7AD40A-8F9D-7DCB-309B-AEDBC90C09BB</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0A29C769-CDEF-6940-DAEF-1B667F05B33D" referredColumn="0AADD5B4-7078-F180-FC88-928DEE743B52"/>
+</associations>
+</Column>
+<Column name="Colegio_Tipo_Colegio_idTipo" id="DCEA8428-842D-2986-1A7D-A774015AE246">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-09 06:57:39 UTC</createdTime>
+<generatorID>1DE7920F-3228-14B2-ECD6-3AA49587DF07</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0A29C769-CDEF-6940-DAEF-1B667F05B33D" referredColumn="667C32BF-4D14-4086-E08F-3F7FBB29B356"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E8AB12D9-802F-E82D-A70A-0BF9415667A1" name="Curso_PK">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-09 06:57:39 UTC</createdTime>
+<generatorID>33D8B441-E7D9-AD12-8CB8-1075600488B1</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="90F26654-03BC-C6A7-254A-B5E417E0EB3E"/>
+<colUsage columnID="B0C520ED-79AB-1FED-F22A-8C8D02369933"/>
+<colUsage columnID="DCEA8428-842D-2986-1A7D-A774015AE246"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0240C22A-17EE-C9D3-4BFD-00A9D5504024" name="Curso_Colegio_FK">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-09 06:57:39 UTC</createdTime>
+<generatorID>10CD345E-C92D-F679-2F9F-58556B0B8609</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B0C520ED-79AB-1FED-F22A-8C8D02369933"/>
+<colUsage columnID="DCEA8428-842D-2986-1A7D-A774015AE246"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

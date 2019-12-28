@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7412EE7E-A3C4-37B3-0430-C86C73ED6007" name="Detalle_Seguro">
+<createdBy>jose</createdBy>
+<createdTime>2019-07-08 04:21:11 UTC</createdTime>
+<generatorID>E0F0EADC-439A-5A29-C55A-6494C7ED8B5B</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IdDetSeg" id="E40F0CB7-50F4-9EA5-4252-04DAD73829C0">
+<createdBy>jose</createdBy>
+<createdTime>2019-07-08 04:21:11 UTC</createdTime>
+<generatorID>2301A96A-D413-03CC-2BFB-6E69E5ECC983</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cant_Seguros" id="F9EAAD6F-3DA2-8C89-CFA9-1A7DD3E6785E">
+<createdBy>jose</createdBy>
+<createdTime>2019-07-08 04:21:11 UTC</createdTime>
+<generatorID>C85B1685-0B30-D302-94F7-60CB943C2557</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Seguro_IdSeguro" id="00F1A706-2CAB-91E2-9FEE-62237D9CC373">
+<createdBy>jose</createdBy>
+<createdTime>2019-07-08 04:21:11 UTC</createdTime>
+<generatorID>4147F307-52C1-D31E-DE37-C5F1EC85DF62</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DF9DF833-491E-13ED-0215-A728920BB5E7" referredColumn="2C7A9FF5-49AB-00D3-4699-2343EF0BD9F8"/>
+</associations>
+</Column>
+<Column name="Contrato_NumContrato" id="465D11FA-6210-2F27-86F2-E29E9D7BEABC">
+<createdBy>jose</createdBy>
+<createdTime>2019-07-08 04:21:11 UTC</createdTime>
+<generatorID>B41AAA64-B4B9-C286-3061-2E672933FE84</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F6678348-A2AD-7C0F-8BA0-48BC2006E51D" referredColumn="3C82C467-F005-AD86-061F-917E5B8F1EC7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3858699C-DDD1-1BF9-E8CC-1FF8CA888DF4" name="Detalle_Seguro_PK">
+<createdBy>jose</createdBy>
+<createdTime>2019-07-08 04:21:11 UTC</createdTime>
+<generatorID>41ACC2F2-7BAB-66E1-020B-DA4D52F707BF</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E40F0CB7-50F4-9EA5-4252-04DAD73829C0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="13A3E965-94B8-EFCE-FD03-ABF29E7DB536" name="Detalle_Seguro_Contrato_FK">
+<createdBy>jose</createdBy>
+<createdTime>2019-07-08 04:21:11 UTC</createdTime>
+<generatorID>64324188-7A4E-5EE5-4B63-25CD2FBA847F</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="465D11FA-6210-2F27-86F2-E29E9D7BEABC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6B34186F-BEDA-4C6D-A6E9-A86C7A1379D7" name="Detalle_Seguro_Seguro_FK">
+<createdBy>jose</createdBy>
+<createdTime>2019-07-08 04:21:11 UTC</createdTime>
+<generatorID>4AC9718A-2A9F-8FB2-BAA0-B53C9387B9A6</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="00F1A706-2CAB-91E2-9FEE-62237D9CC373"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

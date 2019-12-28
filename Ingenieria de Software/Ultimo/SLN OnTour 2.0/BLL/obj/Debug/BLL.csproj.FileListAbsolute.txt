@@ -1,0 +1,128 @@
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\BLL\bin\Debug\BLL.dll.config
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\BLL\bin\Debug\BLL.dll
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\BLL\bin\Debug\BLL.pdb
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\BLL\bin\Debug\DAL.dll
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\BLL\bin\Debug\EntityFramework.dll
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\BLL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\BLL\bin\Debug\DAL.pdb
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\BLL\bin\Debug\DAL.dll.config
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\BLL\bin\Debug\EntityFramework.xml
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\BLL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\BLL\obj\Debug\BLL.dll
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\Entrega OnTour\Prototipo a nivel de diseño\OnTourWPF2.0\BLL\obj\Debug\BLL.pdb
+C:\Users\steds\Desktop\SLN OnTour\BLL\bin\Debug\BLL.dll.config
+C:\Users\steds\Desktop\SLN OnTour\BLL\bin\Debug\BLL.dll
+C:\Users\steds\Desktop\SLN OnTour\BLL\bin\Debug\BLL.pdb
+C:\Users\steds\Desktop\SLN OnTour\BLL\bin\Debug\DAL.dll
+C:\Users\steds\Desktop\SLN OnTour\BLL\bin\Debug\EntityFramework.dll
+C:\Users\steds\Desktop\SLN OnTour\BLL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\steds\Desktop\SLN OnTour\BLL\bin\Debug\DAL.pdb
+C:\Users\steds\Desktop\SLN OnTour\BLL\bin\Debug\DAL.dll.config
+C:\Users\steds\Desktop\SLN OnTour\BLL\bin\Debug\EntityFramework.xml
+C:\Users\steds\Desktop\SLN OnTour\BLL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\steds\Desktop\SLN OnTour\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+C:\Users\steds\Desktop\SLN OnTour\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\steds\Desktop\SLN OnTour\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\steds\Desktop\SLN OnTour\BLL\obj\Debug\BLL.dll
+C:\Users\steds\Desktop\SLN OnTour\BLL\obj\Debug\BLL.pdb
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\BLL\bin\Debug\BLL.dll.config
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\BLL\bin\Debug\BLL.dll
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\BLL\bin\Debug\BLL.pdb
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\BLL\bin\Debug\DAL.dll
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\BLL\bin\Debug\EntityFramework.dll
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\BLL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\BLL\bin\Debug\DAL.pdb
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\BLL\bin\Debug\DAL.dll.config
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\BLL\bin\Debug\EntityFramework.xml
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\BLL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\BLL\obj\Debug\BLL.dll
+C:\Users\anton\OneDrive\Escritorio\Nuevo OnTour\SLN OnTour\BLL\obj\Debug\BLL.pdb
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\BLL\bin\Debug\BLL.dll.config
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\BLL\bin\Debug\BLL.dll
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\BLL\bin\Debug\BLL.pdb
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\BLL\bin\Debug\DAL.dll
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\BLL\bin\Debug\EntityFramework.dll
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\BLL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\BLL\bin\Debug\DAL.pdb
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\BLL\bin\Debug\DAL.dll.config
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\BLL\bin\Debug\EntityFramework.xml
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\BLL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\BLL\obj\Debug\BLL.dll
+C:\Users\anton\OneDrive\Documentos\Asignaturas\Semestre III\Ingenieria de Software\SLN OnTour\BLL\obj\Debug\BLL.pdb
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\BLL\bin\Debug\BLL.dll.config
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\BLL\bin\Debug\BLL.dll
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\BLL\bin\Debug\BLL.pdb
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\BLL\bin\Debug\DAL.dll
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\BLL\bin\Debug\EntityFramework.dll
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\BLL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\BLL\bin\Debug\DAL.pdb
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\BLL\bin\Debug\DAL.dll.config
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\BLL\bin\Debug\EntityFramework.xml
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\BLL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\BLL\obj\Debug\BLL.dll
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\BLL\obj\Debug\BLL.pdb
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\BLL\bin\Debug\itextsharp.dll
+C:\Users\anton\OneDrive\Escritorio\SLN OnTour\BLL\bin\Debug\itextsharp.xml
+C:\Users\steds\Desktop\SLN OnTour 2.0\BLL\bin\Debug\BLL.dll.config
+C:\Users\steds\Desktop\SLN OnTour 2.0\BLL\bin\Debug\BLL.dll
+C:\Users\steds\Desktop\SLN OnTour 2.0\BLL\bin\Debug\BLL.pdb
+C:\Users\steds\Desktop\SLN OnTour 2.0\BLL\bin\Debug\DAL.dll
+C:\Users\steds\Desktop\SLN OnTour 2.0\BLL\bin\Debug\EntityFramework.dll
+C:\Users\steds\Desktop\SLN OnTour 2.0\BLL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\steds\Desktop\SLN OnTour 2.0\BLL\bin\Debug\itextsharp.dll
+C:\Users\steds\Desktop\SLN OnTour 2.0\BLL\bin\Debug\DAL.pdb
+C:\Users\steds\Desktop\SLN OnTour 2.0\BLL\bin\Debug\DAL.dll.config
+C:\Users\steds\Desktop\SLN OnTour 2.0\BLL\bin\Debug\EntityFramework.xml
+C:\Users\steds\Desktop\SLN OnTour 2.0\BLL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\steds\Desktop\SLN OnTour 2.0\BLL\bin\Debug\itextsharp.xml
+C:\Users\steds\Desktop\SLN OnTour 2.0\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+C:\Users\steds\Desktop\SLN OnTour 2.0\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\steds\Desktop\SLN OnTour 2.0\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\steds\Desktop\SLN OnTour 2.0\BLL\obj\Debug\BLL.dll
+C:\Users\steds\Desktop\SLN OnTour 2.0\BLL\obj\Debug\BLL.pdb
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\BLL\bin\Debug\BLL.dll.config
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\BLL\bin\Debug\BLL.dll
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\BLL\bin\Debug\BLL.pdb
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\BLL\bin\Debug\DAL.dll
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\BLL\bin\Debug\EntityFramework.dll
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\BLL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\BLL\bin\Debug\itextsharp.dll
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\BLL\bin\Debug\DAL.pdb
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\BLL\bin\Debug\DAL.dll.config
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\BLL\bin\Debug\EntityFramework.xml
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\BLL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\BLL\bin\Debug\itextsharp.xml
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\BLL\obj\Debug\BLL.dll
+C:\Users\anton\OneDrive\Escritorio\3.0\SLN OnTour 2.0\BLL\obj\Debug\BLL.pdb
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\BLL\bin\Debug\BLL.dll.config
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\BLL\bin\Debug\BLL.dll
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\BLL\bin\Debug\BLL.pdb
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\BLL\bin\Debug\DAL.dll
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\BLL\bin\Debug\EntityFramework.dll
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\BLL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\BLL\bin\Debug\itextsharp.dll
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\BLL\bin\Debug\DAL.pdb
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\BLL\bin\Debug\DAL.dll.config
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\BLL\bin\Debug\EntityFramework.xml
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\BLL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\BLL\bin\Debug\itextsharp.xml
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\BLL\obj\Debug\BLL.dll
+C:\Users\steds\Desktop\Ultimo\SLN OnTour 2.0\BLL\obj\Debug\BLL.pdb

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="27E213FB-6707-881D-6A3E-5909578EB06A" containerWithKeyObject="05FE04C6-CD6B-0A06-539D-467CB5DB9D5D" localFKIndex="4C83180D-B339-AB6D-2CD6-4554B180E4E9" name="Cta_Usuario_Apoderado_FK">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-09 06:57:39 UTC</createdTime>
+<generatorID>5F751A37-06E0-59FF-EFB0-B8114245B5FD</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<referredTableLongName>Apoderado</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>937873B6-5C27-0D33-6924-AFCD7EF03426</referredTableID>
+<keyObject>13C233FD-C700-8BA7-A04A-F3B345187074</keyObject>
+<referredKeyID>13C233FD-C700-8BA7-A04A-F3B345187074</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>RutApoderado</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

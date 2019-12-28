@@ -1,0 +1,28 @@
+﻿<Window x:Class="SLNOnTour.EjecutivoVentasListadoColegio"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SLNOnTour"
+        mc:Ignorable="d"
+        Title="EjecutivoVentasListadoColegio" Height="340.5" Width="765.472">
+    <Grid>
+        <Label Content="Código Colegio" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Button Content="Filtrar" HorizontalAlignment="Left" Margin="655,11,0,0" VerticalAlignment="Top" Width="76"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="107,12,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Nombre Colegio" HorizontalAlignment="Left" Margin="232,10,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="335,12,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="152"/>
+        <DataGrid HorizontalAlignment="Left" Height="232" Margin="10,41,0,0" VerticalAlignment="Top" Width="721">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="CODIGO COLEGIO"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="NOMBER COLEGIO"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="TIPO COLEGIO"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="DIRECCION"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="Tipo" HorizontalAlignment="Left" Margin="492,7,0,0" VerticalAlignment="Top"/>
+        <ComboBox HorizontalAlignment="Left" Margin="530,11,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Cargar Datos" HorizontalAlignment="Left" Margin="656,278,0,0" VerticalAlignment="Top" Width="75"/>
+
+    </Grid>
+</Window>

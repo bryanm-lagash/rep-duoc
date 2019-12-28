@@ -1,0 +1,226 @@
+﻿<Window x:Class="OnTourWPF2._0.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        MouseDown="Window_MouseDown"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OnTourWPF2._0"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="700" AllowsTransparency="True"  Width="1300" WindowStyle="None" WindowStartupLocation="CenterScreen" Background="{x:Null}" ResizeMode="NoResize" WindowState="Maximized">
+    <Window.Resources>
+        <Storyboard x:Key="gridMain">
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Panel.Background).(SolidColorBrush.Color)" Storyboard.TargetName="grid">
+                <EasingColorKeyFrame KeyTime="0" Value="#02000000"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.2" Value="#0C000000"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.4" Value="#19000000"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.6" Value="#26000000"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.8" Value="#33000000"/>
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#3F000000"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.2" Value="#4C000000"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.4" Value="#59000000"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.6" Value="#66000000"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.8" Value="#72000000"/>
+                <EasingColorKeyFrame KeyTime="0:0:2" Value="#7F000000"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Panel.Background).(SolidColorBrush.Color)" Storyboard.TargetName="btnIngresar">
+                <EasingColorKeyFrame KeyTime="0" Value="#00000000"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.2" Value="#19000000"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.4" Value="#33000000"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.6" Value="#4C000000"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.8" Value="#66000000"/>
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#7F000000"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.2" Value="#99000000"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.4" Value="#B2000000"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.6" Value="#CC000000"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.8" Value="#E5000000"/>
+                <EasingColorKeyFrame KeyTime="0:0:2" Value="Black"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)" Storyboard.TargetName="btnIngresar">
+                <EasingColorKeyFrame KeyTime="0" Value="#00CBCBCB"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.2" Value="#19CBCBCB"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.4" Value="#33CBCBCB"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.6" Value="#4CCBCBCB"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.8" Value="#66CBCBCB"/>
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#7FCBCBCB"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.2" Value="#99CBCBCB"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.4" Value="#B2CBCBCB"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.6" Value="#CCCBCBCB"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.8" Value="#E5CBCBCB"/>
+                <EasingColorKeyFrame KeyTime="0:0:2" Value="#FFCBCBCB"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)" Storyboard.TargetName="packIcon">
+                <EasingColorKeyFrame KeyTime="0" Value="#00313E46"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.2" Value="#19313E46"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.4" Value="#33313E46"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.6" Value="#4C313E46"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.8" Value="#66313E46"/>
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#7F313E46"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.2" Value="#99313E46"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.4" Value="#B2313E46"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.6" Value="#CC313E46"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.8" Value="#E5313E46"/>
+                <EasingColorKeyFrame KeyTime="0:0:2" Value="#FF313E46"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)" Storyboard.TargetName="packIcon1">
+                <EasingColorKeyFrame KeyTime="0" Value="#007296A2"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.2" Value="#197296A2"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.4" Value="#337296A2"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.6" Value="#4C7296A2"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.8" Value="#667296A2"/>
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#7F7296A2"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.2" Value="#997296A2"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.4" Value="#B27296A2"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.6" Value="#CC7296A2"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.8" Value="#E57296A2"/>
+                <EasingColorKeyFrame KeyTime="0:0:2" Value="#FF7296A2"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Border.BorderBrush).(SolidColorBrush.Color)" Storyboard.TargetName="txtContraseña">
+                <EasingColorKeyFrame KeyTime="0" Value="Transparent"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.2" Value="#19FFFFFF"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.4" Value="#33FFFFFF"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.6" Value="#4CFFFFFF"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.8" Value="#66FFFFFF"/>
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#7FFFFFFF"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.2" Value="#99FFFFFF"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.4" Value="#B2FFFFFF"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.6" Value="#CCFFFFFF"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.8" Value="#E5FFFFFF"/>
+                <EasingColorKeyFrame KeyTime="0:0:2" Value="White"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)" Storyboard.TargetName="txtContraseña">
+                <EasingColorKeyFrame KeyTime="0" Value="#007296A2"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.2" Value="#197296A2"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.4" Value="#337296A2"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.6" Value="#4C7296A2"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.8" Value="#667296A2"/>
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#7F7296A2"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.2" Value="#997296A2"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.4" Value="#B27296A2"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.6" Value="#CC7296A2"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.8" Value="#E57296A2"/>
+                <EasingColorKeyFrame KeyTime="0:0:2" Value="#FF7296A2"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)" Storyboard.TargetName="label2">
+                <EasingColorKeyFrame KeyTime="0" Value="#00CBCBCB"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.2" Value="#19CBCBCB"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.4" Value="#33CBCBCB"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.6" Value="#4CCBCBCB"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.8" Value="#66CBCBCB"/>
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#7FCBCBCB"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.2" Value="#99CBCBCB"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.4" Value="#B2CBCBCB"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.6" Value="#CCCBCBCB"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.8" Value="#E5CBCBCB"/>
+                <EasingColorKeyFrame KeyTime="0:0:2" Value="#FFCBCBCB"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)" Storyboard.TargetName="txtUsuario">
+                <EasingColorKeyFrame KeyTime="0" Value="#007296A2"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.2" Value="#197296A2"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.4" Value="#337296A2"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.6" Value="#4C7296A2"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.8" Value="#667296A2"/>
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#7F7296A2"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.2" Value="#997296A2"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.4" Value="#B27296A2"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.6" Value="#CC7296A2"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.8" Value="#E57296A2"/>
+                <EasingColorKeyFrame KeyTime="0:0:2" Value="#FF7296A2"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Border.BorderBrush).(SolidColorBrush.Color)" Storyboard.TargetName="txtUsuario">
+                <EasingColorKeyFrame KeyTime="0" Value="Transparent"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.2" Value="#19FFFFFF"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.4" Value="#33FFFFFF"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.6" Value="#4CFFFFFF"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.8" Value="#66FFFFFF"/>
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#7FFFFFFF"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.2" Value="#99FFFFFF"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.4" Value="#B2FFFFFF"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.6" Value="#CCFFFFFF"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.8" Value="#E5FFFFFF"/>
+                <EasingColorKeyFrame KeyTime="0:0:2" Value="White"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)" Storyboard.TargetName="packIcon2">
+                <EasingColorKeyFrame KeyTime="0" Value="#007296A2"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.2" Value="#197296A2"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.4" Value="#337296A2"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.6" Value="#4C7296A2"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.8" Value="#667296A2"/>
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#7F7296A2"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.2" Value="#997296A2"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.4" Value="#B27296A2"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.6" Value="#CC7296A2"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.8" Value="#E57296A2"/>
+                <EasingColorKeyFrame KeyTime="0:0:2" Value="#FF7296A2"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)" Storyboard.TargetName="label1">
+                <EasingColorKeyFrame KeyTime="0" Value="#00CBCBCB"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.2" Value="#19CBCBCB"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.4" Value="#33CBCBCB"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.6" Value="#4CCBCBCB"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.8" Value="#66CBCBCB"/>
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#7FCBCBCB"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.2" Value="#99CBCBCB"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.4" Value="#B2CBCBCB"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.6" Value="#CCCBCBCB"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.8" Value="#E5CBCBCB"/>
+                <EasingColorKeyFrame KeyTime="0:0:2" Value="#FFCBCBCB"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)" Storyboard.TargetName="label">
+                <EasingColorKeyFrame KeyTime="0" Value="#00CBCBCB"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.2" Value="#19CBCBCB"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.4" Value="#33CBCBCB"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.6" Value="#4CCBCBCB"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.8" Value="#66CBCBCB"/>
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#7FCBCBCB"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.2" Value="#99CBCBCB"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.4" Value="#B2CBCBCB"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.6" Value="#CCCBCBCB"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.8" Value="#E5CBCBCB"/>
+                <EasingColorKeyFrame KeyTime="0:0:2" Value="#FFCBCBCB"/>
+            </ColorAnimationUsingKeyFrames>
+        </Storyboard>
+    </Window.Resources>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+            <BeginStoryboard Storyboard="{StaticResource gridMain}"/>
+        </EventTrigger>
+    </Window.Triggers>
+
+    <Grid Margin="0,0,0,0">
+        <Image Source="Logos/michal-parzuchowski-37537-unsplash.jpg" Stretch="UniformToFill"/>
+        <Button Width="30" Height="30" VerticalAlignment="Top" HorizontalAlignment="Right" Background="Transparent" BorderBrush="Transparent" Click="Button_Click_5">
+            <materialDesign:PackIcon Kind="Close" Margin="-7,0,-9,0" Foreground="#FF5E778D"></materialDesign:PackIcon>
+        </Button>
+        <Button Width="30" Height="30" VerticalAlignment="Top" HorizontalAlignment="Right" Background="Transparent" BorderBrush="Transparent" Margin="0,0,30,0" Click="Button_Click">
+            <materialDesign:PackIcon Kind="WindowMaximize" Margin="-7,0,-9,0" Foreground="#FF5E778D"/>
+        </Button>
+        <Button Width="30" Height="30" VerticalAlignment="Top" HorizontalAlignment="Right" Background="Transparent" BorderBrush="Transparent" Margin="0,0,60,0" Click="Button_Click_6">
+            <materialDesign:PackIcon Kind="WindowMinimize" Margin="-7,5,-9,0" Foreground="#FF5E778D"/>
+        </Button>
+        <Grid x:Name="grid" Margin="483,148,479,150" Background="#83000000" MaxWidth="338" MaxHeight="400">
+            <Label x:Name="label" Content="Iniciar Sesión" Visibility="Visible" FontWeight="Bold" FontSize="18" Height="38" Margin="102,0,0,341" VerticalAlignment="Bottom" Background="{x:Null}" Foreground="#FFCBCBCB" HorizontalAlignment="Left" Width="162"  />
+            <Label x:Name="label1" Content="Usuario" Visibility="Visible" Margin="102,0,0,270" Foreground="#FFCBCBCB" FontSize="16" Height="28" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="111"/>
+            <Label x:Name="label2" Content="Contraseña" Visibility="Visible" Margin="102,0,0,135" Foreground="#FFCBCBCB" FontSize="16" Height="28" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="155" Background="{x:Null}"/>
+            <TextBox x:Name="txtUsuario" Margin="102,0,0,224" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Visibility="Visible" TextWrapping="Wrap" materialDesign:HintAssist.Hint="Nombre de usuario" Foreground="#FF7296A2" FontSize="14" BorderBrush="#89FFFFFF" Height="45" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="186" KeyDown="TxtUsuario_KeyDown" />
+            <PasswordBox x:Name="txtContraseña" Margin="102,0,0,91"  Visibility="Visible"  materialDesign:HintAssist.Hint="Ingrese su contraseña" Foreground="#FF7296A2" BorderBrush="#89FFFFFF" FontSize="14" Background="{x:Null}" Height="46" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="186" KeyDown="TxtContraseña_KeyDown" />
+
+            <Button x:Name="btnIngresar" Content="Ingresar" Visibility="Visible" Height="53" Background="Black" BorderBrush="{x:Null}" Foreground="#FFCBCBCB" MouseLeftButtonDown="Button_MouseLeftButtonDown" Click="Button_Click_1" FontSize="16" VerticalAlignment="Bottom" Margin="0,0,0,1"/>
+            <Border Width="40" Height="40" Margin="42,273,256,89">
+                <materialDesign:PackIcon x:Name="packIcon1" Kind="Circle" Width="40" Height="40" Foreground="#FF7296A2"></materialDesign:PackIcon>
+            </Border>
+            <Border Width="40" Height="40" Margin="42,273,256,89">
+                <materialDesign:PackIcon x:Name="packIcon" Kind="Key" Width="30" Height="30" Foreground="#FF313E46" Margin="4,4,0,0"></materialDesign:PackIcon>
+            </Border>
+            <Border Width="40" Height="40" Margin="42,138,256,224">
+                <materialDesign:PackIcon x:Name="packIcon2" Kind="UserCircle" Width="40" Height="40" Foreground="#FF7296A2"></materialDesign:PackIcon>
+
+            </Border>
+        </Grid>
+        <Button Content="Apoderados" Margin="0,148,0,0" VerticalAlignment="Top" Background="#7F000000" Foreground="#FF7296A2" HorizontalAlignment="Right" Width="137" Click="Button_Click_2" BorderBrush="Black"/>
+        <Button Content="Admin Sistemas" Margin="0,185,0,0" VerticalAlignment="Top" Background="#7F000000" Foreground="#FF7296A2" HorizontalAlignment="Right" Width="137" Click="Button_Click_3" BorderBrush="Black"/>
+        <Button Content="Dueño" Margin="0,222,0,0" VerticalAlignment="Top" Background="#7F000000" Foreground="#FF7296A2" HorizontalAlignment="Right" Width="137" Click="Button_Click_4" BorderBrush="Black"/>
+        <Button Content="Ejec. Ventas" Margin="0,259,0,0" VerticalAlignment="Top" Background="#7F000000" Foreground="#FF7296A2" HorizontalAlignment="Right" Width="137"  BorderBrush="Black" Click="Button_Click_7"/>
+
+    </Grid>
+</Window>

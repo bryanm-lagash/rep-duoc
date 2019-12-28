@@ -1,0 +1,183 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="06AE4CE5-7E8E-21D8-43E2-9CDAF31A48BF" name="Detalle_Actividad">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-07 10:36:15 UTC</createdTime>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="32ACCB6A-201C-36C5-1F7F-195C19F4CAC1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Cant_Actividades" id="B28CB3C4-ACC0-BD26-5C31-68D8D7B6FCF0">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-07 10:36:28 UTC</createdTime>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="32ACCB6A-201C-36C5-1F7F-195C19F4CAC1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IdActividad" id="7B67DBC9-17D6-D21A-E58C-769E77C0C088">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-07 10:39:15 UTC</createdTime>
+<generatorID>AFAE3CD8-C191-1FCF-90A5-19AB9EA5EA92</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="32ACCB6A-201C-36C5-1F7F-195C19F4CAC1" value="true"/>
+</engineerTo>
+<referedAttribute>96791C14-3334-465C-C56C-379C7FB2B128</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NumContrato" id="E7BEC176-4BC7-7230-EAFA-60B0BC00DB3F">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-07 10:39:33 UTC</createdTime>
+<generatorID>EE8A31D4-7CBB-4D54-C400-7166330EFCBB</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="32ACCB6A-201C-36C5-1F7F-195C19F4CAC1" value="true"/>
+</engineerTo>
+<referedAttribute>DD17BE5E-9CAC-12D3-7CB1-E7449ADD96B9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IdCurso" id="68AEE404-6C32-453A-704E-38A25D11EDD9">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-07 10:39:33 UTC</createdTime>
+<generatorID>EE8A31D4-7CBB-4D54-C400-7166330EFCBB</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="32ACCB6A-201C-36C5-1F7F-195C19F4CAC1" value="true"/>
+</engineerTo>
+<referedAttribute>2CA78365-D8DA-CDC3-D4E7-873464459BFA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CodColegio" id="7C5F66AB-1B13-AD17-5F77-1DB55C1178F5">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-07 10:39:33 UTC</createdTime>
+<generatorID>EE8A31D4-7CBB-4D54-C400-7166330EFCBB</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="32ACCB6A-201C-36C5-1F7F-195C19F4CAC1" value="true"/>
+</engineerTo>
+<referedAttribute>8E456B95-F1DB-5497-F9D1-32EEF8E21431</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RutEjecutivo" id="8F77EB42-74C6-930D-9019-22DC387FFF18">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-07 10:39:33 UTC</createdTime>
+<generatorID>EE8A31D4-7CBB-4D54-C400-7166330EFCBB</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="32ACCB6A-201C-36C5-1F7F-195C19F4CAC1" value="true"/>
+</engineerTo>
+<referedAttribute>A9C3BA62-167A-B14C-B836-11320187E2AE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idDestino" id="848A10E8-00F2-E777-C464-0CE1F516C29E">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-07 10:39:33 UTC</createdTime>
+<generatorID>EE8A31D4-7CBB-4D54-C400-7166330EFCBB</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="32ACCB6A-201C-36C5-1F7F-195C19F4CAC1" value="true"/>
+</engineerTo>
+<referedAttribute>44460136-DD22-13B8-E291-0CE96AD21940</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idTipoAct" id="D1D89804-7BB5-8C11-C20D-2CEA77138DCC">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-07 10:39:33 UTC</createdTime>
+<generatorID>EE8A31D4-7CBB-4D54-C400-7166330EFCBB</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="32ACCB6A-201C-36C5-1F7F-195C19F4CAC1" value="true"/>
+</engineerTo>
+<referedAttribute>6DBF0F36-68E7-3EA5-B015-23AFCB98852B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idMod" id="9B43612D-E8F5-67AB-9795-F5AB756D953A">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-07 10:45:42 UTC</createdTime>
+<generatorID>EE8A31D4-7CBB-4D54-C400-7166330EFCBB</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="32ACCB6A-201C-36C5-1F7F-195C19F4CAC1" value="true"/>
+</engineerTo>
+<referedAttribute>C43AC68A-4AE9-60E6-B953-28C6ABB4714B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idTipo" id="CB66CC26-D8D9-6B7F-7520-3BD8B54D55ED">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-07 19:20:40 UTC</createdTime>
+<generatorID>EE8A31D4-7CBB-4D54-C400-7166330EFCBB</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="32ACCB6A-201C-36C5-1F7F-195C19F4CAC1" value="true"/>
+</engineerTo>
+<referedAttribute>6E378E82-C11D-E486-CF4B-773E59504FF3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="58DB2A75-3D82-5767-2BD9-E9D901A65339" name="Detalle_Actividad PK">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-07 10:39:15 UTC</createdTime>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="32ACCB6A-201C-36C5-1F7F-195C19F4CAC1" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7B67DBC9-17D6-D21A-E58C-769E77C0C088</attributeRef>
+<attributeRef>E7BEC176-4BC7-7230-EAFA-60B0BC00DB3F</attributeRef>
+<attributeRef>68AEE404-6C32-453A-704E-38A25D11EDD9</attributeRef>
+<attributeRef>7C5F66AB-1B13-AD17-5F77-1DB55C1178F5</attributeRef>
+<attributeRef>8F77EB42-74C6-930D-9019-22DC387FFF18</attributeRef>
+<attributeRef>848A10E8-00F2-E777-C464-0CE1F516C29E</attributeRef>
+<attributeRef>D1D89804-7BB5-8C11-C20D-2CEA77138DCC</attributeRef>
+<attributeRef>9B43612D-E8F5-67AB-9795-F5AB756D953A</attributeRef>
+<attributeRef>CB66CC26-D8D9-6B7F-7520-3BD8B54D55ED</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

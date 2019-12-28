@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="827484A8-55C1-ED77-F8FF-D54059DC790E" name="Info_Beneficio">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 21:21:11 UTC</createdTime>
+<generatorID>71BD789C-2078-84F8-AF08-F4CFA3AA8641</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cant_beneficio" id="FB7E0CF3-CD16-23D2-331F-CC9760B2D1E4">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 21:21:11 UTC</createdTime>
+<generatorID>53E36125-B77B-7872-3B46-77D5F02CD18E</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Contrato_NumContrato" id="E2F429BE-1033-F58C-91B1-F3B3D22E814F">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 21:21:11 UTC</createdTime>
+<generatorID>440CD248-38BC-60AC-D3CE-930DDC7FD637</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1967738C-7DD6-079D-FE93-63403F47EF5E" referredColumn="F03AC28C-A18A-1C9B-B8ED-05B2DE5A5009"/>
+</associations>
+</Column>
+<Column name="Beneficio_idBenefico" id="20D49C0B-6B6B-3145-D524-7599C37CE770">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 21:21:11 UTC</createdTime>
+<generatorID>EA54B02E-2160-57F1-F33F-29EA39B9EBA5</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DC39811C-BD8B-3527-8A2B-9BE89E314ED2" referredColumn="BB4BFC8D-D7D8-383E-D65C-A66DAB8AEED8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5CA89A7A-D214-6A08-B492-36D7474E73F3" name="Info_Beneficio_PK">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 21:21:11 UTC</createdTime>
+<generatorID>5A15D2B9-C5BD-9A89-B844-ACA1574DEEE2</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E2F429BE-1033-F58C-91B1-F3B3D22E814F"/>
+<colUsage columnID="20D49C0B-6B6B-3145-D524-7599C37CE770"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4E6FFD21-E594-4ACA-ABB5-3F745070BDEE" name="Info_Beneficio_Beneficio_FK">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 21:21:11 UTC</createdTime>
+<generatorID>C3069111-8B65-37F1-AE16-4366EC4973C6</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="20D49C0B-6B6B-3145-D524-7599C37CE770"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4E83E8A3-A0DD-E7FB-1FA8-B4568905C0FB" name="Info_Beneficio_Contrato_FK">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 21:21:11 UTC</createdTime>
+<generatorID>B2514F71-D73D-DB79-A209-5C85B5D17F9D</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E2F429BE-1033-F58C-91B1-F3B3D22E814F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

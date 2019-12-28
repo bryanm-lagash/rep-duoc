@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="2B81CF8B-7F95-5DDC-4AA9-4D72EB24BB40" containerWithKeyObject="C576E98F-6684-11A0-E586-181EA22C2888" localFKIndex="7AA98877-2691-8929-5964-990D71568658" name="TipActividad_ModAporte_FK">
+<createdBy>jose</createdBy>
+<createdTime>2019-07-08 04:21:11 UTC</createdTime>
+<generatorID>87E30D47-3365-AFD1-B399-73F50E34ACCD</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<referredTableLongName>ModAporte</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A4A61917-CD9F-237A-1E33-B773C109A710</referredTableID>
+<keyObject>1EFF2674-7441-F266-2C04-B150A1A22D22</keyObject>
+<referredKeyID>1EFF2674-7441-F266-2C04-B150A1A22D22</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>idMod</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

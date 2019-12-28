@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="rlc_TipCuenta_CtaUsuario" directorySegmentName="seg_0" id="A3D73DA4-073D-7D15-763B-D416902077B3">
+<createdBy>steds</createdBy>
+<createdTime>2019-06-15 20:10:23 UTC</createdTime>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="32ACCB6A-201C-36C5-1F7F-195C19F4CAC1" value="true"/>
+<item key="4B805F8D-683E-EAD1-A49B-15918CB62FB7" value="true"/>
+</engineerTo>
+<sourcePk>51D57E12-4A46-523C-931A-13E81CC3BAC5</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>1E852088-47ED-7B79-C071-62E01ED00200</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>E031E092-C331-5476-2BC3-BCC2977D312C</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

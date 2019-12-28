@@ -1,0 +1,199 @@
+﻿<Window x:Class="OnTourWPF2._0.Dueño.Dueño"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OnTourWPF2._0.Dueño"
+        mc:Ignorable="d"
+       Title="OnTour - Apoderados" MinHeight="500" Height="600" Width="1080" WindowStyle="none" ResizeMode="CanResize" WindowStartupLocation="CenterScreen" WindowState="Maximized" >
+    <Window.Resources>
+        <Storyboard x:Key="CloseMenu">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Grid.Width)" Storyboard.TargetName="grid" >
+                <EasingDoubleKeyFrame KeyTime="0" Value="250"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="70" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="OpenMenu">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Grid.Width)" Storyboard.TargetName="grid">
+                <EasingDoubleKeyFrame KeyTime="0" Value="70"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="250"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </Window.Resources>
+    <Window.Background>
+        <ImageBrush ImageSource="/OnTourWPF2.0;component/Logos/michal-parzuchowski-37537-unsplash.jpg"/>
+    </Window.Background>
+    <Grid Margin="0,0,0,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid x:Name="grid" Width="250" HorizontalAlignment="Left"  VerticalAlignment="Stretch" Grid.Column="0" Margin="0">
+
+            <Rectangle x:Name="rec1" Visibility="Hidden" Height="60" Width="8" Margin="0,213,0,0" Fill="#FF1C1C1C" HorizontalAlignment="Left" VerticalAlignment="Top"></Rectangle>
+            <Rectangle x:Name="rec2" Visibility="Hidden" Height="60" Width="8" Margin="0,273,0,0" Fill="#FF1C1C1C" HorizontalAlignment="Left" VerticalAlignment="Top"></Rectangle>
+            <Rectangle x:Name="rec3" Visibility="Hidden" Height="60" Width="8" Margin="0,333,0,0" Fill="#FF1C1C1C" HorizontalAlignment="Left" VerticalAlignment="Top"></Rectangle>
+            <Rectangle x:Name="rec4" Visibility="Hidden" Height="60" Width="8" Margin="0,393,0,0" Fill="#FF1C1C1C" HorizontalAlignment="Left" VerticalAlignment="Top"></Rectangle>
+
+
+
+            <ListView x:Name="ListViewMenu" VerticalAlignment="Stretch" Margin="0,213,0,0" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Disabled" Foreground="White" SelectionChanged="ListViewMenu_SelectionChanged" Background="#FF1B1B1C">
+                <ListViewItem x:Name="listViewItemInicio" Height="60" RenderTransformOrigin="0.5,0.5" >
+                    <ListViewItem.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </ListViewItem.RenderTransform>
+
+                    <StackPanel Orientation="Horizontal" Margin="-8,-26,-228,-26">
+                        <materialDesign:PackIcon Kind="Home" Width="30" Height="30" VerticalAlignment="Center" Margin="18,5,9,5" Foreground="#FF98B7BB"/>
+                        <TextBlock Text="Inicio" Margin="24,20,11,20" VerticalAlignment="Center" Foreground="#FF98B7BB" Width="97" Padding="2,0" Height="16"/>
+                    </StackPanel>
+                </ListViewItem>
+                <ListViewItem x:Name="listViewItemAdminCliente" Height="60" RenderTransformOrigin="0.5,0.5" >
+                    <ListViewItem.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </ListViewItem.RenderTransform>
+                    <StackPanel Orientation="Horizontal" Margin="-23,-8,-228,-10" Height="58" Width="195">
+                        <materialDesign:PackIcon Kind="AttachMoney" Width="30" Height="30" VerticalAlignment="Center" Margin="5" Foreground="#FF98B7BB"/>
+                        <TextBlock Text="Consultar Saldo Alumno" Margin="28,20,-163,20" VerticalAlignment="Center" Foreground="#FF98B7BB" />
+
+                    </StackPanel>
+                </ListViewItem>
+                <ListViewItem x:Name="listViewItemAdminContrato" Height="60" RenderTransformOrigin="0.5,0.5" >
+                    <ListViewItem.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </ListViewItem.RenderTransform>
+                    <StackPanel Orientation="Horizontal" Margin="-24,-8,-228,-10" Height="58" Width="195">
+                        <materialDesign:PackIcon Kind="AttachMoney" Width="30" Height="30" VerticalAlignment="Center" Margin="5" Foreground="#FF98B7BB"/>
+                        <TextBlock Text="Consultar Saldo Curso" Margin="28,20,11,14" VerticalAlignment="Center" Foreground="#FF98B7BB" Width="142" Height="24"/>
+                        <TextBlock Text="Registro" FontSize="11" Margin="-199,35,148,-6" x:Name="labelRegistro2" Visibility="Hidden" VerticalAlignment="Center" Foreground="#FF98B7BB"></TextBlock>
+                    </StackPanel>
+                </ListViewItem>
+
+            </ListView>
+            <Button x:Name="button" VerticalAlignment="Top" Margin="0,126,0,0" Click="Menu_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" HorizontalAlignment="Right" Width="58">
+                <materialDesign:PackIcon Kind="Menu"  Margin="0,0,6,0" Width="20" Height="20" Foreground="#FF364C5D"/>
+            </Button>
+
+        </Grid>
+        <Grid HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="100" MaxHeight="100" Grid.ColumnSpan="2">
+            <Image Margin="405,12,406,0" Source="/OnTourWPF2.0;component/Logos/logoFinal.png" MaxWidth="200" MaxHeight="66" Height="66" VerticalAlignment="Top"></Image>
+            <StackPanel x:Name="stackPanel" Width="200" Height="65.5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,12,0,0">
+
+                <Button VerticalAlignment="Top" HorizontalAlignment="Left" Background="Transparent" BorderBrush="Transparent" Width="60" Height="60" Margin="7,1,0,0">
+                    <materialDesign:PackIcon x:Name="packIcon" Kind="UserCircle" Width="50" Height="50" Margin="-15,-3,-15,-6" Foreground="#FF46647C" RenderTransformOrigin="0.5,0.5" >
+                        <materialDesign:PackIcon.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </materialDesign:PackIcon.RenderTransform>
+                    </materialDesign:PackIcon>
+                </Button>
+                <materialDesign:PopupBox x:Name="popupBox" PlacementMode="BottomAndAlignCentres" StaysOpen="False" Foreground="{x:Null}" Height="50" Margin="10,-58,0,0" Width="50">
+                    <StackPanel Width="150">
+                        <Button Content="Cerrar Sesión" Click="BtnCerrarSesion_Click"/>
+                    </StackPanel>
+                </materialDesign:PopupBox>
+                <Label Height="26" Margin="79,-41,0,-12" Content="Ejecutivo de Ventas" FontSize="12" FontWeight="DemiBold" Foreground="#FF577287"/>
+                <TextBox x:Name="txt_usuario_dueño" Height="29" Margin="86,-77,3,0" FontSize="16" FontWeight="DemiBold" Foreground="#FF46647C"  BorderBrush="{x:Null}" CaretBrush="{x:Null}" Background="{x:Null}"/>
+                <Rectangle Fill="Transparent" Margin="65,-77,0,0" Height="35.5"></Rectangle>
+            </StackPanel>
+            <Button Width="30" Height="30" HorizontalAlignment="Right" Margin="0,10,10,0" Background="Transparent" BorderBrush="Transparent" Click="Close_Windows" VerticalAlignment="Top">
+                <materialDesign:PackIcon Kind="Close" Width="20" Height="20" Margin="-11,-3,-13,-2" Foreground="#FF364C5D"/>
+            </Button>
+            <Button Width="30" Height="30" HorizontalAlignment="Right" Margin="0,10,40,0" Background="Transparent" BorderBrush="Transparent" Click="Maximized" VerticalAlignment="Top">
+                <materialDesign:PackIcon Kind="WindowMaximize" Width="20" Height="20" Margin="-11,-2,-13,0" Foreground="#FF364C5D"/>
+            </Button>
+            <Button Width="30" Height="30" HorizontalAlignment="Right" Margin="0,10,70,0" Background="Transparent" BorderBrush="Transparent" Click="Minimized" VerticalAlignment="Top" Foreground="#FF364C5D">
+                <materialDesign:PackIcon Kind="WindowMinimize" Width="20" Height="20" Margin="-10,5,-13,0" Foreground="#FF364C5D"/>
+            </Button>
+        </Grid>
+        <Grid x:Name="GridPrincipal" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="0,67,0,0" >
+            <TabControl x:Name="tabcontrol1" Width="auto" Height="auto" Background="#99000000" Foreground="#FF2F353C" Margin="0,37,0,0">
+                <TabItem x:Name="tabItemDueño_SaldoAlumno" Width="0" Height="0">
+                    <Grid x:Name="gridDueño_SaldoAlumno" Margin="0,-1,0,0">
+                        <DataGrid FontSize="16" Margin="34,134,44,38" Foreground="#FF98B7BB" Background="#7FFAFAFA">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="RUT ALUMNO"/>
+                                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="NOMBRE"/>
+                                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="APATERNO"/>
+                                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="AMATERNO"/>
+                                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="FECHA DEPOSITO"/>
+                                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="MONTO DEPOSITADO"/>
+                                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="SALDO ALUMNO"/>
+                                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="MONTO POR COMPLETAR"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <Label Content="Rut" FontSize="16" HorizontalAlignment="Left" Margin="56,57,0,0" VerticalAlignment="Top" Foreground="#FF98B7BB"/>
+                        <TextBox FontSize="16" Height="33" Margin="116,55,508,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FF98B7BB" BorderBrush="#FF98B7BB"/>
+                        <Button  HorizontalAlignment="Right" Margin="0,55,508,0" VerticalAlignment="Top" Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}">
+                            <materialDesign:PackIcon Kind="Search" Width="20" Height="20" Margin="-10,0,-11,0"></materialDesign:PackIcon>
+                        </Button>
+
+
+                    </Grid>
+                </TabItem>
+                <TabItem x:Name="tabItemDueño_SaldoCurso" Width="0" Height="0">
+                    <Grid x:Name="gridDueño_SaldoCurso">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <DataGrid Margin="41,143,49,37" Background="#7FFAFAFA" Grid.ColumnSpan="3">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="ID"/>
+                                <DataGridCheckBoxColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Nombre Institucion"/>
+                                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Curso"/>
+                                <DataGridCheckBoxColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Tipo Institucion"/>
+                                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Monto Actual Acumulado"/>
+                                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Monto por Completar"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <Button Margin="0,46,46,0" VerticalAlignment="Top" Grid.Column="2" Height="40" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Right" Width="40" >
+                            <materialDesign:PackIcon Kind="Filter" Width="30" Height="30" Margin="-11,0,-7,0"></materialDesign:PackIcon>
+                        </Button>
+                        <Label Content="Codigo Colegio" FontSize="16" HorizontalAlignment="Left" Margin="41,58,0,0" VerticalAlignment="Top" Foreground="#FF98B7BB"/>
+                        <TextBox FontSize="16" Height="34" Margin="165,50,-13,0" TextWrapping="Wrap"  VerticalAlignment="Top" RenderTransformOrigin="0.52,-0.162" Foreground="#FF98B7BB" BorderBrush="#FF98B7BB"/>
+                        <Label Content="Tipo" FontSize="16" HorizontalAlignment="Left" Margin="10,53,0,0" VerticalAlignment="Top" Foreground="#FF98B7BB" Grid.Column="2" Width="64"/>
+                        <ComboBox Height="33" Margin="109,51,43,0" VerticalAlignment="Top" Foreground="#FF98B7BB" BorderBrush="#FF98B7BB" Grid.Column="1"/>
+                        <Label Content="Curso" FontSize="16" HorizontalAlignment="Left" Margin="34,53,0,0" VerticalAlignment="Top" Foreground="#FF98B7BB" Width="75" Grid.Column="1"/>
+                        <ComboBox Height="33" Margin="61,51,91,0" VerticalAlignment="Top" Foreground="#FF98B7BB" BorderBrush="#FF98B7BB" Grid.Column="2"/>
+                    </Grid>
+                </TabItem>
+                <TabItem x:Name="tabItemMensajeria" Width="0" Height="0">
+                    <Grid x:Name="gridMensajeria">
+
+                    </Grid>
+                </TabItem>
+                <TabItem x:Name="tabItemInicio" Width="0" Height="0">
+                    <Grid x:Name="gridInicio">
+                   
+                    </Grid>
+                </TabItem>
+
+
+            </TabControl >
+
+        </Grid>
+    </Grid>
+</Window>

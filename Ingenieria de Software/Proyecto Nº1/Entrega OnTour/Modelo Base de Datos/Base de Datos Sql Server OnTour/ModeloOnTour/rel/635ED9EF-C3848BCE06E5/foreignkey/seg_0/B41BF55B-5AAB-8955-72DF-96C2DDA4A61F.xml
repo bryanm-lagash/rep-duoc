@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B41BF55B-5AAB-8955-72DF-96C2DDA4A61F" containerWithKeyObject="0FB9F385-C305-BBF1-7AE4-230CC4D9DEBC" localFKIndex="FBDF6D1D-56BB-C67B-1103-6E15D86539D8" name="Seguro_EmpAseg_FK">
+<createdBy>jose</createdBy>
+<createdTime>2019-07-08 04:21:11 UTC</createdTime>
+<generatorID>2F31E3A0-B167-6DFD-7572-DA17BAF9E9F6</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<referredTableLongName>EmpAseg</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>89CBC303-F535-EE97-722C-46168E4A41EB</referredTableID>
+<keyObject>81D5B3FE-493F-F86B-5AA7-B3BCC57242D7</keyObject>
+<referredKeyID>81D5B3FE-493F-F86B-5AA7-B3BCC57242D7</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>RutEmp</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

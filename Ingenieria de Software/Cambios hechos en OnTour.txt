@@ -1,0 +1,11 @@
+al momento de mandar un deposito 
+
+string msg = "Depósito efectuado a la cuenta de " + p.rut_alumno + " por un monto de $" + p.monto + " y con fecha: " + p.fecha_pago;
+    string var = Microsoft.VisualBasic.Interaction.InputBox("Ingrese Correo", "Envío de comprabantes", "Correo", 100, 0);
+
+    Correo c = new Correo();
+    c.EnviarCorreo(var, msg);   
+
+
+--Tiene que haber un usuario para poder registrar el contrato, tambien el otro error es por el cod
+ciudad, no va el codigo pais sino el codigo ciudad

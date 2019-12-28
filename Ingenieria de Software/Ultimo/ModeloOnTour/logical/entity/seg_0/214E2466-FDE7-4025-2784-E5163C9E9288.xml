@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="214E2466-FDE7-4025-2784-E5163C9E9288" name="Detalle_Seguro">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 20:44:29 UTC</createdTime>
+<generatorID>7412EE7E-A3C4-37B3-0430-C86C73ED6007</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<engineerTo>
+<item key="77C8451F-21F8-09E6-56EF-EDF2BAC715BF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="IdDetSeg" id="14DBCE0D-218F-7979-A3E6-0844D0052FB0">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 20:44:29 UTC</createdTime>
+<generatorID>E40F0CB7-50F4-9EA5-4252-04DAD73829C0</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<engineerTo>
+<item key="77C8451F-21F8-09E6-56EF-EDF2BAC715BF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NumContrato" id="292873F8-1DC6-BC46-BF71-2AEB4E03DFD0">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 20:44:29 UTC</createdTime>
+<generatorID>F9EAAD6F-3DA2-8C89-CFA9-1A7DD3E6785E</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<engineerTo>
+<item key="77C8451F-21F8-09E6-56EF-EDF2BAC715BF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IdSeguro" id="98A5B1B3-3DB0-CDF1-C82C-ECBE4123005B">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 20:45:56 UTC</createdTime>
+<generatorID>B83B0A26-929B-1AD6-9F9B-68DBE080B7BB</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<engineerTo>
+<item key="77C8451F-21F8-09E6-56EF-EDF2BAC715BF" value="true"/>
+</engineerTo>
+<referedAttribute>AC7EA2D5-7932-393D-8B52-48E8AAADF54A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6F454B8A-903D-40E9-0A83-DD7A376F94A9" name="Detalle Seguro PK">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 20:44:29 UTC</createdTime>
+<generatorID>3858699C-DDD1-1BF9-E8CC-1FF8CA888DF4</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<engineerTo>
+<item key="77C8451F-21F8-09E6-56EF-EDF2BAC715BF" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>14DBCE0D-218F-7979-A3E6-0844D0052FB0</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

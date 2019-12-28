@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="42F1B778-6881-ED2B-75FA-F35EC6A64348" name="Cta_Usuario">
+<createdBy>steds</createdBy>
+<createdTime>2019-06-15 20:31:24 UTC</createdTime>
+<generatorID>E031E092-C331-5476-2BC3-BCC2977D312C</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Usuario" id="3C494731-72C2-D47F-052F-A862D993B755">
+<createdBy>steds</createdBy>
+<createdTime>2019-06-15 20:31:24 UTC</createdTime>
+<generatorID>999D9A07-B7D4-6FA3-E9BC-C1BD78800CCE</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Contraseña" id="89D5E2A0-6EB3-1DB5-B179-8684B0D60F87">
+<createdBy>steds</createdBy>
+<createdTime>2019-06-15 20:31:24 UTC</createdTime>
+<generatorID>711647C6-691E-3FB9-611C-2661E72D3268</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre" id="58C6FBAD-CBD0-6DE0-9383-71AD60A33853">
+<createdBy>steds</createdBy>
+<createdTime>2019-06-15 20:31:24 UTC</createdTime>
+<generatorID>902EF816-4A60-1603-CACB-F3204669F476</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ApPaterno" id="B5072DC8-879B-832C-2688-E7B68F326A93">
+<createdBy>steds</createdBy>
+<createdTime>2019-06-18 21:46:44 UTC</createdTime>
+<generatorID>842E4E51-368D-0278-0DDC-D5594848172A</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ApMaterno" id="FDD711B5-B662-9474-3024-FD3335F6034F">
+<createdBy>steds</createdBy>
+<createdTime>2019-06-18 21:46:44 UTC</createdTime>
+<generatorID>6FC7483D-1EE6-EC51-05AB-63EFCBCC5C0E</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="47932994-E139-ABA5-3943-7324DC14BB35" name="Cta_Usuariov1_PK">
+<createdBy>steds</createdBy>
+<createdTime>2019-06-15 20:31:24 UTC</createdTime>
+<generatorID>67E4ACB8-910A-B2E4-8E9A-6F60150303D2</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3C494731-72C2-D47F-052F-A862D993B755"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="70FBBFBD-26FD-B54B-BC43-434307812649" name="Cta_Usuariov1_TipCuenta_FK">
+<createdBy>steds</createdBy>
+<createdTime>2019-06-15 20:32:51 UTC</createdTime>
+<generatorID>A3D73DA4-073D-7D15-763B-D416902077B3</generatorID>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="rln_tipoActividad_Contrato" directorySegmentName="seg_0" id="38B9708F-4524-C2C2-9565-20E7BAFA2C40">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-06 02:07:57 UTC</createdTime>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="32ACCB6A-201C-36C5-1F7F-195C19F4CAC1" value="true"/>
+</engineerTo>
+<sourcePk>5A351120-6E58-FF30-D29A-6D5C4EAD0D1F</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>5B16F797-97A6-1F4C-92B3-5F42EA7C595B</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D2582134-FDB0-FB3B-188D-D72D9B974C21</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

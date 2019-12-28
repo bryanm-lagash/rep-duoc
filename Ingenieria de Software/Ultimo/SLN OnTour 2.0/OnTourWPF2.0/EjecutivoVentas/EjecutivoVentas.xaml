@@ -1,0 +1,815 @@
+﻿<Window x:Class="OnTourWPF2._0.EjecutivoVentas"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OnTourWPF2._0"
+     
+        mc:Ignorable="d"
+        Title="OnTour - Ejecutivo de Ventas"  Height="768" Width="1366" WindowStyle="none" ResizeMode="CanResize" WindowStartupLocation="CenterScreen" WindowState="Maximized" >
+    <Window.Resources>
+        <Storyboard x:Key="CloseMenu">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Grid.Width)" Storyboard.TargetName="grid" >
+                <EasingDoubleKeyFrame KeyTime="0" Value="250"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="70" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="OpenMenu">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Grid.Width)" Storyboard.TargetName="grid">
+                <EasingDoubleKeyFrame KeyTime="0" Value="70"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="250"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="animacion1">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="packIcon">
+                <EasingDoubleKeyFrame KeyTime="0" Value="51"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="53"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="55"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="57"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="59"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="60"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="packIcon">
+                <EasingDoubleKeyFrame KeyTime="0" Value="51"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="53"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="55"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="57"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="59"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="60"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="packIcon">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="animacion1cierre">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="packIcon">
+                <EasingDoubleKeyFrame KeyTime="0" Value="60"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="58"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="56"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="54"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="52"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="50"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="packIcon">
+                <EasingDoubleKeyFrame KeyTime="0" Value="60"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="58"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="56"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="54"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="52"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="50"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="tira1">
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="image">
+                <EasingThicknessKeyFrame KeyTime="0" Value="0"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:0.1" Value="-5,0,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:0.2" Value="-10,0,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:0.3" Value="-15,0,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:0.4" Value="-20,0,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:0.5" Value="-25,0,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:0.6" Value="-30,0,0,0"/>
+            </ThicknessAnimationUsingKeyFrames>
+        </Storyboard>
+    </Window.Resources>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="UIElement.MouseEnter" SourceName="stackPanel">
+            <BeginStoryboard x:Name="animacion1_BeginStoryboard1" Storyboard="{StaticResource animacion1}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.MouseLeave" SourceName="stackPanel">
+            <BeginStoryboard Storyboard="{StaticResource animacion1cierre}"/>
+        </EventTrigger>
+    </Window.Triggers>
+    <Window.Background>
+        <ImageBrush ImageSource="/OnTourWPF2.0;component/Logos/michal-parzuchowski-37537-unsplash.jpg"/>
+    </Window.Background>
+    <Grid Margin="0,0,0,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid x:Name="grid" Width="250" HorizontalAlignment="Left"  VerticalAlignment="Stretch" Grid.Column="0" Margin="0">
+
+            <ListView x:Name="ListViewMenu" VerticalAlignment="Stretch" Margin="0,213,0,0" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Disabled" Foreground="White" SelectionChanged="ListViewMenu_SelectionChanged" Background="#FF1B1B1C">
+                <ListViewItem x:Name="listViewItemInicio" Height="60"  ToolTipService.ShowDuration="5000" ToolTip="Inicio" ToolTipService.Placement="Mouse">
+
+
+                    <StackPanel Orientation="Horizontal" Margin="-8,-28,-242,-29" Height="60">
+                        <Rectangle x:Name="rec1" Visibility="Hidden" Height="62" Width="8" Margin="0,-2,0,0" Fill="#FF1C1C1C" HorizontalAlignment="Left" VerticalAlignment="Top"></Rectangle>
+
+                        <materialDesign:PackIcon Kind="HomeCircle" Width="30" Height="30" VerticalAlignment="Center" Margin="14,5,9,5" Foreground="#FF98B7BB"/>
+                        <TextBlock Text="Inicio" Margin="24,20,11,20" VerticalAlignment="Center" Foreground="#FFB8D5D8" Width="97" Padding="2,0" Height="16"/>
+                    </StackPanel>
+                </ListViewItem>
+                <ListViewItem x:Name="listViewItemAdminUsuarios" Height="60"  ToolTipService.ShowDuration="5000" ToolTip="Inicio" ToolTipService.Placement="Mouse">
+
+
+                    <StackPanel Orientation="Horizontal" Margin="-8,-28,-242,-29" Height="60">
+                        <Rectangle x:Name="rec2" Visibility="Hidden" Height="62" Width="8" Margin="0,-2,0,0" Fill="#FF1C1C1C" HorizontalAlignment="Left" VerticalAlignment="Top"></Rectangle>
+
+                        <materialDesign:PackIcon Kind="UserSupervisorCircle" Width="30" Height="30" VerticalAlignment="Center" Margin="14,5,9,5" Foreground="#FF98B7BB"/>
+                        <TextBlock Text="Administrar clientes" Margin="24,22,11,22" VerticalAlignment="Center" Foreground="#FFB8D5D8" Width="120" Padding="2,0" Height="16"/>
+                    </StackPanel>
+                </ListViewItem>
+                <ListViewItem x:Name="listViewItemAdminContrato" Height="60"  ToolTipService.ShowDuration="5000" ToolTip="Inicio" ToolTipService.Placement="Mouse">
+
+
+                    <StackPanel Orientation="Horizontal" Margin="-8,-28,-242,-29" Height="60">
+                        <Rectangle x:Name="rec3" Visibility="Hidden" Height="62" Width="8" Margin="0,-2,0,0" Fill="#FF1C1C1C" HorizontalAlignment="Left" VerticalAlignment="Top"></Rectangle>
+
+                        <materialDesign:PackIcon Kind="Circle" Width="30" Height="30" VerticalAlignment="Center" Margin="14,5,9,5" Foreground="#FF98B7BB"/>
+                        <materialDesign:PackIcon Kind="File" Width="20" Height="20" VerticalAlignment="Center" Margin="-34,5,9,5" Foreground="#FF496780"/>
+
+                        <TextBlock Text="Administrar contratos" Margin="24,22,11,22" VerticalAlignment="Center" Foreground="#FFB8D5D8" Width="129" Padding="2,0" Height="16"/>
+                    </StackPanel>
+                </ListViewItem>
+                <ListViewItem x:Name="listViewItemAdminSeguros" Height="60"  ToolTipService.ShowDuration="5000" ToolTip="Inicio" ToolTipService.Placement="Mouse">
+
+
+                    <StackPanel Orientation="Horizontal" Margin="-8,-28,-242,-29" Height="60">
+                        <Rectangle x:Name="rec4" Visibility="Hidden" Height="62" Width="8" Margin="0,-2,0,0" Fill="#FF1C1C1C" HorizontalAlignment="Left" VerticalAlignment="Top"></Rectangle>
+
+                        <materialDesign:PackIcon Kind="Circle" Width="30" Height="30" VerticalAlignment="Center" Margin="14,5,9,5" Foreground="#FF98B7BB"/>
+                        <materialDesign:PackIcon Kind="FileDocumentBoxMultiple" Width="20" Height="20" VerticalAlignment="Center" Margin="-34,5,9,5" Foreground="#FF496780"/>
+                        <TextBlock Text="Registrar seguros" Margin="24,22,11,15" VerticalAlignment="Center" Foreground="#FFB8D5D8" Width="112" Padding="2,0" Height="23"/>
+                    </StackPanel>
+                </ListViewItem>
+                <ListViewItem x:Name="listViewItemRegistroSeguro" Height="60"  ToolTipService.ShowDuration="5000" ToolTip="Inicio" ToolTipService.Placement="Mouse">
+
+
+                    <StackPanel Orientation="Horizontal" Margin="-8,-28,-242,-29" Height="60">
+                        <Rectangle x:Name="rec5" Visibility="Hidden" Height="62" Width="8" Margin="0,-2,0,0" Fill="#FF1C1C1C" HorizontalAlignment="Left" VerticalAlignment="Top"></Rectangle>
+
+                        <materialDesign:PackIcon Kind="Circle" Width="30" Height="30" VerticalAlignment="Center" Margin="14,5,9,5" Foreground="#FF98B7BB"/>
+                        <materialDesign:PackIcon Kind="Voucher" Width="20" Height="20" VerticalAlignment="Center" Margin="-34,5,9,5" Foreground="#FF496780"/>
+                        <TextBlock Text="Registro depositos" Margin="24,22,11,15" VerticalAlignment="Center" Foreground="#FFB8D5D8" Width="121" Padding="2,0" Height="23"/>
+                    </StackPanel>
+                </ListViewItem>
+                <ListViewItem x:Name="listViewItemConsultaSaldo" Height="60"  ToolTipService.ShowDuration="5000" ToolTip="Inicio" ToolTipService.Placement="Mouse">
+
+
+                    <StackPanel Orientation="Horizontal" Margin="-8,-28,-242,-29" Height="60">
+                        <Rectangle x:Name="rec6" Visibility="Hidden" Height="62" Width="8" Margin="0,-2,0,0" Fill="#FF1C1C1C" HorizontalAlignment="Left" VerticalAlignment="Top"></Rectangle>
+
+                        <materialDesign:PackIcon Kind="Circle" Width="30" Height="30" VerticalAlignment="Center" Margin="14,5,9,5" Foreground="#FF98B7BB"/>
+                        <materialDesign:PackIcon Kind="Money" Width="20" Height="20" VerticalAlignment="Center" Margin="-34,5,9,5" Foreground="#FF496780"/>
+                        <TextBlock Text="Consulta de saldo" Margin="24,22,11,15" VerticalAlignment="Center" Foreground="#FFB8D5D8" Width="122" Padding="2,0" Height="23"/>
+                    </StackPanel>
+                </ListViewItem>
+
+            </ListView>
+            <Button x:Name="button" VerticalAlignment="Top" Margin="0,126,0,0" Click="Menu_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" HorizontalAlignment="Right" Width="58">
+                <materialDesign:PackIcon Kind="Menu"  Margin="0,0,6,0" Width="20" Height="20" Foreground="#FF364C5D"/>
+            </Button>
+
+        </Grid>
+        <Grid HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="106" MaxHeight="100" Grid.ColumnSpan="2">
+            <Image Margin="527,12,529,0" Source="/OnTourWPF2.0;component/Logos/logoFinal.png" MaxWidth="200" MaxHeight="66" Height="66" VerticalAlignment="Top"></Image>
+            <StackPanel x:Name="stackPanel" Width="200" Height="65.5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,12,0,0">
+
+                <Button VerticalAlignment="Top" HorizontalAlignment="Left" Background="Transparent" BorderBrush="Transparent" Width="60" Height="60" Margin="7,1,0,0">
+                    <materialDesign:PackIcon x:Name="packIcon" Kind="UserCircle" Width="50" Height="50" Margin="-15,-3,-15,-6" Foreground="#FF46647C" RenderTransformOrigin="0.5,0.5" >
+                        <materialDesign:PackIcon.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </materialDesign:PackIcon.RenderTransform>
+                    </materialDesign:PackIcon>
+                </Button>
+                <materialDesign:PopupBox x:Name="popupBox" PlacementMode="BottomAndAlignCentres" StaysOpen="False" Foreground="{x:Null}" Height="50" Margin="10,-58,0,0" Width="50">
+                    <StackPanel Width="150">
+                        <Button Content="Cerrar Sesión" Click="BtnCerrarSesion_Click"/>
+                    </StackPanel>
+                </materialDesign:PopupBox>
+                <Label Height="26" Margin="79,-41,0,-12" Content="Ejecutivo de Ventas" FontSize="12" FontWeight="DemiBold" Foreground="#FF577287"/>
+                <TextBox x:Name="txt_usuario_ejecutivoVentas" Height="29" Margin="86,-77,3,0" FontSize="16" FontWeight="DemiBold" Foreground="#FF46647C"  BorderBrush="{x:Null}" CaretBrush="{x:Null}" Background="{x:Null}"/>
+                <Rectangle Fill="Transparent" Margin="65,-77,0,0" Height="35.5"></Rectangle>
+            </StackPanel>
+            <Button Width="30" Height="30" HorizontalAlignment="Right" Margin="0,10,10,0" Background="Transparent" BorderBrush="Transparent" Click="Close_Windows" VerticalAlignment="Top">
+                <materialDesign:PackIcon Kind="Close" Width="20" Height="20" Margin="-11,-3,-13,-2" Foreground="#FF364C5D"/>
+            </Button>
+            <Button Width="30" Height="30" HorizontalAlignment="Right" Margin="0,10,40,0" Background="Transparent" BorderBrush="Transparent" Click="Maximized" VerticalAlignment="Top">
+                <materialDesign:PackIcon Kind="WindowMaximize" Width="20" Height="20" Margin="-11,-2,-13,0" Foreground="#FF364C5D"/>
+            </Button>
+            <Button Width="30" Height="30" HorizontalAlignment="Right" Margin="0,10,70,0" Background="Transparent" BorderBrush="Transparent" Click="Minimized" VerticalAlignment="Top" Foreground="#FF364C5D">
+                <materialDesign:PackIcon Kind="WindowMinimize" Width="20" Height="20" Margin="-10,5,-13,0" Foreground="#FF364C5D"/>
+            </Button>
+        </Grid>
+        <Grid x:Name="GridPrincipal" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="0,67,0,0" >
+            <TabControl x:Name="tabcontrol1" Width="auto" Height="auto" Background="#B2000000" Foreground="#FF2F353C" Margin="0,37,0,0"  >
+                <TabItem x:Name="tabItemAdminCliente_registroColegio" Width="0" Height="0">
+                    <Grid x:Name="gridAdminCliente_registroColegio" Margin="0,-1,0,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+
+                        </Grid.RowDefinitions>
+                        <Label Content="Nombre Colegio" FontSize="16" Margin="-107,12,250,0" VerticalAlignment="Top" Foreground="#FF98B7BB" Grid.Column="2" Grid.Row="1"/>
+                        <TextBox x:Name="AdmClientes_txtNombreColegio" materialDesign:HintAssist.Hint="Liceo Industrial Metodista" FontSize="16" Height="36" Margin="26,2,35,-16" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FF98B7BB" Grid.Column="2" BorderBrush="#FF98B7BB" Grid.Row="1" />
+                        <Label Content="Codigo colegio" FontSize="16" Margin="25,12,130,0" VerticalAlignment="Top" Foreground="#FF98B7BB" Grid.Row="1"/>
+                        <TextBox x:Name="AdmClientes_txtCodColegio" materialDesign:HintAssist.Hint="ej: A-505" Height="38" FontSize="16" Margin="153,0,-92,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FF98B7BB" BorderBrush="#FF98B7BB" Grid.Row="1"/>
+                        <Button x:Name="AdmClientes_btnBuscarColegio" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Width="30" Height="30" Margin="0,11,-97,0" Background="{x:Null}" BorderBrush="{x:Null}"  VerticalAlignment="Top" HorizontalAlignment="Right"  Grid.Row="1" ToolTipService.ShowDuration="5000" Click="EjecutivoVentas_btnBuscarColegio_Click">
+                            <Button.ToolTip>
+                                <ToolTip Placement="Mouse">
+                                    <StackPanel>
+                                        <TextBlock FontWeight="Light" FontSize="14"><Run Text="Buscar "></Run></TextBlock>
+                                    </StackPanel>
+                                </ToolTip>
+                            </Button.ToolTip>
+                            <materialDesign:PackIcon Kind="Search" Margin="-12,-3,-12,0" Width="20" Height="20"></materialDesign:PackIcon>
+                        </Button>
+                        <Label Content="Direccion" FontSize="16" Margin="25,10,156,0" VerticalAlignment="Top" Foreground="#FF98B7BB" Grid.Row="2"/>
+                        <TextBox x:Name="AdmClientes_txtDireccionColegio" materialDesign:HintAssist.Hint="Calle o Psj / N° vivienda / Población / Ciudad " Height="36" Margin="152,5,32,0" FontSize="16" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FF98B7BB" Grid.ColumnSpan="3" BorderBrush="#FF98B7BB" Grid.Row="2"/>
+                        <Label Content="Datos de registro de colegio"  FontSize="18" HorizontalAlignment="Left" Margin="25,10,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FF98B7BB" Grid.ColumnSpan="2" Width="272"/>
+                        <Button x:Name="AdmCliente_btnAgregar"  Margin="25,0,0,-1" Grid.Row="9" Height="50" VerticalAlignment="Bottom"  HorizontalAlignment="Left" Width="50" Background="{x:Null}" BorderBrush="{x:Null}" Click="EjecutivoVentas_btnAgregar_Click" ToolTipService.ShowDuration="5000">
+                            <Button.ToolTip>
+                                <ToolTip Placement="Mouse">
+                                    <StackPanel>
+                                        <TextBlock FontWeight="Light" FontSize="14"><Run Text="Registrar Colegio "></Run></TextBlock>
+                                    </StackPanel>
+                                </ToolTip>
+                            </Button.ToolTip>
+                            <materialDesign:PackIcon Kind="AddCircle" Width="40" Height="40" Margin="-18,-3,-19,0" Foreground="#FF98B7BB"></materialDesign:PackIcon>
+                        </Button>
+                        <Button x:Name="AdmCliente_btnActualizarColegio"  Margin="119,0,103,-1" ToolTipService.ShowDuration="5000" Grid.Column="1" Grid.Row="9" Height="50" VerticalAlignment="Bottom"  BorderBrush="{x:Null}" Background="{x:Null}" Width="50" Click="AdmCliente_btnActualizarColegio_Click">
+                            <Button.ToolTip>
+                                <ToolTip Placement="Mouse">
+                                    <StackPanel>
+                                        <TextBlock FontWeight="Light" FontSize="14"><Run Text="Actualizar Colegio "></Run></TextBlock>
+                                    </StackPanel>
+                                </ToolTip>
+                            </Button.ToolTip>
+                            <materialDesign:PackIcon Kind="Update" Width="40" Height="40" Margin="-16,-10,-18,-7" Foreground="#FF98B7BB"></materialDesign:PackIcon>
+                        </Button>
+                        <Button x:Name="AdmCliente_btnEliminarCliente"  Margin="0,0,35,-1" ToolTipService.ShowDuration="5000" Grid.Column="2" Grid.Row="9" Height="50" HorizontalAlignment="Right" Width="50" VerticalAlignment="Bottom"  Background="{x:Null}" BorderBrush="{x:Null}" Click="AdmCliente_btnEliminarCliente_Click" >
+                            <Button.ToolTip>
+                                <ToolTip Placement="Mouse">
+                                    <StackPanel>
+                                        <TextBlock FontWeight="Light" FontSize="14"><Run Text="Eliminar Colegio "></Run></TextBlock>
+                                    </StackPanel>
+                                </ToolTip>
+                            </Button.ToolTip>
+                            <materialDesign:PackIcon Kind="DeleteCircle" Width="40" Height="40" Margin="-16,-20,-17,-32" Foreground="#FF98B7BB"></materialDesign:PackIcon>
+                        </Button>
+                        <Label Content="Tipo Colegio" FontSize="16" Margin="25,10,147,0" VerticalAlignment="Top" Foreground="#FF98B7BB" Grid.Row="3"/>
+                        <ComboBox x:Name="AdmClientes_cboTipoColegio" materialDesign:HintAssist.Hint="Seleccione" FontSize="16" Margin="152,10,-91,0" VerticalAlignment="Top" Foreground="#FF98B7BB" BorderBrush="#FF98B7BB" Height="33" Grid.Row="3"/>
+                        <DataGrid x:Name="AdmClientes_DataGridColegio" CanUserAddRows="False" CanUserReorderColumns="False" CanUserResizeColumns="False" IsReadOnly="True" AutoGenerateColumns="False" FontSize="16" Margin="28,10,32,10" Grid.ColumnSpan="3" Grid.Row="4" Background="#7FFAFAFA" Grid.RowSpan="5">
+                            <DataGrid.Columns >
+                                <DataGridTextColumn Header="Codigo Colegio" Binding="{Binding CodColegio}"></DataGridTextColumn>
+                                <DataGridTextColumn Header="Nombre" Binding="{Binding Nombre}"></DataGridTextColumn>
+                                <DataGridTextColumn Header="Dirección               " Binding="{Binding Direccion}"></DataGridTextColumn>
+                                <DataGridTextColumn Header="Tipo Colegio" Binding="{Binding TipoColegio}"></DataGridTextColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+
+                    </Grid>
+                </TabItem>
+                <TabItem x:Name="tabItemDatosCurso" Width="0" Height="0">
+                    <Grid x:Name="gridDatosCurso">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+
+                        <Label Content="Datos del colegio" FontSize="18" FontWeight="Bold" HorizontalAlignment="Left" Margin="22,10,0,0" VerticalAlignment="Top" Foreground="#FF98B7BB"/>
+                        <Label Content="Codigo Colegio" FontSize="16" HorizontalAlignment="Left" Margin="50,7,0,0" VerticalAlignment="Top" Foreground="#FF98B7BB" Grid.Row="1"/>
+                        <TextBox x:Name="AdmCliente_txtCodColegio2" materialDesign:HintAssist.Hint="ej: A-525" Height="32" FontSize="16" Margin="178,0,-106,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FF98B7BB" BorderBrush="#FF98B7BB" Grid.Row="1"/>
+                        <Button x:Name="AdmCliente_btnBuscarColegio2" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" ToolTipService.ShowDuration="5000"  FontSize="16" Margin="0,5,-114,0" MaxWidth="30" MaxHeight="30" Background="{x:Null}" BorderBrush="{x:Null}" Height="30" Grid.Row="1" Click="AdmCliente_btnBuscarColegio2_Click" HorizontalAlignment="Right" Width="30" VerticalAlignment="Top" >
+                            <Button.ToolTip>
+                                <ToolTip Placement="Mouse">
+                                    <StackPanel>
+                                        <TextBlock FontWeight="Light" FontSize="14"><Run Text="Buscar"></Run></TextBlock>
+                                    </StackPanel>
+                                </ToolTip>
+                            </Button.ToolTip>
+                            <materialDesign:PackIcon Kind="Search" Width="20" Height="20" Margin="-15,-5,-13,0"></materialDesign:PackIcon>
+                        </Button>
+                        <Label Content="Nombre" HorizontalAlignment="Left" FontSize="16" Margin="50,7,0,0" VerticalAlignment="Top" Foreground="#FF98B7BB" Grid.Row="2"/>
+                        <TextBox x:Name="AdmCliente_txtNombreColegio2" materialDesign:HintAssist.Hint="ej: Liceo Industrial Metodista" IsReadOnly="True" Height="32" FontSize="16" Margin="178,0,-106,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FF98B7BB" BorderBrush="#FF98B7BB" Grid.Row="2" />
+                        <Label Content="Tipo Colegio" FontSize="16" Margin="-101,7,261,0" VerticalAlignment="Top" Foreground="#FF98B7BB" Grid.Column="2" Grid.Row="2"/>
+                        <ComboBox x:Name="AdmCliente_cboTipoColegio" materialDesign:HintAssist.Hint="Seleccione" IsReadOnly="True" Height="32" Margin="28,0,44,0" FontSize="16" VerticalAlignment="Top" Foreground="#FF98B7BB" BorderBrush="#FF98B7BB" Grid.Column="2" Grid.Row="2"/>
+                        <Label Content="Direccion" HorizontalAlignment="Left" FontSize="16" Margin="50,7,0,0" VerticalAlignment="Top" Width="117" Foreground="#FF98B7BB" Grid.Row="3"/>
+                        <TextBox x:Name="AdmCliente_txtDireccionColegio2" IsReadOnly="True" materialDesign:HintAssist.Hint="Calle o Psj / N° vivienda / Población / Ciudad " FontSize="16" Margin="179,0,44,0" TextWrapping="Wrap" Grid.ColumnSpan="3" Foreground="#FF98B7BB" BorderBrush="#FF98B7BB" Grid.Row="3" Height="32" VerticalAlignment="Top"/>
+                        <Label Content="Datos del curso" FontWeight="Bold" HorizontalAlignment="Left" Margin="22,6,0,0" FontSize="18" VerticalAlignment="Top" Foreground="#FF98B7BB" Grid.Row="4"/>
+                        <Label Content="Curso" HorizontalAlignment="Left" Margin="50,7,0,0" FontSize="16" VerticalAlignment="Top" Foreground="#FF98B7BB" Grid.Row="5"/>
+                        <TextBox x:Name="AdmCliente_txtCodCurso" Height="32" Margin="178,0,-106,0" materialDesign:HintAssist.Hint="ej: 3°B" FontSize="16" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FF98B7BB" BorderBrush="#FF98B7BB" Grid.Row="5"/>
+                        <Button x:Name="AdmCliente_btnBuscarCurso" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" ToolTipService.ShowDuration="5000" FontSize="16" Margin="0,6,-115,0" VerticalAlignment="Top" MaxWidth="30" MaxHeight="30" Background="{x:Null}" BorderBrush="{x:Null}" Height="30" Grid.Row="5" HorizontalAlignment="Right" Width="30" Click="AdmCliente_btnBuscarCurso_Click" >
+                            <Button.ToolTip>
+                                <ToolTip Placement="Mouse">
+                                    <StackPanel>
+                                        <TextBlock FontWeight="Light" FontSize="14"><Run Text="Buscar"></Run></TextBlock>
+                                    </StackPanel>
+                                </ToolTip>
+                            </Button.ToolTip>
+                            <materialDesign:PackIcon Kind="Search" Width="20" Height="20" Margin="-15,-5,-13,0"></materialDesign:PackIcon>
+                        </Button>
+                        <Label Content="N° Alumnos" Margin="-99,7,253,0" FontSize="16" VerticalAlignment="Top" Grid.Column="2" Background="{x:Null}" Foreground="#FF98B7BB" Grid.Row="5"/>
+                        <TextBox x:Name="AdmCliente_txtNumeroAlumnos"  Height="32" Margin="28,0,44,0" FontSize="16" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FF98B7BB" BorderBrush="#FF98B7BB" Grid.Column="2" Grid.Row="5"/>
+                        <Button FontSize="10" VerticalAlignment="Top" ToolTipService.ShowDuration="5000" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Grid.Column="2" HorizontalAlignment="Right" Width="64" BorderBrush="{x:Null}" Background="{x:Null}" Grid.Row="5" Margin="0,-5,30,0" Click="Button_Click_7">
+                            <Button.ToolTip>
+                                <ToolTip Placement="Mouse">
+                                    <StackPanel>
+                                        <TextBlock FontWeight="Light" FontSize="14"><Run Text="Agregar alumno"></Run></TextBlock>
+                                    </StackPanel>
+                                </ToolTip>
+                            </Button.ToolTip>
+                            <materialDesign:PackIcon Kind="TableSearch" Width="20" Height="20"></materialDesign:PackIcon>
+                        </Button>
+                        <Button x:Name="AdmCliente_btnAgregarCurso"  HorizontalAlignment="Left" FontSize="16" Margin="33,0,0,-2" Width="50" Height="50" VerticalAlignment="Bottom" Background="{x:Null}" BorderBrush="{x:Null}" Grid.Row="11" Click="AdmCliente_btnAgregarCurso_Click" ToolTipService.ShowDuration="5000">
+                            <Button.ToolTip>
+                                <ToolTip Placement="Mouse">
+                                    <StackPanel>
+                                        <TextBlock FontWeight="Light" FontSize="14"><Run Text="Registrar Curso"></Run></TextBlock>
+                                    </StackPanel>
+                                </ToolTip>
+                            </Button.ToolTip>
+                            <materialDesign:PackIcon Kind="AddCircle" Width="40" Height="40" Margin="-14,0,-15,0"></materialDesign:PackIcon>
+                        </Button>
+                        <Button x:Name="AdmCliente_btnActualizarCurso"  Margin="111,0,110,-2" FontSize="16" ToolTipService.ShowDuration="5000" Grid.Column="1" Height="50" VerticalAlignment="Bottom" Background="{x:Null}" BorderBrush="{x:Null}" MaxWidth="50" MaxHeight="50" Grid.Row="11" Width="50" Click="AdmCliente_btnActualizarCurso_Click">
+                            <Button.ToolTip>
+                                <ToolTip Placement="Mouse">
+                                    <StackPanel>
+                                        <TextBlock FontWeight="Light" FontSize="14"><Run Text="Actualizar Curso "></Run></TextBlock>
+                                    </StackPanel>
+                                </ToolTip>
+                            </Button.ToolTip>
+                            <materialDesign:PackIcon Kind="Update" Width="40" Height="40" Margin="-20,-3,-21,0"></materialDesign:PackIcon>
+                        </Button>
+                        <Button x:Name="AdmCliente_btnEliminarCurso"  Margin="0,0,39,-2" ToolTipService.ShowDuration="5000" FontSize="16" Grid.Column="2" Height="50" HorizontalAlignment="Right" Width="50" VerticalAlignment="Bottom" Background="{x:Null}" BorderBrush="{x:Null}" Grid.Row="11" Click="AdmCliente_btnEliminarCurso_Click">
+                            <Button.ToolTip>
+                                <ToolTip Placement="Mouse">
+                                    <StackPanel>
+                                        <TextBlock FontWeight="Light" FontSize="14"><Run Text="Eliminar Curso"></Run></TextBlock>
+                                    </StackPanel>
+                                </ToolTip>
+                            </Button.ToolTip>
+                            <materialDesign:PackIcon Kind="DeleteCircle" Width="40" Height="40" Margin="-10,0,-13,0"></materialDesign:PackIcon>
+                        </Button>
+                        <DataGrid x:Name="AdmCliente_DatagGridCurso" CanUserAddRows="False" CanUserReorderColumns="False" CanUserResizeColumns="False" AutoGenerateColumns="False"  IsReadOnly="True" Margin="33,10,39,8" Grid.ColumnSpan="3" FontSize="16" Foreground="Black" Background="#7FFAFAFA" Grid.Row="6" Grid.RowSpan="5">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="Código Curso" Binding="{Binding IdCurso}"></DataGridTextColumn>
+                                <DataGridTextColumn Header="Cantidad Alumnos" Binding="{Binding NumAlumnos}"></DataGridTextColumn>
+                                <DataGridTextColumn Header="Nombre Colegio" Binding="{Binding NombreColegio}"></DataGridTextColumn>
+                                <DataGridTextColumn Header="Tipo Colegio" Binding="{Binding TipoColegio}"></DataGridTextColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+
+                    </Grid>
+                </TabItem>
+                <TabItem x:Name="tabItemAdminContrato" Width="0" Height="0">
+                    <Grid x:Name="gridAdminContrato">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Label Content="Datos del contrato" FontSize="20" HorizontalAlignment="Left" Margin="10,7,0,0" VerticalAlignment="Top" FontWeight="Bold" Background="{x:Null}" Foreground="#FF98B7BB" Width="191"/>
+                        <Label Content="Nº Contrato" HorizontalAlignment="Left" FontSize="16" Margin="32,7,0,0" VerticalAlignment="Top" Foreground="#FF98B7BB" Grid.Row="1"/>
+                        <TextBox x:Name="AdmContrato_txtNumeroContrato" materialDesign:HintAssist.Hint="AAAAMMDD" Height="32" FontSize="16" Margin="221,0,10,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FF98B7BB" BorderBrush="#FF98B7BB" Grid.Row="1"/>
+                        <Button Width="30" Height="30" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Margin="0,1,2,0" Grid.Row="1" Background="{x:Null}" BorderBrush="{x:Null}" ToolTip="Buscar" VerticalAlignment="Top" HorizontalAlignment="Right" >
+                            <materialDesign:PackIcon Kind="Search" Margin="-12,3,-12,0" Width="20" Height="20"></materialDesign:PackIcon>
+                        </Button>
+                        <Label Content="Fecha creacion" HorizontalAlignment="Left" FontSize="16" Margin="30,7,0,0" VerticalAlignment="Top" Foreground="#FF98B7BB" Grid.Row="2"/>
+                        <DatePicker x:Name="AdmContrato_FechaCreacion" Margin="221,0,10,0" materialDesign:HintAssist.Hint="Inserte fecha" FontSize="16" VerticalAlignment="Top" Foreground="#FF98B7BB" BorderBrush="#FF98B7BB" Grid.Row="2" Height="32"/>
+                        <Label Content="Fecha termino" FontSize="16" Margin="12,7,284,0" VerticalAlignment="Top" Foreground="#FF98B7BB" Grid.Row="2" Grid.Column="1"/>
+                        <DatePicker x:Name="AdmContrato_FechaTermino" materialDesign:HintAssist.Hint="Inserte fecha" Margin="200,0,31,0" FontSize="16" VerticalAlignment="Top" Foreground="#FF98B7BB" BorderBrush="#FF98B7BB" Grid.Column="1" Grid.Row="2" Height="32"/>
+                        <Label Content="Registro de viaje" HorizontalAlignment="Left" FontSize="18" Margin="11,4,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FF98B7BB" Grid.Row="4"/>
+                        <Label Content="Pais de destino" HorizontalAlignment="Left" FontSize="16" Margin="32,7,0,0" VerticalAlignment="Top" Foreground="#FF98B7BB" Grid.Row="5"/>
+                        <Label Content="Ciudad de destino" Width="150" Height="30" FontSize="16" Grid.Column="1" Margin="12,7,0,0" Grid.Row="5" Foreground="#FF98B7BB" VerticalAlignment="Top" HorizontalAlignment="Left" ></Label>
+                        <ComboBox x:Name="AdmContrato_cboPaisDestino" materialDesign:HintAssist.Hint="Seleccione " Margin="221,0,10,0" FontSize="16" VerticalAlignment="Top" Foreground="#FF98B7BB" BorderBrush="#FF98B7BB" Grid.Row="5" Height="32" SelectionChanged="EjecutivoVentas_cboPaisDestino_SelectionChanged"/>
+                        <Label Content="Duración en días" FontSize="16" HorizontalAlignment="Left" Margin="32,7,0,0" VerticalAlignment="Top" Foreground="#FF98B7BB" Grid.Row="6"/>
+                        <TextBox x:Name="AdmContrato_DuracionDiasViaje"  Height="32" Margin="221,0,10,0" FontSize="16" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FF98B7BB" BorderBrush="#FF98B7BB" Grid.Row="6"/>
+                        <Label Content="Fecha inicio viaje" HorizontalAlignment="Left" FontSize="16" Margin="32,7,0,0" VerticalAlignment="Top" Foreground="#FF98B7BB" Grid.Row="7"/>
+                        <Label Content="Fecha termino viaje" FontSize="16" Margin="12,7,245,0" VerticalAlignment="Top" Foreground="#FF98B7BB" Grid.Row="7" Height="32" Grid.Column="1"/>
+                        <DatePicker x:Name="AdmContrato_FechaInicioViaje" materialDesign:HintAssist.Hint="Inserte fecha" Margin="221,0,10,0" FontSize="16" VerticalAlignment="Top" Foreground="#FF98B7BB" BorderBrush="#FF98B7BB" Grid.Row="7" Height="32"/>
+                        <DatePicker x:Name="AdmContrato_FechaTerminoViaje" Margin="200,0,31,0"  materialDesign:HintAssist.Hint="Inserte fecha" FontSize="16" VerticalAlignment="Top" Foreground="#FF98B7BB" BorderBrush="#FF98B7BB" Grid.Column="1" Height="32" Grid.Row="7"/>
+                        <Label Content="Rut Usuario" FontSize="16" HorizontalAlignment="Left" Margin="30,7,0,0" VerticalAlignment="Top" Foreground="#FF98B7BB" Grid.Row="3"/>
+                        <TextBox x:Name="AdmContrato_RutUsuario" materialDesign:HintAssist.Hint="Ingrese rut sin puntos ni guiones" Height="32" FontSize="16" Margin="221,0,10,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FF98B7BB" BorderBrush="#FF98B7BB" Grid.Row="3" LostFocus="AdmContrato_RutUsuario_LostFocus"  />
+                        <Button x:Name="AdmContrato_btnBuscarRutUsuario" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Width="30" Height="30" Margin="0,1,2,0" Grid.Row="3" Background="{x:Null}" BorderBrush="{x:Null}" ToolTip="Buscar" VerticalAlignment="Top" HorizontalAlignment="Right" Click="AdmContrato_btnBuscarRutEjecutivo_Click" >
+                            <materialDesign:PackIcon Kind="Search" Margin="-12,3,-12,0" Width="20" Height="20"></materialDesign:PackIcon>
+                        </Button>
+                        <TextBox x:Name="AdmContrato_NombreUsuario" materialDesign:HintAssist.Hint="Nombre y apellido" Height="32" Grid.Column="1" FontSize="16" Margin="200,0,31,16" Grid.Row="3" Background="{x:Null}" Foreground="#FF98B7BB" BorderBrush="#FF98B7BB"/>
+                        <Label Content="Nombre Usuario" HorizontalAlignment="Left" FontSize="16" Margin="12,7,0,0" VerticalAlignment="Top" Foreground="#FF98B7BB" Grid.Row="3" Grid.Column="1" Width="164"/>
+                        <ComboBox x:Name="AdmContrato_cboCiudadDestino" materialDesign:HintAssist.Hint="Seleccione" Height="32" FontSize="16" Margin="200,0,31,0" VerticalAlignment="Top" Foreground="#FF98B7BB" BorderBrush="#FF98B7BB" Grid.Row="5" Grid.Column="1"/>
+                        <Button Width="50" Height="50"  Margin="0,0,31,9" VerticalAlignment="Bottom" HorizontalAlignment="Right" Click="Button_Click_3" Grid.Column="1" Grid.Row="9" Background="{x:Null}" BorderBrush="{x:Null}">
+                            <Button.ToolTip>
+                                <ToolTip Placement="Mouse">
+                                    <StackPanel>
+                                        <TextBlock FontSize="16" FontWeight="Light"><Run Text="Siguiente pestaña"></Run></TextBlock>
+                                    </StackPanel>
+                                </ToolTip>
+                            </Button.ToolTip>
+                            <materialDesign:PackIcon Kind="PageNext" Width="40" Height="40" Margin="-11,0,-13,0"></materialDesign:PackIcon>
+                        </Button>
+                    </Grid>
+                </TabItem>
+                <TabItem x:Name="tabItemPagina2" Width="0" Height="0" >
+                    <Grid x:Name="gridPagina2" >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="72*"></RowDefinition>
+                            <RowDefinition Height="72*"></RowDefinition>
+                            <RowDefinition Height="26*"></RowDefinition>
+                            <RowDefinition Height="46*"/>
+                            <RowDefinition Height="72*"></RowDefinition>
+                            <RowDefinition Height="72*"></RowDefinition>
+                            <RowDefinition Height="72*"></RowDefinition>
+                            <RowDefinition Height="72*"></RowDefinition>
+                            <RowDefinition Height="72*"></RowDefinition>
+                            <RowDefinition Height="71*"></RowDefinition>
+                        </Grid.RowDefinitions>
+
+                        <Label Content="Datos del curso" Margin="10,10,0,0" FontSize="20" FontWeight="Bold" Foreground="#FF98B7BB" Width="161" HorizontalAlignment="Left" Height="46" VerticalAlignment="Top"/>
+                        <Label Content="Curso" FontSize="16" Margin="41,5,276,0" Grid.Row="1" Foreground="#FF98B7B9" Height="43" VerticalAlignment="Top" />
+                        <ComboBox x:Name="AdmContrato_cboCurso" Margin="182,5,254,0" Grid.Row="1" materialDesign:HintAssist.Hint="Seleccione curso" Foreground="#FF98B7BB" BorderBrush="#FF849899" FontSize="16" VerticalAlignment="Top" Height="31" Grid.ColumnSpan="2" />
+                        <Label Content="Tipo Institución" FontSize="16" Margin="0,7,95,0" Grid.Row="1" Foreground="#FF98B7B9" Height="43" VerticalAlignment="Top" Grid.Column="1" HorizontalAlignment="Right" Width="119" />
+                        <ComboBox x:Name="AdmContrato_cboTipoColegio" Margin="10,5,25.8,0" Grid.Row="1" materialDesign:HintAssist.Hint="Seleccione Tipo Institucion" Foreground="#FF98B7BB" BorderBrush="#FF849899" FontSize="16" VerticalAlignment="Top" Height="31" Grid.Column="2" />
+
+                        <Label Content="Información de la modalidad de pago"  FontSize="20" HorizontalAlignment="Left" Margin="10,10.4,0,0" VerticalAlignment="Top" FontWeight="Bold" Height="35" RenderTransformOrigin="0.5,0.5" Grid.Row="4" Foreground="#FF98B7BB" Grid.ColumnSpan="2" Width="402"/>
+                        <Label Content="Modalidad aportes" FontSize="16" HorizontalAlignment="Left" Margin="24,10.4,0,0" VerticalAlignment="Top" Height="33" Grid.Row="5" Foreground="#FF98B7BB"/>
+                        <Label Content="Tipos de Actividades" FontSize="16" Margin="0,10.4,10,0" VerticalAlignment="Top" Grid.Column="1" Height="34" Grid.Row="5" Foreground="#FF98B7BB" HorizontalAlignment="Right" Width="204"/>
+                        <Label Content="Fecha de los pagos" FontSize="16" HorizontalAlignment="Left" Margin="24,18.6,0,0" VerticalAlignment="Top" Height="31" Grid.Row="6" Foreground="#FF98B7BB"/>
+                        <Label Content="Tasa de interés por &#xD;&#xA;atraso en los pagos" FontSize="16" Margin="0,18.6,63,0" VerticalAlignment="Top" Height="54" Grid.Row="6" Foreground="#FF98B7BB" Grid.Column="1" HorizontalAlignment="Right" Width="151" Grid.RowSpan="2"/>
+                        <TextBox x:Name="AdmContrato_txtTasaInteres" Height="33" Margin="10,16.6,25.8,0" FontSize="16" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Row="6" Foreground="#FF98B7BB" BorderBrush="#FF98B7BB" Grid.Column="2"/>
+                        <ComboBox x:Name="AdmContrato_cboModalidadAportes" materialDesign:HintAssist.Hint="Seleccione" Margin="182,8.4,254,0" FontSize="16" VerticalAlignment="Top" Height="31" Grid.Row="5" Foreground="#FF98B7BB" BorderBrush="#FF98B7BB" SelectionChanged="AdmContrato_cboModalidadAportes_SelectionChanged" Grid.ColumnSpan="2"/>
+                        <ComboBox x:Name="AdmContrato_cboTipoActividades" materialDesign:HintAssist.Hint="Seleccione" Margin="10,8.4,25.8,0" FontSize="16" VerticalAlignment="Top" Grid.Column="2" Height="31" Grid.Row="5" Foreground="#FF98B7BB" BorderBrush="#FF98B7BB"/>
+                        <TextBox x:Name="AdmContrato_FechaDePagos" materialDesign:HintAssist.Hint="Ej: 15 de cada mes" FontSize="16" Height="33" Margin="182,16.6,254,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Row="6" Foreground="#FF98B7BB" BorderBrush="#FF98B7BB" Grid.ColumnSpan="2"/>
+                        <Button  Margin="0,0,18.8,3.2" Grid.Column="2" Grid.Row="9" Background="{x:Null}" BorderBrush="{x:Null}" Width="50" Height="50" HorizontalAlignment="Right" VerticalAlignment="Bottom" Click="Button_Click_4">
+                            <materialDesign:PackIcon Kind="PageNext" Width="40" Height="40" Margin="-13,0,-12,0"></materialDesign:PackIcon>
+                        </Button>
+                        <Button  Margin="12,0,213,4.2" Grid.Row="9" Background="{x:Null}" BorderBrush="{x:Null}" Height="48"  RenderTransformOrigin="0.5,0.5" VerticalAlignment="Bottom" Click="Button_Click_6">
+                            <Button.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform ScaleX="-1"/>
+                                    <SkewTransform/>
+                                    <RotateTransform/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </Button.RenderTransform>
+                            <materialDesign:PackIcon Kind="PageNext" Width="40" Height="40" Margin="-13,0,-12,0"></materialDesign:PackIcon>
+                        </Button>
+                    </Grid>
+                </TabItem>
+
+                <TabItem x:Name="tabItemSeguro" Width="0" Height="0">
+                    <Grid x:Name="gridSeguro">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Label Content="Tipo seguro" FontSize="16" HorizontalAlignment="Left" Margin="39,7,0,0" VerticalAlignment="Top" Foreground="#FF98B7BB" Grid.Row="5"/>
+                        <Label Content="Descripcion" FontSize="16" HorizontalAlignment="Left" Margin="39,7,0,0" VerticalAlignment="Top" Foreground="#FF98B7BB" Grid.Row="6"/>
+
+                        <Label Content="Costo" HorizontalAlignment="Left" FontSize="16" Margin="38,7,0,0" VerticalAlignment="Top" Foreground="#FF98B7BB" Grid.Row="4" Grid.Column="1"/>
+
+
+                        <Label Content="Datos de la aseguradora" FontSize="18" FontWeight="Bold" HorizontalAlignment="Left" Margin="31,4,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="#FF98B7BB"/>
+                        <Label Content="Nombre" HorizontalAlignment="Left" FontSize="16" Margin="39,7,0,0" VerticalAlignment="Top" Foreground="#FF98B7BB" Grid.Row="2"/>
+
+                        <Label Content="Rut" HorizontalAlignment="Left" FontSize="16" Margin="39,7,0,0" VerticalAlignment="Top" Foreground="#FF98B7BB" Grid.Row="1"/>
+                        <TextBox x:Name="AdmSeguros_txtRutAseguradoraSeguro" materialDesign:HintAssist.Hint="Ingrese rut sin puntos ni guiones" FontSize="16" Height="33" Margin="153,0,30,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FF98B7BB" BorderBrush="#FF98B7BB" Grid.Row="1" LostFocus="AdmSeguros_txtRutAseguradoraSeguro_LostFocus"/>
+                        <Button x:Name="AdmSeguros_btnBuscarAseguradoraSeguro" Margin="0,3,30,0" VerticalAlignment="Top" Grid.Row="1" Height="30" HorizontalAlignment="Right" Width="30" Background="{x:Null}" BorderBrush="{x:Null}" Click="AdmSeguros_btnBuscarAseguradoraSeguro_Click">
+                            <materialDesign:PackIcon Kind="Search" Margin="-10,3,-7,0"></materialDesign:PackIcon>
+                        </Button>
+                        <TextBox x:Name="AdmSeguros_txtNombreAseguradoraSeguro" Height="33" FontSize="16" Margin="153,0,30,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FF98B7BB" BorderBrush="#FF98B7BB" Grid.Row="2"/>
+                        <Label Content="Datos del seguro" FontSize="18" FontWeight="Bold" HorizontalAlignment="Left" Margin="15,4,0,0" VerticalAlignment="Top" Foreground="#FF98B7BB" Grid.Row="3"/>
+                        <TextBox x:Name="AdmSeguros_txtCodSeguro" materialDesign:HintAssist.Hint="ej: 9999" Height="33" FontSize="16" Margin="153,5,30,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FF98B7BB" BorderBrush="#FF98B7BB" Grid.Row="4"/>
+                        <Button x:Name="AdmSeguros_btnBuscarSeguro" Margin="0,3,30,0" Grid.Row="4" Height="27" Click="AdmSeguros_btnBuscarSeguro_Click"  HorizontalAlignment="Right" Width="29" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}">
+                            <materialDesign:PackIcon Kind="Search" Width="20" Height="20" Margin="-12,0,-13,0"></materialDesign:PackIcon>
+                        </Button>
+                        <TextBox x:Name="AdmSeguros_txtCostoSeguro"  Height="33" FontSize="16" Margin="153,0,30,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FF98B7BB" BorderBrush="#FF98B7BB" Grid.Row="4" Grid.Column="1"/>
+                        <TextBox x:Name="AdmSeguros_txtTipoSeguro" materialDesign:HintAssist.Hint="ej: Seguro de vida"  FontSize="16" Height="33" Margin="153,5,30,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FF98B7BB" BorderBrush="#FF98B7BB" Grid.Row="5"/>
+                        <TextBox x:Name="AdmSeguros_txtDescripcionSeguros"  FontSize="16" Height="33" Margin="153,0,30,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FF98B7BB" BorderBrush="#FF98B7BB" Grid.ColumnSpan="2" Grid.Row="6"/>
+                        <Button x:Name="AdmSeguros_btnAgregarSeguro"   HorizontalAlignment="Left" Margin="31,0,0,-7" VerticalAlignment="Bottom" Width="50"  Grid.Row="10" BorderBrush="{x:Null}" Background="{x:Null}" Height="50" Click="AdmSeguros_btnAgregarSeguro_Click">
+                            <materialDesign:PackIcon Kind="AddCircle" Width="40" Height="40" Margin="-12,-3,-11,0"></materialDesign:PackIcon>
+                        </Button>
+                        <Button x:Name="AdmSeguros_btnActualizarSeguro" Margin="0,0,-23,-7" VerticalAlignment="Bottom" Grid.Row="10" Height="50" HorizontalAlignment="Right" Width="50" Background="{x:Null}" BorderBrush="{x:Null}" Click="AdmSeguros_btnActualizarSeguro_Click">
+                            <materialDesign:PackIcon Kind="Update" Width="40" Height="40" Margin="-15,0"></materialDesign:PackIcon>
+                        </Button>
+                        <Button x:Name="AdmSeguros_btnEliminarSeguro" Margin="0,0,30,-7" Grid.Column="1" Grid.Row="10" Background="{x:Null}" BorderBrush="{x:Null}" Height="50" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="50" Click="AdmSeguros_btnEliminarSeguro_Click">
+                            <materialDesign:PackIcon Kind="DeleteCircle" Width="40" Height="40" Margin="-12,0,-13,0"></materialDesign:PackIcon>
+                        </Button>
+                        <DataGrid x:Name="AdmSeguros_DataGridSeguros" CanUserAddRows="False" CanUserReorderColumns="False" CanUserResizeColumns="False" AutoGenerateColumns="False"  IsReadOnly="True" FontSize="16" Margin="39,0,30,0" Foreground="#7F000000" Background="#7FFAFAFA" Grid.ColumnSpan="2" Grid.Row="7" Grid.RowSpan="3">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="Código Seguro" Binding="{Binding IdSeguro}"></DataGridTextColumn>
+                                <DataGridTextColumn Header="Tipo Seguro      " Binding="{Binding Nombre}" ></DataGridTextColumn>
+                                <DataGridTextColumn Header="Costo" Binding="{Binding Costo}" ></DataGridTextColumn>
+                                <DataGridTextColumn Header="Descripción" Binding="{Binding Descripcion}" ></DataGridTextColumn>
+                                <DataGridTextColumn Header="Rut Empresa" Binding="{Binding RutEmp}" ></DataGridTextColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+
+
+
+                        <Label Content="Código " FontSize="16" HorizontalAlignment="Left" Margin="39,7,0,0" VerticalAlignment="Top" Foreground="#FF98B7BB" Grid.Row="4"/>
+
+                    </Grid>
+                </TabItem>
+                <TabItem x:Name="tabItemSeguro2" Width="0" Height="0">
+                    <Grid x:Name="gridSeguro2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Label Content="Registro de la empresa aseguradora" FontSize="18" FontWeight="Bold" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="#FF98B7BB"/>
+                        <Label Content="Rut" FontSize="16" HorizontalAlignment="Left" Margin="36,7,0,0" VerticalAlignment="Top" Width="61" RenderTransformOrigin="0.833,0.712" Foreground="#FF98B7BB" Grid.Row="1"/>
+                        <Label Content="Nombre" FontSize="16" Margin="56,7,284,0" VerticalAlignment="Top" Foreground="#FF98B7BB" Grid.Column="1" Grid.Row="1"/>
+                        <Label Content="Dirección" FontSize="16" HorizontalAlignment="Left" Margin="36,7,0,0" VerticalAlignment="Top" Foreground="#FF98B7BB" Grid.Row="3"/>
+                        <Label Content="Teléfono" FontSize="16" HorizontalAlignment="Left" Margin="36,7,0,0" VerticalAlignment="Top" Foreground="#FF98B7BB" Grid.Row="2"/>
+                        <TextBox x:Name="AdmSeguros_txtRutAseguradora" materialDesign:HintAssist.Hint="Ingrese rut sin puntos ni guiones"  Height="33" FontSize="16" Margin="151,0,45,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FF98B7BB" BorderBrush="#FF98B7BB" Grid.Row="1" LostFocus="AdmSeguros_txtRutAseguradora_LostFocus"/>
+                        <TextBox x:Name="AdmSeguros_txtNombreAseguradora" materialDesign:HintAssist.Hint="ej: Seguros Patito de Ule"  FontSize="16" Margin="152,0,44,0" TextWrapping="Wrap" Foreground="#FF98B7BB" BorderBrush="#FF98B7BB" Grid.Column="1" Grid.Row="1" Height="33" VerticalAlignment="Top"/>
+                        <TextBox x:Name="AdmSeguros_txtTelefonoAseguradora" materialDesign:HintAssist.Hint="ej: 955667788" Height="33" FontSize="16" Margin="151,0,45,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FF98B7BB" BorderBrush="#FF98B7BB" Grid.Row="2"/>
+                        <TextBox x:Name="AdmSeguros_txtDireccionAseguradora" materialDesign:HintAssist.Hint="Calle o Psj / N° vivienda / Población / Ciudad "  Height="33" FontSize="16" Margin="151,0,44,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FF98B7BB" BorderBrush="#FF98B7BB" Grid.Row="3" Grid.ColumnSpan="2"/>
+
+                        <DataGrid x:Name="AdmSeguros_DataGridAseguradora" CanUserAddRows="False" CanUserReorderColumns="False" CanUserResizeColumns="False" AutoGenerateColumns="False"  IsReadOnly="True" FontSize="16" Margin="45,0,44,10" Foreground="#FF98B7BB" Grid.ColumnSpan="2" Grid.Row="4" Grid.RowSpan="4">
+                            <DataGrid.Columns >
+                                <DataGridTextColumn Header="Rut Empresa" Binding="{Binding RutEmp}"></DataGridTextColumn>
+                                <DataGridTextColumn Header="Nombre Empresa" Binding="{Binding Nombre}"></DataGridTextColumn>
+                                <DataGridTextColumn Header="Telefono Empresa" Binding="{Binding Telefono}"></DataGridTextColumn>
+                                <DataGridTextColumn Header="Direccion Empresa" Binding="{Binding Direccion}"></DataGridTextColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <Button x:Name="AdmSeguros_btnBuscarAseguradora" Margin="0,7,45,0" VerticalAlignment="Top" Grid.Row="1" Height="22" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Right" Width="31" Click="AdmSeguros_btnBuscarAseguradora_Click">
+                            <materialDesign:PackIcon Kind="Search" Margin="-6,-1,-11,0"></materialDesign:PackIcon>
+                        </Button>
+                        <Button x:Name="AdmSeguros_btnAgregarAseguradora" Margin="45,0,0,6" Grid.Row="8" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="50" Click="AdmSeguros_btnAgregarAseguradora_Click">
+                            <materialDesign:PackIcon Kind="AddCircle" Width="40" Height="40" Margin="-19,-3,-20,0"></materialDesign:PackIcon>
+                        </Button>
+                        <Button x:Name="AdmSeguros_btnActualizarAseguradora" Margin="0,0,-23,6" Grid.Row="8" Background="{x:Null}" BorderBrush="{x:Null}" Height="50" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="50" Click="AdmSeguros_btnActualizarAseguradora_Click">
+                            <materialDesign:PackIcon Kind="Update" Width="40" Height="40" Margin="-11,0,-13,0"></materialDesign:PackIcon>
+                        </Button>
+                        <Button x:Name="AdmSeguros_btnEliminarAseguradora" Margin="0,0,44,6" Grid.Column="1" Grid.Row="8" Background="{x:Null}" BorderBrush="{x:Null}" Height="50" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="50" Click="AdmSeguros_btnEliminarAseguradora_Click">
+                            <materialDesign:PackIcon Kind="DeleteCircle" Width="40" Height="40" Margin="-13,0,-14,0"></materialDesign:PackIcon>
+                        </Button>
+                    </Grid>
+                </TabItem>
+                <TabItem x:Name="tabItemRegistroDeposito" Width="0" Height="0">
+                    <Grid x:Name="gridRegistroDeposito">
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="Datos de la institución" Grid.Column="0" FontSize="18" FontWeight="Bold" Margin="10,6,0,0" Foreground="#FF98B7BB" HorizontalAlignment="Left" Width="262" Height="33" VerticalAlignment="Top"/>
+                        <Label Content="Codigo" FontSize="16" Margin="34,7,0,0" Foreground="#FF98B7BB" Grid.Row="1" HorizontalAlignment="Left" Width="91" Height="31" VerticalAlignment="Top"/>
+                        <TextBox x:Name="AdmDeposito_txtCodigoColegio" FontSize="16" Margin="164,5,56,0" TextWrapping="Wrap" Foreground="#FF98B7BB" BorderBrush="#FF98B7BB" Grid.Row="1" Height="29" VerticalAlignment="Top" materialDesign:HintAssist.Hint="ej: A-505"/>
+                        <Label Content="Nombre" FontSize="16" HorizontalAlignment="Left" Margin="53,7,0,0" VerticalAlignment="Top" Foreground="#FF98B7BB" Grid.Row="1" Grid.Column="1" Width="105"/>
+                        <TextBox x:Name="AdmDeposito_txtNombreColegio" IsReadOnly="True" FontSize="16" Margin="177,5,43,0" TextWrapping="Wrap" Foreground="#FF98B7BB" BorderBrush="#FF98B7BB" Grid.Row="1" Grid.Column="1" Height="29" VerticalAlignment="Top" />
+                        <Label Content="Tipo Colegio" FontSize="16" Margin="34,7,0,0" Foreground="#FF98B7BB" Grid.Row="2" Height="31" VerticalAlignment="Top" HorizontalAlignment="Left" Width="117"/>
+                        <ComboBox x:Name="AdmDeposito_cboTipoColegio" materialDesign:HintAssist.Hint="Seleccione "  FontSize="16" Margin="164,5,56,0"  Foreground="#FF98B7BB" BorderBrush="#FF98B7BB" Grid.Row="2" Height="29" VerticalAlignment="Top"/>
+                        <Label Content="Curso" FontSize="16" HorizontalAlignment="Left" Margin="53,7,0,0" VerticalAlignment="Top" Foreground="#FF98B7BB" Grid.Row="2" Grid.Column="1" Width="78"/>
+                        <ComboBox x:Name="AdmDeposito_cboCurso" FontSize="16" materialDesign:HintAssist.Hint="Seleccione "  Margin="177,5,43,0" VerticalAlignment="Top" Foreground="#FF98B7BB" BorderBrush="#FF98B7BB" Grid.Row="2" Grid.Column="1" Height="29"/>
+                        <Button x:Name="AdmDeposito_btnBuscarColegio"  Margin="0,0,56,0" Grid.Row="1" Height="30" HorizontalAlignment="Right" Width="30" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" Click="AdmDeposito_btnBuscarColegio_Click">
+                            <materialDesign:PackIcon Kind="Search" Margin="-9,0,-12,0" Width="20" Height="20"></materialDesign:PackIcon>
+                        </Button>
+                        <Button  Margin="0,2,10,0" Grid.Row="1" Height="30" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Right" Width="30">
+                            <materialDesign:PackIcon Kind="TableSearch" Margin="-11,-3,-18,0" Width="20" Height="20"></materialDesign:PackIcon>
+                        </Button>
+                        <Label Content="Datos del depositante" FontSize="18" FontWeight="Bold" Margin="10,5,0,0" Foreground="#FF98B7BB" Grid.Row="3" HorizontalAlignment="Left" Width="206" Height="38" VerticalAlignment="Top"/>
+                        <Label Content="Rut"  FontSize="16" Margin="34,7.4,0,0" Foreground="#FF98B7BB" Grid.Row="4" Height="32" VerticalAlignment="Top" HorizontalAlignment="Left" Width="152"/>
+                        <TextBox x:Name="AdmDeposito_txtRutDepositante" materialDesign:HintAssist.Hint="Ingrese rut sin puntos ni guiones"  FontSize="16" Margin="164,5,56,0" TextWrapping="Wrap" Foreground="#FF98B7BB" BorderBrush="#FF98B7BB" Grid.Row="4" Height="29" VerticalAlignment="Top" LostFocus="AdmDeposito_txtRutDepositante_LostFocus"/>
+                        <Button x:Name="AdmDeposito_btnBuscarApoderado" Margin="0,0.4,56,16" Grid.Row="4" Height="Auto" HorizontalAlignment="Right" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Click="AdmDeposito_btnBuscarApoderado_Click">
+                            <materialDesign:PackIcon Kind="Search" Margin="-12,0,-9,0" Width="20" Height="20"></materialDesign:PackIcon>
+                        </Button>
+                        <Label Content="Nombre" FontSize="16" HorizontalAlignment="Left" Margin="53,7,0,0" VerticalAlignment="Top" Foreground="#FF98B7BB" Grid.Row="4" Grid.Column="1" Width="92"/>
+                        <TextBox x:Name="AdmDeposito_txtNombreDepositante" materialDesign:HintAssist.Hint="Nombre y Apellido"  FontSize="16" Margin="177,5,43,0" TextWrapping="Wrap" Foreground="#FF98B7BB" BorderBrush="#FF98B7BB" Grid.Row="4" Grid.Column="1" Height="29" VerticalAlignment="Top"/>
+                        <Label Content="Datos del deposito" FontSize="18" FontWeight="Bold" Margin="10,6,0,0" Foreground="#FF98B7BB" Grid.Row="5" Height="34" VerticalAlignment="Top" HorizontalAlignment="Left" Width="200"/>
+                        <Label Content="Fecha " FontSize="16" Margin="34,7,0,0" Foreground="#FF98B7BB" Grid.Row="6" Height="32" VerticalAlignment="Top" HorizontalAlignment="Left" Width="100"/>
+                        <DatePicker x:Name="AdmDeposito_FechaDeposito" Margin="164,2,56,0" VerticalAlignment="Top" Foreground="#FF98B7BB" BorderBrush="#FF98B7BB" Grid.Row="6" FontSize="16" Height="30" materialDesign:HintAssist.Hint="Inserte fecha"/>
+                        <Label Content="Monto &#xA;depositado" FontSize="16" Margin="53,22,0,0" Foreground="#FF98B7BB" Grid.Row="5" Grid.Column="1" Height="64" VerticalAlignment="Top" HorizontalAlignment="Left" Width="115" Grid.RowSpan="3"/>
+                        <TextBox x:Name="AdmDeposito_txtMontoDepositado" materialDesign:HintAssist.Hint="Inserte monto"  FontSize="16" Margin="177,0,43,0" TextWrapping="Wrap" Foreground="#FF98B7BB" BorderBrush="#FF98B7BB" Grid.Row="6" Grid.Column="1" Height="28" VerticalAlignment="Top"/>
+                        <Button x:Name="AdmDeposito_btnAgregarDeposito"  Margin="0,0,80,0" Grid.Row="7" Height="40" HorizontalAlignment="Right" Width="40" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" Grid.Column="1" Click="AdmDeposito_btnAgregarDeposito_Click">
+                            <materialDesign:PackIcon Kind="AddCircle" Width="30" Height="30" Margin="-10,-7,-13,0"></materialDesign:PackIcon>
+                        </Button>
+                        <DataGrid x:Name="AdmDeposito_DataGridDepositos" CanUserAddRows="False" CanUserReorderColumns="False" CanUserResizeColumns="False" AutoGenerateColumns="False"  IsReadOnly="True" FontSize="16" Margin="34,0,35,10" Grid.Row="8" Grid.RowSpan="5" Grid.ColumnSpan="2" Background="#7FFAFAFA">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="Id Deposito" Binding="{Binding IdDeposito}"></DataGridTextColumn>
+                                <DataGridTextColumn Header="Fecha Deposito" Binding="{Binding FechaDeposito}"></DataGridTextColumn>
+                                <DataGridTextColumn Header="Monto" Binding="{Binding Monto}" ></DataGridTextColumn>
+                                <DataGridTextColumn Header="Curso" Binding="{Binding IdCurso}"></DataGridTextColumn>
+                                <DataGridTextColumn Header="Codigo Colegio" Binding="{Binding CodColegio}"></DataGridTextColumn>
+                                <DataGridTextColumn Header="Tipo Colegio" Binding="{Binding TipoColegio}"></DataGridTextColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <Button x:Name="AdmDeposito_btnActualizarDeposito"  Margin="0,0,35.4,0" Grid.Row="7" Height="40" Background="{x:Null}" BorderBrush="{x:Null}" Grid.Column="1" Click="AdmDeposito_btnActualizarDeposito_Click" Grid.RowSpan="2" VerticalAlignment="Top" HorizontalAlignment="Right" Width="40">
+                            <materialDesign:PackIcon Kind="Update" Width="30" Height="30" Margin="-8,-10,-15,0"></materialDesign:PackIcon>
+                        </Button>
+                        <Label Content="Id Deposito" Grid.Row="7" FontSize="16" Margin="34,0,0,0" Foreground="#FF98B7BB" Background="{x:Null}" HorizontalAlignment="Left" Width="117" Height="32" VerticalAlignment="Top"></Label>
+                        <TextBox x:Name="AdmDeposito_txtIdDeposito" Grid.Row="7" materialDesign:HintAssist.Hint="ej: 9999999"  Margin="164,0,56,0" FontSize="16" Foreground="#FF98B7BB" BorderBrush="#FF98B7BB" Height="27" VerticalAlignment="Top"></TextBox>
+                        <Button x:Name="AdmDeposito_btnBuscarDeposito" Margin="0,0,56,0" Grid.Row="7" Height="30" VerticalAlignment="Top" HorizontalAlignment="Right" Width="30" Background="{x:Null}" BorderBrush="{x:Null}" Click="AdmDeposito_btnBuscarDeposito_Click">
+                            <materialDesign:PackIcon Kind="Search" Margin="-12,0,-9,0" Width="20" Height="20"></materialDesign:PackIcon>
+                        </Button>
+                    </Grid>
+                </TabItem>
+                <TabItem x:Name="tabItemConsultaSaldo" Width="0" Height="0">
+                    <Grid x:Name="gridConsultaSaldo">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <TextBox x:Name="RegDeposito_txtCodigoColegio" FontSize="16" Margin="180,0,-33,52" materialDesign:HintAssist.Hint="ej: A-505" TextWrapping="Wrap" Foreground="#FF98B7BB" BorderBrush="#FF98B7BB" Height="33" VerticalAlignment="Bottom"/>
+                        <DataGrid x:Name="DataGridDepositos" CanUserAddRows="False" CanUserReorderColumns="False" CanUserResizeColumns="False" AutoGenerateColumns="False"  IsReadOnly="True"  FontSize="16" Margin="44,10,43,59" Foreground="#FF98B7BB" Background="#7FFAFAFA" Grid.ColumnSpan="3" Grid.Row="1" Grid.RowSpan="3">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="Codigo Colegio" Binding="{Binding CodColegio}"/>
+                                <DataGridTextColumn Header="Nombre Institucion" Binding="{Binding NombreColegio}"/>
+                                <DataGridTextColumn Binding="{Binding TipoInstitucion}" Header="Tipo Institucion"/>
+                                <DataGridTextColumn Binding="{Binding IdCurso}" Header="Curso"/>
+                                <DataGridTextColumn Binding="{Binding MontoActualCompletado}" Header="Monto Actual Acumulado"/>
+                                <DataGridTextColumn Binding="{Binding MontoPorCompletar}"  Header="Monto por Completar"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <Label Content="Curso" FontSize="16" Margin="47,0,0,52" Foreground="#FF98B7BB" Grid.Column="1" Height="31" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="52"/>
+                        <Label Content="Tipo" FontSize="16" HorizontalAlignment="Left" Margin="-9,0,0,51.8" Width="51" Foreground="#FF98B7BB" Grid.Column="2" Height="31" VerticalAlignment="Bottom"/>
+                        <ComboBox x:Name="RegDeposito_cboTipoColegio" FontSize="16" Margin="44.4,0,43.4,51.8" materialDesign:HintAssist.Hint="Seleccione" VerticalAlignment="Bottom" Foreground="#FF98B7BB" BorderBrush="#FF98B7BB" Grid.Column="2" Height="33"/>
+                        <Label Content="Codigo colegio" FontSize="16" Margin="44,0,0,52" Foreground="#FF98B7BB" HorizontalAlignment="Left" Width="117" Height="31" VerticalAlignment="Bottom"/>
+                        <ComboBox x:Name="RegDeposito_cboCurso" Margin="119,0,28,52" VerticalAlignment="Bottom" materialDesign:HintAssist.Hint="Seleccione" FontSize="16" Foreground="#FF98B7BB" BorderBrush="#FF98B7BB" Grid.Column="1" Height="33"/>
+                    </Grid>
+                </TabItem >
+                <TabItem x:Name="tabItemMensajeria" Width="0" Height="0">
+                    <Grid x:Name="gridMensajeria">
+
+                    </Grid>
+                </TabItem>
+                <TabItem x:Name="tabItemInicio" Width="0" Height="0">
+                    <Grid x:Name="gridInicio" Background="#00000000">
+
+                    </Grid>
+                </TabItem>
+                <TabItem x:Name="tabItemPestaña3" Width="0" Height="0">
+                    <Grid x:Name="gridPestaña3">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Label Content="Servicios Contratados" FontSize="18" Margin="10,10,0,28" FontWeight="Bold" Foreground="#FF98B7BB" HorizontalAlignment="Left" Width="202"/>
+                        <Label Content="Seguros " FontSize="16" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="32" Grid.Row="1" Foreground="#FF98B7BB"/>
+                        <Label Content="Beneficios" FontSize="16" HorizontalAlignment="Left" Margin="15,10,0,0" VerticalAlignment="Top" Grid.Column="1" Height="30" Grid.Row="1" Width="85" Foreground="#FF98B7BB"/>
+                        <Label Content="Actividades" FontSize="16" HorizontalAlignment="Left" Margin="10,7,0,0" VerticalAlignment="Top" Grid.Column="2" Height="29" Grid.Row="1" Width="94" Foreground="#FF98B7BB"/>
+                        <ComboBox x:Name="AdmContrato_cboSeguros" materialDesign:HintAssist.Hint="Seleccione" Height="30" FontSize="16" Margin="86,6,56,0" Grid.Row="1" Foreground="#FF98B7BB" BorderBrush="#FF98B7BB" VerticalAlignment="Top"/>
+                        <ComboBox x:Name="AdmContrato_cboBeneficios" Height="30" materialDesign:HintAssist.Hint="Seleccione" FontSize="16" Margin="95,6,55,0" RenderTransformOrigin="0.5,0.5" Grid.Column="1" Grid.Row="1" Foreground="#FF98B7BB" BorderBrush="#FF98B7BB" VerticalAlignment="Top"/>
+                        <ComboBox x:Name="AdmContrato_cboActividades" materialDesign:HintAssist.Hint="Seleccione" Height="30" FontSize="16" Margin="101,6,55,0" Grid.Column="2" Foreground="#FF98B7BB" BorderBrush="#FF98B7BB" Grid.Row="1" VerticalAlignment="Top"/>
+                        <DataGrid x:Name="AdmContrato_DataGridSeguros" CanUserAddRows="False" CanUserReorderColumns="False" CanUserResizeColumns="False" AutoGenerateColumns="False"  IsReadOnly="True" Margin="10,0,8,7" FontSize="16" Grid.Row="2" Grid.RowSpan="2" Foreground="#FF98B7BB" Background="#7FFFFFFF" BorderBrush="#FF98B7BB">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="Seguro" Binding="{Binding Nombre}"></DataGridTextColumn>
+                                <DataGridTextColumn Header="Costo" Binding="{Binding Costo}"></DataGridTextColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <DataGrid x:Name="AdmContrato_DataGridBeneficios" FontSize="16" Margin="10,0.2,8,6.6" Grid.Column="1" materialDesign:HintAssist.Hint="Seleccione actividades" Grid.Row="2" Grid.RowSpan="2" Foreground="#FF98B7BB" BorderBrush="#FF98B7BB" Background="#7FFFFFFF"/>
+                        <DataGrid x:Name="AdmContrato_DataGridActividades" FontSize="16" Margin="10,0,8,7" Grid.Column="2" Grid.Row="2" Grid.RowSpan="2" Foreground="#FF98B7BB" BorderBrush="#FF98B7BB" Background="#7FFFFFFF"/>
+                        <Button x:Name="AdmContrato_btnAgregarSeguro" Margin="0,3,11,0"  VerticalAlignment="Top" Grid.Row="1" Background="{x:Null}" BorderBrush="{x:Null}" Height="40" HorizontalAlignment="Right" Width="40" Click="AdmContrato_btnAgregarSeguro_Click">
+                            <materialDesign:PackIcon Kind="AddCircle" Width="30" Height="30" Margin="-12,0"></materialDesign:PackIcon>
+                        </Button>
+                        <Button x:Name="AdmContrato_btnAgregarBeneficio" FontSize="16" Margin="0,0,10,0" VerticalAlignment="Top" Grid.Column="1" Grid.Row="1" Background="{x:Null}" BorderBrush="{x:Null}" Height="40" HorizontalAlignment="Right" Width="40" Click="AdmContrato_btnAgregarBeneficio_Click">
+                            <materialDesign:PackIcon Kind="AddCircle" Width="30" Height="30" Margin="-11,0,-12,0"></materialDesign:PackIcon>
+                        </Button>
+                        <Button x:Name="AdmContrato_btnAgregarActividad"  Margin="0,0,10,0" VerticalAlignment="Top" Grid.Column="2" Grid.Row="1" Background="{x:Null}" BorderBrush="{x:Null}" Height="40" HorizontalAlignment="Right" Width="40" Click="AdmContrato_btnAgregarActividad_Click">
+                            <materialDesign:PackIcon Kind="AddCircle" Width="30" Height="30" Margin="-10,0,-13,0"></materialDesign:PackIcon>
+                        </Button>
+
+                        <Label Content="Resumen de la cotización" FontSize="18" HorizontalAlignment="Left"  VerticalAlignment="Top" FontWeight="Bold" Margin="10,10.4,0,0" Foreground="#FF98B7BB" Grid.Row="4"/>
+                        <Label Content="Meta a completar" FontSize="16" VerticalAlignment="Top" Margin="0,20,-10,0" Foreground="#FF98B7BB" Grid.Row="6" Grid.Column="1" HorizontalAlignment="Right" Width="135"/>
+                        <Label Content="Costo total de &#xD;&#xA;los seguros" FontSize="16" Margin="25,8.6,106,0" Foreground="#FF98B7BB" Height="53" VerticalAlignment="Top" Grid.Row="5"/>
+                        <Label Content="Porc de descuento &#xA;por los beneficios" FontSize="16"  VerticalAlignment="Top" Margin="24,8.8,0,0" Foreground="#FF98B7BB" Grid.Row="7" HorizontalAlignment="Left" Width="146"/>
+                        <Label Content="Costo por prestación &#xD;&#xA;de servicios" FontSize="16"  VerticalAlignment="Top" Margin="0,1,-32,0" Foreground="#FF98B7BB" Grid.Row="5" Grid.Column="1" HorizontalAlignment="Right" Width="162"/>
+                        <TextBox x:Name="AdmContrato_txtCostoTotalActividades"  Height="33" FontSize="16"  TextWrapping="Wrap" VerticalAlignment="Top" Margin="170,19.6,273,0" Foreground="#FF98B7BB" BorderBrush="#FF98B7BB" Grid.Row="6" Grid.ColumnSpan="2"/>
+                        <TextBox x:Name="AdmContrato_txtCostoTotalSeguros"  FontSize="16" TextWrapping="Wrap" Margin="171,20.6,273,0" Foreground="#FF98B7BB" BorderBrush="#FF98B7BB" Grid.Row="5" Height="33" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+                        <TextBox x:Name="AdmContrato_txtPorcDesctBeneficios"  Height="33" FontSize="16" TextWrapping="Wrap" VerticalAlignment="Top" Margin="170,20.8,273,0" Foreground="#FF98B7BB" BorderBrush="#FF98B7BB" Grid.Row="7" Grid.ColumnSpan="2"/>
+                        <TextBox x:Name="AdmContrato_txtCostoServicios" Height="33" FontSize="16" TextWrapping="Wrap" VerticalAlignment="Top" Margin="41,21,37,0" Foreground="#FF98B7BB" BorderBrush="#FF98B7BB" Grid.Row="5" Grid.Column="2"/>
+                        <Label Content="Costo total de las&#xD;&#xA;actividades" FontSize="16" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="20,9.6,0,0" Foreground="#FF98B7BB" Width="145" Grid.Row="6"/>
+                        <TextBox x:Name="AdmContrato_txtMeta" Height="33" FontSize="16"  TextWrapping="Wrap" VerticalAlignment="Top" Margin="41,13,37,0" Foreground="#FF98B7BB" BorderBrush="#FF98B7BB" Grid.Row="6" Grid.Column="2"/>
+                        <Button x:Name="AdmContrato_btnAgregarContrato" Margin="25,0,0,0" Grid.Row="8" Height="50" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="50" Background="{x:Null}" BorderBrush="{x:Null}" Click="AdmContrato_btnAgregarContrato_Click">
+                            <materialDesign:PackIcon Kind="AddCircle" Width="40" Height="40" Margin="-18,-1,-19,0"></materialDesign:PackIcon>
+                        </Button>
+                        <Button x:Name="AdmContrato_btnActualizarContrato"  Margin="116,0,106,0" Grid.Column="1" Grid.Row="8" Height="50" VerticalAlignment="Bottom"  BorderBrush="{x:Null}" Background="{x:Null}" Click="AdmContrato_btnActualizarContrato_Click" MaxWidth="50" MaxHeight="50">
+                            <materialDesign:PackIcon Kind="Update" Width="40" Height="40" Margin="-16,-7,-12,-7"></materialDesign:PackIcon>
+                        </Button>
+                        <Button x:Name="AdmContrato_btnTerminarContrato"  Margin="0,0,25,0" Grid.Column="2" Grid.Row="8" Height="50" HorizontalAlignment="Right" Width="50" VerticalAlignment="Bottom"  Background="{x:Null}" BorderBrush="{x:Null}" >
+                            <materialDesign:PackIcon Kind="StopCircle" Width="40" Height="40" Margin="-16,-18,-17,-13"></materialDesign:PackIcon>
+                        </Button>
+                        <Button  Margin="0,9,27,0" Grid.Column="2" Height="50" HorizontalAlignment="Right" Width="50"  Background="{x:Null}" BorderBrush="{x:Null}" Grid.RowSpan="2" VerticalAlignment="Top" Click="Button_Click_5" >
+                            <materialDesign:PackIcon Kind="PageNext" Width="40" Height="40" RenderTransformOrigin="0.5,0.5" Margin="-14,0">
+                                <materialDesign:PackIcon.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform ScaleX="-1"/>
+                                        <SkewTransform/>
+                                        <RotateTransform/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </materialDesign:PackIcon.RenderTransform>
+                            </materialDesign:PackIcon>
+                        </Button>
+                    </Grid>
+                </TabItem>
+            </TabControl >
+            <Button Content="Registro del colegio" x:Name="btnregistroColegio" Visibility="Hidden" HorizontalAlignment="Left" FontSize="12" Margin="0,5,0,0" VerticalAlignment="Top" Width="143" Click="BtnregistroColegio_Click" Background="#7F000000" BorderBrush="Black" Foreground="#FF98B7BB"/>
+            <Button Content="Datos del curso" x:Name="btnDatosCurso" Visibility="Hidden" HorizontalAlignment="Left" FontSize="12" Margin="152,5,0,0" VerticalAlignment="Top" Width="143" Click="BtnDatosCurso_Click" Background="#7F000000" BorderBrush="Black" Foreground="#FF98B7BB"/>
+            <Button Content="Registrar seguro" x:Name="btnSeguro" Visibility="Hidden" HorizontalAlignment="Left" FontSize="12" Margin="0,5,0,0" VerticalAlignment="Top" Width="143" Click="BtnSeguro_Click" Background="#7F000000" BorderBrush="Black" Foreground="#FF98B7BB"/>
+            <Button Content="Administrar empresas" x:Name="btnSeguro2" Visibility="Hidden" HorizontalAlignment="Left" FontSize="12" Margin="152,5,0,0" VerticalAlignment="Top" Width="143" Click="BtnSeguro2_Click" Background="#7F000000" BorderBrush="Black" Foreground="#FF98B7BB" />
+
+        </Grid>
+    </Grid>
+</Window>

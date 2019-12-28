@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="56E061AE-8315-6523-8D58-EE16CC9794BE" containerWithKeyObject="E4668235-CE97-107B-9F41-7C782E47032B" localFKIndex="DEFB96AE-01D4-3BF9-004F-1D60F42708BB" name="Curso_Colegio_FK">
+<createdBy>steds</createdBy>
+<createdTime>2019-07-13 20:49:13 UTC</createdTime>
+<generatorID>10CD345E-C92D-F679-2F9F-58556B0B8609</generatorID>
+<ownerDesignName>ModeloOnTour </ownerDesignName>
+<referredTableLongName>Colegio</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>87F02DB0-AA69-4988-8DA3-4881D00E38A2</referredTableID>
+<keyObject>CD0C7D4D-4BB9-23DF-A064-AAE052482586</keyObject>
+<referredKeyID>CD0C7D4D-4BB9-23DF-A064-AAE052482586</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CodColegio</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

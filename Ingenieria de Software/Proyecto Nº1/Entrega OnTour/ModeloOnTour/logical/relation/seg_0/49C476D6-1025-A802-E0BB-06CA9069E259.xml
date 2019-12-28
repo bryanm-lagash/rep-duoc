@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="rln_apoderado_alumno" directorySegmentName="seg_0" id="49C476D6-1025-A802-E0BB-06CA9069E259">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-07 20:52:48 UTC</createdTime>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="32ACCB6A-201C-36C5-1F7F-195C19F4CAC1" value="true"/>
+</engineerTo>
+<sourcePk>E369D0BE-EE89-EE6B-CE0C-B202126AC9F2</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>95E3E3F8-D32E-73A8-2ED8-486E53713F92</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>05EC0658-6D36-316A-8E15-CE9C12D5AD45</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

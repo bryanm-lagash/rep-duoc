@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Detalle Seguro Seguro FK" directorySegmentName="seg_0" id="4AC9718A-2A9F-8FB2-BAA0-B53C9387B9A6">
+<createdBy>jose</createdBy>
+<createdTime>2019-06-06 01:52:33 UTC</createdTime>
+<ownerDesignName>ModeloOnTour</ownerDesignName>
+<engineerTo>
+<item key="635ED9EF-D8C7-B650-AF71-C3848BCE06E5" value="true"/>
+</engineerTo>
+<sourcePk>740A6DCD-EFF6-07CC-B8F3-560A8880D6EA</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>593FE002-707D-255A-C74B-260D6F626BA3</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>E0F0EADC-439A-5A29-C55A-6494C7ED8B5B</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
